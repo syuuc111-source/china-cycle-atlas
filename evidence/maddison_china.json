@@ -1,0 +1,1617 @@
+{
+  "title": "Maddison Project Database 2023, China (CHN)",
+  "url": "https://www.rug.nl/ggdc/historicaldevelopment/maddison/releases/maddison-project-database-2023",
+  "download": "https://dataverse.nl/api/access/datafile/421302",
+  "dataset_doi": "10.34894/INZBF2",
+  "paper_doi": "10.1111/joes.12618",
+  "accessed": "2026-11-06",
+  "units": {
+    "GDPpc": "2011 international dollars per person",
+    "Population": "thousands of persons"
+  },
+  "caution": "Historical estimates and modern series compiled by MPD, not directly comparable to WDI series without methodological reconciliation. Preserve sparse years; no interpolation. Values in long annually filled sections may be source estimates/interpolations, not independent annual observations.",
+  "series": {
+    "GDPpc": [
+      {
+        "year": 1000,
+        "value": 1225.1070000000002
+      },
+      {
+        "year": 1090,
+        "value": 1221.711
+      },
+      {
+        "year": 1120,
+        "value": 1180.959
+      },
+      {
+        "year": 1400,
+        "value": 1404.246
+      },
+      {
+        "year": 1410,
+        "value": 1414
+      },
+      {
+        "year": 1420,
+        "value": 1412
+      },
+      {
+        "year": 1430,
+        "value": 1498
+      },
+      {
+        "year": 1440,
+        "value": 1458
+      },
+      {
+        "year": 1450,
+        "value": 1375.38
+      },
+      {
+        "year": 1460,
+        "value": 1324
+      },
+      {
+        "year": 1470,
+        "value": 1341
+      },
+      {
+        "year": 1480,
+        "value": 1242
+      },
+      {
+        "year": 1490,
+        "value": 1189
+      },
+      {
+        "year": 1500,
+        "value": 1207.278
+      },
+      {
+        "year": 1510,
+        "value": 1274
+      },
+      {
+        "year": 1520,
+        "value": 1166
+      },
+      {
+        "year": 1530,
+        "value": 1187
+      },
+      {
+        "year": 1540,
+        "value": 1193
+      },
+      {
+        "year": 1550,
+        "value": 1195
+      },
+      {
+        "year": 1560,
+        "value": 1200
+      },
+      {
+        "year": 1570,
+        "value": 1237.842
+      },
+      {
+        "year": 1580,
+        "value": 1217
+      },
+      {
+        "year": 1590,
+        "value": 1217
+      },
+      {
+        "year": 1600,
+        "value": 1217.4660000000001
+      },
+      {
+        "year": 1610,
+        "value": 1282
+      },
+      {
+        "year": 1620,
+        "value": 1262
+      },
+      {
+        "year": 1661,
+        "value": 1330
+      },
+      {
+        "year": 1685,
+        "value": 1280
+      },
+      {
+        "year": 1690,
+        "value": 1413
+      },
+      {
+        "year": 1700,
+        "value": 1542.633
+      },
+      {
+        "year": 1710,
+        "value": 1406
+      },
+      {
+        "year": 1720,
+        "value": 1312
+      },
+      {
+        "year": 1724,
+        "value": 1170
+      },
+      {
+        "year": 1730,
+        "value": 1234
+      },
+      {
+        "year": 1740,
+        "value": 1158
+      },
+      {
+        "year": 1750,
+        "value": 1061.25
+      },
+      {
+        "year": 1760,
+        "value": 1022
+      },
+      {
+        "year": 1766,
+        "value": 991
+      },
+      {
+        "year": 1770,
+        "value": 998
+      },
+      {
+        "year": 1780,
+        "value": 981
+      },
+      {
+        "year": 1790,
+        "value": 955
+      },
+      {
+        "year": 1800,
+        "value": 926.259
+      },
+      {
+        "year": 1810,
+        "value": 901
+      },
+      {
+        "year": 1820,
+        "value": 882
+      },
+      {
+        "year": 1830,
+        "value": 846
+      },
+      {
+        "year": 1840,
+        "value": 849
+      },
+      {
+        "year": 1850,
+        "value": 858
+      },
+      {
+        "year": 1870,
+        "value": 945
+      },
+      {
+        "year": 1887,
+        "value": 912
+      },
+      {
+        "year": 1890,
+        "value": 964
+      },
+      {
+        "year": 1900,
+        "value": 972
+      },
+      {
+        "year": 1911,
+        "value": 905
+      },
+      {
+        "year": 1913,
+        "value": 985
+      },
+      {
+        "year": 1929,
+        "value": 1003
+      },
+      {
+        "year": 1930,
+        "value": 1012
+      },
+      {
+        "year": 1931,
+        "value": 1015
+      },
+      {
+        "year": 1932,
+        "value": 1039
+      },
+      {
+        "year": 1933,
+        "value": 923
+      },
+      {
+        "year": 1934,
+        "value": 937
+      },
+      {
+        "year": 1935,
+        "value": 1007
+      },
+      {
+        "year": 1936,
+        "value": 1065
+      },
+      {
+        "year": 1937,
+        "value": 1034
+      },
+      {
+        "year": 1938,
+        "value": 1003
+      },
+      {
+        "year": 1950,
+        "value": 799
+      },
+      {
+        "year": 1951,
+        "value": 950
+      },
+      {
+        "year": 1952,
+        "value": 1047
+      },
+      {
+        "year": 1953,
+        "value": 1157
+      },
+      {
+        "year": 1954,
+        "value": 1049
+      },
+      {
+        "year": 1955,
+        "value": 1119
+      },
+      {
+        "year": 1956,
+        "value": 1189
+      },
+      {
+        "year": 1957,
+        "value": 1195
+      },
+      {
+        "year": 1958,
+        "value": 1173
+      },
+      {
+        "year": 1959,
+        "value": 1117
+      },
+      {
+        "year": 1960,
+        "value": 1057
+      },
+      {
+        "year": 1961,
+        "value": 874
+      },
+      {
+        "year": 1962,
+        "value": 926
+      },
+      {
+        "year": 1963,
+        "value": 1034
+      },
+      {
+        "year": 1964,
+        "value": 1152
+      },
+      {
+        "year": 1965,
+        "value": 1253
+      },
+      {
+        "year": 1966,
+        "value": 1261
+      },
+      {
+        "year": 1967,
+        "value": 1237
+      },
+      {
+        "year": 1968,
+        "value": 1178
+      },
+      {
+        "year": 1969,
+        "value": 1264
+      },
+      {
+        "year": 1970,
+        "value": 1398
+      },
+      {
+        "year": 1971,
+        "value": 1446
+      },
+      {
+        "year": 1972,
+        "value": 1431
+      },
+      {
+        "year": 1973,
+        "value": 1513
+      },
+      {
+        "year": 1974,
+        "value": 1519
+      },
+      {
+        "year": 1975,
+        "value": 1594
+      },
+      {
+        "year": 1976,
+        "value": 1519
+      },
+      {
+        "year": 1977,
+        "value": 1583
+      },
+      {
+        "year": 1978,
+        "value": 1744
+      },
+      {
+        "year": 1979,
+        "value": 1859
+      },
+      {
+        "year": 1980,
+        "value": 1930
+      },
+      {
+        "year": 1981,
+        "value": 1962
+      },
+      {
+        "year": 1982,
+        "value": 2128
+      },
+      {
+        "year": 1983,
+        "value": 2227
+      },
+      {
+        "year": 1984,
+        "value": 2444
+      },
+      {
+        "year": 1985,
+        "value": 2619
+      },
+      {
+        "year": 1986,
+        "value": 2748
+      },
+      {
+        "year": 1987,
+        "value": 2931
+      },
+      {
+        "year": 1988,
+        "value": 3045
+      },
+      {
+        "year": 1989,
+        "value": 3022
+      },
+      {
+        "year": 1990,
+        "value": 2982
+      },
+      {
+        "year": 1991,
+        "value": 3051.3151251535655
+      },
+      {
+        "year": 1992,
+        "value": 3227.744141541462
+      },
+      {
+        "year": 1993,
+        "value": 3506.4800947744798
+      },
+      {
+        "year": 1994,
+        "value": 3730.164094416436
+      },
+      {
+        "year": 1995,
+        "value": 3999.729180990004
+      },
+      {
+        "year": 1996,
+        "value": 4219.644172416151
+      },
+      {
+        "year": 1997,
+        "value": 4310.828198416168
+      },
+      {
+        "year": 1998,
+        "value": 4309.847175568261
+      },
+      {
+        "year": 1999,
+        "value": 4466.736250214565
+      },
+      {
+        "year": 2000,
+        "value": 4730.354351202304
+      },
+      {
+        "year": 2001,
+        "value": 4995.144724820601
+      },
+      {
+        "year": 2002,
+        "value": 5343.112257824781
+      },
+      {
+        "year": 2003,
+        "value": 5649.4632391271925
+      },
+      {
+        "year": 2004,
+        "value": 6067.591161370288
+      },
+      {
+        "year": 2005,
+        "value": 6626.591821130525
+      },
+      {
+        "year": 2006,
+        "value": 7271.035651970811
+      },
+      {
+        "year": 2007,
+        "value": 7895.712892697418
+      },
+      {
+        "year": 2008,
+        "value": 8190.112094505943
+      },
+      {
+        "year": 2009,
+        "value": 8734.04062380443
+      },
+      {
+        "year": 2010,
+        "value": 9658.41859928433
+      },
+      {
+        "year": 2011,
+        "value": 10221
+      },
+      {
+        "year": 2012,
+        "value": 10946.83397149056
+      },
+      {
+        "year": 2013,
+        "value": 11731.294597488408
+      },
+      {
+        "year": 2014,
+        "value": 12515.198304795971
+      },
+      {
+        "year": 2015,
+        "value": 13325.431748191117
+      },
+      {
+        "year": 2016,
+        "value": 14138.954637273522
+      },
+      {
+        "year": 2017,
+        "value": 15030.447422313575
+      },
+      {
+        "year": 2018,
+        "value": 15977.007798620576
+      },
+      {
+        "year": 2019,
+        "value": 16879.53970153226
+      },
+      {
+        "year": 2020,
+        "value": 17225.968276942745
+      },
+      {
+        "year": 2021,
+        "value": 18666.604569482603
+      },
+      {
+        "year": 2022,
+        "value": 19238.17878269338
+      }
+    ],
+    "Population": [
+      {
+        "year": 1,
+        "value": 59600
+      },
+      {
+        "year": 1000,
+        "value": 59000
+      },
+      {
+        "year": 1500,
+        "value": 103000
+      },
+      {
+        "year": 1600,
+        "value": 160000
+      },
+      {
+        "year": 1700,
+        "value": 138000
+      },
+      {
+        "year": 1820,
+        "value": 381000
+      },
+      {
+        "year": 1821,
+        "value": 383712
+      },
+      {
+        "year": 1822,
+        "value": 386442
+      },
+      {
+        "year": 1823,
+        "value": 389193
+      },
+      {
+        "year": 1824,
+        "value": 391962
+      },
+      {
+        "year": 1825,
+        "value": 394752
+      },
+      {
+        "year": 1826,
+        "value": 397561
+      },
+      {
+        "year": 1827,
+        "value": 400391
+      },
+      {
+        "year": 1828,
+        "value": 403240
+      },
+      {
+        "year": 1829,
+        "value": 406110
+      },
+      {
+        "year": 1830,
+        "value": 409000
+      },
+      {
+        "year": 1831,
+        "value": 409299
+      },
+      {
+        "year": 1832,
+        "value": 409598
+      },
+      {
+        "year": 1833,
+        "value": 409898
+      },
+      {
+        "year": 1834,
+        "value": 410197
+      },
+      {
+        "year": 1835,
+        "value": 410497
+      },
+      {
+        "year": 1836,
+        "value": 410797
+      },
+      {
+        "year": 1837,
+        "value": 411098
+      },
+      {
+        "year": 1838,
+        "value": 411398
+      },
+      {
+        "year": 1839,
+        "value": 411699
+      },
+      {
+        "year": 1840,
+        "value": 412000
+      },
+      {
+        "year": 1841,
+        "value": 412000
+      },
+      {
+        "year": 1842,
+        "value": 412000
+      },
+      {
+        "year": 1843,
+        "value": 412000
+      },
+      {
+        "year": 1844,
+        "value": 412000
+      },
+      {
+        "year": 1845,
+        "value": 412000
+      },
+      {
+        "year": 1846,
+        "value": 412000
+      },
+      {
+        "year": 1847,
+        "value": 412000
+      },
+      {
+        "year": 1848,
+        "value": 412000
+      },
+      {
+        "year": 1849,
+        "value": 412000
+      },
+      {
+        "year": 1850,
+        "value": 412000
+      },
+      {
+        "year": 1851,
+        "value": 408359
+      },
+      {
+        "year": 1852,
+        "value": 404749
+      },
+      {
+        "year": 1853,
+        "value": 401172
+      },
+      {
+        "year": 1854,
+        "value": 397626
+      },
+      {
+        "year": 1855,
+        "value": 394112
+      },
+      {
+        "year": 1856,
+        "value": 390628
+      },
+      {
+        "year": 1857,
+        "value": 387176
+      },
+      {
+        "year": 1858,
+        "value": 383754
+      },
+      {
+        "year": 1859,
+        "value": 380362
+      },
+      {
+        "year": 1860,
+        "value": 377000
+      },
+      {
+        "year": 1861,
+        "value": 375055
+      },
+      {
+        "year": 1862,
+        "value": 373121
+      },
+      {
+        "year": 1863,
+        "value": 371196
+      },
+      {
+        "year": 1864,
+        "value": 369282
+      },
+      {
+        "year": 1865,
+        "value": 367377
+      },
+      {
+        "year": 1866,
+        "value": 365482
+      },
+      {
+        "year": 1867,
+        "value": 363597
+      },
+      {
+        "year": 1868,
+        "value": 361722
+      },
+      {
+        "year": 1869,
+        "value": 359856
+      },
+      {
+        "year": 1870,
+        "value": 358000
+      },
+      {
+        "year": 1871,
+        "value": 358988
+      },
+      {
+        "year": 1872,
+        "value": 359978
+      },
+      {
+        "year": 1873,
+        "value": 360971
+      },
+      {
+        "year": 1874,
+        "value": 361967
+      },
+      {
+        "year": 1875,
+        "value": 362966
+      },
+      {
+        "year": 1876,
+        "value": 363967
+      },
+      {
+        "year": 1877,
+        "value": 364971
+      },
+      {
+        "year": 1878,
+        "value": 365978
+      },
+      {
+        "year": 1879,
+        "value": 366988
+      },
+      {
+        "year": 1880,
+        "value": 368000
+      },
+      {
+        "year": 1881,
+        "value": 369183
+      },
+      {
+        "year": 1882,
+        "value": 370369
+      },
+      {
+        "year": 1883,
+        "value": 371560
+      },
+      {
+        "year": 1884,
+        "value": 372754
+      },
+      {
+        "year": 1885,
+        "value": 373952
+      },
+      {
+        "year": 1886,
+        "value": 375154
+      },
+      {
+        "year": 1887,
+        "value": 376359
+      },
+      {
+        "year": 1888,
+        "value": 377569
+      },
+      {
+        "year": 1889,
+        "value": 378783
+      },
+      {
+        "year": 1890,
+        "value": 380000
+      },
+      {
+        "year": 1891,
+        "value": 381979
+      },
+      {
+        "year": 1892,
+        "value": 383969
+      },
+      {
+        "year": 1893,
+        "value": 385969
+      },
+      {
+        "year": 1894,
+        "value": 387979
+      },
+      {
+        "year": 1895,
+        "value": 390000
+      },
+      {
+        "year": 1896,
+        "value": 391980
+      },
+      {
+        "year": 1897,
+        "value": 393970
+      },
+      {
+        "year": 1898,
+        "value": 395970
+      },
+      {
+        "year": 1899,
+        "value": 397980
+      },
+      {
+        "year": 1900,
+        "value": 400000
+      },
+      {
+        "year": 1901,
+        "value": 402243
+      },
+      {
+        "year": 1902,
+        "value": 404498
+      },
+      {
+        "year": 1903,
+        "value": 406766
+      },
+      {
+        "year": 1904,
+        "value": 409047
+      },
+      {
+        "year": 1905,
+        "value": 411340
+      },
+      {
+        "year": 1906,
+        "value": 413646
+      },
+      {
+        "year": 1907,
+        "value": 415965
+      },
+      {
+        "year": 1908,
+        "value": 418297
+      },
+      {
+        "year": 1909,
+        "value": 420642
+      },
+      {
+        "year": 1910,
+        "value": 423000
+      },
+      {
+        "year": 1911,
+        "value": 427662
+      },
+      {
+        "year": 1912,
+        "value": 432375
+      },
+      {
+        "year": 1913,
+        "value": 437140
+      },
+      {
+        "year": 1914,
+        "value": 441958
+      },
+      {
+        "year": 1915,
+        "value": 446829
+      },
+      {
+        "year": 1916,
+        "value": 451753
+      },
+      {
+        "year": 1917,
+        "value": 456732
+      },
+      {
+        "year": 1918,
+        "value": 461766
+      },
+      {
+        "year": 1919,
+        "value": 466855
+      },
+      {
+        "year": 1920,
+        "value": 472000
+      },
+      {
+        "year": 1921,
+        "value": 473673
+      },
+      {
+        "year": 1922,
+        "value": 475352
+      },
+      {
+        "year": 1923,
+        "value": 477037
+      },
+      {
+        "year": 1924,
+        "value": 478728
+      },
+      {
+        "year": 1925,
+        "value": 480425
+      },
+      {
+        "year": 1926,
+        "value": 482128
+      },
+      {
+        "year": 1927,
+        "value": 483837
+      },
+      {
+        "year": 1928,
+        "value": 485552
+      },
+      {
+        "year": 1929,
+        "value": 487273
+      },
+      {
+        "year": 1930,
+        "value": 489000
+      },
+      {
+        "year": 1931,
+        "value": 492640
+      },
+      {
+        "year": 1932,
+        "value": 496307
+      },
+      {
+        "year": 1933,
+        "value": 500000
+      },
+      {
+        "year": 1934,
+        "value": 502639
+      },
+      {
+        "year": 1935,
+        "value": 505292
+      },
+      {
+        "year": 1936,
+        "value": 507959
+      },
+      {
+        "year": 1937,
+        "value": 510640
+      },
+      {
+        "year": 1938,
+        "value": 513336
+      },
+      {
+        "year": 1939,
+        "value": 516046
+      },
+      {
+        "year": 1940,
+        "value": 518770
+      },
+      {
+        "year": 1941,
+        "value": 521508
+      },
+      {
+        "year": 1942,
+        "value": 524261
+      },
+      {
+        "year": 1943,
+        "value": 527028
+      },
+      {
+        "year": 1944,
+        "value": 529810
+      },
+      {
+        "year": 1945,
+        "value": 532607
+      },
+      {
+        "year": 1946,
+        "value": 535418
+      },
+      {
+        "year": 1947,
+        "value": 538244
+      },
+      {
+        "year": 1948,
+        "value": 541085
+      },
+      {
+        "year": 1949,
+        "value": 543941
+      },
+      {
+        "year": 1950,
+        "value": 546815
+      },
+      {
+        "year": 1951,
+        "value": 557480
+      },
+      {
+        "year": 1952,
+        "value": 568910
+      },
+      {
+        "year": 1953,
+        "value": 581390
+      },
+      {
+        "year": 1954,
+        "value": 595310
+      },
+      {
+        "year": 1955,
+        "value": 608655
+      },
+      {
+        "year": 1956,
+        "value": 621465
+      },
+      {
+        "year": 1957,
+        "value": 637408
+      },
+      {
+        "year": 1958,
+        "value": 653235
+      },
+      {
+        "year": 1959,
+        "value": 666005
+      },
+      {
+        "year": 1960,
+        "value": 667070
+      },
+      {
+        "year": 1961,
+        "value": 660330
+      },
+      {
+        "year": 1962,
+        "value": 665770
+      },
+      {
+        "year": 1963,
+        "value": 682335
+      },
+      {
+        "year": 1964,
+        "value": 698355
+      },
+      {
+        "year": 1965,
+        "value": 715185
+      },
+      {
+        "year": 1966,
+        "value": 735400
+      },
+      {
+        "year": 1967,
+        "value": 754550
+      },
+      {
+        "year": 1968,
+        "value": 774510
+      },
+      {
+        "year": 1969,
+        "value": 796025
+      },
+      {
+        "year": 1970,
+        "value": 818315
+      },
+      {
+        "year": 1971,
+        "value": 841105
+      },
+      {
+        "year": 1972,
+        "value": 862030
+      },
+      {
+        "year": 1973,
+        "value": 881940
+      },
+      {
+        "year": 1974,
+        "value": 900350
+      },
+      {
+        "year": 1975,
+        "value": 916395
+      },
+      {
+        "year": 1976,
+        "value": 930685
+      },
+      {
+        "year": 1977,
+        "value": 943455
+      },
+      {
+        "year": 1978,
+        "value": 956165
+      },
+      {
+        "year": 1979,
+        "value": 969005
+      },
+      {
+        "year": 1980,
+        "value": 981235
+      },
+      {
+        "year": 1981,
+        "value": 993861
+      },
+      {
+        "year": 1982,
+        "value": 1000281
+      },
+      {
+        "year": 1983,
+        "value": 1023288
+      },
+      {
+        "year": 1984,
+        "value": 1036825
+      },
+      {
+        "year": 1985,
+        "value": 1051040
+      },
+      {
+        "year": 1986,
+        "value": 1066790
+      },
+      {
+        "year": 1987,
+        "value": 1084035
+      },
+      {
+        "year": 1988,
+        "value": 1101630
+      },
+      {
+        "year": 1989,
+        "value": 1118650
+      },
+      {
+        "year": 1990,
+        "value": 1135185
+      },
+      {
+        "year": 1991,
+        "value": 1149978.85
+      },
+      {
+        "year": 1992,
+        "value": 1163362.82
+      },
+      {
+        "year": 1993,
+        "value": 1176726.93
+      },
+      {
+        "year": 1994,
+        "value": 1189961.97
+      },
+      {
+        "year": 1995,
+        "value": 1202581.43
+      },
+      {
+        "year": 1996,
+        "value": 1215171.1
+      },
+      {
+        "year": 1997,
+        "value": 1227452.97
+      },
+      {
+        "year": 1998,
+        "value": 1238722.12
+      },
+      {
+        "year": 1999,
+        "value": 1248899.1
+      },
+      {
+        "year": 2000,
+        "value": 1258400.92
+      },
+      {
+        "year": 2001,
+        "value": 1267177.95
+      },
+      {
+        "year": 2002,
+        "value": 1275379.1
+      },
+      {
+        "year": 2003,
+        "value": 1283063.96
+      },
+      {
+        "year": 2004,
+        "value": 1290619.75
+      },
+      {
+        "year": 2005,
+        "value": 1298245.04
+      },
+      {
+        "year": 2006,
+        "value": 1305115.74
+      },
+      {
+        "year": 2007,
+        "value": 1311877.23
+      },
+      {
+        "year": 2008,
+        "value": 1318559.28
+      },
+      {
+        "year": 2009,
+        "value": 1324993.12
+      },
+      {
+        "year": 2010,
+        "value": 1331357.45
+      },
+      {
+        "year": 2011,
+        "value": 1339548.68
+      },
+      {
+        "year": 2012,
+        "value": 1349537.02
+      },
+      {
+        "year": 2013,
+        "value": 1357519.74
+      },
+      {
+        "year": 2014,
+        "value": 1366654.2
+      },
+      {
+        "year": 2015,
+        "value": 1373405.76
+      },
+      {
+        "year": 2016,
+        "value": 1382401.21
+      },
+      {
+        "year": 2017,
+        "value": 1390135.72
+      },
+      {
+        "year": 2018,
+        "value": 1395397.96
+      },
+      {
+        "year": 2019,
+        "value": 1400034.69
+      },
+      {
+        "year": 2020,
+        "value": 1402060.16
+      },
+      {
+        "year": 2021,
+        "value": 1402536.74
+      },
+      {
+        "year": 2022,
+        "value": 1401692.8
+      }
+    ]
+  },
+  "sources": [
+    [
+      "CHN",
+      "China",
+      null
+    ],
+    [
+      null,
+      "1000-1661",
+      "Broadberry, S.N., Guan, Hanhui and David Daokui Li (2018), “China, Europe and the Great Divergence: a Study in Historical National Accounting, 980-1850”, Journal of Economic History, 78, 4, 955-1000"
+    ],
+    [
+      null,
+      "1661–1933",
+      "Broadberry, S.N., Guan, Hanhui and David Daokui Li (2018), “China, Europe and the Great Divergence: a Study in Historical National Accounting, 980-1850”, Journal of Economic History, 78, 4, 955-1000"
+    ],
+    [
+      null,
+      "1661–1933",
+      "Xu, Y. Z. Shi, B. van Leeuwen, Y Ni, Z Zhang, and Y Ma, (2016) 'Chinese National Income, ca. 1661-1933', Australian Economic History Review 57(3), 368–393 "
+    ],
+    [
+      null,
+      "1952–2008",
+      "Wu, Harry X. (2014), “China’s growth and productivity performance debate revisited – Accounting for China’s sources of growth with a new data set” The Conference Board Economics Program Working Paper Series EWP#14-01."
+    ]
+  ],
+  "original_sources": [],
+  "notes": [
+    [
+      "Maddison Project Database (MPD) 2023",
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "Citation policy",
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "CONDITIONS UNDER WHICH ALL ORIGINAL PAPERS MUST BE CITED:",
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "a) If the data is shown in any graphical form",
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "b) If subsets of the full dataset that include less than a dozen (12) countries are used for statistical analysis or any other purposes",
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "When neither a) or b) apply, then the MPD as a whole can be cited.",
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "Sources",
+      "Sources for GDP pc and population data",
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "GDP pc",
+      "Real GDP per capita in 2011$",
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "Population",
+      "Population, mid-year (thousands)",
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "Full data",
+      "GDP pc and population data in long format",
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "Regional data",
+      "Regional GDP per capita and population estimates",
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "Maddison original sources",
+      "List of sources used by Maddison",
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  ]
+}
