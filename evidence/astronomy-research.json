@@ -1,0 +1,820 @@
+{
+  "date": "2026-11-06",
+  "sources": [
+    {
+      "id": "jpl_approx",
+      "title": "NASA/JPL · Approximate Positions of the Planets",
+      "url": "https://ssd.jpl.nasa.gov/planets/approx_pos.html",
+      "access": "全文及Table2a/2b已读取",
+      "note": "采用前3000年至公元3000年拟合参数；地球位置用地月质心；需要Kepler方程和外行星额外项。日心J2000黄道坐标，不是地心观测星历。"
+    },
+    {
+      "id": "nasa_fact_notes",
+      "title": "NASA/NSSDCA · Fact Sheet Notes",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/planetfact_notes.html",
+      "access": "原网页全文已读取",
+      "note": "总汇表Orbital Period是回归公转周期。此处周期取各行星详细表Sidereal orbit period列，避免混用。"
+    },
+    {
+      "id": "nasa_moon",
+      "title": "NASA/NSSDCA · Moon Fact Sheet",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html",
+      "access": "原网页全文已读取",
+      "note": "恒星月27.3217日，朔望月29.53日；均不是28日民俗值宿循环。"
+    },
+    {
+      "id": "nasa_mercury",
+      "title": "NASA/NSSDCA · 水星 Fact Sheet",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/mercuryfact.html",
+      "access": "原网页详细表已读取",
+      "note": "使用Sidereal orbit period与Synodic period行；地球公转周期用于参照，不将地球会合周期设为0。"
+    },
+    {
+      "id": "nasa_venus",
+      "title": "NASA/NSSDCA · 金星 Fact Sheet",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/venusfact.html",
+      "access": "原网页详细表已读取",
+      "note": "使用Sidereal orbit period与Synodic period行；地球公转周期用于参照，不将地球会合周期设为0。"
+    },
+    {
+      "id": "nasa_earth",
+      "title": "NASA/NSSDCA · 地球 Fact Sheet",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html",
+      "access": "原网页详细表已读取",
+      "note": "使用Sidereal orbit period与Synodic period行；地球公转周期用于参照，不将地球会合周期设为0。"
+    },
+    {
+      "id": "nasa_mars",
+      "title": "NASA/NSSDCA · 火星 Fact Sheet",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/marsfact.html",
+      "access": "原网页详细表已读取",
+      "note": "使用Sidereal orbit period与Synodic period行；地球公转周期用于参照，不将地球会合周期设为0。"
+    },
+    {
+      "id": "nasa_jupiter",
+      "title": "NASA/NSSDCA · 木星 Fact Sheet",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/jupiterfact.html",
+      "access": "原网页详细表已读取",
+      "note": "使用Sidereal orbit period与Synodic period行；地球公转周期用于参照，不将地球会合周期设为0。"
+    },
+    {
+      "id": "nasa_saturn",
+      "title": "NASA/NSSDCA · 土星 Fact Sheet",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/saturnfact.html",
+      "access": "原网页详细表已读取",
+      "note": "使用Sidereal orbit period与Synodic period行；地球公转周期用于参照，不将地球会合周期设为0。"
+    },
+    {
+      "id": "nasa_uranus",
+      "title": "NASA/NSSDCA · 天王星 Fact Sheet",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/uranusfact.html",
+      "access": "原网页详细表已读取",
+      "note": "使用Sidereal orbit period与Synodic period行；地球公转周期用于参照，不将地球会合周期设为0。"
+    },
+    {
+      "id": "nasa_neptune",
+      "title": "NASA/NSSDCA · 海王星 Fact Sheet",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/neptunefact.html",
+      "access": "原网页详细表已读取",
+      "note": "使用Sidereal orbit period与Synodic period行；地球公转周期用于参照，不将地球会合周期设为0。"
+    }
+  ],
+  "planets": [
+    {
+      "id": "mercury",
+      "label": "水星",
+      "period_days": 87.969,
+      "period_years": 0.2408459958932238,
+      "period_definition": "恒星公转周期；年按365.25日儒略年换算",
+      "synodic_days": 115.88,
+      "source": "nasa_mercury",
+      "position_source": "jpl_approx",
+      "base": [
+        0.38709843,
+        0.20563661,
+        7.00559432,
+        252.25166724,
+        77.45771895,
+        48.33961819
+      ],
+      "rate": [
+        0,
+        2.123e-05,
+        -0.00590158,
+        149472.67486623,
+        0.15940013,
+        -0.12214182
+      ],
+      "extra": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "venus",
+      "label": "金星",
+      "period_days": 224.701,
+      "period_years": 0.6151978097193703,
+      "period_definition": "恒星公转周期；年按365.25日儒略年换算",
+      "synodic_days": 583.92,
+      "source": "nasa_venus",
+      "position_source": "jpl_approx",
+      "base": [
+        0.72332102,
+        0.00676399,
+        3.39777545,
+        181.9797085,
+        131.76755713,
+        76.67261496
+      ],
+      "rate": [
+        -2.6e-07,
+        -5.107e-05,
+        0.00043494,
+        58517.8156026,
+        0.05679648,
+        -0.27274174
+      ],
+      "extra": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "earth",
+      "label": "地月质心",
+      "period_days": 365.256,
+      "period_years": 1.0000164271047227,
+      "period_definition": "恒星公转周期；年按365.25日儒略年换算",
+      "synodic_days": null,
+      "source": "nasa_earth",
+      "position_source": "jpl_approx",
+      "base": [
+        1.00000018,
+        0.01673163,
+        -0.00054346,
+        100.46691572,
+        102.93005885,
+        -5.11260389
+      ],
+      "rate": [
+        -3e-08,
+        -3.661e-05,
+        -0.01337178,
+        35999.37306329,
+        0.3179526,
+        -0.24123856
+      ],
+      "extra": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "mars",
+      "label": "火星",
+      "period_days": 686.98,
+      "period_years": 1.880848733744011,
+      "period_definition": "恒星公转周期；年按365.25日儒略年换算",
+      "synodic_days": 779.94,
+      "source": "nasa_mars",
+      "position_source": "jpl_approx",
+      "base": [
+        1.52371243,
+        0.09336511,
+        1.85181869,
+        -4.56813164,
+        -23.91744784,
+        49.71320984
+      ],
+      "rate": [
+        9.7e-07,
+        9.149e-05,
+        -0.00724757,
+        19140.29934243,
+        0.45223625,
+        -0.26852431
+      ],
+      "extra": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "jupiter",
+      "label": "木星",
+      "period_days": 4332.589,
+      "period_years": 11.861982203969884,
+      "period_definition": "恒星公转周期；年按365.25日儒略年换算",
+      "synodic_days": 398.88,
+      "source": "nasa_jupiter",
+      "position_source": "jpl_approx",
+      "base": [
+        5.20248019,
+        0.0485359,
+        1.29861416,
+        34.33479152,
+        14.27495244,
+        100.29282654
+      ],
+      "rate": [
+        -2.864e-05,
+        0.00018026,
+        -0.00322699,
+        3034.90371757,
+        0.18199196,
+        0.13024619
+      ],
+      "extra": [
+        -0.00012452,
+        0.0606406,
+        -0.35635438,
+        38.35125
+      ]
+    },
+    {
+      "id": "saturn",
+      "label": "土星",
+      "period_days": 10755.699,
+      "period_years": 29.447498973305958,
+      "period_definition": "恒星公转周期；年按365.25日儒略年换算",
+      "synodic_days": 378.09,
+      "source": "nasa_saturn",
+      "position_source": "jpl_approx",
+      "base": [
+        9.54149883,
+        0.05550825,
+        2.49424102,
+        50.07571329,
+        92.86136063,
+        113.63998702
+      ],
+      "rate": [
+        -3.065e-05,
+        -0.00032044,
+        0.00451969,
+        1222.11494724,
+        0.54179478,
+        -0.25015002
+      ],
+      "extra": [
+        0.00025899,
+        -0.13434469,
+        0.87320147,
+        38.35125
+      ]
+    },
+    {
+      "id": "uranus",
+      "label": "天王星",
+      "period_days": 30685.4,
+      "period_years": 84.01204654346338,
+      "period_definition": "恒星公转周期；年按365.25日儒略年换算",
+      "synodic_days": 369.66,
+      "source": "nasa_uranus",
+      "position_source": "jpl_approx",
+      "base": [
+        19.18797948,
+        0.0468574,
+        0.77298127,
+        314.20276625,
+        172.43404441,
+        73.96250215
+      ],
+      "rate": [
+        -0.00020455,
+        -1.55e-05,
+        -0.00180155,
+        428.49512595,
+        0.09266985,
+        0.05739699
+      ],
+      "extra": [
+        0.00058331,
+        -0.97731848,
+        0.17689245,
+        7.67025
+      ]
+    },
+    {
+      "id": "neptune",
+      "label": "海王星",
+      "period_days": 60189.018,
+      "period_years": 164.7885503080082,
+      "period_definition": "恒星公转周期；年按365.25日儒略年换算",
+      "synodic_days": 367.49,
+      "source": "nasa_neptune",
+      "position_source": "jpl_approx",
+      "base": [
+        30.06952752,
+        0.00895439,
+        1.7700552,
+        304.22289287,
+        46.68158724,
+        131.78635853
+      ],
+      "rate": [
+        6.447e-05,
+        8.18e-06,
+        0.000224,
+        218.46515314,
+        0.01009938,
+        -0.00606302
+      ],
+      "extra": [
+        -0.00041348,
+        0.68346318,
+        -0.10162547,
+        7.67025
+      ]
+    }
+  ],
+  "element_order": [
+    "a_AU",
+    "e",
+    "I_deg",
+    "L_deg",
+    "longitude_perihelion_deg",
+    "longitude_node_deg"
+  ],
+  "rate_units": "每儒略世纪；a为AU/世纪、e为1/世纪、角为度/世纪",
+  "extra_order": [
+    "b",
+    "c",
+    "s",
+    "f"
+  ],
+  "time_formula": "T=(JDTDB-2451545.0)/36525",
+  "M_formula": "M=L-peri+b*T*T+c*cos(f*T)+s*sin(f*T); f*T为度",
+  "validity": {
+    "start_astro_year": -2999,
+    "end_astro_year": 3000,
+    "text": "JPL标前3000–公元3000；历史无0年，应转天文年。用户界面若直接用年，应定义该年的具体取样日期。"
+  },
+  "limitations": [
+    "模型参数为区间最佳拟合，不是精密实测轨道常数，不能外推有效期外。",
+    "元素L称均黄经，但L本身不是解Kepler后实际近似日心黄经。",
+    "应先归一化M，再解E-e*sin(E)=M；三角计算用弧度，一致转换。",
+    "给定JD理想为TDB；使用公历日期UTC近似需说明未作TT/TDB及古代DeltaT转换，不能声称秒级精度。",
+    "固定J2000黄道/春分点坐标，不是日期真黄道或中国某地点的地平坐标。",
+    "日心图不能直接用来判断地心合相、冲、逆行或月亮入宿。",
+    "不要把每天绕一宿或28日循环当作真实月亮运行。"
+  ],
+  "period_model": {
+    "synodic_formula": "S=1/abs(1/P-1/E)",
+    "units": "P、E、S用同一时间单位",
+    "meaning": "同向近圆轨道的平均会合周期近似，不是每次合相间隔的精密预报",
+    "earth_period_days": 365.256
+  },
+  "moon": {
+    "sidereal_days": 27.3217,
+    "synodic_days": 29.53
+  },
+  "mansions": [
+    {
+      "name": "角",
+      "direction": "东",
+      "symbol": "青龙",
+      "luminary": "木",
+      "animal": "蛟",
+      "full_name": "角木蛟"
+    },
+    {
+      "name": "亢",
+      "direction": "东",
+      "symbol": "青龙",
+      "luminary": "金",
+      "animal": "龙",
+      "full_name": "亢金龙"
+    },
+    {
+      "name": "氐",
+      "direction": "东",
+      "symbol": "青龙",
+      "luminary": "土",
+      "animal": "貉",
+      "full_name": "氐土貉"
+    },
+    {
+      "name": "房",
+      "direction": "东",
+      "symbol": "青龙",
+      "luminary": "日",
+      "animal": "兔",
+      "full_name": "房日兔"
+    },
+    {
+      "name": "心",
+      "direction": "东",
+      "symbol": "青龙",
+      "luminary": "月",
+      "animal": "狐",
+      "full_name": "心月狐"
+    },
+    {
+      "name": "尾",
+      "direction": "东",
+      "symbol": "青龙",
+      "luminary": "火",
+      "animal": "虎",
+      "full_name": "尾火虎"
+    },
+    {
+      "name": "箕",
+      "direction": "东",
+      "symbol": "青龙",
+      "luminary": "水",
+      "animal": "豹",
+      "full_name": "箕水豹"
+    },
+    {
+      "name": "斗",
+      "direction": "北",
+      "symbol": "玄武",
+      "luminary": "木",
+      "animal": "獬",
+      "full_name": "斗木獬"
+    },
+    {
+      "name": "牛",
+      "direction": "北",
+      "symbol": "玄武",
+      "luminary": "金",
+      "animal": "牛",
+      "full_name": "牛金牛"
+    },
+    {
+      "name": "女",
+      "direction": "北",
+      "symbol": "玄武",
+      "luminary": "土",
+      "animal": "蝠",
+      "full_name": "女土蝠"
+    },
+    {
+      "name": "虚",
+      "direction": "北",
+      "symbol": "玄武",
+      "luminary": "日",
+      "animal": "鼠",
+      "full_name": "虚日鼠"
+    },
+    {
+      "name": "危",
+      "direction": "北",
+      "symbol": "玄武",
+      "luminary": "月",
+      "animal": "燕",
+      "full_name": "危月燕"
+    },
+    {
+      "name": "室",
+      "direction": "北",
+      "symbol": "玄武",
+      "luminary": "火",
+      "animal": "猪",
+      "full_name": "室火猪"
+    },
+    {
+      "name": "壁",
+      "direction": "北",
+      "symbol": "玄武",
+      "luminary": "水",
+      "animal": "獝",
+      "full_name": "壁水獝"
+    },
+    {
+      "name": "奎",
+      "direction": "西",
+      "symbol": "白虎",
+      "luminary": "木",
+      "animal": "狼",
+      "full_name": "奎木狼"
+    },
+    {
+      "name": "娄",
+      "direction": "西",
+      "symbol": "白虎",
+      "luminary": "金",
+      "animal": "狗",
+      "full_name": "娄金狗"
+    },
+    {
+      "name": "胃",
+      "direction": "西",
+      "symbol": "白虎",
+      "luminary": "土",
+      "animal": "雉",
+      "full_name": "胃土雉"
+    },
+    {
+      "name": "昴",
+      "direction": "西",
+      "symbol": "白虎",
+      "luminary": "日",
+      "animal": "鸡",
+      "full_name": "昴日鸡"
+    },
+    {
+      "name": "毕",
+      "direction": "西",
+      "symbol": "白虎",
+      "luminary": "月",
+      "animal": "乌",
+      "full_name": "毕月乌"
+    },
+    {
+      "name": "觜",
+      "direction": "西",
+      "symbol": "白虎",
+      "luminary": "火",
+      "animal": "猴",
+      "full_name": "觜火猴"
+    },
+    {
+      "name": "参",
+      "direction": "西",
+      "symbol": "白虎",
+      "luminary": "水",
+      "animal": "猿",
+      "full_name": "参水猿"
+    },
+    {
+      "name": "井",
+      "direction": "南",
+      "symbol": "朱雀",
+      "luminary": "木",
+      "animal": "犴",
+      "full_name": "井木犴"
+    },
+    {
+      "name": "鬼",
+      "direction": "南",
+      "symbol": "朱雀",
+      "luminary": "金",
+      "animal": "羊",
+      "full_name": "鬼金羊"
+    },
+    {
+      "name": "柳",
+      "direction": "南",
+      "symbol": "朱雀",
+      "luminary": "土",
+      "animal": "獐",
+      "full_name": "柳土獐"
+    },
+    {
+      "name": "星",
+      "direction": "南",
+      "symbol": "朱雀",
+      "luminary": "日",
+      "animal": "马",
+      "full_name": "星日马"
+    },
+    {
+      "name": "张",
+      "direction": "南",
+      "symbol": "朱雀",
+      "luminary": "月",
+      "animal": "鹿",
+      "full_name": "张月鹿"
+    },
+    {
+      "name": "翼",
+      "direction": "南",
+      "symbol": "朱雀",
+      "luminary": "火",
+      "animal": "蛇",
+      "full_name": "翼火蛇"
+    },
+    {
+      "name": "轸",
+      "direction": "南",
+      "symbol": "朱雀",
+      "luminary": "水",
+      "animal": "蚓",
+      "full_name": "轸水蚓"
+    }
+  ],
+  "mansions_verification": {
+    "status": "四象和七曜完整表目前仅搜索返回内容支持；官方正文抓取未成功，父agent需补核验或明确二手层级",
+    "source_candidates": [
+      "https://zh.wikipedia.org/zh-hans/二十八宿",
+      "https://www.fatemaster.ai/zh-Hant/guides/28-mansions"
+    ],
+    "layout_note": "等宽28格仅顺序示意，不代表真实天区角宽，不计算月亮实际入宿。",
+    "search_verified_claim": "以距星的赤经差定义距度，不是均匀28等分。"
+  },
+  "raw_table2a": [
+    [
+      "mercury",
+      "水星",
+      87.969,
+      115.88,
+      [
+        0.38709843,
+        0.20563661,
+        7.00559432,
+        252.25166724,
+        77.45771895,
+        48.33961819
+      ],
+      [
+        0,
+        2.123e-05,
+        -0.00590158,
+        149472.67486623,
+        0.15940013,
+        -0.12214182
+      ]
+    ],
+    [
+      "venus",
+      "金星",
+      224.701,
+      583.92,
+      [
+        0.72332102,
+        0.00676399,
+        3.39777545,
+        181.9797085,
+        131.76755713,
+        76.67261496
+      ],
+      [
+        -2.6e-07,
+        -5.107e-05,
+        0.00043494,
+        58517.8156026,
+        0.05679648,
+        -0.27274174
+      ]
+    ],
+    [
+      "earth",
+      "地月质心",
+      365.256,
+      null,
+      [
+        1.00000018,
+        0.01673163,
+        -0.00054346,
+        100.46691572,
+        102.93005885,
+        -5.11260389
+      ],
+      [
+        -3e-08,
+        -3.661e-05,
+        -0.01337178,
+        35999.37306329,
+        0.3179526,
+        -0.24123856
+      ]
+    ],
+    [
+      "mars",
+      "火星",
+      686.98,
+      779.94,
+      [
+        1.52371243,
+        0.09336511,
+        1.85181869,
+        -4.56813164,
+        -23.91744784,
+        49.71320984
+      ],
+      [
+        9.7e-07,
+        9.149e-05,
+        -0.00724757,
+        19140.29934243,
+        0.45223625,
+        -0.26852431
+      ]
+    ],
+    [
+      "jupiter",
+      "木星",
+      4332.589,
+      398.88,
+      [
+        5.20248019,
+        0.0485359,
+        1.29861416,
+        34.33479152,
+        14.27495244,
+        100.29282654
+      ],
+      [
+        -2.864e-05,
+        0.00018026,
+        -0.00322699,
+        3034.90371757,
+        0.18199196,
+        0.13024619
+      ]
+    ],
+    [
+      "saturn",
+      "土星",
+      10755.699,
+      378.09,
+      [
+        9.54149883,
+        0.05550825,
+        2.49424102,
+        50.07571329,
+        92.86136063,
+        113.63998702
+      ],
+      [
+        -3.065e-05,
+        -0.00032044,
+        0.00451969,
+        1222.11494724,
+        0.54179478,
+        -0.25015002
+      ]
+    ],
+    [
+      "uranus",
+      "天王星",
+      30685.4,
+      369.66,
+      [
+        19.18797948,
+        0.0468574,
+        0.77298127,
+        314.20276625,
+        172.43404441,
+        73.96250215
+      ],
+      [
+        -0.00020455,
+        -1.55e-05,
+        -0.00180155,
+        428.49512595,
+        0.09266985,
+        0.05739699
+      ]
+    ],
+    [
+      "neptune",
+      "海王星",
+      60189.018,
+      367.49,
+      [
+        30.06952752,
+        0.00895439,
+        1.7700552,
+        304.22289287,
+        46.68158724,
+        131.78635853
+      ],
+      [
+        6.447e-05,
+        8.18e-06,
+        0.000224,
+        218.46515314,
+        0.01009938,
+        -0.00606302
+      ]
+    ]
+  ],
+  "raw_table2b": {
+    "jupiter": [
+      -0.00012452,
+      0.0606406,
+      -0.35635438,
+      38.35125
+    ],
+    "saturn": [
+      0.00025899,
+      -0.13434469,
+      0.87320147,
+      38.35125
+    ],
+    "uranus": [
+      0.00058331,
+      -0.97731848,
+      0.17689245,
+      7.67025
+    ],
+    "neptune": [
+      -0.00041348,
+      0.68346318,
+      -0.10162547,
+      7.67025
+    ]
+  }
+}
