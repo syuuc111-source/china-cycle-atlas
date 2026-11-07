@@ -17,3 +17,8 @@
 SILSO 数据署名：WDC-SILSO, Royal Observatory of Belgium, Brussels；DOI 10.24414/qnza-ac80；来源标示CC BY-NC。
 
 Maddison Project Database 2023 数据 DOI 10.34894/INZBF2；中国原始研究引文见 evidence/maddison_china.json。其余数据遵守各自来源条件，本仓库不将第三方数据重新授予统一许可。
+
+
+二十八宿专题：https://syuuc111-source.github.io/china-cycle-atlas/mansions/
+
+独立星空风格的四象导览、28宿百科、可点击星图、文化体系与出处。详见 [专题说明](mansions/README.md)。
