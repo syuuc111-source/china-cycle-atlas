@@ -1,0 +1,53 @@
+const {chromium}=require(process.env.PLAYWRIGHT_MODULE||'C:/Users/苏预超/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
+const assert=require('node:assert/strict');
+const fs=require('node:fs');
+const path=require('node:path');
+const base=process.env.MANSIONS_URL||'http://127.0.0.1:8768/mansions/';
+(async()=>{
+const browser=await chromium.launch({headless:true,executablePath:process.env.BROWSER_EXECUTABLE||'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe'});
+const page=await browser.newPage({viewport:{width:1440,height:1000}});const errors=[];page.on('pageerror',e=>errors.push(e.message));
+const results=[];const check=(name,ok)=>{assert.ok(ok,name);results.push(name)};
+await page.goto(base);await page.waitForSelector('[data-ready="true"]');
+check('首页标题',await page.locator('#view-home h1').innerText()==='二十八宿');
+await page.getByRole('link',{name:'探索二十八宿'}).click();await page.waitForURL('**/#atlas');
+check('四象星图可达',await page.locator('#view-atlas').isVisible());
+await page.locator('#atlas-groups [data-group="tiger"]').click();
+await page.locator('#atlas-mansions [data-mansion="shen"]').click();
+await page.waitForSelector('dialog[open]');check('点击参宿弹出讲解',(await page.locator('#detail-title').innerText()).includes('参宿'));
+check('星点可点击',await page.locator('#detail-map [data-star]').count()>=7);
+await page.locator('#detail-map [data-star]').first().click();check('星点显示编号',(await page.locator('#star-info').innerText()).includes('HIP'));
+await page.keyboard.press('Escape');check('Escape关闭',await page.locator('dialog[open]').count()===0);
+check('关闭恢复星宿按钮焦点',await page.evaluate(()=>document.activeElement?.dataset.mansion==='shen'));
+await page.goto(base+'#mansion/xin');await page.waitForSelector('dialog[open]');check('心宿深链',(await page.locator('#detail-title').innerText()).includes('心宿'));
+await page.locator('#close-detail').click();await page.locator('header a[href="#library"]').click();
+await page.locator('#search').fill('參');check('异体搜索',(await page.locator('#library-results [data-mansion]').first().getAttribute('data-mansion'))==='shen');
+await page.locator('#search').fill('xyznoresults');check('无结果提示',await page.locator('#empty-search').isVisible());
+await page.locator('#clear-search').click();check('清除恢复28宿',await page.locator('#library-results [data-mansion]').count()===28);
+await page.goto(base+'#guide/0');await page.getByRole('button',{name:'下一章'}).click();check('章节切换',page.url().endsWith('#guide/1'));
+await page.goBack();check('浏览器后退',page.url().endsWith('#guide/0'));
+await page.goto(base+'#mansion/unknown');check('无效宿回退',await page.locator('dialog[open]').count()===0);
+await page.goto(base+'#sources');check('出处已收录',await page.locator('#source-list article').count()>=8);
+await page.locator('.skip-link').focus();await page.keyboard.press('Enter');await page.waitForTimeout(100);check('跳正文保留栏目',page.url().endsWith('#sources'));
+check('跳正文聚焦main',await page.evaluate(()=>document.activeElement?.id==='main'));
+await page.goto(base+'#atlas');await page.locator('#atlas-groups [data-group="tiger"]').click();await page.locator('header a[href="#guide/0"]').click();await page.goBack();await page.waitForTimeout(100);
+check('返回星图保留四象',(await page.locator('#atlas-name').innerText())==='西方白虎');
+await page.goto(base+'#home');await page.locator('#motion-toggle').click();check('暂停状态',await page.locator('#motion-toggle').getAttribute('aria-pressed')==='true');
+fs.mkdirSync(path.join(__dirname,'../verification'),{recursive:true});
+await page.screenshot({path:path.join(__dirname,'../verification/mansions-desktop.png'),fullPage:true});
+await page.goto(base+'#mansion/shen');await page.waitForSelector('dialog[open]');await page.screenshot({path:path.join(__dirname,'../verification/mansions-detail.png')});
+const mobile=await browser.newPage({viewport:{width:390,height:844},isMobile:true,deviceScaleFactor:1,reducedMotion:'reduce'});
+await mobile.goto(base);await mobile.waitForSelector('[data-ready="true"]');
+check('减少动态默认暂停',await mobile.locator('#motion-toggle').getAttribute('aria-pressed')==='true');
+for(const route of ['home','atlas','library','traditions','sources','guide/0']){
+ await mobile.goto(base+'#'+route);await mobile.waitForTimeout(100);
+ check('手机无溢出 '+route,await mobile.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
+}
+await mobile.goto(base+'#mansion/shen');await mobile.waitForSelector('dialog[open]');check('手机详情可关闭',await mobile.locator('#close-detail').isVisible());
+await mobile.screenshot({path:path.join(__dirname,'../verification/mansions-mobile-detail.png'),fullPage:true});
+await mobile.goto(base+'#home');await mobile.screenshot({path:path.join(__dirname,'../verification/mansions-mobile.png'),fullPage:true});
+check('无JavaScript异常',errors.length===0);
+const content=await (await page.request.get(base+'data/content.json')).json();
+for(const m of content.mansions){await page.goto(base+'#mansion/'+m.id);await page.waitForSelector('dialog[open]');check('逐宿详情 '+m.name,(await page.locator('#detail-title').innerText())===m.name+'宿')}
+fs.writeFileSync(path.join(__dirname,'../verification/mansions-browser.json'),JSON.stringify({base,results,errors},null,2));
+console.log('PASS',results.length,'browser checks');await browser.close();
+})().catch(e=>{console.error(e);process.exit(1)});

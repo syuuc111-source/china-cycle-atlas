@@ -1,0 +1,36 @@
+DATA ATTRIBUTION AND LICENSES
+
+1. Chinese asterism lines and traditional star names
+Source: Stellarium, skycultures/chinese/index.json and description.md
+https://github.com/Stellarium/stellarium/tree/master/skycultures/chinese
+Contributors: Karrie Berglund, Sun Shuwei, Stellarium contributors.
+Based on Yi Shitong, Chinese and Western Contrast Star Chart and Catalogue 1950.0;
+Complete Studies of Astronomical (Yi Xiang Kao Cheng) and later revisions.
+License: Creative Commons Attribution-ShareAlike 4.0 International
+https://creativecommons.org/licenses/by-sa/4.0/
+Changes: selected the 28 main namesake asterisms; retained HIP-based lines;
+converted the JSON structure; selected Chinese names for included stars.
+The adapted asterism and name dataset in data/sky.json is distributed under CC BY-SA 4.0.
+No constellation artwork or reference video frames are included.
+
+2. Stellar coordinates and magnitudes
+Source: D3-Celestial, stars.8.json (J2000 equatorial directions).
+https://github.com/ofrohn/d3-celestial
+Original astronomical source credited by D3-Celestial:
+XHIP: An Extended Hipparcos Compilation, Anderson E., Francis C. (2012), VizieR V/137D.
+Changes: selected stars with magnitude <= 5.4 plus all asterism and focus members;
+packed HIP, RA in degrees, declination in degrees, and apparent magnitude into arrays.
+D3-Celestial repository license follows:
+
+Copyright (c) 2015, Olaf Frohn
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+
+1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+
+2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+
+3. Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.

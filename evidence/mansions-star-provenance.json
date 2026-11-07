@@ -1,0 +1,14 @@
+{
+  "retrieved": "2026-11-07",
+  "files": {
+    "stars8.json": {
+      "sha256": "e3ec6cde89bae0dde064d91c1edb9ec53c3c40d5c12fdf5d30f9a4de5dbc2143",
+      "bytes": 5385740
+    },
+    "stellarium-index.txt": {
+      "sha256": "426118e6238ae69edb319c91d1a74b705eaa758222e962206e58c49b9dac9d8a",
+      "bytes": 643323
+    }
+  },
+  "note": "These hashes describe the input snapshots used for the published generated data. Upstream master may change."
+}

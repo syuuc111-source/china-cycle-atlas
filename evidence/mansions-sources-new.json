@@ -1,0 +1,115 @@
+{
+  "accessed": "2026-11-07",
+  "scope": "实读馆方文章与古籍公开转录；现代星位由主代理另行核对。本文件不把搜索结果摘要或网站首页当作论述证据。",
+  "sources": [
+    {
+      "id": "hubei_lacquer",
+      "title": "国君之礼 旷世之美——曾侯乙墓出土漆器述略",
+      "url": "https://www.hbww.org.cn/hhfz70n/p/9135.html",
+      "publisher": "湖北省博物馆",
+      "authors": "陈春、林戈",
+      "date": "2023-09-20",
+      "original": "《文物天地》总第387期／湖北省博物馆七十周年纪念专辑",
+      "status": "全文已读",
+      "locator": "三、生活用器；（三）彩漆二十八宿图漆箱",
+      "quotes": [
+        "E.66号漆箱“二十八宿图”",
+        "盖面中心书写“斗”，环绕“斗”字顺时针依次书写二十八宿名称。左侧绘白虎，右侧绘青龙",
+        "此件衣箱记录了迄今发现最早的二十八宿全部名称，表明至少在战国早期中国已形成二十八宿体系。"
+      ],
+      "supports": "1978年湖北随州曾侯乙墓发掘；战国早期已形成完整二十八宿体系；漆箱是衣箱；龙虎图与二十八宿名称并存。",
+      "limits": "本页没有给出公元前433年这个具体纪年。最早完整实物证据不等于体系发明年代。不要将馆方对史前图案的推测写成确定事实。"
+    },
+    {
+      "id": "shiji_tianguan",
+      "title": "《史记》卷二十七·天官书",
+      "url": "https://github.com/garychowcmu/daizhigev20/blob/master/史藏/正史/史记.txt",
+      "read_url": "https://raw.githubusercontent.com/garychowcmu/daizhigev20/master/史藏/正史/史记.txt",
+      "publisher": "司马迁；殆知阁公开数字转录",
+      "status": "全文下载；相关天官书段落已读",
+      "local": "evidence/mansions-primary/史记.txt",
+      "quotes": [
+        "东宫苍龙，房、心。心为明堂，大星天王，前后星子属。",
+        "南宫朱鸟，权、衡。",
+        "西宫咸池，曰天五潢。",
+        "参为白虎。三星直者，是为衡石。",
+        "北宫玄武，虚、危。",
+        "二十八舍主十二州，斗秉兼之，所从来久矣。"
+      ],
+      "supports": "汉代星官的社会政治象征、早期四宫观念、分野、天象占候史。",
+      "limits": "数字转录不是现代校勘本；古字、异文应注明。西宫标题原文是咸池，不应伪造为“西宫白虎”引文。吉凶、兵疫等是古代观念，不是有效预测。"
+    },
+    {
+      "id": "shijing",
+      "title": "《诗经》：小星、绸缪、七月、大东、渐渐之石、定之方中",
+      "url": "https://github.com/garychowcmu/daizhigev20/blob/master/儒藏/诗经/诗经.txt",
+      "read_url": "GitHub Contents API application/vnd.github.raw+json",
+      "publisher": "殆知阁公开数字转录",
+      "status": "全文下载；列出诗篇已读",
+      "local": "evidence/mansions-primary/诗经.txt",
+      "quotes": [
+        "《召南·小星》：嘒彼小星，维参与昴。",
+        "《唐风·绸缪》：绸缪束薪，三星在天。",
+        "《豳风·七月》：七月流火，九月授衣。",
+        "《小雅·大东》：维南有箕，不可以簸扬。维北有斗，不可以挹酒浆。",
+        "《小雅·渐渐之石》：月离于毕，俾滂沱矣。",
+        "《鄘风·定之方中》：定之方中，作于楚宫。"
+      ],
+      "supports": "星名进入诗歌、时间感知与社会生活；箕斗日常器物名称的诗意比喻。",
+      "limits": "诗篇本身不证明现代星名对应；“三星在天”不可不加限定写成唯一指参宿三星。有关心宿二、大火、定与营室的具体训释应另引注本。"
+    },
+    {
+      "id": "xiuyao",
+      "title": "《文殊师利菩萨及诸仙所说吉凶时日善恶宿曜经》",
+      "url": "https://github.com/garychowcmu/daizhigev20/blob/master/佛藏/大藏经/经藏/密教部/文殊师利菩萨及诸仙所说吉凶时日善恶宿曜经.txt",
+      "publisher": "唐·不空译，杨景风修注；殆知阁公开数字转录",
+      "status": "全文下载；卷上序、日宿直所生品、卷下二十七宿十二宫图及七曜直日历已读",
+      "local": "evidence/mansions-primary/文殊师利菩萨及诸仙所说吉凶时日善恶宿曜经.txt",
+      "quotes": [
+        "和上以乾元二年翻出此本……于时岁次玄枵大唐广德之二年也。",
+        "然今案经文，说星多不与中国相符。",
+        "二十七宿十二宫图（唐用二十八宿西国除牛宿……）",
+        "夫七曜者。所谓日月五星下直人间。一日一易七日周而复始。",
+        "此则是二十七宿。周而复始。是为三九之法。"
+      ],
+      "supports": "唐代传播与修注；二十七宿、二十八宿及印度与中国星官不同；宿曜七日循环；命、业、胎及三九法属于特定传统。",
+      "limits": "本经不同部分并见二十七宿与含牛宿表，不能概括为所有宿曜文本都严格只有27项。不要把中国牛宿天区与印度被省略的Abhijit星群直接混为同一现代星位。宗教占验应作为传统观念展示，不提供已获验证的人生命运结论。"
+    }
+  ],
+  "mansion_cultural_quotes": [
+    {"name":"角","source":"shiji_tianguan","quote":"左角，李；右角，将。","note":"古代以左右角赋予不同政治象征；保留原文异体，不据此推出单一词源。"},
+    {"name":"亢","source":"shiji_tianguan","quote":"亢为疏庙，主疾。","note":"属于古代占候解释。"},
+    {"name":"氐","source":"shiji_tianguan","quote":"氐为天根，主疫。","note":"“天根”称谓可用于历史解释；疫病联系只作为古说。"},
+    {"name":"房","source":"shiji_tianguan","quote":"房为府，曰天驷。","note":"府与天驷的象征。"},
+    {"name":"心","source":"shiji_tianguan","quote":"心为明堂，大星天王，前后星子属。","note":"宫廷象征与星体亮暗相联系。"},
+    {"name":"尾","source":"shiji_tianguan","quote":"尾为九子，曰君臣。","note":"古代社会象征，不能当作现代恒星物理关联。"},
+    {"name":"箕","source":"shijing","quote":"维南有箕，不可以簸扬。","note":"《小雅·大东》的器物比喻。"},
+    {"name":"斗","source":"shiji_tianguan","quote":"南斗为庙，其北建星。","note":"南斗与北斗必须分开。"},
+    {"name":"牛","source":"shiji_tianguan","quote":"牵牛为牺牲。其北河鼓。","note":"文本区分牵牛与河鼓；不能把牛宿直接等同现代牛郎星河鼓二。"},
+    {"name":"女","source":"shiji_tianguan","quote":"婺女，其北织女。","note":"文本区分婺女与织女，女宿不是织女星。"},
+    {"name":"虚","source":"shiji_tianguan","quote":"虚为哭泣之事。","note":"古代占候象征。"},
+    {"name":"危","source":"shiji_tianguan","quote":"危为盖屋。","note":"与屋盖联系的历史命名解释。"},
+    {"name":"室","source":"shiji_tianguan","quote":"营室为清庙，曰离宫、阁道。","note":"营室与宫室建筑象征。"},
+    {"name":"壁","source":"xiuyao","quote":"景风曰中国天文壁二星主图书秘法。北方之宿也。","note":"须明确这是唐代修注所述中国天文传统。"},
+    {"name":"奎","source":"shiji_tianguan","quote":"奎曰封豕，为沟渎。","note":"保留与后世文学象征不同的早期记载。"},
+    {"name":"娄","source":"shiji_tianguan","quote":"娄为聚众。","note":"历史象征。"},
+    {"name":"胃","source":"shiji_tianguan","quote":"胃为天仓。","note":"天上仓储象征。"},
+    {"name":"昴","source":"shijing","quote":"嘒彼小星，维参与昴。","note":"《召南·小星》直接点名参昴。"},
+    {"name":"毕","source":"shiji_tianguan","quote":"毕曰罕车，为边兵，主弋猎。","note":"亦可连读《诗经·渐渐之石》月离于毕；不要作为降雨预报。"},
+    {"name":"觜","source":"shiji_tianguan","quote":"小三星隅置，曰觜觿，为虎首。","note":"觜觿是古称；三星位置与虎首解释。"},
+    {"name":"参","source":"shiji_tianguan","quote":"参为白虎。三星直者，是为衡石。","note":"直接支持三星成列的形象，避免把诗经三星的解释绝对化。"},
+    {"name":"井","source":"shiji_tianguan","quote":"东井为水事。","note":"古称东井，水事象征。"},
+    {"name":"鬼","source":"shiji_tianguan","quote":"舆鬼，鬼祠事；中白者为质。","note":"古称舆鬼；中白者的现代对应需星表来源。"},
+    {"name":"柳","source":"shiji_tianguan","quote":"柳为鸟注，主木草。","note":"古代朱鸟部位解释有异文、训释，勿改成唯一确定词源。"},
+    {"name":"星","source":"shiji_tianguan","quote":"七星，颈，为员官。","note":"此处七星属于南方星官，不能与北斗七星混淆。"},
+    {"name":"张","source":"shiji_tianguan","quote":"张，素，为厨，主觞客。","note":"古代宴饮厨房象征。"},
+    {"name":"翼","source":"shiji_tianguan","quote":"翼为羽翮，主远客。","note":"羽翼和远方宾客的古代象征。"},
+    {"name":"轸","source":"shiji_tianguan","quote":"轸为车，主风。","note":"车辆象征；风的关联为古代占候。"}
+  ],
+  "research_limits": [
+    "Jina、Wikipedia、Wikisource连接失败；ctext返回安全验证，未绕过。",
+    "二十八宿现代星官、HIP连线由主代理读取Stellarium资料，不在本子任务重复。",
+    "精确公元前433年日期、完整禽星神名的历史起源尚未由这些来源证明。",
+    "古籍数字转录可能有OCR、异文、断句问题；关键解释宜进一步与校勘本互证。"
+  ]
+}

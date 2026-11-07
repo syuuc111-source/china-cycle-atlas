@@ -1,0 +1,109 @@
+{
+  "accessed": "2026-11-07",
+  "method": "实际读取对应正文段落；链接指向整部数字转录，locator明确篇名与本地文件行号，不将目录命中误报为篇级阅读。",
+  "sources": [
+    {
+      "id": "shijing_qiyue",
+      "title": "《诗经·国风·豳风·七月》",
+      "url": "https://github.com/garychowcmu/daizhigev20/blob/master/儒藏/诗经/诗经.txt#L1037",
+      "locator": "国风 豳风 七月；本地第1037行起",
+      "quote": "七月流火，九月授衣。",
+      "context": "全文围绕农事、物候、衣食与岁时生活展开。",
+      "limits": "诗篇原文不直接出现“心宿二”名称；把火解释为大火、把大火对应心宿二，需另列注释或天文来源。这里的七月不能未经历法说明换成现代公历七月。"
+    },
+    {
+      "id": "shijing_choumou",
+      "title": "《诗经·国风·唐风·绸缪》",
+      "url": "https://github.com/garychowcmu/daizhigev20/blob/master/儒藏/诗经/诗经.txt#L876",
+      "locator": "国风 唐风 绸缪；本地第876行起",
+      "quote": "绸缪束薪，三星在天。今夕何夕，见此良人？",
+      "other_quotes": ["绸缪束刍，三星在隅。", "绸缪束楚，三星在户。"],
+      "limits": "可展示诗文及夜空意象；若以参宿配图须标为一种传统解释，不能只凭诗篇本身断言三星唯一等于参宿腰带三星。"
+    },
+    {
+      "id": "shijing_dadong",
+      "title": "《诗经·小雅·谷风之什·大东》",
+      "url": "https://github.com/garychowcmu/daizhigev20/blob/master/儒藏/诗经/诗经.txt#L1369",
+      "locator": "小雅 谷风之什 大东；本地第1369行起",
+      "quote": "维南有箕，不可以簸扬。维北有斗，不可以挹酒浆。",
+      "other_quotes": ["维天有汉，监亦有光。跂彼织女，终日七襄。", "睆彼牵牛，不以服箱。东有启明，西有长庚。有捄天毕，载施之行。"],
+      "limits": "诗以日用器物和星名构成反讽。不要未经训诂依据把所有牵牛、斗等古称逐字套入唯一现代星官。"
+    },
+    {
+      "id": "shijing_ding",
+      "title": "《诗经·国风·鄘风·定之方中》",
+      "url": "https://github.com/garychowcmu/daizhigev20/blob/master/儒藏/诗经/诗经.txt#L578",
+      "locator": "国风 鄘风 定之方中；本地第578行起",
+      "quote": "定之方中，作于楚宫。揆之以日，作于楚室。",
+      "limits": "正文关联营建宫室与观日；“定”为营室的训释需另引注本。这份转录末章存在截断，不宜拿来发布全篇校订文本；本条所引首章完整。"
+    },
+    {
+      "id": "shijing_jianjian",
+      "title": "《诗经·小雅·鱼藻之什·渐渐之石》",
+      "url": "https://github.com/garychowcmu/daizhigev20/blob/master/儒藏/诗经/诗经.txt#L1547",
+      "locator": "小雅 鱼藻之什 渐渐之石；本地第1547行起",
+      "quote": "有豕白蹢，烝涉波矣。月离于毕，俾滂沱矣。武人东征，不皇他矣。",
+      "limits": "适合说明古代星象与天气观念在诗歌中的联系，不能据此推出月入毕宿必然降雨的现代预测规律。"
+    },
+    {
+      "id": "shangshu_yaodian",
+      "title": "《尚书·虞书·尧典》",
+      "url": "https://github.com/garychowcmu/daizhigev20/blob/master/儒藏/尚书/尚书.txt#L61",
+      "locator": "虞书 尧典第一；本地第61行起，正文第64行含四仲中星",
+      "local": "evidence/mansions-primary/尚书.txt",
+      "quote": "乃命羲和，钦若昊天，历象日月星辰，敬授人时。",
+      "other_quotes": [
+        "日中，星鸟，以殷仲春。",
+        "日永，星火，以正仲夏。",
+        "宵中，星虚，以殷仲秋。",
+        "日短，星昴，以正仲冬。"
+      ],
+      "limits": "文学记述的尧时代不能直接当成传世篇章成书年代或精确观测日期。古代中星不能直接固定到今天同一公历日、同一观测时刻；还需考虑岁差、纬度与历法。"
+    },
+    {
+      "id": "wangbo_tengwang",
+      "title": "王勃《秋日登洪府滕王阁饯别序》（通称《滕王阁序》）",
+      "url": "https://github.com/garychowcmu/daizhigev20/blob/master/集藏/四库别集/王子安集.txt#L384",
+      "locator": "《王子安集》卷八·序，〈秋日登洪府滕王阁饯别序〉；本地第384行起",
+      "local": "evidence/mansions-primary/王子安集.txt",
+      "quote": "豫章故郡，洪都新府。星分翼轸，地接衡庐。",
+      "other_quotes": ["物华天宝，龙光射牛斗之墟。"],
+      "limits": "适合说明分野观念进入唐代骈文。分野是历史文化地理系统，不等于现代天文学的地面投影或星座对地域的真实因果作用。引用版本用豫章故郡，其他通行版本有南昌故郡异文。"
+    },
+    {
+      "id": "dufu_weiba",
+      "title": "杜甫《赠卫八处士》",
+      "url": "https://github.com/chinese-poetry/chinese-poetry/blob/master/全唐诗/唐诗三百首.json",
+      "locator": "JSON中title=贈衛八處士，author=杜甫，id=6c7c45a6-c944-4ff3-aa99-f5cb0440436f",
+      "local": "evidence/mansions-primary/唐诗三百首.json",
+      "quote": "人生不相见，动如参与商。今夕复何夕，共此灯烛光。",
+      "limits": "引句从繁体转为简体；商与心宿、大火的训释需另附来源。诗意是聚少离多，不意味着两组星在任何地球地点任何条件下都绝无同时可见的可能。"
+    },
+    {
+      "id": "yanqin_names",
+      "title": "《演禽通纂》卷上·二十八宿名例",
+      "url": "https://github.com/garychowcmu/daizhigev20/blob/master/易藏/术数/演禽通纂.txt#L102",
+      "locator": "《演禽通纂三校本》卷上〈二十八宿名例〉；本地第102—103行",
+      "local": "evidence/mansions-primary/演禽通纂.txt",
+      "quote": "角木蛟（蛇父雉母，细颈，上白婴，四脚。）亢金龙、氐土狢、房日兔、心月狐、尾火虎（为暗禽）、箕水豹（为暗禽）、斗木獬、牛金牛、女土蝠、虚日鼠、危月燕、室火猪、壁水貐、奎木狼、娄金狗、胃土雉、昴日鸡（为明禽）、毕月乌、嘴火猴、参水猿、井木犴、鬼金羊、柳土獐、星日马、张月鹿、翼火蛇、轸水蚓。",
+      "supports": "完整二十八宿的宿名—七曜—禽兽配对，且七曜按木、金、土、日、月、火、水循环四次。",
+      "limits": "这属于星禽术数传统，不是上古二十八宿制度必然附带的原始属性。数字转录注明参校四库本，未核作者、最初成书年代，不据此宣称配对起源年代。原文狢/嘴/貐等字形与现代写法有异。"
+    },
+    {
+      "id": "fengshen_personification",
+      "title": "《封神演义》第九十九回·姜子牙归国封神",
+      "url": "https://github.com/garychowcmu/daizhigev20/blob/master/集藏/演义/封神演义.txt",
+      "locator": "第九十九回封神名单；本地第5462—5467行附近",
+      "local": "evidence/mansions-primary/封神演义.txt",
+      "supports": "小说把二十八宿写成人格化星神，并编入封神名单，部分归水火部。",
+      "limits": "该转录明显有OCR错字，如角木蛇、升木犴、昂日鸡，不用作28宿规范名称表。小说神名不代表统一道教正典，不应反向投射到先秦天文体系。"
+    }
+  ],
+  "normalized_seven_luminaries_animals": [
+    "角木蛟", "亢金龙", "氐土貉", "房日兔", "心月狐", "尾火虎", "箕水豹",
+    "斗木獬", "牛金牛", "女土蝠", "虚日鼠", "危月燕", "室火猪", "壁水貐",
+    "奎木狼", "娄金狗", "胃土雉", "昴日鸡", "毕月乌", "觜火猴", "参水猿",
+    "井木犴", "鬼金羊", "柳土獐", "星日马", "张月鹿", "翼火蛇", "轸水蚓"
+  ],
+  "normalization_notes": "氐土狢以貉显示、嘴火猴以觜火猴显示，保留原文字形在来源栏。壁水貐可保留貐，与常见㺄/獝等写法不要无注释混用。日与月是七曜中的两项，不应随意改标为五行的火或水。"
+}
