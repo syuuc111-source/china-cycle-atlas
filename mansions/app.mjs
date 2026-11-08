@@ -1,16 +1,18 @@
 import {parseRoute,searchMansions} from './model.mjs';
 import {createSky,detailStarMap,GROUP_COLORS} from './sky.mjs';
+import {createEffects} from './motion.mjs';
 const $=s=>document.querySelector(s);
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const ELEMENTS={木:'#348b50',火:'#d7443e',土:'#e88328',金:'#c9a32c',水:'#307dc0',日:'#e4d3ac',月:'#c5d3dc'};
 let data,skyData,sky,group='dragon',atlasGroup='dragon',libraryGroup='all',view='home',chapter=0,currentMansion=null,returnHash='#library',lastFocus=null,lastFocusMansion=null;
 let paused=matchMedia('(prefers-reduced-motion: reduce)').matches;
 const stage=$('#sky-stage'),dialog=$('#detail');
+const effects=createEffects();let routeVersion=0,detailGhost=null;
 function getGroup(id){return data.groups.find(g=>g.id===id)}
 function refLinks(ids){return ids.map(id=>{const s=data.sources.find(s=>s.id===id);return s?`<a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.title)} ↗</a>`:''}).join('')}
 function mansionButtons(list){return list.map(m=>`<button data-mansion="${m.id}" aria-label="${m.name}宿，${m.fullName}">${m.name}</button>`).join('')}
 function groupTabs(all=false){return (all?'<button data-group="all">全部</button>':'')+data.groups.map(g=>`<button data-group="${g.id}" style="--group:${g.color}">${g.short}</button>`).join('')}
-function setGroup(id){group=id;document.documentElement.style.setProperty('--accent',GROUP_COLORS[id]);sky.setGroup(id);$('#sky-label').textContent=getGroup(id).name+' · 七宿';renderAtlas();}
+function setGroup(id,options={}){group=id;document.documentElement.style.setProperty('--accent',GROUP_COLORS[id]);sky.setView({group:id,...options});$('#sky-label').textContent=getGroup(id).name+' · 七宿';renderAtlas();}
 function renderAtlas(){
  const g=getGroup(group);$('#atlas-en').textContent=g.en;$('#atlas-name').textContent=g.name;$('#atlas-intro').textContent=g.intro;$('#atlas-mansions').innerHTML=mansionButtons(data.mansions.filter(m=>m.group===group));
  $('#atlas-groups').querySelectorAll('button').forEach(b=>{b.classList.toggle('active',b.dataset.group===group);b.setAttribute('aria-pressed',String(b.dataset.group===group))});
@@ -27,21 +29,33 @@ function renderGuide(){
  $('#chapter-dots').innerHTML=data.chapters.map((c,i)=>`<button data-chapter="${i}" class="${i===chapter?'active':''}" aria-label="第${i+1}章：${esc(c.title)}" aria-current="${i===chapter?'step':'false'}">${String(i+1).padStart(2,'0')}</button>`).join('');
  $('#chapter-number').textContent=`${String(chapter+1).padStart(2,'0')} / 06`;
  $('#prev-chapter').disabled=chapter===0;$('#next-chapter').disabled=chapter===5;
- const groups=['dragon','dragon','tiger','tortoise','tiger','bird'];setGroup(groups[chapter]);
- if(chapter===4)sky.setAnchor(data.mansions.find(m=>m.id==='shen').anchor);
+ const groups=['dragon','dragon','tiger','tortoise','tiger','bird'];setGroup(groups[chapter],{chapter,anchor:chapter===4?data.mansions.find(m=>m.id==='shen').anchor:undefined});
 }
 function showView(next){
+ const previous=view,oldBox=!stage.hidden?stage.getBoundingClientRect():null;
+ if(previous!==next)effects.cancel(stage);
  view=next;document.querySelectorAll('.view').forEach(el=>el.hidden=el.id!==`view-${next}`);
  const mount=['home','atlas','guide'].includes(next)?$(`#${next}-sky-mount`):null;
- stage.hidden=!mount;if(mount){mount.append(stage);sky.setActive(true)}else sky.setActive(false);
+ stage.hidden=!mount;if(mount){if(stage.parentElement!==mount)mount.append(stage);sky.setActive(true)}else{effects.cancel(stage);sky.setActive(false)}
  document.querySelectorAll('header nav a').forEach(a=>{const key=a.hash.split('/')[0].slice(1);if(key===next)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current')});
  if(next==='atlas'||next==='home')setGroup(atlasGroup);if(next==='library')renderLibrary();if(next==='guide')renderGuide();
- if(!matchMedia('(prefers-reduced-motion: reduce)').matches)$(`#view-${next}`).animate([{opacity:.25,transform:'translateY(8px)'},{opacity:1,transform:'translateY(0)'}],{duration:450,easing:'ease-out'});
+ if(previous!==next){
+  effects.reveal($(`#view-${next}`).querySelectorAll('.hero-copy,.section-intro,.strip-heading,.symbol-card,.library-controls,.library-grid,.source-note,.source-list,.tradition-preface,.tradition-grid'),{distance:26});
+  if(mount){
+   const box=stage.getBoundingClientRect();
+   if(oldBox?.width&&box.width)effects.animate(stage,[{transform:`translate(${oldBox.x-box.x}px,${oldBox.y-box.y}px) scale(${oldBox.width/box.width},${oldBox.height/box.height})`,opacity:.7},{transform:'translate(0,0) scale(1)',opacity:1}],{duration:900});
+   else effects.animate(stage,[{opacity:0,transform:'scale(.94) rotate(-3deg)'},{opacity:1,transform:'scale(1) rotate(0deg)'}],{duration:950});
+  }
+ }
+ if(next==='atlas')effects.reveal([$('#atlas-en'),$('#atlas-name'),$('#atlas-intro'),$('#atlas-mansions')],{distance:18});
+ if(next==='guide')effects.reveal($('.guide-copy').children,{distance:24});
  document.title=(next==='home'?'二十八宿':{atlas:'四象星图',library:'星宿百科',guide:'入门导览',traditions:'文化脉络',sources:'文献索引'}[next])+' · 中国星空漫游';
 }
 function showMansion(m){
- if(!dialog.open){lastFocus=document.activeElement;lastFocusMansion=lastFocus?.dataset?.mansion}
- currentMansion=m;setGroup(m.group);sky.setAnchor(m.anchor);const g=getGroup(m.group);
+ const opening=!dialog.open,oldMap=!opening?$('#detail-map svg')?.cloneNode(true):null;
+ effects.cancel(dialog);if(detailGhost){effects.cancel(detailGhost);detailGhost.remove();detailGhost=null}
+ if(opening){lastFocus=document.activeElement;lastFocusMansion=lastFocus?.dataset?.mansion}
+ currentMansion=m;setGroup(m.group,{anchor:m.anchor});const g=getGroup(m.group);
  $('#detail-breadcrumb').textContent=`${g.name} / 第 ${String(m.number).padStart(2,'0')} 宿`;$('#detail-reading').textContent=`${m.reading.toUpperCase()} XIÙ / ${m.fullName}`;$('#detail-title').textContent=m.name+'宿';
  $('#detail-tags').innerHTML=`<span>${g.direction}方 · ${g.short}</span><span class="luminary" style="--element:${ELEMENTS[m.luminary]}">七曜配属 · ${m.luminary}</span><span>${esc(m.region)}</span>`;
  $('#detail-summary').textContent=m.summary;$('#detail-astronomy').textContent=m.astronomy;$('#detail-culture').textContent=m.culture;$('#detail-map').innerHTML=detailStarMap(m,skyData);$('#star-info').textContent='点击星点，查看名称与恒星编号。';
@@ -50,21 +64,39 @@ function showMansion(m){
  $('#detail-sources').innerHTML=m.sourceIds.map(id=>{const s=data.sources.find(s=>s.id===id);return s?`<a class="detail-source" href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.title)} ↗<small>${esc(s.note)}</small></a>`:''}).join('');
  const i=m.number-1;$('#prev-mansion').textContent='← '+data.mansions[(i+27)%28].name+'宿';$('#next-mansion').textContent=data.mansions[(i+1)%28].name+'宿 →';$('#share-mansion').href='#mansion/'+m.id;
  if(!dialog.open){dialog.showModal();document.body.style.overflow='hidden';$('#close-detail').focus()}dialog.scrollTop=0;
+ if(opening)effects.animate(dialog,[{opacity:0,transform:'perspective(1200px) translateX(56px) rotateY(-5deg)'},{opacity:1,transform:'perspective(1200px) translateX(0) rotateY(0deg)'}],{duration:700});
+ effects.reveal([$('#detail-reading'),$('#detail-title'),$('#detail-tags'),$('#detail-summary')],{distance:16,duration:700});
+ const newMap=$('#detail-map svg');
+ effects.animate(newMap,[{opacity:.15,transform:'scale(.9) rotate(-4deg)'},{opacity:1,transform:'scale(1) rotate(0deg)'}],{duration:950});
+ newMap.querySelectorAll('polyline').forEach((line,i)=>effects.animate(line,[{strokeDashoffset:1,opacity:.1},{strokeDashoffset:0,opacity:1}],{duration:950,delay:Math.min(i*70,180),fill:'backwards'}));
+ newMap.querySelectorAll('[data-star]').forEach((point,i)=>effects.animate(point,[{opacity:.1},{opacity:1}],{duration:600,delay:Math.min(i*30,200),fill:'backwards'}));
+ if(oldMap&&!effects.reduced){
+  oldMap.querySelectorAll('*').forEach(el=>{el.removeAttribute('id');el.removeAttribute('data-star');el.removeAttribute('tabindex');el.removeAttribute('role')});
+  oldMap.classList.add('outgoing-star-map');oldMap.setAttribute('aria-hidden','true');oldMap.inert=true;$('#detail-map').append(oldMap);detailGhost=oldMap;
+  const fade=effects.animate(oldMap,[{opacity:.5,transform:'scale(1)'},{opacity:0,transform:'scale(1.08) rotate(3deg)'}],{duration:350});
+  fade?.finished.then(()=>{oldMap.remove();if(detailGhost===oldMap)detailGhost=null},()=>oldMap.remove());
+ }
  document.title=m.name+'宿 · 二十八宿';
 }
 function closeDetail(){location.hash=returnHash}
-function applyRoute(){
- const route=parseRoute(location.hash);
+async function applyRoute(){
+ const version=++routeVersion,route=parseRoute(location.hash);
  if(route.view==='mansion'){
   const m=data.mansions.find(m=>m.id===route.id);
-  if(!m){history.replaceState(null,'','#library');if(dialog.open)dialog.close();document.body.style.overflow='';showView('library');return}
+  if(!m){history.replaceState(null,'','#library');effects.cancel(dialog);if(dialog.open)dialog.close();document.body.style.overflow='';showView('library');return}
   if(!$('#app').dataset.routeInitialized)showView('library');
   showMansion(m);
  }else{
   returnHash=location.hash||'#home';chapter=route.chapter??0;if(route.view==='atlas'&&route.group)atlasGroup=route.group;
   const restore=dialog.open;
-  if(restore){dialog.close();document.body.style.overflow=''}
-  showView(route.view);window.scrollTo({top:0,behavior:'instant'});
+  if(restore){
+   const exit=effects.animate(dialog,[{opacity:getComputedStyle(dialog).opacity,transform:getComputedStyle(dialog).transform},{opacity:0,transform:'translateX(36px) scale(.985)'}],{duration:230});
+   if(exit)await exit.finished.catch(()=>{});
+   if(version!==routeVersion)return;
+   dialog.close();document.body.style.overflow='';
+  }
+  if(view!==route.view)window.scrollTo({top:0,behavior:'instant'});
+  showView(route.view);
   if(restore){const target=lastFocusMansion?$(`.view:not([hidden]) [data-mansion="${lastFocusMansion}"]`):lastFocus; if(target?.isConnected&&target.getClientRects().length)target.focus();else $('#main').focus()}
  }
  $('#app').dataset.routeInitialized='true';
@@ -79,7 +111,7 @@ function bind(){
  $('.skip-link').onclick=e=>{e.preventDefault();$('#main').focus();$('#main').scrollIntoView({behavior:'instant'})};
  document.addEventListener('click',e=>{
   const m=e.target.closest('[data-mansion]');if(m){location.hash='#mansion/'+m.dataset.mansion;return}
-  const g=e.target.closest('[data-group]');if(g){if(g.closest('#library-groups')){libraryGroup=g.dataset.group;renderLibrary()}else{atlasGroup=g.dataset.group;setGroup(atlasGroup);location.hash='#atlas/'+atlasGroup}return}
+  const g=e.target.closest('[data-group]');if(g){if(g.closest('#library-groups')){libraryGroup=g.dataset.group;renderLibrary();effects.reveal($('#library-results').children,{distance:12,duration:650})}else{atlasGroup=g.dataset.group;location.hash='#atlas/'+atlasGroup}return}
   const c=e.target.closest('[data-chapter]');if(c){location.hash='#guide/'+c.dataset.chapter;return}
   const s=e.target.closest('[data-star]');if(s)showStar(s.dataset.star);
  });

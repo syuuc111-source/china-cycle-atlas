@@ -16,7 +16,7 @@ await page.locator('#atlas-mansions [data-mansion="shen"]').click();
 await page.waitForSelector('dialog[open]');check('点击参宿弹出讲解',(await page.locator('#detail-title').innerText()).includes('参宿'));
 check('星点可点击',await page.locator('#detail-map [data-star]').count()>=7);
 await page.locator('#detail-map [data-star]').first().click();check('星点显示编号',(await page.locator('#star-info').innerText()).includes('HIP'));
-await page.keyboard.press('Escape');check('Escape关闭',await page.locator('dialog[open]').count()===0);
+await page.keyboard.press('Escape');await page.waitForFunction(()=>!document.querySelector('#detail').open);check('Escape关闭',await page.locator('dialog[open]').count()===0);
 check('关闭恢复星宿按钮焦点',await page.evaluate(()=>document.activeElement?.dataset.mansion==='shen'));
 await page.goto(base+'#mansion/xin');await page.waitForSelector('dialog[open]');check('心宿深链',(await page.locator('#detail-title').innerText()).includes('心宿'));
 await page.locator('#close-detail').click();await page.locator('header a[href="#library"]').click();
