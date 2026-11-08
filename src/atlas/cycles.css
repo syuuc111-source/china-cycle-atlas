@@ -1,0 +1,103 @@
+.tabs{gap:17px}
+.tabs button{flex-shrink:0}
+.tabs button span{margin-left:5px}
+.element-legend{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
+.element-key{display:inline-flex;align-items:center;gap:5px;font-size:13px}
+.element-key i{width:14px;height:14px;border-radius:3px;display:inline-block}
+.element-badge{display:inline-block;border:1px solid var(--element);border-left:1px solid var(--element);padding:4px 8px;border-radius:4px;background:color-mix(in srgb,var(--element) 10%,var(--paper));color:#e6edf7;font-size:12px}
+.element-badge small{display:block;color:#b5c7dc;font-size:12px}
+.overlay-tools,.overlay-details,.normalization-details,.wuxing-controls,.wuxing-year-card,.sixqi-card,.sixty-card,.planet-controls,.planet-timeline{padding:22px;margin-bottom:18px}
+.preset-row,.form-row{display:flex;align-items:end;flex-wrap:wrap;gap:10px}
+.preset-row{margin-bottom:14px}
+.preset-row button{font-size:13px}
+.preset-row .selected{background:#183d48}
+.form-row label{display:flex;flex-direction:column;gap:5px;font-size:13px}
+.form-row input{width:94px}
+.form-row select{max-width:245px}
+.overlay-layout{display:grid;grid-template-columns:220px minmax(0,1fr);gap:17px;margin-bottom:18px}
+.overlay-choices{padding:17px}
+.overlay-choices h3{font-weight:500;font-size:12px;margin:15px 0 8px}
+.overlay-choices .layer-item{font-size:13px}
+.svg-scroll{overflow-x:auto;width:100%;min-width:0}
+.svg-scroll svg{display:block;width:100%;height:auto;min-width:780px}
+.overlay-details h3{font-size:15px;font-weight:500;margin-top:0}
+#overlayProbe{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.probe-cell{background:#15243c;border-radius:6px;padding:10px;font-size:13px;border-top:3px solid var(--series-color,#456079)}
+.probe-cell strong{display:block;font-size:17px;font-weight:500;margin:5px 0}
+.probe-cell small{font-size:12px;color:var(--muted)}
+.normalization-details summary{cursor:pointer;font-size:12px}
+.wuxing-controls{display:flex;align-items:center;gap:15px;flex-wrap:wrap}
+.wuxing-controls input{width:100px;margin-left:9px}
+.wuxing-year-card h3{margin-top:0;font-size:23px;font-weight:500}
+.wuxing-items{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}
+.wuxing-item{padding:12px;border-top:5px solid var(--element);background:color-mix(in srgb,var(--element) 10%,var(--paper));border-radius:5px;color:#e6edf7}
+.wuxing-item small{display:block;font-size:12px;color:#b5c7dc}
+.wuxing-item strong{display:block;font-weight:500;font-size:19px;margin:8px 0}
+.wuxing-item span{font-size:13px}
+#sixqiSequence{display:grid;grid-template-columns:repeat(6,1fr);gap:8px}
+.qi-step{border-radius:6px;padding:14px 12px;background:color-mix(in srgb,var(--element) 10%,var(--paper));border-top:5px solid var(--element);font-size:13px}
+.qi-step small{display:block;font-size:12px;color:#b5c7dc;margin-top:9px}
+.qi-step.fire-pattern{border-top:0;padding-top:19px;background-image:repeating-linear-gradient(135deg,transparent 0 8px,#d7443e18 8px 12px);box-shadow:inset 0 5px #d7443e}
+#sixtyGrid{display:grid;grid-template-columns:repeat(10,1fr);gap:8px}
+.sixty-cell{text-align:left;padding:9px 10px;border-radius:5px;border:1px solid #31435b;border-left:1px solid var(--element);background:color-mix(in srgb,var(--element) 10%,var(--paper));min-width:0;position:relative}
+.sixty-cell:hover{border-color:var(--element);background:color-mix(in srgb,var(--element) 10%,var(--paper));filter:brightness(.96)}
+.sixty-cell strong{display:block;font-size:19px;font-weight:500}
+.sixty-cell span{font-size:12px;display:block;color:#d1deee}
+.sixty-cell small{font-size:12px;color:#b5c7dc}
+.sixty-cell.selected{outline:2px solid var(--element);outline-offset:1px}
+.astronomy-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:20px;margin-bottom:20px}
+.mansions-card,.lunar-card{padding:24px}
+.mansions-card h3,.lunar-card h3{font-size:18px;font-weight:500;margin-top:0}
+#mansionRing svg{display:block;width:100%;max-height:500px}
+#mansionRing [data-mansion]{cursor:pointer}
+#mansionRing [data-mansion]:hover{filter:brightness(.88)}
+.lunar-card p{font-size:12px;color:var(--muted);line-height:1.9}
+.lunar-period{border-left:1px solid #83a8d6;background:#17283f;padding:14px;margin:12px 0}
+.lunar-period strong{font-size:27px;font-weight:400;color:#c8dffb}
+.lunar-period span{font-size:13px;margin-left:10px;color:var(--muted)}
+.mansion-group{border-top:1px solid #293a54;padding:13px 0;font-size:12px}
+.mansion-group strong{font-weight:500;display:block;margin-bottom:5px}
+.planet-choices{display:flex;flex-wrap:wrap;gap:8px 16px;margin:15px 0}
+.planet-choices label{display:flex;align-items:center;gap:5px;font-size:12px}
+.planet-visuals{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.planet-visuals h3{font-size:13px;font-weight:500}
+.planet-visuals svg{display:block;width:100%;max-height:430px}
+.planet-timeline .form-row{margin-bottom:20px}
+.atlas-element-tools{padding:10px 0;border-top:1px solid var(--line);margin-top:10px}
+.atlas-element-tools label{font-size:12px;display:block}
+.atlas-element-tools select{width:100%;font-size:12px;margin-top:5px;padding:5px}
+.atlas-element-tools .element-legend{gap:5px}
+.atlas-element-tools .element-key{font-size:12px}
+.atlas-element-tools .element-key i{width:9px;height:9px}
+.year-five{display:flex;gap:5px;flex-wrap:wrap;padding-bottom:10px}
+.year-five .element-badge{font-size:12px;padding:3px 5px}
+.year-five .element-badge small{font-size:12px}
+.overlay-event{cursor:pointer}
+.overlay-point{cursor:pointer}
+.planet-stroke{stroke-dasharray:6 4;opacity:.8}
+.svg-scroll text,.planet-visuals text,#mansionRing text{font-family:'Microsoft YaHei',sans-serif}
+.sixty-hint{font-size:13px;color:var(--muted)}
+
+@media(max-width:1150px){#sixtyGrid{grid-template-columns:repeat(6,1fr)}
+.wuxing-items{grid-template-columns:repeat(3,1fr)}
+#overlayProbe{grid-template-columns:repeat(3,1fr)}
+.overlay-layout{grid-template-columns:185px minmax(0,1fr)}
+.tabs{gap:14px}
+}
+
+@media(max-width:750px){.overlay-layout,.astronomy-grid,.planet-visuals{grid-template-columns:1fr}
+.overlay-choices>div:not(.element-legend){display:flex;flex-wrap:wrap;gap:6px 14px}
+.overlay-choices .layer-item{margin:2px 0}
+.overlay-choices h3{margin-top:10px}
+#sixtyGrid{grid-template-columns:repeat(4,1fr);gap:6px}
+.sixty-cell{padding:8px 7px}
+.sixty-cell strong{font-size:17px}
+.wuxing-items,#sixqiSequence{grid-template-columns:repeat(2,1fr)}
+.overlay-tools,.overlay-details,.normalization-details,.wuxing-controls,.wuxing-year-card,.sixqi-card,.sixty-card,.planet-controls,.planet-timeline{padding:16px}
+.mansions-card,.lunar-card{padding:18px}
+#overlayProbe{grid-template-columns:repeat(2,1fr)}
+.tabs button span{font-size:12px}
+.tabs{gap:12px}
+.form-row button{font-size:13px}
+}
+

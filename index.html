@@ -1,55 +1,411 @@
 <!doctype html>
-<html lang="zh-CN">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>中国周期图谱 · 历史、自然与时间</title><style>:root{--bg:#f5f4ef;--paper:#fffefa;--ink:#20343a;--muted:#667878;--line:#dfe5df;--teal:#267f7e;--gold:#b68c46;--purple:#8874a7;--shadow:0 5px 25px #243e3a05}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.6 'Microsoft YaHei','PingFang SC',system-ui,sans-serif}button,input,select{font:inherit;color:inherit}button{cursor:pointer;border:1px solid var(--line);background:var(--paper);border-radius:6px;padding:7px 12px;transition:background .15s}button:hover{background:#edf4ee;border-color:#b3ccc3}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #86b9b5;outline-offset:2px}input,select{border:1px solid var(--line);background:#fffefa;border-radius:5px;padding:7px 9px;min-width:0}input[type=range]{accent-color:var(--teal);width:100%;padding:0}a{color:var(--teal);text-decoration:none}a:hover{text-decoration:underline}.topbar{height:86px;padding:0 36px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);background:var(--paper)}.brand{display:flex;align-items:center;gap:13px;font-size:20px;font-weight:700;letter-spacing:2px;color:var(--ink)}.brand:hover{text-decoration:none}.brandmark{background:var(--teal);color:#fff;font-size:27px;border-radius:50%;width:44px;height:44px;display:grid;place-items:center;font-weight:400}.brand small{display:block;font-size:9px;letter-spacing:2.2px;color:var(--muted);font-weight:400;margin-top:1px}.edition{display:flex;gap:12px;align-items:center;color:var(--muted);font-size:12px}.edition i{width:6px;height:6px;border-radius:50%;background:var(--teal)}.quiet{margin-left:14px}main{max-width:1780px;margin:auto;padding:0 32px}.hero{display:flex;justify-content:space-between;gap:30px;padding:37px 0 32px;align-items:center}.eyebrow{font-size:11px;letter-spacing:2px;color:var(--teal);margin:0 0 10px;font-weight:700}h1{font-family:'Microsoft YaHei',sans-serif;letter-spacing:-1px;font-weight:600;font-size:clamp(23px,2.3vw,35px);line-height:1.4;margin:0 0 13px}.hero-sub{color:var(--muted);margin:0;font-size:13px}.hero-facts{display:flex;gap:32px;flex-shrink:0;padding-left:20px}.hero-facts div{display:flex;flex-direction:column}.hero-facts strong{font-size:30px;font-weight:400;line-height:1.25;font-variant-numeric:tabular-nums}.hero-facts span{font-size:10px;color:var(--muted);letter-spacing:1px;margin-top:7px}.tabs{display:flex;border-bottom:1px solid #cad6cd;gap:25px;overflow-x:auto}.tabs button{border:0;border-radius:0;border-bottom:3px solid transparent;background:none;color:#80908a;padding:14px 5px;font-size:11px;white-space:nowrap}.tabs button span{font-size:14px;margin-left:9px;color:var(--muted)}.tabs button.active{border-bottom-color:var(--teal);color:var(--teal)}.tabs button.active span{color:var(--ink);font-weight:600}.tab-panel{display:none;padding-top:22px}.tab-panel.active{display:block}.rangebar{display:flex;justify-content:space-between;gap:14px;align-items:center;flex-wrap:wrap}.presets{display:flex;gap:6px;flex-wrap:wrap}.presets button{font-size:12px;background:transparent;border-color:transparent}.presets button.selected{background:#dfede6;border-color:#c8dfd4;color:#215f60}.range-inputs{display:flex;align-items:center;gap:8px;font-size:11px}.range-inputs input{width:76px;margin-left:3px;padding:5px}.range-inputs button{padding:4px 10px}.message{font-size:11px;color:var(--muted);margin:12px 0 18px;min-height:18px}.message.error{color:#a33e32}.atlas-layout{display:grid;grid-template-columns:190px minmax(400px,1fr) 252px;gap:16px;align-items:start}.card{background:var(--paper);border:1px solid var(--line);border-radius:10px;box-shadow:var(--shadow)}.layers{padding:17px 15px}.section-label{font-size:12px;font-weight:700;letter-spacing:1px;display:flex;justify-content:space-between;align-items:center;margin-bottom:15px}.text-btn{padding:0;background:none!important;border:0;color:var(--teal);font-size:11px;text-align:left}.layer-group{font-size:10px;letter-spacing:1px;color:var(--muted);margin:17px 0 7px}.layer-item{display:flex;gap:7px;align-items:flex-start;margin:10px 0;font-size:11px;cursor:pointer}.layer-item input{accent-color:var(--teal);margin:4px 0 0}.layer-item span small{display:block;color:var(--muted);font-size:9px}.layer-line{width:10px;height:2px;flex-shrink:0;margin-top:11px}.legend-block{border-top:1px solid var(--line);margin-top:20px;padding-top:15px;line-height:2.2;font-size:10px;color:var(--muted)}.dot{display:inline-block;width:6px;height:6px;margin-right:5px;border-radius:50%}.teal{background:var(--teal)}.gold{background:var(--gold)}.purple{background:var(--purple)}.micro{font-size:11px;line-height:1.8;color:var(--muted)}.wide{width:100%;font-size:11px}.chart-card{overflow:hidden}.chart-top{padding:17px 18px 12px;display:flex;justify-content:space-between;align-items:center;gap:10px}h2{font-size:19px;font-weight:600;margin:0 0 8px;line-height:1.5}.chart-top h2{font-size:14px;margin:0}.muted{font-size:12px;color:var(--muted)}.chart-top .muted{font-size:10px}.zoom-controls{display:flex;gap:4px}.zoom-controls button{padding:2px 8px}#chartHost{width:100%;overflow:auto;position:relative}#chartHost svg{display:block;min-width:620px;width:100%;height:auto}svg text{font-family:'Microsoft YaHei',sans-serif}.chart-caption{font-size:10px;color:var(--muted);padding:12px 16px;border-top:1px solid var(--line)}.inspector{padding:17px;max-height:960px;overflow:auto}.year-picker{display:flex;gap:7px;margin-bottom:12px}.year-picker input{width:100%;font-size:23px;color:var(--teal);padding:3px 8px;font-variant-numeric:tabular-nums}.year-picker button{white-space:nowrap;font-size:11px}.year-title{font-size:13px;margin:10px 0 3px}.year-sub{font-size:10px;color:var(--muted)}.window-label{font-size:11px;display:flex;justify-content:space-between;align-items:center;margin:16px 0;border-bottom:1px solid var(--line);padding-bottom:14px}.window-label select{padding:3px}.readout{padding:10px 0;border-bottom:1px solid #e9ede7}.readout label{font-size:10px;color:var(--muted)}.readout strong{display:block;font-size:18px;font-weight:500;margin:2px 0}.readout small{display:block;font-size:9px;color:var(--muted);line-height:1.65}.readout .text-btn{margin-top:5px}.window-section{margin-top:20px;padding:22px}.panel-heading{display:flex;justify-content:space-between;align-items:center;gap:20px;margin:6px 0 22px}.panel-heading p{margin-bottom:7px}.table-scroll{overflow:auto}table{border-collapse:collapse;width:100%;font-size:12px;white-space:nowrap}th,td{text-align:left;padding:11px 14px;border-bottom:1px solid #e5eae3}th{font-weight:500;background:#f2f5ef;color:var(--muted);font-size:11px}td small{font-size:10px;color:var(--muted)}.event-list{display:flex;flex-wrap:wrap;gap:8px;margin-top:17px}.event-chip{font-size:11px;text-align:left}.event-chip small{display:block;font-size:9px;color:var(--muted)}.search{width:300px;max-width:100%;font-size:12px}.knowledge-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.knowledge-card{padding:23px;display:flex;flex-direction:column}.knowledge-card h3{font-size:18px;font-weight:500;margin:15px 0 4px}.knowledge-card .period{font-size:12px;color:var(--teal);margin-bottom:9px}.knowledge-card p{font-size:12px;color:var(--muted);flex:1}.pill{display:inline-block;width:fit-content;border:1px solid #dce3d9;border-radius:4px;padding:2px 7px;font-size:10px;background:#f3f5f0;color:var(--muted)}.teal-pill{color:#237875;background:#eaf5ef;border-color:#cde3d7}.gold-pill{color:#94712e;background:#faf2e5;border-color:#ecdbba}.purple-pill{color:#80619b;background:#f2edf7;border-color:#e0d3e9}.refs{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}.lab-controls{padding:20px;display:flex;gap:14px;flex-wrap:wrap;align-items:end}.lab-controls label{font-size:10px;color:var(--muted);display:flex;flex-direction:column;gap:5px}.lab-controls input{width:90px}.lab-controls select{max-width:215px}.primary{background:var(--teal);color:white;border-color:var(--teal)}.primary:hover{background:#216d6b}.lab-output{display:grid;grid-template-columns:260px 1fr;gap:20px;margin-top:20px}.lab-metric{padding:25px}.lab-metric strong{display:block;font-size:56px;font-weight:400;line-height:1.3;color:var(--teal);font-variant-numeric:tabular-nums}.lab-metric p{font-size:12px;color:var(--muted)}.scatter-card{padding:15px}.scatter-card svg{width:100%;height:300px}.notice{border-left:3px solid #b7c8b9;padding:16px 20px;background:#eaf0e7;color:#586e65;font-size:12px;margin:22px 0;line-height:1.9}.literature{padding:20px;margin-top:20px}.literature h3{margin-top:0}.literature p{color:var(--muted);font-size:12px}.future-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.future-card{padding:27px}.future-card h3{font-size:20px;font-weight:500}.future-card p{font-size:13px;color:var(--muted)}.future-card label{display:block;margin:12px 0;font-size:12px}.future-card input[type=range]{width:65%;vertical-align:middle;margin:0 15px}.future-card select{margin-left:10px}.scenario-value{font-size:42px;color:var(--teal);font-variant-numeric:tabular-nums}.future-node{display:flex;padding:10px 0;border-bottom:1px solid var(--line);justify-content:space-between;font-size:12px}.future-node strong{font-size:17px;font-weight:500}.method-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.method-grid article{padding:22px}.method-grid h3{font-size:16px}.method-grid p{font-size:12px;color:var(--muted)}.source-heading{font-weight:500;font-size:17px;margin:30px 0 15px}.source-list{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.source-item{padding:18px;display:flex;gap:15px}.source-number{font-size:11px;color:var(--teal);padding-top:5px}.source-item h4{font-weight:500;font-size:13px;margin:0 0 6px}.source-item p{font-size:11px;color:var(--muted);margin:6px 0}.source-item a{font-size:11px;word-break:break-all}footer{margin:30px 0 20px;padding-top:18px;border-top:1px solid var(--line);display:flex;justify-content:space-between;color:#839087;font-size:10px}dialog{border:1px solid #cfd9cd;border-radius:14px;max-width:650px;width:calc(100% - 40px);padding:30px;background:var(--paper);color:var(--ink);box-shadow:0 20px 100px #182f3940}dialog::backdrop{background:#152d3155;backdrop-filter:blur(3px)}#closeDialog{position:absolute;right:12px;top:12px;border:0;background:none;font-size:22px;padding:0 6px}#detailBody h2{padding-right:15px}#detailBody p{font-size:13px;color:var(--muted)}#detailBody a{word-break:break-all}#detailBody pre{white-space:pre-wrap;font-size:12px;background:#edf2e9;padding:12px}#tooltip{display:none;position:fixed;pointer-events:none;z-index:20;background:#203c3ef5;color:#fff;padding:8px 11px;border-radius:6px;max-width:280px;font-size:11px;box-shadow:0 5px 15px #0002}.empty{padding:35px;text-align:center;color:var(--muted);font-size:13px}
-@media(min-width:1550px){.atlas-layout{grid-template-columns:210px minmax(500px,1fr) 275px}}
-@media(max-width:1150px){main{padding:0 20px}.atlas-layout{grid-template-columns:170px minmax(360px,1fr)}.inspector{grid-column:1/-1;max-height:none}.inspector #yearReadout{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.year-picker{max-width:300px}.inspector #yearSlider{max-width:500px;display:block}.window-label{max-width:300px}.hero-facts{gap:18px}.hero-facts strong{font-size:25px}.knowledge-grid{grid-template-columns:repeat(2,1fr)}.method-grid{grid-template-columns:1fr}.topbar{padding:0 22px}}
-@media(max-width:750px){main{padding:0 12px}.topbar{padding:0 15px;height:72px}.brand{font-size:17px}.brand small{font-size:7px}.edition{font-size:0;gap:0}.edition i{display:none}.quiet{font-size:11px;margin:0}.hero{display:block;padding:27px 4px}.hero-facts{padding:20px 0 0;gap:35px}.hero-facts strong{font-size:25px}h1{font-size:24px}.hero-sub{font-size:11px}.tabs{gap:15px}.tabs button span{font-size:12px;margin-left:4px}.atlas-layout{display:flex;flex-direction:column}.layers,.chart-card,.inspector{width:100%}.layers{padding:14px}#layerControls{display:flex;flex-wrap:wrap;gap:7px 13px}.layer-group{width:100%;margin:5px 0 0}.layer-item{margin:2px 0}.layer-item span small{display:none}.layers .micro,.legend-block{display:none}.layers .wide{margin-top:10px}.chart-top{padding:13px}.inspector #yearReadout{grid-template-columns:repeat(2,1fr)}.panel-heading{align-items:start;flex-direction:column;gap:8px}.knowledge-grid,.source-list,.future-grid{grid-template-columns:1fr}.lab-output{grid-template-columns:1fr}.lab-metric strong{font-size:42px}.lab-controls{gap:10px;padding:15px}.lab-controls select{max-width:190px}.window-section{padding:15px}.future-card{padding:20px}.search{width:100%}.hero-facts span{font-size:9px}footer{gap:15px;font-size:9px}.range-inputs{flex-wrap:wrap}}
-@media print{.topbar,.tabs,.layers,.inspector,.rangebar,button,footer{display:none!important}.atlas-layout{display:block}main{padding:0}.tab-panel.active{display:block}.chart-card{border:0}.hero{padding:10px 0}body{background:white}.card{box-shadow:none}}
+<html lang="zh-CN" data-type="software">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#080f20"><meta name="description" content="从夏朝至今，分轨查看气候、经济、历史与传统周期，比较已有样本并追溯来源。"><meta name="page-type" content="software"><meta name="site-kind" content="software"><title>中国周期图谱 · 历史、自然与时间</title><style>:root{--bg:#080f20;--paper:#101c32;--ink:#e6edf7;--muted:#a6b7ce;--line:#293a54;--teal:#6cddd7;--gold:#f0c77f;--purple:#9bb6ef;--shadow:0 5px 25px #243e3a05}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.75 'Microsoft YaHei','PingFang SC',system-ui,sans-serif}
+button,input,select{font:inherit;color:inherit}
+button{cursor:pointer;border:1px solid var(--line);background:var(--paper);border-radius:6px;padding:7px 12px;transition:background .15s}
+button:hover{background:#1b3049;border-color:#456079}
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #8aefeb;outline-offset:2px}
+input,select{border:1px solid var(--line);background:#101c32;border-radius:5px;padding:7px 9px;min-width:0}
+input[type=range]{accent-color:var(--teal);width:100%;padding:0}
+a{color:var(--teal);text-decoration:none}
+a:hover{text-decoration:underline}
+.topbar{height:86px;padding:0 36px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);background:var(--paper)}
+.brand{display:flex;align-items:center;gap:13px;font-size:20px;font-weight:700;letter-spacing:2px;color:var(--ink)}
+.brand:hover{text-decoration:none}
+.brandmark{background:var(--teal);color:#fff;font-size:27px;border-radius:50%;width:44px;height:44px;display:grid;place-items:center;font-weight:400}
+.brand small{display:block;font-size:12px;letter-spacing:2.2px;color:var(--muted);font-weight:400;margin-top:1px}
+.edition{display:flex;gap:12px;align-items:center;color:var(--muted);font-size:12px}
+.edition i{width:6px;height:6px;border-radius:50%;background:var(--teal)}
+.quiet{margin-left:14px}
+main{max-width:1780px;margin:auto;padding:0 32px}
+.hero{display:flex;justify-content:space-between;gap:30px;padding:37px 0 32px;align-items:center}
+.eyebrow{font-size:13px;letter-spacing:2px;color:var(--teal);margin:0 0 10px;font-weight:700}
+h1{font-family:'Microsoft YaHei',sans-serif;letter-spacing:-1px;font-weight:600;font-size:clamp(23px,2.3vw,35px);line-height:1.4;margin:0 0 13px}
+.hero-sub{color:var(--muted);margin:0;font-size:13px}
+.hero-facts{display:flex;gap:32px;flex-shrink:0;padding-left:20px}
+.hero-facts div{display:flex;flex-direction:column}
+.hero-facts strong{font-size:30px;font-weight:400;line-height:1.25;font-variant-numeric:tabular-nums}
+.hero-facts span{font-size:12px;color:var(--muted);letter-spacing:1px;margin-top:7px}
+.tabs{display:flex;border-bottom:1px solid #293a54;gap:25px;overflow-x:auto}
+.tabs button{border:0;border-radius:0;border-bottom:3px solid transparent;background:none;color:#a6b7ce;padding:14px 5px;font-size:13px;white-space:nowrap}
+.tabs button span{font-size:14px;margin-left:9px;color:var(--muted)}
+.tabs button.active{border-bottom-color:var(--teal);color:var(--teal)}
+.tabs button.active span{color:var(--ink);font-weight:600}
+.tab-panel{display:none;padding-top:22px}
+.tab-panel.active{display:block}
+.rangebar{display:flex;justify-content:space-between;gap:14px;align-items:center;flex-wrap:wrap}
+.presets{display:flex;gap:6px;flex-wrap:wrap}
+.presets button{font-size:12px;background:transparent;border-color:transparent}
+.presets button.selected{background:#183d48;border-color:#39717a;color:#8cf0e5}
+.range-inputs{display:flex;align-items:center;gap:8px;font-size:13px}
+.range-inputs input{width:76px;margin-left:3px;padding:5px}
+.range-inputs button{padding:4px 10px}
+.message{font-size:13px;color:var(--muted);margin:12px 0 18px;min-height:18px}
+.message.error{color:#ffa095}
+.atlas-layout{display:grid;grid-template-columns:190px minmax(400px,1fr) 252px;gap:16px;align-items:start}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:10px;box-shadow:none}
+.layers{padding:17px 15px}
+.section-label{font-size:12px;font-weight:700;letter-spacing:1px;display:flex;justify-content:space-between;align-items:center;margin-bottom:15px}
+.text-btn{padding:0;background:none!important;border:0;color:var(--teal);font-size:13px;text-align:left}
+.layer-group{font-size:12px;letter-spacing:1px;color:var(--muted);margin:17px 0 7px}
+.layer-item{display:flex;gap:7px;align-items:flex-start;margin:10px 0;font-size:13px;cursor:pointer}
+.layer-item input{accent-color:var(--teal);margin:4px 0 0}
+.layer-item span small{display:block;color:var(--muted);font-size:12px}
+.layer-line{width:10px;height:2px;flex-shrink:0;margin-top:11px}
+.legend-block{border-top:1px solid var(--line);margin-top:20px;padding-top:15px;line-height:2.2;font-size:12px;color:var(--muted)}
+.dot{display:inline-block;width:6px;height:6px;margin-right:5px;border-radius:50%}
+.teal{background:var(--teal)}
+.gold{background:var(--gold)}
+.purple{background:var(--purple)}
+.micro{font-size:13px;line-height:1.8;color:var(--muted)}
+.wide{width:100%;font-size:13px}
+.chart-card{overflow:hidden}
+.chart-top{padding:17px 18px 12px;display:flex;justify-content:space-between;align-items:center;gap:10px}
+h2{font-size:19px;font-weight:600;margin:0 0 8px;line-height:1.5}
+.chart-top h2{font-size:14px;margin:0}
+.muted{font-size:12px;color:var(--muted)}
+.chart-top .muted{font-size:12px}
+.zoom-controls{display:flex;gap:4px}
+.zoom-controls button{padding:2px 8px}
+#chartHost{width:100%;overflow:auto;position:relative}
+#chartHost svg{display:block;min-width:620px;width:100%;height:auto}
+svg text{font-family:'Microsoft YaHei',sans-serif}
+.chart-caption{font-size:12px;color:var(--muted);padding:12px 16px;border-top:1px solid var(--line)}
+.inspector{padding:17px;max-height:960px;overflow:auto}
+.year-picker{display:flex;gap:7px;margin-bottom:12px}
+.year-picker input{width:100%;font-size:23px;color:var(--teal);padding:3px 8px;font-variant-numeric:tabular-nums}
+.year-picker button{white-space:nowrap;font-size:13px}
+.year-title{font-size:13px;margin:10px 0 3px}
+.year-sub{font-size:12px;color:var(--muted)}
+.window-label{font-size:13px;display:flex;justify-content:space-between;align-items:center;margin:16px 0;border-bottom:1px solid var(--line);padding-bottom:14px}
+.window-label select{padding:3px}
+.readout{padding:10px 0;border-bottom:1px solid #26384f}
+.readout label{font-size:12px;color:var(--muted)}
+.readout strong{display:block;font-size:18px;font-weight:500;margin:2px 0}
+.readout small{display:block;font-size:12px;color:var(--muted);line-height:1.65}
+.readout .text-btn{margin-top:5px}
+.window-section{margin-top:20px;padding:22px}
+.panel-heading{display:flex;justify-content:space-between;align-items:center;gap:20px;margin:6px 0 22px}
+.panel-heading p{margin-bottom:7px}
+.table-scroll{overflow:auto}
+table{border-collapse:collapse;width:100%;font-size:12px;white-space:nowrap}
+th,td{text-align:left;padding:11px 14px;border-bottom:1px solid #26384f}
+th{font-weight:500;background:#15243c;color:var(--muted);font-size:13px}
+td small{font-size:12px;color:var(--muted)}
+.event-list{display:flex;flex-wrap:wrap;gap:8px;margin-top:17px}
+.event-chip{font-size:13px;text-align:left}
+.event-chip small{display:block;font-size:12px;color:var(--muted)}
+.search{width:300px;max-width:100%;font-size:12px}
+.knowledge-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.knowledge-card{padding:23px;display:flex;flex-direction:column}
+.knowledge-card h3{font-size:18px;font-weight:500;margin:15px 0 4px}
+.knowledge-card .period{font-size:12px;color:var(--teal);margin-bottom:9px}
+.knowledge-card p{font-size:12px;color:var(--muted);flex:1}
+.pill{display:inline-block;width:fit-content;border:1px solid #3a4d65;border-radius:4px;padding:2px 7px;font-size:12px;background:#17283d;color:var(--muted)}
+.teal-pill{color:#9ae9dd;background:#163837;border-color:#355a58}
+.gold-pill{color:#f0ce93;background:#332d25;border-color:#655438}
+.purple-pill{color:#adc7ef;background:#1d2d4b;border-color:#405576}
+.refs{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+.lab-controls{padding:20px;display:flex;gap:14px;flex-wrap:wrap;align-items:end}
+.lab-controls label{font-size:12px;color:var(--muted);display:flex;flex-direction:column;gap:5px}
+.lab-controls input{width:90px}
+.lab-controls select{max-width:215px}
+.primary{background:var(--teal);color:#09252d;border-color:var(--teal)}
+.primary:hover{background:#98eee6}
+.lab-output{display:grid;grid-template-columns:260px 1fr;gap:20px;margin-top:20px}
+.lab-metric{padding:25px}
+.lab-metric strong{display:block;font-size:56px;font-weight:400;line-height:1.3;color:var(--teal);font-variant-numeric:tabular-nums}
+.lab-metric p{font-size:12px;color:var(--muted)}
+.scatter-card{padding:15px}
+.scatter-card svg{width:100%;height:300px}
+.notice{border-left:1px solid #456079;padding:16px 20px;background:#14273c;color:#c1d2e4;font-size:12px;margin:22px 0;line-height:1.9}
+.literature{padding:20px;margin-top:20px}
+.literature h3{margin-top:0}
+.literature p{color:var(--muted);font-size:12px}
+.future-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.future-card{padding:27px}
+.future-card h3{font-size:20px;font-weight:500}
+.future-card p{font-size:13px;color:var(--muted)}
+.future-card label{display:block;margin:12px 0;font-size:12px}
+.future-card input[type=range]{width:65%;vertical-align:middle;margin:0 15px}
+.future-card select{margin-left:10px}
+.scenario-value{font-size:42px;color:var(--teal);font-variant-numeric:tabular-nums}
+.future-node{display:flex;padding:10px 0;border-bottom:1px solid var(--line);justify-content:space-between;font-size:12px}
+.future-node strong{font-size:17px;font-weight:500}
+.method-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}
+.method-grid article{padding:22px}
+.method-grid h3{font-size:16px}
+.method-grid p{font-size:12px;color:var(--muted)}
+.source-heading{font-weight:500;font-size:17px;margin:30px 0 15px}
+.source-list{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.source-item{padding:18px;display:flex;gap:15px}
+.source-number{font-size:13px;color:var(--teal);padding-top:5px}
+.source-item h4{font-weight:500;font-size:13px;margin:0 0 6px}
+.source-item p{font-size:13px;color:var(--muted);margin:6px 0}
+.source-item a{font-size:13px;word-break:break-all}
+footer{margin:30px 0 20px;padding-top:18px;border-top:1px solid var(--line);display:flex;justify-content:space-between;color:#a6b7ce;font-size:12px}
+dialog{border:1px solid #3a4d65;border-radius:14px;max-width:650px;width:calc(100% - 40px);padding:30px;background:var(--paper);color:var(--ink);box-shadow:0 20px 100px #182f3940}
+dialog::backdrop{background:#030916bf;backdrop-filter:blur(3px)}
+#closeDialog{position:absolute;right:12px;top:12px;border:0;background:none;font-size:22px;padding:0 6px}
+#detailBody h2{padding-right:15px}
+#detailBody p{font-size:13px;color:var(--muted)}
+#detailBody a{word-break:break-all}
+#detailBody pre{white-space:pre-wrap;font-size:12px;background:#14243c;padding:12px}
+#tooltip{display:none;position:fixed;pointer-events:none;z-index:20;background:#233957f5;color:#fff;padding:8px 11px;border-radius:6px;max-width:280px;font-size:13px;box-shadow:0 5px 15px #0002}
+.empty{padding:35px;text-align:center;color:var(--muted);font-size:13px}
 
-.tabs{gap:17px}.tabs button{flex-shrink:0}.tabs button span{margin-left:5px}.element-legend{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}.element-key{display:inline-flex;align-items:center;gap:5px;font-size:11px}.element-key i{width:14px;height:14px;border-radius:3px;display:inline-block}.element-badge{display:inline-block;border:1px solid var(--element);border-left:5px solid var(--element);padding:4px 8px;border-radius:4px;background:var(--element-light);color:#253d36;font-size:12px}.element-badge small{display:block;color:#52675f;font-size:10px}.overlay-tools,.overlay-details,.normalization-details,.wuxing-controls,.wuxing-year-card,.sixqi-card,.sixty-card,.planet-controls,.planet-timeline{padding:22px;margin-bottom:18px}.preset-row,.form-row{display:flex;align-items:end;flex-wrap:wrap;gap:10px}.preset-row{margin-bottom:14px}.preset-row button{font-size:11px}.preset-row .selected{background:#dfeee5}.form-row label{display:flex;flex-direction:column;gap:5px;font-size:11px}.form-row input{width:94px}.form-row select{max-width:245px}.overlay-layout{display:grid;grid-template-columns:220px minmax(0,1fr);gap:17px;margin-bottom:18px}.overlay-choices{padding:17px}.overlay-choices h3{font-weight:500;font-size:12px;margin:15px 0 8px}.overlay-choices .layer-item{font-size:11px}.svg-scroll{overflow-x:auto;width:100%;min-width:0}.svg-scroll svg{display:block;width:100%;height:auto;min-width:780px}.overlay-details h3{font-size:15px;font-weight:500;margin-top:0}#overlayProbe{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}.probe-cell{background:#f2f5ef;border-radius:6px;padding:10px;font-size:11px;border-top:3px solid var(--series-color,#c3cfc3)}.probe-cell strong{display:block;font-size:17px;font-weight:500;margin:5px 0}.probe-cell small{font-size:10px;color:var(--muted)}.normalization-details summary{cursor:pointer;font-size:12px}.wuxing-controls{display:flex;align-items:center;gap:15px;flex-wrap:wrap}.wuxing-controls input{width:100px;margin-left:9px}.wuxing-year-card h3{margin-top:0;font-size:23px;font-weight:500}.wuxing-items{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}.wuxing-item{padding:12px;border-top:5px solid var(--element);background:var(--element-light);border-radius:5px;color:#243c31}.wuxing-item small{display:block;font-size:10px;color:#52675f}.wuxing-item strong{display:block;font-weight:500;font-size:19px;margin:8px 0}.wuxing-item span{font-size:11px}#sixqiSequence{display:grid;grid-template-columns:repeat(6,1fr);gap:8px}.qi-step{border-radius:6px;padding:14px 12px;background:var(--element-light);border-top:5px solid var(--element);font-size:13px}.qi-step small{display:block;font-size:10px;color:#5c6c60;margin-top:9px}.qi-step.fire-pattern{border-top:0;padding-top:19px;background-image:repeating-linear-gradient(135deg,transparent 0 8px,#d7443e18 8px 12px);box-shadow:inset 0 5px #d7443e}#sixtyGrid{display:grid;grid-template-columns:repeat(10,1fr);gap:8px}.sixty-cell{text-align:left;padding:9px 10px;border-radius:5px;border:1px solid #d6dfd4;border-left:4px solid var(--element);background:var(--element-light);min-width:0;position:relative}.sixty-cell:hover{border-color:var(--element);background:var(--element-light);filter:brightness(.96)}.sixty-cell strong{display:block;font-size:19px;font-weight:500}.sixty-cell span{font-size:10px;display:block;color:#304739}.sixty-cell small{font-size:9px;color:#586b5d}.sixty-cell.selected{outline:2px solid var(--element);outline-offset:1px}.astronomy-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:20px;margin-bottom:20px}.mansions-card,.lunar-card{padding:24px}.mansions-card h3,.lunar-card h3{font-size:18px;font-weight:500;margin-top:0}#mansionRing svg{display:block;width:100%;max-height:500px}#mansionRing [data-mansion]{cursor:pointer}#mansionRing [data-mansion]:hover{filter:brightness(.88)}.lunar-card p{font-size:12px;color:var(--muted);line-height:1.9}.lunar-period{border-left:4px solid #8f98ae;background:#f1f3f6;padding:14px;margin:12px 0}.lunar-period strong{font-size:27px;font-weight:400;color:#435775}.lunar-period span{font-size:11px;margin-left:10px;color:var(--muted)}.mansion-group{border-top:1px solid #e0e7db;padding:13px 0;font-size:12px}.mansion-group strong{font-weight:500;display:block;margin-bottom:5px}.planet-choices{display:flex;flex-wrap:wrap;gap:8px 16px;margin:15px 0}.planet-choices label{display:flex;align-items:center;gap:5px;font-size:12px}.planet-visuals{display:grid;grid-template-columns:1fr 1fr;gap:24px}.planet-visuals h3{font-size:13px;font-weight:500}.planet-visuals svg{display:block;width:100%;max-height:430px}.planet-timeline .form-row{margin-bottom:20px}.atlas-element-tools{padding:10px 0;border-top:1px solid var(--line);margin-top:10px}.atlas-element-tools label{font-size:10px;display:block}.atlas-element-tools select{width:100%;font-size:10px;margin-top:5px;padding:5px}.atlas-element-tools .element-legend{gap:5px}.atlas-element-tools .element-key{font-size:9px}.atlas-element-tools .element-key i{width:9px;height:9px}.year-five{display:flex;gap:5px;flex-wrap:wrap;padding-bottom:10px}.year-five .element-badge{font-size:10px;padding:3px 5px}.year-five .element-badge small{font-size:9px}.overlay-event{cursor:pointer}.overlay-point{cursor:pointer}.planet-stroke{stroke-dasharray:6 4;opacity:.8}.svg-scroll text,.planet-visuals text,#mansionRing text{font-family:'Microsoft YaHei',sans-serif}.sixty-hint{font-size:11px;color:var(--muted)}
-@media(max-width:1150px){#sixtyGrid{grid-template-columns:repeat(6,1fr)}.wuxing-items{grid-template-columns:repeat(3,1fr)}#overlayProbe{grid-template-columns:repeat(3,1fr)}.overlay-layout{grid-template-columns:185px minmax(0,1fr)}.tabs{gap:14px}}
-@media(max-width:750px){.overlay-layout,.astronomy-grid,.planet-visuals{grid-template-columns:1fr}.overlay-choices>div:not(.element-legend){display:flex;flex-wrap:wrap;gap:6px 14px}.overlay-choices .layer-item{margin:2px 0}.overlay-choices h3{margin-top:10px}#sixtyGrid{grid-template-columns:repeat(4,1fr);gap:6px}.sixty-cell{padding:8px 7px}.sixty-cell strong{font-size:17px}.wuxing-items,#sixqiSequence{grid-template-columns:repeat(2,1fr)}.overlay-tools,.overlay-details,.normalization-details,.wuxing-controls,.wuxing-year-card,.sixqi-card,.sixty-card,.planet-controls,.planet-timeline{padding:16px}.mansions-card,.lunar-card{padding:18px}#overlayProbe{grid-template-columns:repeat(2,1fr)}.tabs button span{font-size:12px}.tabs{gap:12px}.form-row button{font-size:11px}}
+@media(min-width:1550px){.atlas-layout{grid-template-columns:210px minmax(500px,1fr) 275px}
+}
+
+@media(max-width:1150px){main{padding:0 20px}
+.atlas-layout{grid-template-columns:170px minmax(360px,1fr)}
+.inspector{grid-column:1/-1;max-height:none}
+.inspector #yearReadout{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.year-picker{max-width:300px}
+.inspector #yearSlider{max-width:500px;display:block}
+.window-label{max-width:300px}
+.hero-facts{gap:18px}
+.hero-facts strong{font-size:25px}
+.knowledge-grid{grid-template-columns:repeat(2,1fr)}
+.method-grid{grid-template-columns:1fr}
+.topbar{padding:0 22px}
+}
+
+@media(max-width:750px){main{padding:0 12px}
+.topbar{padding:0 15px;height:72px}
+.brand{font-size:17px}
+.brand small{font-size:7px}
+.edition{font-size:0;gap:0}
+.edition i{display:none}
+.quiet{font-size:13px;margin:0}
+.hero{display:block;padding:27px 4px}
+.hero-facts{padding:20px 0 0;gap:35px}
+.hero-facts strong{font-size:25px}
+h1{font-size:24px}
+.hero-sub{font-size:13px}
+.tabs{gap:15px}
+.tabs button span{font-size:12px;margin-left:4px}
+.atlas-layout{display:flex;flex-direction:column}
+.layers,.chart-card,.inspector{width:100%}
+.layers{padding:14px}
+#layerControls{display:flex;flex-wrap:wrap;gap:7px 13px}
+.layer-group{width:100%;margin:5px 0 0}
+.layer-item{margin:2px 0}
+.layer-item span small{display:none}
+.layers .micro,.legend-block{display:none}
+.layers .wide{margin-top:10px}
+.chart-top{padding:13px}
+.inspector #yearReadout{grid-template-columns:repeat(2,1fr)}
+.panel-heading{align-items:start;flex-direction:column;gap:8px}
+.knowledge-grid,.source-list,.future-grid{grid-template-columns:1fr}
+.lab-output{grid-template-columns:1fr}
+.lab-metric strong{font-size:42px}
+.lab-controls{gap:10px;padding:15px}
+.lab-controls select{max-width:190px}
+.window-section{padding:15px}
+.future-card{padding:20px}
+.search{width:100%}
+.hero-facts span{font-size:12px}
+footer{gap:15px;font-size:12px}
+.range-inputs{flex-wrap:wrap}
+}
+
+@media print{.topbar,.tabs,.layers,.inspector,.rangebar,button,footer{display:none!important}
+.atlas-layout{display:block}
+main{padding:0}
+.tab-panel.active{display:block}
+.chart-card{border:0}
+.hero{padding:10px 0}
+body{background:white}
+.card{box-shadow:none}
+}
+
+.tabs{gap:17px}
+.tabs button{flex-shrink:0}
+.tabs button span{margin-left:5px}
+.element-legend{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
+.element-key{display:inline-flex;align-items:center;gap:5px;font-size:13px}
+.element-key i{width:14px;height:14px;border-radius:3px;display:inline-block}
+.element-badge{display:inline-block;border:1px solid var(--element);border-left:1px solid var(--element);padding:4px 8px;border-radius:4px;background:color-mix(in srgb,var(--element) 10%,var(--paper));color:#e6edf7;font-size:12px}
+.element-badge small{display:block;color:#b5c7dc;font-size:12px}
+.overlay-tools,.overlay-details,.normalization-details,.wuxing-controls,.wuxing-year-card,.sixqi-card,.sixty-card,.planet-controls,.planet-timeline{padding:22px;margin-bottom:18px}
+.preset-row,.form-row{display:flex;align-items:end;flex-wrap:wrap;gap:10px}
+.preset-row{margin-bottom:14px}
+.preset-row button{font-size:13px}
+.preset-row .selected{background:#183d48}
+.form-row label{display:flex;flex-direction:column;gap:5px;font-size:13px}
+.form-row input{width:94px}
+.form-row select{max-width:245px}
+.overlay-layout{display:grid;grid-template-columns:220px minmax(0,1fr);gap:17px;margin-bottom:18px}
+.overlay-choices{padding:17px}
+.overlay-choices h3{font-weight:500;font-size:12px;margin:15px 0 8px}
+.overlay-choices .layer-item{font-size:13px}
+.svg-scroll{overflow-x:auto;width:100%;min-width:0}
+.svg-scroll svg{display:block;width:100%;height:auto;min-width:780px}
+.overlay-details h3{font-size:15px;font-weight:500;margin-top:0}
+#overlayProbe{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.probe-cell{background:#15243c;border-radius:6px;padding:10px;font-size:13px;border-top:3px solid var(--series-color,#456079)}
+.probe-cell strong{display:block;font-size:17px;font-weight:500;margin:5px 0}
+.probe-cell small{font-size:12px;color:var(--muted)}
+.normalization-details summary{cursor:pointer;font-size:12px}
+.wuxing-controls{display:flex;align-items:center;gap:15px;flex-wrap:wrap}
+.wuxing-controls input{width:100px;margin-left:9px}
+.wuxing-year-card h3{margin-top:0;font-size:23px;font-weight:500}
+.wuxing-items{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}
+.wuxing-item{padding:12px;border-top:5px solid var(--element);background:color-mix(in srgb,var(--element) 10%,var(--paper));border-radius:5px;color:#e6edf7}
+.wuxing-item small{display:block;font-size:12px;color:#b5c7dc}
+.wuxing-item strong{display:block;font-weight:500;font-size:19px;margin:8px 0}
+.wuxing-item span{font-size:13px}
+#sixqiSequence{display:grid;grid-template-columns:repeat(6,1fr);gap:8px}
+.qi-step{border-radius:6px;padding:14px 12px;background:color-mix(in srgb,var(--element) 10%,var(--paper));border-top:5px solid var(--element);font-size:13px}
+.qi-step small{display:block;font-size:12px;color:#b5c7dc;margin-top:9px}
+.qi-step.fire-pattern{border-top:0;padding-top:19px;background-image:repeating-linear-gradient(135deg,transparent 0 8px,#d7443e18 8px 12px);box-shadow:inset 0 5px #d7443e}
+#sixtyGrid{display:grid;grid-template-columns:repeat(10,1fr);gap:8px}
+.sixty-cell{text-align:left;padding:9px 10px;border-radius:5px;border:1px solid #31435b;border-left:1px solid var(--element);background:color-mix(in srgb,var(--element) 10%,var(--paper));min-width:0;position:relative}
+.sixty-cell:hover{border-color:var(--element);background:color-mix(in srgb,var(--element) 10%,var(--paper));filter:brightness(.96)}
+.sixty-cell strong{display:block;font-size:19px;font-weight:500}
+.sixty-cell span{font-size:12px;display:block;color:#d1deee}
+.sixty-cell small{font-size:12px;color:#b5c7dc}
+.sixty-cell.selected{outline:2px solid var(--element);outline-offset:1px}
+.astronomy-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:20px;margin-bottom:20px}
+.mansions-card,.lunar-card{padding:24px}
+.mansions-card h3,.lunar-card h3{font-size:18px;font-weight:500;margin-top:0}
+#mansionRing svg{display:block;width:100%;max-height:500px}
+#mansionRing [data-mansion]{cursor:pointer}
+#mansionRing [data-mansion]:hover{filter:brightness(.88)}
+.lunar-card p{font-size:12px;color:var(--muted);line-height:1.9}
+.lunar-period{border-left:1px solid #83a8d6;background:#17283f;padding:14px;margin:12px 0}
+.lunar-period strong{font-size:27px;font-weight:400;color:#c8dffb}
+.lunar-period span{font-size:13px;margin-left:10px;color:var(--muted)}
+.mansion-group{border-top:1px solid #293a54;padding:13px 0;font-size:12px}
+.mansion-group strong{font-weight:500;display:block;margin-bottom:5px}
+.planet-choices{display:flex;flex-wrap:wrap;gap:8px 16px;margin:15px 0}
+.planet-choices label{display:flex;align-items:center;gap:5px;font-size:12px}
+.planet-visuals{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.planet-visuals h3{font-size:13px;font-weight:500}
+.planet-visuals svg{display:block;width:100%;max-height:430px}
+.planet-timeline .form-row{margin-bottom:20px}
+.atlas-element-tools{padding:10px 0;border-top:1px solid var(--line);margin-top:10px}
+.atlas-element-tools label{font-size:12px;display:block}
+.atlas-element-tools select{width:100%;font-size:12px;margin-top:5px;padding:5px}
+.atlas-element-tools .element-legend{gap:5px}
+.atlas-element-tools .element-key{font-size:12px}
+.atlas-element-tools .element-key i{width:9px;height:9px}
+.year-five{display:flex;gap:5px;flex-wrap:wrap;padding-bottom:10px}
+.year-five .element-badge{font-size:12px;padding:3px 5px}
+.year-five .element-badge small{font-size:12px}
+.overlay-event{cursor:pointer}
+.overlay-point{cursor:pointer}
+.planet-stroke{stroke-dasharray:6 4;opacity:.8}
+.svg-scroll text,.planet-visuals text,#mansionRing text{font-family:'Microsoft YaHei',sans-serif}
+.sixty-hint{font-size:13px;color:var(--muted)}
+
+@media(max-width:1150px){#sixtyGrid{grid-template-columns:repeat(6,1fr)}
+.wuxing-items{grid-template-columns:repeat(3,1fr)}
+#overlayProbe{grid-template-columns:repeat(3,1fr)}
+.overlay-layout{grid-template-columns:185px minmax(0,1fr)}
+.tabs{gap:14px}
+}
+
+@media(max-width:750px){.overlay-layout,.astronomy-grid,.planet-visuals{grid-template-columns:1fr}
+.overlay-choices>div:not(.element-legend){display:flex;flex-wrap:wrap;gap:6px 14px}
+.overlay-choices .layer-item{margin:2px 0}
+.overlay-choices h3{margin-top:10px}
+#sixtyGrid{grid-template-columns:repeat(4,1fr);gap:6px}
+.sixty-cell{padding:8px 7px}
+.sixty-cell strong{font-size:17px}
+.wuxing-items,#sixqiSequence{grid-template-columns:repeat(2,1fr)}
+.overlay-tools,.overlay-details,.normalization-details,.wuxing-controls,.wuxing-year-card,.sixqi-card,.sixty-card,.planet-controls,.planet-timeline{padding:16px}
+.mansions-card,.lunar-card{padding:18px}
+#overlayProbe{grid-template-columns:repeat(2,1fr)}
+.tabs button span{font-size:12px}
+.tabs{gap:12px}
+.form-row button{font-size:13px}
+}
+/* Approved Operate surface: the chart remains the first task, not a cover page. */
+:root{color-scheme:dark;--bg:#080f20;--paper:#101c32;--ink:#e6edf7;--muted:#a6b7ce;--line:#293a54;--teal:#6cddd7;--gold:#f0c77f;--purple:#9bb6ef;--shadow:none}
+html{scroll-padding-top:20px;scrollbar-color:#536a88 var(--bg)}body{background:radial-gradient(ellipse at 70% 0,#18365355,transparent 620px),var(--bg)}
+::selection{background:#6cddd73a;color:white}input{caret-color:var(--teal)}input::placeholder{color:var(--muted);opacity:1}
+button,input,select{min-height:42px}input[type=checkbox]{min-height:18px;width:17px;height:17px;flex-shrink:0}input[type=range]{min-height:28px}
+button{transition:background-color .18s,border-color .18s,transform .18s}button:active{transform:translateY(1px)}button:disabled{opacity:.45;cursor:not-allowed}
+a{text-underline-offset:5px}h1,h2,h3{letter-spacing:0;text-wrap:balance}h1{font-size:30px;line-height:1.5;font-weight:600}h2{font-size:23px}h3{font-size:19px}
+.topbar{height:82px;background:#0b1426;border-bottom:1px solid var(--line);padding:0 32px;gap:20px}.brand{font-size:21px;letter-spacing:.04em;gap:13px}.brandmark{background:none;color:var(--teal);width:44px;height:44px;box-shadow:0 0 24px #6cddd71a}.brandmark svg{width:100%;height:100%}.brand small{font-size:10px;letter-spacing:.12em}
+.edition{font-size:12px;gap:16px}.edition i{background:var(--gold)}.topic-link{font-size:13px;padding:10px 0}.quiet{margin-left:0;font-size:13px}
+main{padding:0 32px;max-width:1920px}.hero{padding:29px 0 25px;gap:22px}.hero-sub{font-size:14px;max-width:65ch}.hero-facts{gap:18px;padding:0;align-self:flex-end}.hero-facts div{display:block;white-space:nowrap}.hero-facts strong{display:inline;font-size:17px;font-weight:500;color:#c1d9e9}.hero-facts span{font-size:12px;margin-left:6px;letter-spacing:0}
+.tabs{gap:4px;border-bottom:1px solid var(--line);padding-bottom:0}.tabs button{padding:14px 18px;border-bottom-width:2px;min-height:52px}.tabs button span{font-size:14px;margin:0}.tabs button.active{background:#6cddd70b}.tabs button:hover{background:#20334d}
+.tab-panel{padding-top:24px}.rangebar{gap:18px}.presets{gap:8px}.presets button{font-size:13px;padding:8px 14px;border:1px solid var(--line)}.presets button.selected,.preset-row button.selected{background:#183d48;border-color:#39717a;color:#a3f4e9}.range-inputs{font-size:13px;gap:10px}.range-inputs input{width:85px;padding:8px}.range-inputs button{padding:8px 16px}.message{font-size:13px;margin:13px 0 20px}
+.atlas-layout{grid-template-columns:224px minmax(0,1fr) 270px;gap:18px}.card{border-radius:12px;box-shadow:none}.layers,.inspector{padding:20px 17px}.section-label{font-size:15px;letter-spacing:0;gap:12px;margin-bottom:16px}.text-btn{font-size:12px;min-height:34px;padding:5px 0;line-height:1.5}
+.layer-group{font-size:12px;letter-spacing:0;margin:20px 0 9px;color:#c0cfe2}.layer-item{font-size:13px;line-height:1.5;gap:8px;margin:11px 0;min-height:32px}.layer-item span small{font-size:11px;line-height:1.5;margin-top:3px}.layer-line{width:12px;height:3px;margin-top:10px}.legend-block{font-size:12px}.micro{font-size:13px;line-height:1.85}.wide{font-size:13px;min-height:44px}.atlas-element-tools label,.atlas-element-tools select{font-size:12px}.atlas-element-tools .element-key{font-size:12px}.atlas-element-tools .element-key i{width:10px;height:10px}
+.chart-top{padding:18px 20px 14px;align-items:center}.chart-top h2{font-size:17px}.chart-top .muted{font-size:12px;display:block;margin-top:4px}.zoom-controls{gap:6px}.zoom-controls button{min-width:36px;min-height:36px;padding:4px 7px;font-size:18px}.chart-caption{font-size:12px;line-height:1.8;padding:14px 18px;margin:0;border-top:1px solid var(--line);background:#0d192d}
+.inspector{position:sticky;top:20px;max-height:calc(100svh - 40px);overflow:auto;border-top-color:#6cddd760}.year-picker{align-items:center}.year-picker input{font-size:29px;padding:5px 8px;color:var(--gold)}.year-picker button{font-size:13px;padding:9px}.year-title{font-size:16px;margin-top:18px}.year-sub{font-size:12px}.window-label{font-size:13px;gap:12px}.window-label select{padding:6px}.readout{padding:14px 0}.readout label{font-size:12px}.readout strong{font-size:21px;color:#d5e7f7;font-variant-numeric:tabular-nums}.readout small{font-size:12px;line-height:1.8}.year-five .element-badge{font-size:12px;padding:6px 7px}.year-five .element-badge small{font-size:11px}
+.window-section{margin-top:24px;padding:26px}.panel-heading{margin:2px 0 24px;gap:24px}.panel-heading p{font-size:14px;max-width:75ch;line-height:1.8}.muted{font-size:14px}.context-note{font-size:14px;color:var(--gold)}
+table{font-size:14px}th,td{padding:14px 16px;border-bottom-color:var(--line)}th{font-size:13px;background:#15243c}td small{font-size:12px}.table-scroll tbody tr:hover{background:#6cddd707}.event-chip{font-size:13px}.event-chip small{font-size:12px}.search{font-size:14px;min-height:44px}
+.knowledge-grid{gap:20px}.knowledge-card{padding:26px}.knowledge-card h3{font-size:22px}.knowledge-card p,.knowledge-card .period{font-size:14px;line-height:1.9}.pill{font-size:12px;padding:4px 9px}.refs{gap:14px}.lab-controls{gap:18px;padding:24px}.lab-controls label{font-size:13px}.lab-controls select{max-width:260px}.primary{color:#09252d}.lab-output{grid-template-columns:280px minmax(0,1fr)}.lab-metric p,.literature p,.future-card p,.method-grid p{font-size:15px;line-height:1.9}.notice{border-left-width:1px;font-size:14px;padding:19px 22px;line-height:1.9}.literature,.future-card,.method-grid article{padding:26px}.method-grid h3{font-size:20px}.future-card label{font-size:14px}.future-node{font-size:14px;gap:16px}.source-list{gap:18px}.source-item{padding:24px}.source-item h4{font-size:17px}.source-item p{font-size:14px;line-height:1.85}.source-item a{font-size:13px;overflow-wrap:anywhere;word-break:normal}.source-number{font-size:13px}.source-heading{font-size:21px}
+.form-row{gap:14px}.form-row label{font-size:13px}.form-row input{width:100px}.form-row select{max-width:290px}.preset-row button{font-size:13px}.overlay-layout{grid-template-columns:238px minmax(0,1fr);gap:18px}.overlay-choices{padding:20px}.overlay-choices h3{font-size:15px;margin-top:24px}.overlay-choices .layer-item{font-size:13px}.overlay-details h3{font-size:18px}.probe-cell{font-size:13px;border-top-width:2px;padding:15px}.probe-cell strong{font-size:21px}.probe-cell small{font-size:12px}.normalization-details summary{font-size:15px;padding:3px 0;min-height:32px}
+.element-badge{color:var(--ink)}.element-badge small{color:var(--muted)}.element-key{font-size:13px}.wuxing-year-card h3{font-size:25px}.wuxing-item{border-top-width:3px;padding:18px}.wuxing-item small,.qi-step small{font-size:12px;color:#bdcde0}.wuxing-item strong{font-size:21px}.wuxing-item span{font-size:13px}.qi-step{font-size:15px;padding:18px 14px;border-top-width:3px}.sixty-cell{min-height:111px;padding:14px 11px;border-left-width:1px;border-bottom:3px solid var(--element)}.sixty-cell:hover{filter:brightness(1.2)}.sixty-cell strong{font-size:23px}.sixty-cell span,.sixty-cell small{font-size:12px}.sixty-cell.selected{outline-offset:2px;box-shadow:0 4px 20px #0003}.wuxing-controls label{font-size:15px}.element-legend{gap:13px}
+.astronomy-grid{gap:24px}.mansions-card,.lunar-card{padding:28px}.mansions-card h3,.lunar-card h3{font-size:22px}.lunar-card p{font-size:15px}.lunar-period{border-left-width:1px}.lunar-period strong{color:#baddfa}.lunar-period span{font-size:13px}.mansion-group{font-size:14px;line-height:1.9}.planet-choices label{font-size:14px;min-height:38px}.planet-visuals h3{font-size:16px}.planet-visuals svg{max-height:480px}.planet-controls,.planet-timeline{padding:26px}.planet-timeline .form-row button{font-size:13px}
+dialog{padding:32px;max-width:720px;background:#132139;border-color:#3a4d65;box-shadow:0 24px 100px #0008}#closeDialog{min-width:44px;min-height:44px;right:8px;top:8px}#detailBody h2{padding-right:25px}#detailBody p{font-size:15px;line-height:1.9}#detailBody pre{font-size:13px}#tooltip{font-size:13px;line-height:1.7;max-width:300px}footer{padding:24px 0;font-size:12px;gap:24px}.skip-link{position:fixed;top:-80px;left:20px;padding:12px 18px;background:var(--teal);color:#09252d;z-index:100}.skip-link:focus{top:12px}.mobile-layer-toggle{display:none}
+@media(min-width:1600px){.atlas-layout{grid-template-columns:240px minmax(0,1fr) 286px}.tabs button{padding-left:24px;padding-right:24px}}
+@media(max-width:1250px){.atlas-layout{grid-template-columns:210px minmax(0,1fr)}.inspector{grid-column:1/-1;position:static;max-height:none}.inspector #yearReadout{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}.year-picker{max-width:320px}.inspector #yearSlider{max-width:500px}.window-label{max-width:320px}.hero-facts{display:none}.tabs{gap:0}.tabs button{padding:13px 12px}.topbar,.edition{gap:12px}}
+@media(max-width:900px){main{padding:0 20px}.topbar{padding:0 20px}.edition{font-size:0}.edition i{display:none}.edition .topic-link,.edition button{font-size:12px}.tabs{display:grid;grid-template-columns:repeat(4,1fr);gap:4px;border-bottom:0}.tabs button{min-height:44px;padding:9px 6px;border:1px solid var(--line);border-radius:6px}.tabs button.active{border-color:#5aa9ad;background:#183d48}.tabs button span{font-size:13px}.knowledge-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.hero{padding:24px 0}.method-grid{grid-template-columns:1fr}}
+@media(max-width:750px){
+ main{padding:0 16px}.topbar{height:76px;padding:0 16px}.brand{font-size:18px;gap:9px;letter-spacing:0}.brandmark{width:34px;height:34px}.brand small{font-size:8px}.edition{gap:8px}.edition .topic-link{max-width:55px;font-size:11px;line-height:1.6}.quiet{font-size:11px;padding:8px}.hero{padding:24px 0}.hero h1{font-size:24px;letter-spacing:0;margin-bottom:12px}.hero-sub{font-size:14px}.hero-facts{display:none}.tab-panel{padding-top:22px}.presets{display:grid;grid-template-columns:repeat(3,1fr);width:100%;gap:8px}.presets button{padding:8px 6px;font-size:12px}.range-inputs{gap:7px;flex-wrap:nowrap;width:100%;font-size:12px}.range-inputs input{width:68px;margin:0;padding:5px}.range-inputs label{display:flex;align-items:center;gap:5px}.range-inputs button{padding:6px 10px;flex:1}.message{font-size:12px;margin:12px 0 16px}
+ .atlas-layout{display:flex;gap:16px}.layers{padding:14px 16px}.layers .section-label{margin-bottom:0;flex-wrap:wrap;gap:10px;font-size:14px}.mobile-layer-toggle{display:block;min-height:38px;padding:5px 10px;font-size:12px;margin-left:auto}.layers #toggleLayers{display:none}.layers #layerContents{display:none}.layers.is-open #layerContents{display:block;padding-top:12px}.layers.is-open #toggleLayers{display:block;width:100%}.layers #layerControls{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 12px}.layer-group{grid-column:1/-1}.layer-item{margin:0;min-height:40px;font-size:12px;align-items:center}.layer-item input{margin:0}.layer-line{margin:0}.layers .micro{display:block;font-size:12px}.atlas-element-tools .element-key{font-size:12px}
+ .chart-top{padding:14px;gap:8px}.chart-top h2{font-size:15px}.chart-top .muted{font-size:11px}.zoom-controls{gap:5px}.zoom-controls button{min-width:30px;min-height:40px;font-size:16px;padding:3px}.chart-caption{font-size:12px;padding:12px 14px}.inspector{padding:20px}.inspector #yearReadout{grid-template-columns:repeat(2,minmax(0,1fr));gap:0 18px}.readout strong{font-size:20px}.readout small{font-size:12px}.window-section{padding:20px 16px}.panel-heading{gap:13px;margin-bottom:20px}.panel-heading h2{font-size:22px}.panel-heading p{font-size:14px}.muted{font-size:13px}table{font-size:13px}th{font-size:12px}th,td{padding:12px}
+ .knowledge-grid,.source-list,.future-grid,.lab-output{grid-template-columns:1fr}.knowledge-card,.future-card,.method-grid article,.source-item{padding:22px}.lab-controls{padding:20px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}.lab-controls select,.lab-controls input{width:100%;max-width:100%;font-size:13px}.lab-controls label:nth-child(7),.lab-controls .primary{grid-column:1/-1}.lab-metric{padding:22px}.notice{font-size:13px;padding:17px}.source-item{gap:12px}.source-item h4{font-size:16px}
+ .overlay-layout{grid-template-columns:1fr}.overlay-choices{padding:20px}.overlay-choices .layer-item{font-size:12px;min-height:40px}.overlay-tools,.overlay-details,.normalization-details,.wuxing-controls,.wuxing-year-card,.sixqi-card,.sixty-card,.planet-controls,.planet-timeline{padding:20px 16px}.form-row{gap:12px}.form-row label{font-size:12px}.form-row select{max-width:100%}.form-row input{width:85px}.form-row button{font-size:12px;min-height:44px}.preset-row{gap:8px}.preset-row button{font-size:12px;padding:8px 10px}.wuxing-items,#sixqiSequence{gap:10px}.wuxing-item,.qi-step{padding:15px 12px}.wuxing-item small,.qi-step small{font-size:12px}.wuxing-item strong{font-size:19px}.sixty-cell{padding:10px 8px;min-height:110px}.sixty-cell strong{font-size:21px}.sixty-cell span{font-size:11px}.sixty-cell small{font-size:11px}.sixty-cell.selected{outline-offset:0}.mansions-card,.lunar-card{padding:22px 18px}.planet-visuals h3{font-size:14px}.planet-choices{gap:6px 14px}.planet-choices label{font-size:13px}.probe-cell{font-size:12px;padding:12px}.probe-cell strong{font-size:18px}.element-key{font-size:12px}.planet-visuals{gap:20px}footer{font-size:11px;padding:20px 0;flex-wrap:wrap;gap:8px}dialog{padding:24px;width:calc(100% - 24px)}
+}
+@media(max-width:360px){main{padding:0 12px}.topbar{padding:0 12px}.brand{font-size:16px}.brandmark{width:28px;height:28px}.brand small{font-size:7px}.edition .topic-link{display:block}.tabs button span{font-size:12px}.range-inputs{gap:5px}.range-inputs input{width:62px}.range-inputs button{padding:6px}.zoom-controls{gap:3px}.zoom-controls button{min-width:27px}.chart-top{padding:12px 10px}.chart-top h2{font-size:14px}.chart-top .muted{font-size:10px}#sixtyGrid{grid-template-columns:repeat(3,1fr)}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+@media print{body{background:#080f20;color:#e6edf7;print-color-adjust:exact;-webkit-print-color-adjust:exact}.card{break-inside:avoid}#chartHost svg{print-color-adjust:exact}.hero-sub{color:#a6b7ce}.skip-link{display:none}}
+
+.mobile-chart-hint{display:none}#chartHost:focus-visible{outline:2px solid var(--teal);outline-offset:-2px}@media(max-width:750px){.mobile-chart-hint{display:block;margin:0;padding:0 14px 12px;font-size:12px;color:var(--muted)}}
+
+.slider-label{display:block;font-size:12px;color:var(--muted);margin-top:10px}.tab-panel{padding-bottom:20px}
 </style></head>
 <body>
-<header class="topbar"><a class="brand" href="#"><span class="brandmark">回</span><span>中国周期图谱<small>CHINA · AN ATLAS OF TIME</small></span></a><div class="edition"><i></i> 研究快照 · 2026.11.06 <button id="exportAll" class="quiet">导出数据 ↗</button></div></header>
-<main>
-<section class="hero"><div><p class="eyebrow">历史记录 / 自然变化 / 周期假说</p><h1>把四千年，放在同一条时间轴上。</h1><p class="hero-sub">观察共时，追问关联。让每个数据点都有出处，让每一种周期都有边界。</p></div><div class="hero-facts"><div><strong id="countSeries">—</strong><span>数值变量</span></div><div><strong id="countPoints">—</strong><span>来源数据点</span></div><div><strong id="countSources">—</strong><span>资料入口</span></div></div></section>
-<nav class="tabs" aria-label="主导航"><button data-tab="atlas" class="active">01 <span>时间图谱</span></button><button data-tab="overlay">02 <span>同轴对照</span></button><button data-tab="wuxing">03 <span>五运六气</span></button><button data-tab="astronomy">04 <span>星宿与行星</span></button><button data-tab="lab">05 <span>关联实验</span></button><button data-tab="knowledge">06 <span>周期知识库</span></button><button data-tab="future">07 <span>未来情景</span></button><button data-tab="sources">08 <span>资料与方法</span></button><a href="mansions/" style="flex-shrink:0;align-self:center;padding:10px 4px;font-size:12px;font-weight:600;text-decoration:none;white-space:nowrap">09 二十八宿专题 ↗</a></nav>
+<a class="skip-link" href="#workspace">跳到时间图谱</a>
+<header class="topbar"><a class="brand" href="#atlas"><span class="brandmark" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="24" cy="24" r="19" opacity=".4"/><path d="M24 5a19 19 0 0 1 19 19M24 43A19 19 0 0 1 5 24" stroke-width="2"/><circle cx="24" cy="24" r="12"/><path d="M24 9v9m15 6h-9m-6 15v-9M9 24h9"/><circle cx="24" cy="24" r="3" fill="currentColor"/></svg></span><span>中国周期图谱<small>CHINA · AN ATLAS OF TIME</small></span></a><div class="edition"><i></i> 研究快照 · 2026.11.06 <a class="topic-link" href="mansions/" aria-label="二十八宿专题">星宿专题</a><button id="exportAll" class="quiet">导出数据 ↗</button></div></header>
+<main id="workspace" tabindex="-1">
+<section class="hero"><div><h1>把四千年，放在同一条时间轴上。</h1><p class="hero-sub">观察共时，追问关联。让每个数据点都有出处，让每一种周期都有边界。</p></div><div class="hero-facts" aria-label="数据覆盖"><div><strong id="countSeries">—</strong><span>数值变量</span></div><div><strong id="countPoints">—</strong><span>来源数据点</span></div><div><strong id="countSources">—</strong><span>资料入口</span></div></div></section>
+<nav class="tabs" aria-label="主导航"><button data-tab="atlas" class="active"><span>时间图谱</span></button><button data-tab="overlay"><span>同轴对照</span></button><button data-tab="wuxing"><span>五运六气</span></button><button data-tab="astronomy"><span>星宿与行星</span></button><button data-tab="lab"><span>关联实验</span></button><button data-tab="knowledge"><span>周期知识库</span></button><button data-tab="future"><span>未来情景</span></button><button data-tab="sources"><span>资料与方法</span></button></nav>
 <section id="tab-atlas" class="tab-panel active">
 <div class="rangebar"><div class="presets"><button data-range="-2070,2050" class="selected">全史</button><button data-range="1,2026">近两千年</button><button data-range="1368,1912">明清</button><button data-range="1840,2026">近现代</button><button data-range="1960,2026">现代统计</button><button data-range="2020,2050">未来窗口</button></div><div class="range-inputs"><label>起点 <input id="rangeStart" type="number" value="-2070" aria-label="起始历史年份"></label><span>—</span><label>终点 <input id="rangeEnd" type="number" value="2050" aria-label="结束历史年份"></label><button id="applyRange">查看</button></div></div>
 <p id="rangeMessage" class="message" role="status">负数表示公元前；没有公元0年。点击图中任意位置查询年份，点击条目查看出处。</p>
 <div class="atlas-layout">
-<aside class="layers card"><div class="section-label">图层 <button id="toggleLayers" class="text-btn">全部开关</button></div><div id="layerControls"></div><div class="atlas-element-tools"><label>甲子色带的五行口径<select id="atlasElementMode"><option value="nayin">纳音五行</option><option value="stem">天干本气</option><option value="branch">地支本气</option><option value="yun">年中运</option></select></label><div class="element-legend"></div><button class="text-btn" data-open-tab="wuxing">完整六十甲子对照 →</button></div><div class="legend-block"><span class="dot teal"></span> 观测 / 统计 / 重建<br><span class="dot gold"></span> 历史估算 / 事件<br><span class="dot purple"></span> 传统规则计算</div><p class="micro">各轨独立纵轴，不直接比较线条高低。空白表示本版无数据。古气候点为30年区间中点；历史估算只显示原表采样。</p><button id="exportSvg" class="wide">下载当前图 SVG</button></aside>
-<section class="chart-card card"><div class="chart-top"><div><h2>多变量时间轴</h2><span id="chartRange" class="muted"></span></div><div class="zoom-controls"><button id="panLeft" title="向前移动">←</button><button id="zoomIn" title="放大">＋</button><button id="zoomOut" title="缩小">−</button><button id="panRight" title="向后移动">→</button></div></div><div id="chartHost"></div><div class="chart-caption">政权并列不代表疆域相同。古气候与现代气温分轨；稀疏估算不跨缺年补线。未来底色仅表示日期范围。</div></section>
-<aside class="inspector card"><div class="section-label">年份探针</div><div class="year-picker"><input type="number" id="yearInput" value="1644" aria-label="查询历史年份"><button id="goYear">定位</button></div><input id="yearSlider" type="range" min="-2069" max="2050" value="1644" aria-label="查询年份滑块"><div id="yearInfo"></div><label class="window-label">前后窗口 <select id="windowSize"><option value="5">±5年</option><option value="15">±15年</option><option value="30" selected>±30年</option><option value="60">±60年</option><option value="100">±100年</option></select></label><div id="yearReadout"></div></aside>
+<aside class="layers card"><div class="section-label"><span>变量图层</span><button id="toggleLayerPanel" class="mobile-layer-toggle" aria-expanded="false" aria-controls="layerContents">展开图层</button><button id="toggleLayers" class="text-btn">全部开关</button></div><div id="layerContents"><div id="layerControls"></div><div class="atlas-element-tools"><label>甲子色带的五行口径<select id="atlasElementMode"><option value="nayin">纳音五行</option><option value="stem">天干本气</option><option value="branch">地支本气</option><option value="yun">年中运</option></select></label><div class="element-legend"></div><button class="text-btn" data-open-tab="wuxing">完整六十甲子对照 →</button></div><div class="legend-block"><span class="dot teal"></span> 观测 / 统计 / 重建<br><span class="dot gold"></span> 历史估算 / 事件<br><span class="dot purple"></span> 传统规则计算</div><p class="micro">各轨独立纵轴，不直接比较线条高低。空白表示本版无数据。古气候点为30年区间中点；历史估算只显示原表采样。</p><button id="exportSvg" class="wide">下载当前图 SVG</button></div></aside>
+<section class="chart-card card"><div class="chart-top"><div><h2>多变量时间轴</h2><span id="chartRange" class="muted"></span></div><div class="zoom-controls"><button id="panLeft" title="向前移动" aria-label="向前移动">←</button><button id="zoomIn" title="放大" aria-label="放大">＋</button><button id="zoomOut" title="缩小" aria-label="缩小">−</button><button id="panRight" title="向后移动" aria-label="向后移动">→</button></div></div><p class="mobile-chart-hint">左右滑动图表查看完整时间范围；点击数据点查看出处。</p><div id="chartHost" tabindex="0" aria-label="可横向滚动的多变量时间轴"></div><div class="chart-caption">政权并列不代表疆域相同。古气候与现代气温分轨；稀疏估算不跨缺年补线。未来底色仅表示日期范围。</div></section>
+<aside class="inspector card"><label for="yearInput" class="section-label">年份探针</label><div class="year-picker"><input type="number" id="yearInput" value="1644" aria-label="查询历史年份"><button id="goYear">定位</button></div><label for="yearSlider" class="slider-label">拖动定位年份</label><input id="yearSlider" type="range" min="-2069" max="2050" value="1644" aria-label="查询年份滑块"><div id="yearInfo"></div><label class="window-label">前后窗口 <select id="windowSize"><option value="5">±5年</option><option value="15">±15年</option><option value="30" selected>±30年</option><option value="60">±60年</option><option value="100">±100年</option></select></label><div id="yearReadout"></div></aside>
 </div>
-<section class="window-section card"><div class="panel-heading"><div><p class="eyebrow">时间窗口 / 同期对照</p><h2 id="windowTitle">前后变化</h2></div><span class="muted">只汇总已有样本，不代表因果效应</span></div><div class="table-scroll"><table><thead><tr><th>变量</th><th>前窗口均值 · n</th><th>后窗口均值 · n</th><th>后 − 前</th><th>口径</th></tr></thead><tbody id="windowTable"></tbody></table></div><div id="nearEvents" class="event-list"></div></section>
+<section class="window-section card"><div class="panel-heading"><div><h2 id="windowTitle">前后变化</h2></div><span class="muted">只汇总已有样本，不代表因果效应</span></div><div class="table-scroll"><table><thead><tr><th>变量</th><th>前窗口均值 · n</th><th>后窗口均值 · n</th><th>后 − 前</th><th>口径</th></tr></thead><tbody id="windowTable"></tbody></table></div><div id="nearEvents" class="event-list"></div></section>
 </section>
 <section id="tab-overlay" class="tab-panel">
- <div class="panel-heading"><div><p class="eyebrow">同一时间轴 / 多条曲线叠加</p><h2>把变量放进同一张图。</h2><p class="muted">左轴比较各变量的相对变化，右轴读取行星角度；五行作为分类色带对齐，不赋予虚构数值。</p></div><button id="exportOverlay">下载叠加图 SVG</button></div>
+ <div class="panel-heading"><div><h2>把变量放进同一张图。</h2><p class="muted">左轴比较各变量的相对变化，右轴读取行星角度；五行作为分类色带对齐，不赋予虚构数值。</p></div><button id="exportOverlay">下载叠加图 SVG</button></div>
  <div class="card overlay-tools"><div class="preset-row"><button data-overlay-range="-2070,2050">全史</button><button data-overlay-range="1,2026">两千年</button><button data-overlay-range="1840,2026">近现代</button><button data-overlay-range="1960,2026" class="selected">现代统计</button><button data-overlay-range="2024,2027">近三年天文</button></div><div class="form-row"><label>起年<input id="overlayStart" type="number" value="1960"></label><label>止年<input id="overlayEnd" type="number" value="2026"></label><label>左轴显示<select id="overlayScale"><option value="z">标准分数 z</option><option value="range">各系列范围 0–100</option></select></label><button id="drawOverlay" class="primary">更新对照</button><button id="syncOverlay">沿用时间图谱窗口</button></div><p id="overlayMessage" class="micro" role="status">标准化基准固定为各系列全部已接入的有效采样点；缩放不会重算基准。缺年断线，日期冲突点排除。</p></div>
  <div class="overlay-layout"><aside class="card overlay-choices"><h3>叠加变量</h3><button id="overlayAll" class="text-btn">全选数值变量</button><div id="overlaySeriesControls"></div><h3>行星 · 右轴 0–360°</h3><div id="overlayPlanetControls"></div><h3>同年分类色带</h3><div id="overlayBandControls"></div><label class="layer-item"><input id="overlayDynasties" type="checkbox"> 政权并立背景</label><label class="layer-item"><input id="overlaySanyuan" type="checkbox"> 三元九运规则带</label><label class="layer-item"><input id="overlayEvents" type="checkbox" checked> 历史事件竖线</label><div class="element-legend"></div></aside><div class="card chart-card"><div id="overlayHost" class="svg-scroll"></div><p id="overlayResolution" class="chart-caption"></p></div></div>
  <div class="card overlay-details"><h3>探针 · <span id="overlayProbeYear">点击曲线或图中年份</span></h3><div id="overlayProbe"></div></div>
  <details class="card normalization-details"><summary>标准化基准与读图说明</summary><p class="micro">z=(原值−全序列样本均值)/全序列总体标准差；0–100=(原值−最小值)/(最大值−最小值)×100。历史稀疏采样按点计算，非时间加权。曲线重合不表示单位相同、影响同等或存在因果。行星线读取右轴，位置重合没有统计意义。</p><div class="table-scroll"><table><thead><tr><th>系列</th><th>样本数</th><th>均值</th><th>标准差</th><th>最小 / 最大</th></tr></thead><tbody id="normalizationTable"></tbody></table></div></details>
 </section>
 <section id="tab-wuxing" class="tab-panel">
- <div class="panel-heading"><div><p class="eyebrow">五色 / 干支 / 运气</p><h2>同一个甲子，可以有不同的五行对应。</h2><p class="muted">例如甲子：天干甲属木，地支子属水，纳音属金，年中运属土。选择口径后再比较。</p></div><div class="element-legend"></div></div>
+ <div class="panel-heading"><div><h2>同一个甲子，可以有不同的五行对应。</h2><p class="muted">例如甲子：天干甲属木，地支子属水，纳音属金，年中运属土。选择口径后再比较。</p></div><div class="element-legend"></div></div>
  <div class="card wuxing-controls"><label>查询年份 <input id="wuxingYear" type="number" value="2026"></label><button id="wuxingGo" class="primary">查看</button><span id="wuxingError" class="micro" role="status"></span></div>
  <div id="wuxingYearCard" class="wuxing-year-card card"></div>
- <div class="card sixqi-card"><div class="panel-heading"><div><p class="eyebrow">每年重复的主气次序</p><h3>六气：两个“火”，名称分别保留。</h3></div><button class="text-btn" data-source="wuyun-classic">查看运气原典 ↗</button></div><div id="sixqiSequence"></div><p class="micro">这是主气的节气区间顺序：大寒→春分→小满→大暑→秋分→小雪→下一大寒。各段不是等长公历月份；此处不计算交节时刻、客气加临、平气等调整或临床判断。相火使用红色斜纹，君火使用纯红，以免混淆。</p></div>
- <div class="card sixty-card"><div class="panel-heading"><div><p class="eyebrow">六十甲子完整对照</p><h3>切换五行口径</h3></div><select id="sixtyMode"><option value="nayin">纳音五行（默认）</option><option value="stem">天干本气五行</option><option value="branch">地支本气五行</option><option value="yun">五运 · 年中运</option><option value="sitian">六气 · 司天</option><option value="zaiquan">六气 · 在泉</option></select></div><div id="sixtyGrid"></div><p class="micro">干支年标签以1984甲子统一回算。农历正月初一、立春与运气交节年界有别；本页只作年度传统规则对照，公元前回算不等于当时已使用相同纪年体系。纳音转录可见“覆灯/佛灯”“沙/砂”等异写，保留来源对应的元素。</p><div class="refs"><button class="text-btn" data-source="nayin-table">纳音表来源 ↗</button><button class="text-btn" data-source="ganzhi-elements">干支五行来源 ↗</button><button class="text-btn" data-source="wuyun-classic">五运六气来源 ↗</button></div></div>
+ <div class="card sixqi-card"><div class="panel-heading"><div><h3>六气：两个“火”，名称分别保留。</h3></div><button class="text-btn" data-source="wuyun-classic">查看运气原典 ↗</button></div><div id="sixqiSequence"></div><p class="micro">这是主气的节气区间顺序：大寒→春分→小满→大暑→秋分→小雪→下一大寒。各段不是等长公历月份；此处不计算交节时刻、客气加临、平气等调整或临床判断。相火使用红色斜纹，君火使用纯红，以免混淆。</p></div>
+ <div class="card sixty-card"><div class="panel-heading"><div><h3>切换五行口径</h3></div><select id="sixtyMode"><option value="nayin">纳音五行（默认）</option><option value="stem">天干本气五行</option><option value="branch">地支本气五行</option><option value="yun">五运 · 年中运</option><option value="sitian">六气 · 司天</option><option value="zaiquan">六气 · 在泉</option></select></div><div id="sixtyGrid"></div><p class="micro">干支年标签以1984甲子统一回算。农历正月初一、立春与运气交节年界有别；本页只作年度传统规则对照，公元前回算不等于当时已使用相同纪年体系。纳音转录可见“覆灯/佛灯”“沙/砂”等异写，保留来源对应的元素。</p><div class="refs"><button class="text-btn" data-source="nayin-table">纳音表来源 ↗</button><button class="text-btn" data-source="ganzhi-elements">干支五行来源 ↗</button><button class="text-btn" data-source="wuyun-classic">五运六气来源 ↗</button></div></div>
 </section>
 <section id="tab-astronomy" class="tab-panel">
- <div class="panel-heading"><div><p class="eyebrow">星空分区 / 轨道运动</p><h2>二十八宿与太阳系行星。</h2><p><a href="mansions/" style="font-size:13px">进入二十八宿专题：交互星图、逐宿讲解与文献 →</a></p><p class="muted">星宿是传统星空分区，行星周期是轨道量；分清两者，再沿时间查看。</p></div><button class="text-btn" data-source="jpl-elements">JPL 参数与精度 ↗</button></div>
- <div class="astronomy-grid"><article class="card mansions-card"><h3>二十八宿 · 四象次序图</h3><div id="mansionRing"></div><p class="micro">环图等宽仅为排版，真实宿距不等宽。宿名中的“木金土日月火水”为传统七曜配属；它与四象方位的五行不是同一口径。点击一宿查看名称和来源。</p><button class="text-btn" data-source="mansions">二十八宿与四象来源 ↗</button></article><article class="card lunar-card"><p class="eyebrow">27.32天 ≠ 28日</p><h3>月亮绕地一周，不是每天恰好一宿。</h3><div id="moonPeriods"></div><p>恒星月约27.3217日，朔望月约29.53日；一个对应相对恒星绕行，一个对应月相重复。</p><p>二十八宿的距星与宿距随采用的时代、星表口径而异。本版提供28宿完整次序与七曜配属；未取得并校准距星星表，因此不标注某日期的“月亮入宿”，也不把28日值宿表当作实际月球位置。</p><div id="mansionGroups"></div></article></div>
- <div class="card planet-controls"><div class="panel-heading"><div><p class="eyebrow">八大行星 / JPL近似轨道</p><h3>公转周期、会合周期与位置</h3></div><button id="exportPlanetChart">下载行星图 SVG</button></div><div class="form-row"><label>查询年<input id="planetYear" type="number" value="2026"></label><label>月<input id="planetMonth" type="number" min="1" max="12" value="11"></label><label>日<input id="planetDay" type="number" min="1" max="31" value="6"></label><button id="planetGo" class="primary">更新位置</button><button id="planetPrev">← 前30日</button><button id="planetNext">后30日 →</button></div><p id="planetStatus" class="micro" role="status"></p><div id="planetChoices" class="planet-choices"></div><div class="planet-visuals"><div><h3>日心俯视 · 距离经对数压缩</h3><div id="orbitDiagram"></div><p class="micro">展示J2000黄道平面的投影，轨道圈只是距离参照，非等比例椭圆；不显示地心逆行。</p></div><div><h3>恒星公转周期 · 对数横轴（日）</h3><div id="periodBars"></div></div></div><div class="table-scroll"><table><thead><tr><th>行星</th><th>恒星公转（日 / 年）</th><th>对地球平均会合（日）</th><th>所选日期日心黄经</th><th>日距（AU）</th></tr></thead><tbody id="planetTable"></tbody></table></div><p class="micro">平均会合周期 S=1/|1/P−1/P地球|，不是相邻两次会合的精确间隔。地球位置以地月质心近似。位置采用JPL Table 2a+2b的拟合参数、Kepler方程和外行星校正项；适用约前3000—3000年。本图限夏朝至2050，采用延伸格里历日期的12时作为近似动力学时标签，未作ΔT/光行时/视差校正，不用于精密观测或确定古代天象时刻。</p></div>
+ <div class="panel-heading"><div><h2>二十八宿与太阳系行星。</h2><p><a href="mansions/" style="font-size:13px">进入二十八宿专题：交互星图、逐宿讲解与文献 →</a></p><p class="muted">星宿是传统星空分区，行星周期是轨道量；分清两者，再沿时间查看。</p></div><button class="text-btn" data-source="jpl-elements">JPL 参数与精度 ↗</button></div>
+ <div class="astronomy-grid"><article class="card mansions-card"><h3>二十八宿 · 四象次序图</h3><div id="mansionRing"></div><p class="micro">环图等宽仅为排版，真实宿距不等宽。宿名中的“木金土日月火水”为传统七曜配属；它与四象方位的五行不是同一口径。点击一宿查看名称和来源。</p><button class="text-btn" data-source="mansions">二十八宿与四象来源 ↗</button></article><article class="card lunar-card"><p class="context-note">27.32天 ≠ 28日</p><h3>月亮绕地一周，不是每天恰好一宿。</h3><div id="moonPeriods"></div><p>恒星月约27.3217日，朔望月约29.53日；一个对应相对恒星绕行，一个对应月相重复。</p><p>二十八宿的距星与宿距随采用的时代、星表口径而异。本版提供28宿完整次序与七曜配属；未取得并校准距星星表，因此不标注某日期的“月亮入宿”，也不把28日值宿表当作实际月球位置。</p><div id="mansionGroups"></div></article></div>
+ <div class="card planet-controls"><div class="panel-heading"><div><h3>公转周期、会合周期与位置</h3></div><button id="exportPlanetChart">下载行星图 SVG</button></div><div class="form-row"><label>查询年<input id="planetYear" type="number" value="2026"></label><label>月<input id="planetMonth" type="number" min="1" max="12" value="11"></label><label>日<input id="planetDay" type="number" min="1" max="31" value="6"></label><button id="planetGo" class="primary">更新位置</button><button id="planetPrev">← 前30日</button><button id="planetNext">后30日 →</button></div><p id="planetStatus" class="micro" role="status"></p><div id="planetChoices" class="planet-choices"></div><div class="planet-visuals"><div><h3>日心俯视 · 距离经对数压缩</h3><div id="orbitDiagram"></div><p class="micro">展示J2000黄道平面的投影，轨道圈只是距离参照，非等比例椭圆；不显示地心逆行。</p></div><div><h3>恒星公转周期 · 对数横轴（日）</h3><div id="periodBars"></div></div></div><div class="table-scroll"><table><thead><tr><th>行星</th><th>恒星公转（日 / 年）</th><th>对地球平均会合（日）</th><th>所选日期日心黄经</th><th>日距（AU）</th></tr></thead><tbody id="planetTable"></tbody></table></div><p class="micro">平均会合周期 S=1/|1/P−1/P地球|，不是相邻两次会合的精确间隔。地球位置以地月质心近似。位置采用JPL Table 2a+2b的拟合参数、Kepler方程和外行星校正项；适用约前3000—3000年。本图限夏朝至2050，采用延伸格里历日期的12时作为近似动力学时标签，未作ΔT/光行时/视差校正，不用于精密观测或确定古代天象时刻。</p></div>
  <div class="card planet-timeline"><div class="form-row"><label>曲线起年<input id="planetStart" type="number" value="2024"></label><label>曲线止年<input id="planetEnd" type="number" value="2027"></label><button id="drawPlanets">绘制同轴轨迹</button><button id="planetsToOverlay">在历史同轴页中查看 →</button></div><div id="planetChart" class="svg-scroll"></div><p id="planetResolution" class="micro"></p><p class="micro">纵轴为日心黄经0—360°。跨360°的回绕断开显示，不是突然倒退。快速行星在过长窗口会隐藏并给出提示，缩小窗口可查看，避免采样混叠产生虚假的慢周期。</p></div>
 </section>
 
-<section id="tab-lab" class="tab-panel"><div class="panel-heading"><div><p class="eyebrow">探索性统计 / 不等同因果影响</p><h2>两个变量，是否在不同年份一起变化？</h2><p class="muted">只比较有实际年度记录的系列。正滞后 k 表示比较 X(t) 与 Y(t+k)。</p></div></div><div class="card lab-controls"><label>变量 X<select id="labX"></select></label><label>变量 Y<select id="labY"></select></label><label>起年<input id="labStart" type="number" value="1961"></label><label>止年<input id="labEnd" type="number" value="2020"></label><label>Y 滞后于 X（年）<input id="labLag" type="number" min="-30" max="30" value="0"></label><label>比较方式<select id="labTransform"><option value="diff">一阶差分（相邻年变化）</option><option value="level">原始值（含趋势）</option></select></label><button id="runLab" class="primary">计算关联</button></div><div id="labResult"></div><div class="notice">这是一项探索，不是“影响大小”的估计。共同趋势、自相关、结构变化、样本选择和反复尝试滞后都可能产生看似显著的相关。差分只能缓解部分趋势问题；本图不输出未经这些检验的显著性或因果结论。</div><div class="card literature"><h3>古代气候与战争：先阅读研究</h3><p>本版没有取得完整战争频率序列，因此不把精选战争事件转成统计曲线。有关研究与后续局限已收录在知识库。</p><button class="wide" data-open-tab="knowledge">查看研究与周期知识库 →</button></div></section>
-<section id="tab-knowledge" class="tab-panel"><div class="panel-heading"><div><p class="eyebrow">周期不只有一种含义</p><h2>观测、假说与传统规则，各归其位。</h2></div><input id="knowledgeSearch" class="search" type="search" placeholder="搜索：太乙、干支、战争、粮价…" aria-label="搜索知识库"></div><div id="knowledgeGrid" class="knowledge-grid"></div></section>
-<section id="tab-future" class="tab-panel"><div class="panel-heading"><div><p class="eyebrow">2027—2050 / 分层推演</p><h2>可以计算的节点，与仍需验证的未来。</h2><p class="muted">不将规则的可计算性等同于现实事件的可预测性。</p></div></div><div class="future-grid"><article class="card future-card"><span class="pill teal-pill">科学评估</span><h3>气候：方向有依据，逐年值未接入</h3><p>IPCC亚洲评估认为热极端将继续增加、冷极端减少；东亚强降水的频率与强度增加（高信度）。近期东亚夏季风降水受内部变率主导，长期增加（中信度）。</p><p class="micro">区域、季节和排放情景很重要。这不是中国各省2027–2050逐年天气预报。本版没有填造数值预测曲线。</p><button class="text-btn" data-source="ipcc">查看 IPCC 原文 ↗</button></article><article class="card future-card"><span class="pill gold-pill">假设情景 · 非预测</span><h3>经济：如果平均增速是…</h3><p>以2025年规模指数=100，仅演示恒定增长假设的复利结果。不使用干支或王朝长度估计增速。</p><label>假设年增速 <input id="scenarioGrowth" type="range" min="-5" max="10" step="0.5" value="3"><strong id="scenarioGrowthLabel">3%</strong></label><label>情景年份 <select id="scenarioYear"><option>2030</option><option selected>2035</option><option>2040</option><option>2050</option></select></label><div id="scenarioResult"></div><p class="micro">公式：100×(1+g)^(年份−2025)。没有给这些假设分配概率，也不据此判断衰退时间。</p></article><article class="card future-card"><span class="pill purple-pill">传统规则</span><h3>干支与三元九运的可计算节点</h3><div id="futureNodes"></div><p class="micro">年度简化；日级换岁另查历表。太乙和皇极经世尚未确定统一版本与纪元，不填造相位。</p><button class="text-btn" data-source="sanyuan">查看所选规则来源 ↗</button></article><article class="card future-card"><span class="pill">社会与政治</span><h3>不确定性不能画成倒计时</h3><p>本次资料没有提供经过外部样本验证、能预测未来中国战争或政治更替年份的模型。因此这里不输出“危机年份”或“朝代寿命”。</p><p>可用图谱检查历史事件前后的变量，并阅读机制研究；推演还需制度、政策、技术、国际关系等独立变量。</p><button class="text-btn" data-source="review2025">查看研究覆盖与局限 ↗</button></article></div></section>
-<section id="tab-sources" class="tab-panel"><div class="panel-heading"><div><p class="eyebrow">可追溯 / 可复核 / 可继续补充</p><h2>资料与方法</h2></div><input id="sourceSearch" class="search" type="search" placeholder="搜索来源、机构或证据类型" aria-label="搜索来源"></div><div class="method-grid"><article class="card"><h3>这张图做到了什么</h3><p id="coverageSummary"></p><p>这是截至2026年11月6日的研究快照，不是全网所有资料。部分资料只核实到摘要；每条来源会显示实际读取层级。未接入的变量明确标为数据缺口。</p></article><article class="card"><h3>如何读“影响”</h3><p>时间对齐只回答“何时发生”，窗口差值只回答“已有样本如何变化”，相关系数只描述所选样本的线性共变。三者均不自动证明因果。</p><p>历史估算不补点，现代系列缺年断线；各轨单位独立。古气候为30年平均的中点，原误差字段与元数据冲突均保留。</p></article><article class="card"><h3>纪年、年界与开放结尾</h3><p>界面使用历史纪年，无公元0年；内部用连续天文年换算。朝代边界有不同口径，具体见条目。中华人民共和国轨道只画到资料日，不暗示结束时间。</p><p>甲子轨为1984锚点回算；三元九运从1864起。两者都不是实测气候或政治效果。</p></article></div><h3 class="source-heading">数据覆盖清单</h3><div class="table-scroll card"><table><thead><tr><th>变量</th><th>实际样本范围</th><th>点数</th><th>地域 / 分辨率</th><th>证据</th></tr></thead><tbody id="coverageTable"></tbody></table></div><h3 class="source-heading">来源目录 <span id="sourceCount" class="muted"></span></h3><div id="sourceList" class="source-list"></div><div class="notice">数据署名：SILSO — WDC-SILSO, Royal Observatory of Belgium, Brussels，DOI 10.24414/qnza-ac80，CC BY-NC。Maddison中国序列的原始研究包括 Broadberry, Guan & Li (2018)、Xu 等（2016/2017）、Wu (2014)，具体引文保存在随附 evidence/maddison_china.json。其他资料请遵守其来源条件。</div></section>
+<section id="tab-lab" class="tab-panel"><div class="panel-heading"><div><h2>两个变量，是否在不同年份一起变化？</h2><p class="muted">只比较有实际年度记录的系列。正滞后 k 表示比较 X(t) 与 Y(t+k)。</p></div></div><div class="card lab-controls"><label>变量 X<select id="labX"></select></label><label>变量 Y<select id="labY"></select></label><label>起年<input id="labStart" type="number" value="1961"></label><label>止年<input id="labEnd" type="number" value="2020"></label><label>Y 滞后于 X（年）<input id="labLag" type="number" min="-30" max="30" value="0"></label><label>比较方式<select id="labTransform"><option value="diff">一阶差分（相邻年变化）</option><option value="level">原始值（含趋势）</option></select></label><button id="runLab" class="primary">计算关联</button></div><div id="labResult"></div><div class="notice">这是一项探索，不是“影响大小”的估计。共同趋势、自相关、结构变化、样本选择和反复尝试滞后都可能产生看似显著的相关。差分只能缓解部分趋势问题；本图不输出未经这些检验的显著性或因果结论。</div><div class="card literature"><h3>古代气候与战争：先阅读研究</h3><p>本版没有取得完整战争频率序列，因此不把精选战争事件转成统计曲线。有关研究与后续局限已收录在知识库。</p><button class="wide" data-open-tab="knowledge">查看研究与周期知识库 →</button></div></section>
+<section id="tab-knowledge" class="tab-panel"><div class="panel-heading"><div><h2>观测、假说与传统规则，各归其位。</h2></div><input id="knowledgeSearch" class="search" type="search" placeholder="搜索：太乙、干支、战争、粮价…" aria-label="搜索知识库"></div><div id="knowledgeGrid" class="knowledge-grid"></div></section>
+<section id="tab-future" class="tab-panel"><div class="panel-heading"><div><h2>可以计算的节点，与仍需验证的未来。</h2><p class="muted">不将规则的可计算性等同于现实事件的可预测性。</p></div></div><div class="future-grid"><article class="card future-card"><span class="pill teal-pill">科学评估</span><h3>气候：方向有依据，逐年值未接入</h3><p>IPCC亚洲评估认为热极端将继续增加、冷极端减少；东亚强降水的频率与强度增加（高信度）。近期东亚夏季风降水受内部变率主导，长期增加（中信度）。</p><p class="micro">区域、季节和排放情景很重要。这不是中国各省2027–2050逐年天气预报。本版没有填造数值预测曲线。</p><button class="text-btn" data-source="ipcc">查看 IPCC 原文 ↗</button></article><article class="card future-card"><span class="pill gold-pill">假设情景 · 非预测</span><h3>经济：如果平均增速是…</h3><p>以2025年规模指数=100，仅演示恒定增长假设的复利结果。不使用干支或王朝长度估计增速。</p><label>假设年增速 <input id="scenarioGrowth" type="range" min="-5" max="10" step="0.5" value="3"><strong id="scenarioGrowthLabel">3%</strong></label><label>情景年份 <select id="scenarioYear"><option>2030</option><option selected>2035</option><option>2040</option><option>2050</option></select></label><div id="scenarioResult"></div><p class="micro">公式：100×(1+g)^(年份−2025)。没有给这些假设分配概率，也不据此判断衰退时间。</p></article><article class="card future-card"><span class="pill purple-pill">传统规则</span><h3>干支与三元九运的可计算节点</h3><div id="futureNodes"></div><p class="micro">年度简化；日级换岁另查历表。太乙和皇极经世尚未确定统一版本与纪元，不填造相位。</p><button class="text-btn" data-source="sanyuan">查看所选规则来源 ↗</button></article><article class="card future-card"><span class="pill">社会与政治</span><h3>不确定性不能画成倒计时</h3><p>本次资料没有提供经过外部样本验证、能预测未来中国战争或政治更替年份的模型。因此这里不输出“危机年份”或“朝代寿命”。</p><p>可用图谱检查历史事件前后的变量，并阅读机制研究；推演还需制度、政策、技术、国际关系等独立变量。</p><button class="text-btn" data-source="review2025">查看研究覆盖与局限 ↗</button></article></div></section>
+<section id="tab-sources" class="tab-panel"><div class="panel-heading"><div><h2>资料与方法</h2></div><input id="sourceSearch" class="search" type="search" placeholder="搜索来源、机构或证据类型" aria-label="搜索来源"></div><div class="method-grid"><article class="card"><h3>这张图做到了什么</h3><p id="coverageSummary"></p><p>这是截至2026年11月6日的研究快照，不是全网所有资料。部分资料只核实到摘要；每条来源会显示实际读取层级。未接入的变量明确标为数据缺口。</p></article><article class="card"><h3>如何读“影响”</h3><p>时间对齐只回答“何时发生”，窗口差值只回答“已有样本如何变化”，相关系数只描述所选样本的线性共变。三者均不自动证明因果。</p><p>历史估算不补点，现代系列缺年断线；各轨单位独立。古气候为30年平均的中点，原误差字段与元数据冲突均保留。</p></article><article class="card"><h3>纪年、年界与开放结尾</h3><p>界面使用历史纪年，无公元0年；内部用连续天文年换算。朝代边界有不同口径，具体见条目。中华人民共和国轨道只画到资料日，不暗示结束时间。</p><p>甲子轨为1984锚点回算；三元九运从1864起。两者都不是实测气候或政治效果。</p></article></div><h3 class="source-heading">数据覆盖清单</h3><div class="table-scroll card"><table><thead><tr><th>变量</th><th>实际样本范围</th><th>点数</th><th>地域 / 分辨率</th><th>证据</th></tr></thead><tbody id="coverageTable"></tbody></table></div><h3 class="source-heading">来源目录 <span id="sourceCount" class="muted"></span></h3><div id="sourceList" class="source-list"></div><div class="notice">数据署名：SILSO — WDC-SILSO, Royal Observatory of Belgium, Brussels，DOI 10.24414/qnza-ac80，CC BY-NC。Maddison中国序列的原始研究包括 Broadberry, Guan & Li (2018)、Xu 等（2016/2017）、Wu (2014)，具体引文保存在随附 evidence/maddison_china.json。其他资料请遵守其来源条件。</div></section>
 <footer><span>中国周期图谱 · 有出处的历史探索</span><span>空白也是信息。周期不是命运。</span></footer>
 </main>
 <dialog id="detailDialog"><button id="closeDialog" aria-label="关闭详情">×</button><div id="detailBody"></div></dialog><div id="tooltip" role="tooltip"></div>
@@ -6465,6 +6821,23 @@
  if(typeof module==='object'&&module.exports)module.exports=api;else root.CycleModel=api;
 })(typeof globalThis==='object'?globalThis:this);
 </script><script>'use strict';
+// Display-only contrast adjustment; source colours and numeric data are untouched.
+const displayColors=new Map();
+function themeColor(color){
+ if(!/^#[\da-f]{6}$/i.test(color))return color;
+ if(displayColors.has(color))return displayColors.get(color);
+ let rgb=[1,3,5].map(i=>parseInt(color.slice(i,i+2),16));
+ const luminance=c=>c.map(v=>{v/=255;return v<=.04045?v/12.92:((v+.055)/1.055)**2.4}).reduce((s,v,i)=>s+v*[.2126,.7152,.0722][i],0);
+ const base=luminance([16,28,50]);
+ while((luminance(rgb)+.05)/(base+.05)<4.5)rgb=rgb.map(v=>Math.min(255,Math.round(v+(255-v)*.12)));
+ const result='#'+rgb.map(v=>v.toString(16).padStart(2,'0')).join('');displayColors.set(color,result);return result;
+}
+function bandInk(color,alpha=.78){
+ const rgb=[1,3,5].map((i,j)=>parseInt(color.slice(i,i+2),16)*alpha+[16,28,50][j]*(1-alpha));
+ const linear=rgb.map(v=>{v/=255;return v<=.04045?v/12.92:((v+.055)/1.055)**2.4});
+ const l=linear.reduce((sum,v,i)=>sum+v*[.2126,.7152,.0722][i],0);
+ return (l+.05)/.05>=1.05/(l+.05)?'#000000':'#ffffff';
+}
 const DATA=JSON.parse(document.getElementById('dataset').textContent);
 const $=id=>document.getElementById(id);
 const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -6492,11 +6865,26 @@ $('detailDialog').addEventListener('click',e=>{if(e.target===$('detailDialog')){
 function download(name,content,type){const u=URL.createObjectURL(new Blob([content],{type}));const a=document.createElement('a');a.href=u;a.download=name;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),30000);}
 $('exportAll').onclick=()=>download('中国周期图谱_数据与来源_2026-11-06.json',JSON.stringify(DATA,null,2),'application/json;charset=utf-8');
 $('exportSvg').onclick=()=>{const svg=$('chartHost').querySelector('svg');download('中国周期图谱_当前时间窗口.svg',new XMLSerializer().serializeToString(svg),'image/svg+xml;charset=utf-8');};
-function switchTab(tab){document.querySelectorAll('.tabs button').forEach(b=>b.classList.toggle('active',b.dataset.tab===tab));document.querySelectorAll('.tab-panel').forEach(p=>p.classList.toggle('active',p.id==='tab-'+tab));if(tab==='atlas')renderChart();if(window.CycleEnhancements)window.CycleEnhancements.onTab(tab);}
+let panelTransition=null;
+function switchTab(tab){
+ const target=$('tab-'+tab);if(!target)return;
+ const changed=!target.classList.contains('active');
+ panelTransition?.cancel();panelTransition=null;
+ document.querySelectorAll('.tabs button').forEach(b=>{b.classList.toggle('active',b.dataset.tab===tab);b.setAttribute('aria-pressed',String(b.dataset.tab===tab));b.setAttribute('aria-controls','tab-'+b.dataset.tab)});
+ document.querySelectorAll('.tab-panel').forEach(p=>p.classList.toggle('active',p===target));
+ if(tab==='atlas')renderChart();if(window.CycleEnhancements)window.CycleEnhancements.onTab(tab);
+ if(changed&&!matchMedia('(prefers-reduced-motion: reduce)').matches)panelTransition=target.animate([{opacity:.55},{opacity:1}],{duration:180,easing:'ease-out'});
+}
+const layerPanel=$('toggleLayerPanel');
+layerPanel.onclick=()=>{const open=layerPanel.getAttribute('aria-expanded')!=='true';layerPanel.setAttribute('aria-expanded',String(open));layerPanel.textContent=open?'收起图层':'展开图层';document.querySelector('.layers').classList.toggle('is-open',open)};
+document.querySelector('.skip-link').onclick=e=>{e.preventDefault();$('workspace').focus();$('workspace').scrollIntoView({behavior:'instant'})};
+addEventListener('hashchange',()=>{const tab=location.hash.slice(1);if($('tab-'+tab))switchTab(tab)});
+matchMedia('(prefers-reduced-motion: reduce)').addEventListener('change',e=>{if(e.matches){panelTransition?.cancel();panelTransition=null}});
+
 document.querySelectorAll('.tabs button').forEach(b=>b.onclick=()=>switchTab(b.dataset.tab));
 $('countSeries').textContent=DATA.series.length;$('countPoints').textContent=DATA.series.reduce((n,s)=>n+s.points.length,0).toLocaleString();$('countSources').textContent=DATA.sources.length;
 
-function buildLayers(){let out='<div class="layer-group">历史背景</div>';const check=(id,label,color,sub='')=>`<label class="layer-item"><input type="checkbox" data-layer="${id}" checked><i class="layer-line" style="background:${color}"></i><span>${label}${sub?`<small>${sub}</small>`:''}</span></label>`;out+=check('dynasties','政权与历史分期','#8a9b83');out+=check('events','历史事件选集','#b68c46');out+='<div class="layer-group">数值变量</div>';DATA.series.forEach(s=>{out+=check(s.id,s.label.split(' · ')[1],s.color,s.kind+' · '+s.unit);});out+='<div class="layer-group">传统规则</div>';out+=check('ganzi','六十甲子','#8874a7','年度回算，非实测');out+=check('wuyun','五运 · 年中运','#e88328','甲己土等化运规则');out+=check('sitian','六气 · 司天','#d7443e','按年支配属');out+=check('zaiquan','六气 · 在泉','#307dc0','按年支配属');out+=check('sanyuan','三元九运','#a689b6','选定规则，1864起');$('layerControls').innerHTML=out;document.querySelectorAll('[data-layer]').forEach(c=>c.onchange=()=>{c.checked?state.visible.add(c.dataset.layer):state.visible.delete(c.dataset.layer);renderAtlas();});}
+function buildLayers(){let out='<div class="layer-group">历史背景</div>';const check=(id,label,color,sub='')=>`<label class="layer-item"><input type="checkbox" data-layer="${id}" checked><i class="layer-line" style="background:${color}"></i><span>${label}${sub?`<small>${sub}</small>`:''}</span></label>`;out+=check('dynasties','政权与历史分期','#8a9b83');out+=check('events','历史事件选集','#f0c77f');out+='<div class="layer-group">数值变量</div>';DATA.series.forEach(s=>{out+=check(s.id,s.label.split(' · ')[1],themeColor(s.color),s.kind+' · '+s.unit);});out+='<div class="layer-group">传统规则</div>';out+=check('ganzi','六十甲子','#9bb6ef','年度回算，非实测');out+=check('wuyun','五运 · 年中运','#e88328','甲己土等化运规则');out+=check('sitian','六气 · 司天','#d7443e','按年支配属');out+=check('zaiquan','六气 · 在泉','#307dc0','按年支配属');out+=check('sanyuan','三元九运','#a689b6','选定规则，1864起');$('layerControls').innerHTML=out;document.querySelectorAll('[data-layer]').forEach(c=>c.onchange=()=>{c.checked?state.visible.add(c.dataset.layer):state.visible.delete(c.dataset.layer);renderAtlas();});}
 $('toggleLayers').onclick=()=>{const all=document.querySelectorAll('[data-layer]'),enable=state.visible.size===0;all.forEach(c=>{c.checked=enable;enable?state.visible.add(c.dataset.layer):state.visible.delete(c.dataset.layer);});renderAtlas();};
 function rangeMessage(text,error=false){$('rangeMessage').textContent=text;$('rangeMessage').classList.toggle('error',error);}
 function setRange(a,b){if(!Number.isFinite(a)||!Number.isFinite(b)||a>=b)return false;let span=Math.max(5,Math.min(MAX-MIN,b-a));a=Math.max(MIN,Math.min(a,MAX-span));b=a+span;state.start=Math.round(a);state.end=Math.round(b);$('rangeStart').value=historical(state.start);$('rangeEnd').value=historical(state.end);document.querySelectorAll('[data-range]').forEach(e=>{const [x,y]=e.dataset.range.split(',').map(Number);e.classList.toggle('selected',astro(x)===state.start&&astro(y)===state.end);});renderChart();return true;}
@@ -6517,50 +6905,50 @@ if(state.visible.has('events')){rows.push({id:'events',y:Y,h:75});Y+=75;}
 if(state.visible.has('ganzi')){rows.push({id:'ganzi',y:Y,h:54});Y+=54;}
 for(const id of ['wuyun','sitian','zaiquan'])if(state.visible.has(id)){rows.push({id,y:Y,h:54});Y+=54;}
 if(state.visible.has('sanyuan')){rows.push({id:'sanyuan',y:Y,h:54});Y+=54;}
-const H=Math.max(180,Y+28);let z=[`<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" style="min-width:780px" role="img" aria-label="中国历史多变量时间轴"><title>中国周期图谱 · ${yearLabel(state.start)}至${yearLabel(state.end)}</title><desc>观测、历史估算、事件与传统规则分轨显示。点击查询。数值轨各自独立纵轴，空白为本版无数据。</desc><defs><clipPath id="plotClip"><rect x="${L}" y="35" width="${P}" height="${H-50}"/></clipPath><pattern id="futurePattern" width="7" height="7" patternUnits="userSpaceOnUse"><path d="M0 7L7 0" stroke="#dce2d4" stroke-width=".5"/></pattern></defs><rect width="${W}" height="${H}" fill="#fffefa"/>`];
-const text=(xx,yy,t,size=11,color='#667878',extra='')=>`<text x="${xx}" y="${yy}" font-size="${size}" fill="${color}" ${extra}>${esc(t)}</text>`;
+const H=Math.max(180,Y+28);let z=[`<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" style="min-width:780px" role="img" aria-label="中国历史多变量时间轴"><title>中国周期图谱 · ${yearLabel(state.start)}至${yearLabel(state.end)}</title><desc>观测、历史估算、事件与传统规则分轨显示。点击查询。数值轨各自独立纵轴，空白为本版无数据。</desc><defs><clipPath id="plotClip"><rect x="${L}" y="35" width="${P}" height="${H-50}"/></clipPath><pattern id="futurePattern" width="7" height="7" patternUnits="userSpaceOnUse"><path d="M0 7L7 0" stroke="#44516a" stroke-width=".5"/></pattern></defs><rect width="${W}" height="${H}" fill="#101c32"/>`];
+const text=(xx,yy,t,size=11,color='#a6b7ce',extra='',preserveInk=false)=>`<text x="${xx}" y="${yy}" font-size="${Math.max(11,size)}" fill="${preserveInk?color:themeColor(color)}" ${extra}>${esc(t)}</text>`;
 const rect=(xx,yy,w,h,fill,extra='')=>`<rect x="${xx}" y="${yy}" width="${Math.max(0,w)}" height="${h}" fill="${fill}" ${extra}/>`;
-if(state.end>2026){const xx=Math.max(L,x(2027));z.push(rect(xx,35,R-xx,H-50,'#f0f1e7'),rect(xx,35,R-xx,H-50,'url(#futurePattern)'));if(R-xx>50)z.push(text(xx+7,48,'未来 · 规则/情景',10,'#899276'));}
+if(state.end>2026){const xx=Math.max(L,x(2027));z.push(rect(xx,35,R-xx,H-50,'#222b39'),rect(xx,35,R-xx,H-50,'url(#futurePattern)'));if(R-xx>50)z.push(text(xx+7,48,'未来 · 规则/情景',10,'#d4c29e'));}
 const step=[1,2,5,10,20,25,50,100,200,250,500,1000].find(s=>span/s<=8)||1000;
-for(let tick=Math.ceil(historical(state.start)/step)*step;tick<=historical(state.end);tick+=step){if(tick===0)continue;const a=tick===0?0:astro(tick);if(a<state.start||a>state.end)continue;const xx=x(a);z.push(`<line x1="${xx}" y1="32" x2="${xx}" y2="${H-20}" stroke="#e4e9e0" stroke-dasharray="2 4"/>`,text(xx,24,yearLabel(a),10,'#75847c','text-anchor="middle"'));}
+for(let tick=Math.ceil(historical(state.start)/step)*step;tick<=historical(state.end);tick+=step){if(tick===0)continue;const a=tick===0?0:astro(tick);if(a<state.start||a>state.end)continue;const xx=x(a);z.push(`<line x1="${xx}" y1="32" x2="${xx}" y2="${H-20}" stroke="#293a54" stroke-dasharray="2 4"/>`,text(xx,24,yearLabel(a),10,'#a6b7ce','text-anchor="middle"'));}
 z.push(text(13,24,'同一横轴 · 独立纵轴',10));
-if(state.year+state.window>=state.start&&state.year-state.window<=state.end){const a=Math.max(L,x(state.year-state.window)),b=Math.min(R,x(state.year+state.window));z.push(rect(a,35,b-a,H-50,'#388f8622'));}
-for(const row of rows){const yy=row.y;z.push(`<line x1="12" y1="${yy+row.h-1}" x2="${R}" y2="${yy+row.h-1}" stroke="#e5e9e0"/>`);
+if(state.year+state.window>=state.start&&state.year-state.window<=state.end){const a=Math.max(L,x(state.year-state.window)),b=Math.min(R,x(state.year+state.window));z.push(rect(a,35,b-a,H-50,'#6cddd718'));}
+for(const row of rows){const yy=row.y;z.push(`<line x1="12" y1="${yy+row.h-1}" x2="${R}" y2="${yy+row.h-1}" stroke="#26384f"/>`);
 if(row.id==='dynasties'){
- z.push(text(13,yy+22,'政权 / 历史分期',12,'#344d42'),text(13,yy+42,'多政权并列 · 口径见详情',9));
- DATA.dynasties.forEach((d,i)=>{const a=astro(d.start),b=astro(d.end);if(b<state.start||a>state.end)return;const xx=Math.max(L,x(a)),xx2=Math.min(R,x(b));const cy=yy+8+d.lane*27;const colors=['#dce6d5','#d7e7e3','#e9dfc9','#e1dcec'];const tip=`${d.name}：${historicalLabel(d.start)}—${historicalLabel(d.end)}。${d.note}`;z.push(rect(xx,cy,Math.max(2,xx2-xx),21,colors[d.lane%4],`rx="3" data-record="dynasty:${i}" data-tip="${esc(tip)}" style="cursor:pointer"`));const available=xx2-xx-9;if(available>18){const count=Math.floor(available/10);const label=d.name.length<=count?d.name:d.name.slice(0,Math.max(1,count-1))+'…';z.push(text(xx+4,cy+14,label,10,'#49614e',`pointer-events="none"`));}});
+ z.push(text(13,yy+22,'政权 / 历史分期',12,'#d6e5f5'),text(13,yy+42,'多政权并列 · 口径见详情',9));
+ DATA.dynasties.forEach((d,i)=>{const a=astro(d.start),b=astro(d.end);if(b<state.start||a>state.end)return;const xx=Math.max(L,x(a)),xx2=Math.min(R,x(b));const cy=yy+8+d.lane*27;const colors=['#254139','#234454','#493f2b','#334362'];const tip=`${d.name}：${historicalLabel(d.start)}—${historicalLabel(d.end)}。${d.note}`;z.push(rect(xx,cy,Math.max(2,xx2-xx),21,colors[d.lane%4],`rx="3" data-record="dynasty:${i}" data-tip="${esc(tip)}" style="cursor:pointer"`));const available=xx2-xx-9;if(available>18){const count=Math.floor(available/10);const label=d.name.length<=count?d.name:d.name.slice(0,Math.max(1,count-1))+'…';z.push(text(xx+4,cy+14,label,10,'#e2eaf4',`pointer-events="none"`));}});
 }else if(row.s){
- const s=row.s,pts=s.points.filter(p=>astro(p.year)>=state.start&&astro(p.year)<=state.end);z.push(text(13,yy+23,s.label.split(' · ')[1],12,s.color),text(13,yy+41,s.unit,9),text(13,yy+57,s.kind+' · '+s.points[0].year+'–'+s.points.at(-1).year,9));
- if(!pts.length){z.push(text(L+12,yy+43,'该窗口无已接入数值 · 空白不等于零',10,'#9aa59c'));continue;}
+ const s=row.s,pts=s.points.filter(p=>astro(p.year)>=state.start&&astro(p.year)<=state.end);z.push(text(13,yy+23,s.label.split(' · ')[1],12,themeColor(s.color)),text(13,yy+41,s.unit,9),text(13,yy+57,s.kind+' · '+s.points[0].year+'–'+s.points.at(-1).year,9));
+ if(!pts.length){z.push(text(L+12,yy+43,'该窗口无已接入数值 · 空白不等于零',10,'#a6b7ce'));continue;}
  let values=pts.map(p=>p.value),lo=Math.min(...values),hi=Math.max(...values);if(lo===hi){lo-=Math.max(1,Math.abs(lo)*.1);hi+=Math.max(1,Math.abs(hi)*.1);}const pad=(hi-lo)*.13;lo-=pad;hi+=pad;if(['population','pop_history','gdppc','sunspots'].includes(s.id))lo=Math.max(0,lo);
- const py=v=>yy+65-(v-lo)/(hi-lo)*50;z.push(text(L-7,yy+19,format(hi,1),8,'#98a399','text-anchor="end"'),text(L-7,yy+65,format(lo,1),8,'#98a399','text-anchor="end"'));
- if(lo<0&&hi>0)z.push(`<line x1="${L}" y1="${py(0)}" x2="${R}" y2="${py(0)}" stroke="#ced9ce" stroke-dasharray="3 4"/>`);
+ const py=v=>yy+65-(v-lo)/(hi-lo)*50;z.push(text(L-7,yy+19,format(hi,1),8,'#a6b7ce','text-anchor="end"'),text(L-7,yy+65,format(lo,1),8,'#a6b7ce','text-anchor="end"'));
+ if(lo<0&&hi>0)z.push(`<line x1="${L}" y1="${py(0)}" x2="${R}" y2="${py(0)}" stroke="#405a70" stroke-dasharray="3 4"/>`);
  let path='',last=null;for(const p of pts){const px=x(astro(p.year)),qy=py(p.value);const contiguous=last&&p.year-last.year<=s.step*1.1;path+=(contiguous?'L':'M')+px.toFixed(2)+','+qy.toFixed(2);last=p;}
- z.push(`<path d="${path}" fill="none" stroke="${s.color}" stroke-width="1.6" stroke-linejoin="round" clip-path="url(#plotClip)"/>`);
- for(const p of pts){let tip=`${s.label} · ${historicalLabel(p.year)}：${format(p.value,4)} ${s.unit}`;if(s.id==='paleo')tip+='（30年区间中点，非单年值）';if(p.date_note)tip+='。'+p.date_note;z.push(`<circle cx="${x(astro(p.year))}" cy="${py(p.value)}" r="${pts.length>160?1.7:2.6}" fill="${p.exclude_window?'#fffefa':s.color}" stroke="${p.exclude_window?s.color:'#fffefa'}" stroke-width="${p.exclude_window?1.8:.5}" data-point="${s.id}:${p.year}" data-tip="${esc(tip)}" style="cursor:pointer"/>`);}
+ z.push(`<path d="${path}" fill="none" stroke="${themeColor(s.color)}" stroke-width="1.6" stroke-linejoin="round" clip-path="url(#plotClip)"/>`);
+ for(const p of pts){let tip=`${s.label} · ${historicalLabel(p.year)}：${format(p.value,4)} ${s.unit}`;if(s.id==='paleo')tip+='（30年区间中点，非单年值）';if(p.date_note)tip+='。'+p.date_note;z.push(`<circle cx="${x(astro(p.year))}" cy="${py(p.value)}" r="${pts.length>160?1.7:2.6}" fill="${p.exclude_window?'#101c32':themeColor(s.color)}" stroke="${p.exclude_window?themeColor(s.color):'#101c32'}" stroke-width="${p.exclude_window?1.8:.5}" data-point="${s.id}:${p.year}" data-tip="${esc(tip)}" style="cursor:pointer"/>`);}
 }else if(row.id==='events'){
- z.push(text(13,yy+25,'历史事件选集',12,'#987443'),text(13,yy+44,'非完整战争 / 灾害样本',9));
- DATA.events.forEach((d,i)=>{const a=astro(d.start),b=astro(d.end);if(b<state.start||a>state.end)return;const xx=Math.max(L,x(a)),x2=Math.min(R,x(b)),cy=yy+14+(i%2)*25;const tip=`${d.name} · ${historicalLabel(d.start)}—${historicalLabel(d.end)}：${d.note}`;z.push(`<line x1="${xx}" y1="${cy+8}" x2="${Math.max(xx+3,x2)}" y2="${cy+8}" stroke="#c3a66b" stroke-width="4"/>`,rect(xx-4,cy+4,8,8,'#b38b46',`rx="2" data-record="event:${i}" data-tip="${esc(tip)}" style="cursor:pointer"`));if(span<600&&xx+70<R)z.push(text(xx+7,cy+11,d.name,9,'#93723f','pointer-events="none"'));});
+ z.push(text(13,yy+25,'历史事件选集',12,'#e2c28a'),text(13,yy+44,'非完整战争 / 灾害样本',9));
+ DATA.events.forEach((d,i)=>{const a=astro(d.start),b=astro(d.end);if(b<state.start||a>state.end)return;const xx=Math.max(L,x(a)),x2=Math.min(R,x(b)),cy=yy+14+(i%2)*25;const tip=`${d.name} · ${historicalLabel(d.start)}—${historicalLabel(d.end)}：${d.note}`;z.push(`<line x1="${xx}" y1="${cy+8}" x2="${Math.max(xx+3,x2)}" y2="${cy+8}" stroke="#c3a66b" stroke-width="4"/>`,rect(xx-4,cy+4,8,8,'#b38b46',`rx="2" data-record="event:${i}" data-tip="${esc(tip)}" style="cursor:pointer"`));if(span<600&&xx+70<R)z.push(text(xx+7,cy+11,d.name,9,'#e2c28a','pointer-events="none"'));});
  }else if(['ganzi','wuyun','sitian','zaiquan'].includes(row.id)){
  const mode=row.id==='ganzi'?$('atlasElementMode').value:row.id==='wuyun'?'yun':row.id;
  const title={ganzi:'六十甲子',wuyun:'五运 · 年中运',sitian:'六气 · 司天',zaiquan:'六气 · 在泉'}[row.id];
  const modeName={nayin:'纳音',stem:'天干本气',branch:'地支本气',yun:'年中运',sitian:'司天',zaiquan:'在泉'}[mode];
- z.push(text(13,yy+22,title,12,'#566d53'),text(13,yy+40,modeName+' · 年度规则',9));
+ z.push(text(13,yy+22,title,12,'#b7d3d1'),text(13,yy+40,modeName+' · 年度规则',9));
  for(let a=Math.floor(state.start);a<state.end;a++){
   const c=CycleModel.category(a,mode),xx=Math.max(L,x(a)),end=Math.min(R,x(a+1)),col=CycleModel.ELEMENTS[c.element];
   const tip=yearLabel(a)+' '+ganzi(a)+' · '+modeName+'：'+c.label+'；年度简化，非自然/社会实测';
   z.push(rect(xx,yy+10,Math.max(0,end-xx),25,col.color,`opacity=".78" data-element-year="${a}" data-tip="${esc(tip)}" style="cursor:pointer"`));
-  if(end-xx>24)z.push(text((xx+end)/2,yy+27,mode==='nayin'?ganzi(a):c.element,10,'#102b1b','text-anchor="middle" pointer-events="none"'));
+  if(end-xx>24)z.push(text((xx+end)/2,yy+27,mode==='nayin'?ganzi(a):c.element,10,bandInk(col.color),'text-anchor="middle" pointer-events="none"',true));
  }
  if(span>120)z.push(text(L+6,yy+48,'逐年配色；放大到120年以内更易辨认。完整文字见探针及五运六气页。',9));
 }else if(row.id==='sanyuan'){
- z.push(text(13,yy+22,'三元九运',12,'#8874a7'),text(13,yy+40,'1864锚点 · 20年一运',9));
- if(state.end<1864)z.push(text(L+12,yy+29,'本版不向1864年前回推三元九运',10,'#9aa59c'));
- for(let a=1864;a<=state.end;a+=20){if(a+20<state.start)continue;const xx=Math.max(L,x(a)),b=Math.min(R,x(a+20));z.push(rect(xx,yy+10,Math.max(1,b-xx-1),25,yun(a)%2?'#e3d9ed':'#eee8f4',`rx="2" data-tip="${a}–${a+19}：${yuan(a)}${yun(a)}运；传统选定规则，无实测效应。"`));if(b-xx>18)z.push(text(xx+3,yy+27,yun(a)+'运',10,'#806b98'));}
+ z.push(text(13,yy+22,'三元九运',12,'#9bb6ef'),text(13,yy+40,'1864锚点 · 20年一运',9));
+ if(state.end<1864)z.push(text(L+12,yy+29,'本版不向1864年前回推三元九运',10,'#a6b7ce'));
+ for(let a=1864;a<=state.end;a+=20){if(a+20<state.start)continue;const xx=Math.max(L,x(a)),b=Math.min(R,x(a+20));z.push(rect(xx,yy+10,Math.max(1,b-xx-1),25,yun(a)%2?'#314365':'#23344e',`rx="2" data-tip="${a}–${a+19}：${yuan(a)}${yun(a)}运；传统选定规则，无实测效应。"`));if(b-xx>18)z.push(text(xx+3,yy+27,yun(a)+'运',10,'#806b98'));}
 }
 }
-if(!rows.length)z.push(text(W/2,100,'请在左侧选择至少一个图层',13,'#667878','text-anchor="middle"'));
-if(state.year>=state.start&&state.year<=state.end){const xx=x(state.year);z.push(`<line x1="${xx}" y1="32" x2="${xx}" y2="${H-18}" stroke="#267f7e" stroke-width="1.2" stroke-dasharray="4 3" pointer-events="none"/>`);z.push(text(Math.min(R-4,Math.max(L+30,xx)),H-5,yearLabel(state.year),10,'#267f7e','text-anchor="middle"'));}
+if(!rows.length)z.push(text(W/2,100,'请在左侧选择至少一个图层',13,'#a6b7ce','text-anchor="middle"'));
+if(state.year>=state.start&&state.year<=state.end){const xx=x(state.year);z.push(`<line x1="${xx}" y1="32" x2="${xx}" y2="${H-18}" stroke="#f0c77f" stroke-width="1.2" stroke-dasharray="4 3" pointer-events="none"/><circle cx="${xx}" cy="36" r="8" fill="#f0c77f12" stroke="#f0c77f77" pointer-events="none"/><circle cx="${xx}" cy="36" r="3" fill="#f0c77f" pointer-events="none"/>`);z.push(text(Math.min(R-4,Math.max(L+30,xx)),H-5,yearLabel(state.year),10,'#6cddd7','text-anchor="middle"'));}
 z.push('</svg>');host.innerHTML=z.join('');$('chartRange').textContent=yearLabel(state.start)+' — '+yearLabel(state.end)+' · 点击查询';
 host.onclick=e=>{const annual=e.target.closest('[data-element-year]');if(annual){setYear(+annual.dataset.elementYear);return;}const rec=e.target.closest('[data-record]'),pt=e.target.closest('[data-point]');if(rec){const [t,i]=rec.dataset.record.split(':');const d=t==='dynasty'?DATA.dynasties[+i]:DATA.events[+i];recordDetail(t,+i);return;}if(pt){const [id,y]=pt.dataset.point.split(':');setYear(astro(+y));pointDetail(id,+y);return;}const svg=host.querySelector('svg'),b=svg.getBoundingClientRect(),px=(e.clientX-b.left)*W/b.width;if(px>=L&&px<=R)setYear(state.start+(px-L)/P*span);};
 host.onmousemove=e=>{const t=e.target.closest('[data-tip]');if(!t){$('tooltip').style.display='none';return;}$('tooltip').textContent=t.dataset.tip;$('tooltip').style.display='block';$('tooltip').style.left=Math.max(8,Math.min(window.innerWidth-295,e.clientX+14))+'px';$('tooltip').style.top=Math.min(window.innerHeight-90,e.clientY+15)+'px';};host.onmouseleave=()=>{$('tooltip').style.display='none';};
@@ -6593,10 +6981,10 @@ function renderLab(){const xs=series($('labX').value),ys=series($('labY').value)
 const pairs=labPairs(xs,ys,a,b,lag,diff),r=pearson(pairs);if(pairs.length<10||r===null){$('labResult').innerHTML=`<div class="notice">可配对样本只有 ${pairs.length} 个，或序列没有变化；本图不报告相关系数。请扩大共同数据窗口。没有插值补样本。</div>`;return;}
 const xunit=diff?(xs.unit==='%'?'百分点':xs.unit==='°C 距平'?'°C':xs.unit):xs.unit,yunit=diff?(ys.unit==='%'?'百分点':ys.unit==='°C 距平'?'°C':ys.unit):ys.unit;
 const W=760,H=300,L=70,R=730,T=30,B=250;let xlo=Math.min(...pairs.map(p=>p.x)),xhi=Math.max(...pairs.map(p=>p.x)),ylo=Math.min(...pairs.map(p=>p.y)),yhi=Math.max(...pairs.map(p=>p.y));const xp=(xhi-xlo)*.08||1,yp=(yhi-ylo)*.08||1;xlo-=xp;xhi+=xp;ylo-=yp;yhi+=yp;const x=v=>L+(v-xlo)/(xhi-xlo)*(R-L),y=v=>B-(v-ylo)/(yhi-ylo)*(B-T);
-let svg=`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" role="img" aria-label="配对样本散点图"><rect width="${W}" height="${H}" fill="#fffefa"/><path d="M${L} ${T}V${B}H${R}" fill="none" stroke="#b8c9bd"/>`;
-for(let i=0;i<=4;i++){const xv=xlo+(xhi-xlo)*i/4,yv=ylo+(yhi-ylo)*i/4;svg+=`<text x="${x(xv)}" y="270" font-size="10" fill="#75847b" text-anchor="middle">${format(xv,2)}</text><text x="60" y="${y(yv)+4}" font-size="10" fill="#75847b" text-anchor="end">${format(yv,2)}</text><line x1="${L}" y1="${y(yv)}" x2="${R}" y2="${y(yv)}" stroke="#e5ebe1"/>`;}
-for(const p of pairs)svg+=`<circle cx="${x(p.x)}" cy="${y(p.y)}" r="3.7" fill="#318c83" opacity=".65"><title>X ${p.t}年=${p.x}；Y ${p.u}年=${p.y}</title></circle>`;
-svg+=`<text x="${(L+R)/2}" y="294" font-size="11" text-anchor="middle" fill="#526d62">${esc(xs.label)}${diff?' · 年变化':''} (${esc(xunit)})</text><text x="70" y="17" font-size="11" fill="#526d62">Y：${esc(ys.label)}${diff?' · 年变化':''} (${esc(yunit)})</text></svg>`;
+let svg=`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" role="img" aria-label="配对样本散点图"><rect width="${W}" height="${H}" fill="#101c32"/><path d="M${L} ${T}V${B}H${R}" fill="none" stroke="#b8c9bd"/>`;
+for(let i=0;i<=4;i++){const xv=xlo+(xhi-xlo)*i/4,yv=ylo+(yhi-ylo)*i/4;svg+=`<text x="${x(xv)}" y="270" font-size="11" fill="#a6b7ce" text-anchor="middle">${format(xv,2)}</text><text x="60" y="${y(yv)+4}" font-size="11" fill="#a6b7ce" text-anchor="end">${format(yv,2)}</text><line x1="${L}" y1="${y(yv)}" x2="${R}" y2="${y(yv)}" stroke="#293e56"/>`;}
+for(const p of pairs)svg+=`<circle cx="${x(p.x)}" cy="${y(p.y)}" r="3.7" fill="#6cddd7" opacity=".65"><title>X ${p.t}年=${p.x}；Y ${p.u}年=${p.y}</title></circle>`;
+svg+=`<text x="${(L+R)/2}" y="294" font-size="11" text-anchor="middle" fill="#a6b7ce">${esc(xs.label)}${diff?' · 年变化':''} (${esc(xunit)})</text><text x="70" y="17" font-size="11" fill="#a6b7ce">Y：${esc(ys.label)}${diff?' · 年变化':''} (${esc(yunit)})</text></svg>`;
 $('labResult').innerHTML=`<div class="lab-output"><div class="card lab-metric"><span class="eyebrow">PEARSON r / ${diff?'一阶差分':'原始值'}</span><strong>${r.toFixed(3)}</strong><p>n = ${pairs.length} 个配对样本<br>X：${pairs[0].t}—${pairs.at(-1).t}<br>Y：${pairs[0].u}—${pairs.at(-1).u}<br>滞后：${lag} 年</p><p>这是线性共变，不是因果效应；相关系数的正负也不是“好／坏”的评分。</p>${sourceButton(xs.source,'X来源 ↗')} &nbsp; ${sourceButton(ys.source,'Y来源 ↗')}</div><div class="card scatter-card">${svg}</div></div><details class="card" style="margin-top:16px;padding:15px"><summary>复核配对值（全部 ${pairs.length} 行）</summary><div class="table-scroll"><table><thead><tr><th>X年份</th><th>Y年份</th><th>X ${diff?'年变化':'原值'}</th><th>Y ${diff?'年变化':'原值'}</th></tr></thead><tbody>${pairs.map(p=>`<tr><td>${p.t}</td><td>${p.u}</td><td>${format(p.x,6)}</td><td>${format(p.y,6)}</td></tr>`).join('')}</tbody></table></div></details>`;
 }
 $('runLab').onclick=renderLab;
@@ -6615,7 +7003,7 @@ window.CycleAtlas={state,DATA,astro,historical,ganzi,yun,yuan,pearson,labPairs,s
  const elementStyle=el=>`--element:${E[el].color};--element-light:${E[el].light}`;
  const badge=(el,text)=>`<span class="element-badge" style="${elementStyle(el)}">${esc(text)}</span>`;
  const hyear=a=>a<=0?1-a+' BCE':String(a);
- const txt=(x,y,s,size=11,color='#65796c',extra='')=>`<text x="${x}" y="${y}" font-size="${size}" fill="${color}" ${extra}>${esc(s)}</text>`;
+ const txt=(x,y,s,size=11,color='#a6b7ce',extra='')=>`<text x="${x}" y="${y}" font-size="${Math.max(11,size)}" fill="${themeColor(color)}" ${extra}>${esc(s)}</text>`;
  const rect=(x,y,w,h,fill,extra='')=>`<rect x="${x}" y="${y}" width="${Math.max(0,w)}" height="${h}" fill="${fill}" ${extra}/>`;
  const ov={start:1960,end:2026,series:new Set(['temperature','gdp','sunspots']),planets:new Set(),bands:new Set(['nayin','yun','sitian','zaiquan']),scale:'z',year:2000};
  const planetSet=new Set(['mercury','venus','earth','mars','jupiter','saturn','uranus','neptune']);
@@ -6636,29 +7024,29 @@ window.CycleAtlas={state,DATA,astro,historical,ganzi,yun,yuan,pearson,labPairs,s
   const host=$('overlayHost'),W=Math.max(900,host.clientWidth||1080),L=64,R=W-70,T=51,B=420,H=530+ov.bands.size*34+($('overlayDynasties').checked?114:0)+($('overlaySanyuan').checked?34:0),span=ov.end-ov.start,x=t=>L+(t-ov.start)/span*(R-L);
   const selected=DATA.series.filter(s=>ov.series.has(s.id)),normalizedSeries=selected.map(s=>({s,pts:s.points.filter(p=>!p.exclude_window&&astro(p.year)>=ov.start&&astro(p.year)<=ov.end).map(p=>({...p,v:C.normalized(p.value,stats.get(s.id),ov.scale)})).filter(p=>Number.isFinite(p.v))}));
   const all=normalizedSeries.flatMap(s=>s.pts.map(p=>p.v));let low=ov.scale==='range'?0:Math.min(-2,...all),high=ov.scale==='range'?100:Math.max(2,...all);if(ov.scale==='z'){low=Math.floor(low);high=Math.ceil(high);}const y=v=>B-(v-low)/(high-low)*(B-T),py=v=>B-v/360*(B-T);
-  let z=[`<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="多变量同一坐标系叠加图"><title>同轴对照：数值变量左轴、行星黄经右轴、五行分类色带</title><rect width="${W}" height="${H}" fill="#fffefa"/><defs><clipPath id="overlayClip"><rect x="${L}" y="${T}" width="${R-L}" height="${B-T}"/></clipPath></defs>`];
-  if(ov.end>2026)z.push(rect(Math.max(L,x(2027)),T,Math.max(0,R-Math.max(L,x(2027))),B-T,'#f0f0e6'));
-  for(let i=0;i<=5;i++){let v=low+(high-low)*i/5;z.push(`<line x1="${L}" y1="${y(v)}" x2="${R}" y2="${y(v)}" stroke="#e1e7dc"/>`,txt(L-9,y(v)+4,format(v,1),10,'#708678','text-anchor="end"'));if(ov.planets.size)z.push(txt(R+10,py(i*72)+4,i*72+'°',10,'#7f7891'));}
+  let z=[`<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="多变量同一坐标系叠加图"><title>同轴对照：数值变量左轴、行星黄经右轴、五行分类色带</title><rect width="${W}" height="${H}" fill="#101c32"/><defs><clipPath id="overlayClip"><rect x="${L}" y="${T}" width="${R-L}" height="${B-T}"/></clipPath></defs>`];
+  if(ov.end>2026)z.push(rect(Math.max(L,x(2027)),T,Math.max(0,R-Math.max(L,x(2027))),B-T,'#222b39'));
+  for(let i=0;i<=5;i++){let v=low+(high-low)*i/5;z.push(`<line x1="${L}" y1="${y(v)}" x2="${R}" y2="${y(v)}" stroke="#293e56"/>`,txt(L-9,y(v)+4,format(v,1),10,'#708678','text-anchor="end"'));if(ov.planets.size)z.push(txt(R+10,py(i*72)+4,i*72+'°',10,'#7f7891'));}
   z.push(txt(L,22,ov.scale==='z'?'左轴 · 标准分数 z':'左轴 · 全序列范围 0–100',11,'#496757'),txt(R,22,ov.planets.size?'右轴 · 日心黄经（虚线）':'',11,'#82758e','text-anchor="end"'));
-  ticks(ov.start,ov.end).forEach(t=>{z.push(`<line x1="${x(t)}" y1="${T}" x2="${x(t)}" y2="${H-44}" stroke="#e1e8df" stroke-dasharray="3 5"/>`,txt(x(t),B+23,yearLabel(t),10,'#60786c','text-anchor="middle"'));});
+  ticks(ov.start,ov.end).forEach(t=>{z.push(`<line x1="${x(t)}" y1="${T}" x2="${x(t)}" y2="${H-44}" stroke="#293e56" stroke-dasharray="3 5"/>`,txt(x(t),B+23,yearLabel(t),10,'#60786c','text-anchor="middle"'));});
   if($('overlayEvents').checked)DATA.events.forEach((e,i)=>{const a=astro(e.start);if(a<ov.start||a>ov.end)return;z.push(`<line x1="${x(a)}" y1="${T}" x2="${x(a)}" y2="${B}" stroke="#b49964" opacity=".5" stroke-dasharray="3 4"/><circle class="overlay-event" cx="${x(a)}" cy="${T+8+(i%3)*12}" r="4" fill="#b49964" data-overlay-event="${i}" data-tip="${esc(e.name+' · '+historicalLabel(e.start)+'；点击查看出处')}"/>`);});
   let noData=[];
-  for(const {s,pts} of normalizedSeries){if(!pts.length){noData.push(s.label+'（无数据或零方差）');continue;}let path='',last=null;for(const p of pts){path+=(!last||p.year-last.year>s.step*1.1?'M':'L')+x(astro(p.year)).toFixed(2)+','+y(p.v).toFixed(2);last=p;}z.push(`<path d="${path}" fill="none" stroke="${s.color}" stroke-width="2" clip-path="url(#overlayClip)" data-series-path="${s.id}"/>`);for(const p of pts){z.push(`<circle class="overlay-point" cx="${x(astro(p.year))}" cy="${y(p.v)}" r="2.5" fill="${s.color}" stroke="#fffefa" stroke-width=".6" data-overlay-point="${s.id}:${p.year}" data-tip="${esc(s.label+' · '+p.year+'：'+format(p.value,4)+' '+s.unit+'；'+(ov.scale==='z'?'z=':'范围值=')+format(p.v,3))}"/>`);}}
+  for(const {s,pts} of normalizedSeries){if(!pts.length){noData.push(s.label+'（无数据或零方差）');continue;}let path='',last=null;for(const p of pts){path+=(!last||p.year-last.year>s.step*1.1?'M':'L')+x(astro(p.year)).toFixed(2)+','+y(p.v).toFixed(2);last=p;}z.push(`<path d="${path}" fill="none" stroke="${themeColor(s.color)}" stroke-width="2" clip-path="url(#overlayClip)" data-series-path="${s.id}"/>`);for(const p of pts){z.push(`<circle class="overlay-point" cx="${x(astro(p.year))}" cy="${y(p.v)}" r="2.5" fill="${themeColor(s.color)}" stroke="#101c32" stroke-width=".6" data-overlay-point="${s.id}:${p.year}" data-tip="${esc(s.label+' · '+p.year+'：'+format(p.value,4)+' '+s.unit+'；'+(ov.scale==='z'?'z=':'范围值=')+format(p.v,3))}"/>`);}}
   let planetNotes=[];
-  for(const id of ov.planets){const p=planetBy(id),sample=orbitSamples(p,ov.start,ov.end);if(sample.hidden){planetNotes.push(p.name+'：已隐藏，'+sample.reason);continue;}z.push(`<path d="${phasePath(sample.points,x,py)}" fill="none" stroke="${p.color}" stroke-width="1.5" stroke-dasharray="6 4" opacity=".82" clip-path="url(#overlayClip)" data-planet-path="${p.id}"/>`);planetNotes.push(p.name+'：步长≤'+format(sample.stepDays,2)+'日');}
+  for(const id of ov.planets){const p=planetBy(id),sample=orbitSamples(p,ov.start,ov.end);if(sample.hidden){planetNotes.push(p.name+'：已隐藏，'+sample.reason);continue;}z.push(`<path d="${phasePath(sample.points,x,py)}" fill="none" stroke="${themeColor(p.color)}" stroke-width="1.5" stroke-dasharray="6 4" opacity=".82" clip-path="url(#overlayClip)" data-planet-path="${p.id}"/>`);planetNotes.push(p.name+'：步长≤'+format(sample.stepDays,2)+'日');}
   let by=B+58;
   for(const mode of ov.bands){z.push(txt(L,by-7,modeLabels[mode],10,'#55715d'));for(let a=Math.floor(ov.start);a<ov.end;a++){const c=C.category(a,mode),xx=Math.max(L,x(a)),end=Math.min(R,x(a+1));z.push(rect(xx,by,Math.max(0,end-xx),16,E[c.element].color,`opacity=".78" data-band-year="${a}" data-tip="${esc(yearLabel(a)+' '+C.yearInfo(a).ganzi+' '+modeLabels[mode]+'：'+c.label)}"`));}by+=34;}
-  if($('overlaySanyuan').checked){z.push(txt(L,by-7,'三元九运 · 1864起',10,'#8874a7'));for(let a=1864;a<ov.end;a+=20){if(a+20<=ov.start)continue;const xx=Math.max(L,x(a)),end=Math.min(R,x(a+20));z.push(rect(xx,by,Math.max(0,end-xx-1),16,'#c2afcf',`data-tip="${a}–${a+19} ${yuan(a)}${yun(a)}运；传统规则"`));if(end-xx>25)z.push(txt(xx+4,by+12,yun(a)+'运',9,'#5f4b72','pointer-events="none"'));}by+=34;}
-  if($('overlayDynasties').checked){z.push(txt(L,by-7,'政权并立 · 历史分期',10,'#657a5f'));DATA.dynasties.forEach((d,i)=>{const a=astro(d.start),b=astro(d.end);if(b<ov.start||a>ov.end)return;const xx=Math.max(L,x(a)),end=Math.min(R,x(b)),cy=by+d.lane*23;z.push(rect(xx,cy,Math.max(2,end-xx-1),18,['#dce6d5','#d7e7e3','#e9dfc9','#e1dcec'][d.lane],`data-overlay-dynasty="${i}" data-tip="${esc(d.name+' '+historicalLabel(d.start)+'—'+historicalLabel(d.end)+'；点击查看')}" style="cursor:pointer"`));const chars=Math.floor((end-xx-8)/10);if(chars>1)z.push(txt(xx+4,cy+13,d.name.length>chars?d.name.slice(0,chars-1)+'…':d.name,10,'#4f664f','pointer-events="none"'));});by+=114;}
-  if(ov.year>=ov.start&&ov.year<=ov.end)z.push(`<line x1="${x(ov.year)}" y1="${T}" x2="${x(ov.year)}" y2="${by}" stroke="#244e4a" stroke-dasharray="3 3" opacity=".8" pointer-events="none"/>`);
+  if($('overlaySanyuan').checked){z.push(txt(L,by-7,'三元九运 · 1864起',10,'#9bb6ef'));for(let a=1864;a<ov.end;a+=20){if(a+20<=ov.start)continue;const xx=Math.max(L,x(a)),end=Math.min(R,x(a+20));z.push(rect(xx,by,Math.max(0,end-xx-1),16,'#314365',`data-tip="${a}–${a+19} ${yuan(a)}${yun(a)}运；传统规则"`));if(end-xx>25)z.push(txt(xx+4,by+12,yun(a)+'运',9,'#5f4b72','pointer-events="none"'));}by+=34;}
+  if($('overlayDynasties').checked){z.push(txt(L,by-7,'政权并立 · 历史分期',10,'#657a5f'));DATA.dynasties.forEach((d,i)=>{const a=astro(d.start),b=astro(d.end);if(b<ov.start||a>ov.end)return;const xx=Math.max(L,x(a)),end=Math.min(R,x(b)),cy=by+d.lane*23;z.push(rect(xx,cy,Math.max(2,end-xx-1),18,['#254139','#234454','#493f2b','#334362'][d.lane],`data-overlay-dynasty="${i}" data-tip="${esc(d.name+' '+historicalLabel(d.start)+'—'+historicalLabel(d.end)+'；点击查看')}" style="cursor:pointer"`));const chars=Math.floor((end-xx-8)/10);if(chars>1)z.push(txt(xx+4,cy+13,d.name.length>chars?d.name.slice(0,chars-1)+'…':d.name,10,'#4f664f','pointer-events="none"'));});by+=114;}
+  if(ov.year>=ov.start&&ov.year<=ov.end)z.push(`<line x1="${x(ov.year)}" y1="${T}" x2="${x(ov.year)}" y2="${by}" stroke="#f0c77f" stroke-dasharray="3 3" opacity=".8" pointer-events="none"/>`);
   z.push(txt(L,H-15,'实线：来源数据的标准化值　虚线：轨道模型角度　色带：传统类别；三者不共用物理单位。',10));z.push('</svg>');host.innerHTML=z.join('');
   $('overlayResolution').textContent=[noData.length?'窗口内空白：'+noData.join('、'):null,...planetNotes,span>120&&ov.bands.size?'逐年五行色带很密；缩小到120年以内可辨认单年。':null].filter(Boolean).join('；')||'点击任意年份查看该年记录；数值点保留原始单位与出处。';
   host.onclick=e=>{const dynasty=e.target.closest('[data-overlay-dynasty]');if(dynasty){recordDetail('dynasty',+dynasty.dataset.overlayDynasty);return;}const band=e.target.closest('[data-band-year]');if(band){ov.year=+band.dataset.bandYear;renderOverlay();return;}const dot=e.target.closest('[data-overlay-point]'),ev=e.target.closest('[data-overlay-event]');if(ev){recordDetail('event',+ev.dataset.overlayEvent);return;}if(dot){const [id,a]=dot.dataset.overlayPoint.split(':');ov.year=astro(+a);renderOverlay();pointDetail(id,+a);return;}const svg=host.querySelector('svg'),b=svg.getBoundingClientRect(),xx=(e.clientX-b.left)*W/b.width;if(xx>=L&&xx<=R){ov.year=Math.round(ov.start+(xx-L)/(R-L)*span);renderOverlay();renderOverlayProbe();}};
   renderOverlayProbe();
  }
- function renderOverlayProbe(){const a=ov.year,q=C.yearInfo(a);$('overlayProbeYear').textContent=yearLabel(a)+' · '+q.ganzi;let html='';for(const s of DATA.series.filter(s=>ov.series.has(s.id))){const p=s.points.find(p=>astro(p.year)===a);const value=p&&!p.exclude_window?p.value:null;html+=`<div class="probe-cell" style="--series-color:${s.color}">${esc(s.label)}<strong>${value===null?'无该年有效点':format(value,4)}</strong><small>${esc(s.unit)}${p?.exclude_window?' · 日期冲突已排除':''}${s.id==='paleo'?' · 30年中点，非单年温度':''}</small><br>${sourceButton(s.source)}</div>`;}
+ function renderOverlayProbe(){const a=ov.year,q=C.yearInfo(a);$('overlayProbeYear').textContent=yearLabel(a)+' · '+q.ganzi;let html='';for(const s of DATA.series.filter(s=>ov.series.has(s.id))){const p=s.points.find(p=>astro(p.year)===a);const value=p&&!p.exclude_window?p.value:null;html+=`<div class="probe-cell" style="--series-color:${themeColor(s.color)}">${esc(s.label)}<strong>${value===null?'无该年有效点':format(value,4)}</strong><small>${esc(s.unit)}${p?.exclude_window?' · 日期冲突已排除':''}${s.id==='paleo'?' · 30年中点，非单年温度':''}</small><br>${sourceButton(s.source)}</div>`;}
   for(const mode of ov.bands){const c=C.category(a,mode);html+=`<div class="probe-cell" style="--series-color:${E[c.element].color}">${modeLabels[mode]}<strong>${esc(c.label)}</strong><small>传统年度规则</small></div>`;}
-  for(const id of ov.planets){const p=planetBy(id),pos=C.planetPosition(p,C.jdFromYear(a));html+=`<div class="probe-cell" style="--series-color:${p.color}">${p.name}<strong>${format(pos.longitude,2)}°</strong><small>该年1月1日0时标签的近似日心黄经；非年平均</small></div>`;}
+  for(const id of ov.planets){const p=planetBy(id),pos=C.planetPosition(p,C.jdFromYear(a));html+=`<div class="probe-cell" style="--series-color:${themeColor(p.color)}">${p.name}<strong>${format(pos.longitude,2)}°</strong><small>该年1月1日0时标签的近似日心黄经；非年平均</small></div>`;}
   $('overlayProbe').innerHTML=html||'<p class="micro">请选择至少一个变量或图层。</p>';
  }
  bindSelection($('overlaySeriesControls'),DATA.series,ov.series,renderOverlay,'overlay-series');
@@ -6679,11 +7067,11 @@ window.CycleAtlas={state,DATA,astro,historical,ganzi,yun,yuan,pearson,labPairs,s
  $('sixqiSequence').innerHTML=C.QI.map((q,i)=>`<div class="qi-step ${i===2?'fire-pattern':''}" style="${elementStyle(q.element)}"><small>第${i+1}气</small>${q.name}<small>${boundaries[i]}</small></div>`).join('');
 
  function renderMansions(){const groups=[{name:'东方青龙',element:'木'},{name:'北方玄武',element:'水'},{name:'西方白虎',element:'金'},{name:'南方朱雀',element:'火'}];
-  const list=A.mansions;let z=['<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 540" role="img" aria-label="二十八宿四象次序示意环，等宽非真实宿距"><circle cx="270" cy="270" r="225" fill="#f8f8f0"/>'];
+  const list=A.mansions;let z=['<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 540" role="img" aria-label="二十八宿四象次序示意环，等宽非真实宿距"><circle cx="270" cy="270" r="225" fill="#101c32"/>'];
   for(let i=0;i<28;i++){const a=(i/28*360-90)*Math.PI/180,b=((i+1)/28*360-90)*Math.PI/180,m=(a+b)/2,g=groups[Math.floor(i/7)],c=E[g.element],x1=270+218*Math.cos(a),y1=270+218*Math.sin(a),x2=270+218*Math.cos(b),y2=270+218*Math.sin(b),x3=270+158*Math.cos(b),y3=270+158*Math.sin(b),x4=270+158*Math.cos(a),y4=270+158*Math.sin(a),d=`M${x1},${y1}A218,218 0 0 1 ${x2},${y2}L${x3},${y3}A158,158 0 0 0 ${x4},${y4}Z`;
-   z.push(`<path d="${d}" fill="${c.light}" stroke="#fffefa" stroke-width="2" data-mansion="${i}" data-tip="${esc(list[i].name+' · '+g.name+'；点击查看')}"/>`,txt(270+189*Math.cos(m),270+189*Math.sin(m)+5,list[i].name[0],17,c.color,`text-anchor="middle" pointer-events="none"`));
+   z.push(`<path d="${d}" fill="${c.color}22" stroke="#101c32" stroke-width="2" data-mansion="${i}" data-tip="${esc(list[i].name+' · '+g.name+'；点击查看')}"/>`,txt(270+189*Math.cos(m),270+189*Math.sin(m)+5,list[i].name[0],17,c.color,`text-anchor="middle" pointer-events="none"`));
   }
-  z.push(txt(270,240,'二十八宿',28,'#344f42','text-anchor="middle"'),txt(270,273,'四象 · 每象七宿',13,'#687e6e','text-anchor="middle"'),txt(270,300,'等宽布局 ≠ 实际宿距',11,'#8c998e','text-anchor="middle"'));
+  z.push(txt(270,240,'二十八宿',28,'#e6edf7','text-anchor="middle"'),txt(270,273,'四象 · 每象七宿',13,'#b1c3d8','text-anchor="middle"'),txt(270,300,'等宽布局 ≠ 实际宿距',11,'#a6b7ce','text-anchor="middle"'));
   groups.forEach((g,i)=>{const a=((i*7+3.5)/28*360-90)*Math.PI/180;z.push(txt(270+122*Math.cos(a),270+122*Math.sin(a),g.name,12,E[g.element].color,'text-anchor="middle"'));});z.push('</svg>');$('mansionRing').innerHTML=z.join('');
   $('mansionRing').onclick=e=>{const n=e.target.closest('[data-mansion]');if(!n)return;const i=+n.dataset.mansion,m=list[i],g=groups[Math.floor(i/7)];openDialog(`<p class="eyebrow">二十八宿 / ${g.name}</p><h2>第${i+1}宿 · ${esc(m.name)}</h2><p>本宿的七曜配属：${esc(m.luminary)}。四象所属：${g.name}。</p>${E[m.luminary]?badge(m.luminary,m.luminary+'的显示色'):badge(g.element,'日/月不硬配五行；此处采用四象的颜色')}<p>此处展示传统次序与配属，不表示日期值宿或月亮实际入宿。环图各格等宽仅为排版；真实星区不等宽。</p>${sourceButton('mansions')}`);};
   $('mansionGroups').innerHTML=groups.map((g,i)=>`<div class="mansion-group"><strong style="color:${E[g.element].color}">${g.name}</strong>${list.slice(i*7,i*7+7).map(m=>m.name).join(' · ')}</div>`).join('');
@@ -6695,15 +7083,15 @@ window.CycleAtlas={state,DATA,astro,historical,ganzi,yun,yuan,pearson,labPairs,s
  function moveDate(days){const jd=planetDate+days,d=new Date((jd-2440587.5)*86400000);if(d.getUTCFullYear()<MIN||d.getUTCFullYear()>MAX)return;$('planetYear').value=historical(d.getUTCFullYear());$('planetMonth').value=d.getUTCMonth()+1;$('planetDay').value=d.getUTCDate();planetDate=jd;renderPlanets();}
  $('planetGo').onclick=()=>{const d=dateFromControls();if(d===null){$('planetStatus').textContent='日期无效：检查月份天数、闰年及无0年的纪年。';return;}planetDate=d;renderPlanets();};$('planetPrev').onclick=()=>moveDate(-30);$('planetNext').onclick=()=>moveDate(30);
  function renderPlanets(){const selected=A.planets.filter(p=>planetSet.has(p.id)),earth=A.planets.find(p=>p.id==='earth');$('planetStatus').textContent=dateString(planetDate)+' · 12时近似动力学时标签 · J2000黄道坐标；太阳在原点。';
-  let orbit=['<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 440" role="img" aria-label="行星日心位置图，距离对数压缩"><rect width="500" height="440" fill="#fafbf7" rx="10"/>'],cx=250,cy=220;
+  let orbit=['<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 440" role="img" aria-label="行星日心位置图，距离对数压缩"><rect width="500" height="440" fill="#101c32" rx="10"/>'],cx=250,cy=220;
   const radius=r=>25+172*Math.log1p(r)/Math.log1p(31);
-  for(const p of selected){const pos=C.planetPosition(p,planetDate),r=radius(pos.distance),angle=pos.longitude*Math.PI/180,xx=cx+r*Math.cos(angle),yy=cy-r*Math.sin(angle);orbit.push(`<circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="#e3e8db"/><line x1="${cx}" y1="${cy}" x2="${xx}" y2="${yy}" stroke="${p.color}" opacity=".18"/><circle cx="${xx}" cy="${yy}" r="5" fill="${p.color}"><title>${p.name} · ${format(pos.longitude)}° · ${format(pos.distance,3)}AU</title></circle>`,txt(xx+8,yy-7,p.name,11,p.color));}
-  orbit.push(`<circle cx="${cx}" cy="${cy}" r="10" fill="#d9a234"/>`,txt(cx,cy+28,'太阳',11,'#aa8435','text-anchor="middle"'),txt(463,cy+4,'0°',10),txt(cx,17,'90°',10,'#65796c','text-anchor="middle"'),txt(25,cy+4,'180°',10),txt(cx,432,'270°',10,'#65796c','text-anchor="middle"'));orbit.push('</svg>');$('orbitDiagram').innerHTML=orbit.join('');
-  let bars=['<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 440" role="img" aria-label="恒星公转周期对数轴比较">'];const bx=d=>95+(Math.log10(d)-1)/4*(360);for(const d of [10,100,1000,10000,100000]){bars.push(`<line x1="${bx(d)}" y1="25" x2="${bx(d)}" y2="402" stroke="#e0e6dc"/>`,txt(bx(d),426,d.toLocaleString(),10,'#718071','text-anchor="middle"'));}selected.forEach((p,i)=>{const y=44+i*43;bars.push(txt(10,y+5,p.name,12,p.color),`<line x1="95" y1="${y}" x2="${bx(p.periodDays)}" y2="${y}" stroke="${p.color}" stroke-width="9" stroke-linecap="round"/>`,txt(bx(p.periodDays)+7,y+4,format(p.periodDays,1)+'日',10,p.color));});bars.push('</svg>');$('periodBars').innerHTML=bars.join('');
-  $('planetTable').innerHTML=selected.map(p=>{const pos=C.planetPosition(p,planetDate),syn=p.id==='earth'?null:1/Math.abs(1/p.periodDays-1/earth.periodDays);return `<tr><td><i class="dot" style="background:${p.color}"></i>${p.name}${p.id==='earth'?'<br><small>位置用地月质心</small>':''}<br>${sourceButton(p.source,'NASA周期来源 ↗')}</td><td>${format(p.periodDays,3)} 日 / ${format(p.periodDays/365.25,4)} 年</td><td>${syn===null?'不适用':format(syn,2)}</td><td>${format(pos.longitude,3)}°</td><td>${format(pos.distance,4)}</td></tr>`;}).join('')||'<tr><td colspan="5">请选择行星。</td></tr>';renderPlanetChart();
+  for(const p of selected){const pos=C.planetPosition(p,planetDate),r=radius(pos.distance),angle=pos.longitude*Math.PI/180,xx=cx+r*Math.cos(angle),yy=cy-r*Math.sin(angle);orbit.push(`<circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="#31465e"/><line x1="${cx}" y1="${cy}" x2="${xx}" y2="${yy}" stroke="${themeColor(p.color)}" opacity=".18"/><circle cx="${xx}" cy="${yy}" r="5" fill="${themeColor(p.color)}"><title>${p.name} · ${format(pos.longitude)}° · ${format(pos.distance,3)}AU</title></circle>`,txt(xx+8,yy-7,p.name,11,themeColor(p.color)));}
+  orbit.push(`<circle cx="${cx}" cy="${cy}" r="10" fill="#d9a234"/>`,txt(cx,cy+28,'太阳',11,'#aa8435','text-anchor="middle"'),txt(463,cy+4,'0°',10),txt(cx,17,'90°',10,'#a6b7ce','text-anchor="middle"'),txt(25,cy+4,'180°',10),txt(cx,432,'270°',10,'#a6b7ce','text-anchor="middle"'));orbit.push('</svg>');$('orbitDiagram').innerHTML=orbit.join('');
+  let bars=['<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 440" role="img" aria-label="恒星公转周期对数轴比较">'];const bx=d=>95+(Math.log10(d)-1)/4*(360);for(const d of [10,100,1000,10000,100000]){bars.push(`<line x1="${bx(d)}" y1="25" x2="${bx(d)}" y2="402" stroke="#293e56"/>`,txt(bx(d),426,d.toLocaleString(),10,'#a6b7ce','text-anchor="middle"'));}selected.forEach((p,i)=>{const y=44+i*43;bars.push(txt(10,y+5,p.name,12,themeColor(p.color)),`<line x1="95" y1="${y}" x2="${bx(p.periodDays)}" y2="${y}" stroke="${themeColor(p.color)}" stroke-width="9" stroke-linecap="round"/>`,txt(bx(p.periodDays)+7,y+4,format(p.periodDays,1)+'日',10,themeColor(p.color)));});bars.push('</svg>');$('periodBars').innerHTML=bars.join('');
+  $('planetTable').innerHTML=selected.map(p=>{const pos=C.planetPosition(p,planetDate),syn=p.id==='earth'?null:1/Math.abs(1/p.periodDays-1/earth.periodDays);return `<tr><td><i class="dot" style="background:${themeColor(p.color)}"></i>${p.name}${p.id==='earth'?'<br><small>位置用地月质心</small>':''}<br>${sourceButton(p.source,'NASA周期来源 ↗')}</td><td>${format(p.periodDays,3)} 日 / ${format(p.periodDays/365.25,4)} 年</td><td>${syn===null?'不适用':format(syn,2)}</td><td>${format(pos.longitude,3)}°</td><td>${format(pos.distance,4)}</td></tr>`;}).join('')||'<tr><td colspan="5">请选择行星。</td></tr>';renderPlanetChart();
  }
  bindSelection($('planetChoices'),A.planets,planetSet,renderPlanets,'planet-choice');
- function renderPlanetChart(){const range=validRange('planetStart','planetEnd','planetResolution');if(!range)return;const [a,b]=range,host=$('planetChart'),W=Math.max(850,host.clientWidth||1100),L=60,R=W-32,T=37,B=325,H=385,x=t=>L+(t-a)/(b-a)*(R-L),y=v=>B-v/360*(B-T);let z=[`<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="行星日心黄经同轴时间曲线"><rect width="${W}" height="${H}" fill="#fffefa"/>`];for(const v of [0,90,180,270,360])z.push(`<line x1="${L}" y1="${y(v)}" x2="${R}" y2="${y(v)}" stroke="#e1e7dc"/>`,txt(L-9,y(v)+4,v+'°',10,'#6a7c6d','text-anchor="end"'));ticks(a,b).forEach(t=>z.push(txt(x(t),350,yearLabel(t),10,'#6a7c6d','text-anchor="middle"')));z.push(txt(L,18,'J2000日心黄经 · 近似轨道模型',11));let messages=[];for(const p of A.planets.filter(p=>planetSet.has(p.id))){const sample=orbitSamples(p,a,b);if(sample.hidden){messages.push(p.name+'已隐藏：'+sample.reason);continue;}z.push(`<path d="${phasePath(sample.points,x,y)}" fill="none" stroke="${p.color}" stroke-width="1.6" opacity=".88" data-planet-path="${p.id}"/>`);messages.push(p.name+' '+sample.n+'段 / 步长'+format(sample.stepDays,2)+'日');}z.push('</svg>');host.innerHTML=z.join('');$('planetResolution').textContent=messages.join('；')||'请选择行星。';}
+ function renderPlanetChart(){const range=validRange('planetStart','planetEnd','planetResolution');if(!range)return;const [a,b]=range,host=$('planetChart'),W=Math.max(850,host.clientWidth||1100),L=60,R=W-32,T=37,B=325,H=385,x=t=>L+(t-a)/(b-a)*(R-L),y=v=>B-v/360*(B-T);let z=[`<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="行星日心黄经同轴时间曲线"><rect width="${W}" height="${H}" fill="#101c32"/>`];for(const v of [0,90,180,270,360])z.push(`<line x1="${L}" y1="${y(v)}" x2="${R}" y2="${y(v)}" stroke="#293e56"/>`,txt(L-9,y(v)+4,v+'°',10,'#a6b7ce','text-anchor="end"'));ticks(a,b).forEach(t=>z.push(txt(x(t),350,yearLabel(t),10,'#a6b7ce','text-anchor="middle"')));z.push(txt(L,18,'J2000日心黄经 · 近似轨道模型',11));let messages=[];for(const p of A.planets.filter(p=>planetSet.has(p.id))){const sample=orbitSamples(p,a,b);if(sample.hidden){messages.push(p.name+'已隐藏：'+sample.reason);continue;}z.push(`<path d="${phasePath(sample.points,x,y)}" fill="none" stroke="${themeColor(p.color)}" stroke-width="1.6" opacity=".88" data-planet-path="${p.id}"/>`);messages.push(p.name+' '+sample.n+'段 / 步长'+format(sample.stepDays,2)+'日');}z.push('</svg>');host.innerHTML=z.join('');$('planetResolution').textContent=messages.join('；')||'请选择行星。';}
  $('drawPlanets').onclick=renderPlanetChart;$('exportPlanetChart').onclick=()=>exportChart('planetChart','太阳系行星_同轴黄经.svg');
  $('planetsToOverlay').onclick=()=>{const r=validRange('planetStart','planetEnd','planetResolution');if(!r)return;[ov.start,ov.end]=r;ov.planets=new Set(planetSet);$('overlayPlanetControls').querySelectorAll('input').forEach(c=>c.checked=ov.planets.has(c.dataset.overlayPlanet));bindSelection($('overlayPlanetControls'),A.planets,ov.planets,renderOverlay,'overlay-planet');$('overlayStart').value=historical(ov.start);$('overlayEnd').value=historical(ov.end);switchTab('overlay');};
  window.CycleEnhancements={ov,renderOverlay,renderWuxing,renderPlanetChart,orbitSamples,yearFromJD,onTab(tab){$('tooltip').style.display='none';if(tab==='overlay')renderOverlay();if(tab==='wuxing')renderWuxing();if(tab==='astronomy')renderPlanets();}};
