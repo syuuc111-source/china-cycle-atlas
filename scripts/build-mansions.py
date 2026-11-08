@@ -16,10 +16,10 @@ for filename,url in {
 OUT=ROOT/'mansions'/'data'
 OUT.mkdir(parents=True,exist_ok=True)
 groups=[
- dict(id='dragon',name='东方苍龙',short='苍龙',direction='东',season='春',element='木',color='#79cbb5',en='AZURE DRAGON',intro='从角宿出发，沿着心宿的赤色星光，一直走到银河边的尾与箕。七宿连成古人想象中的苍龙。',verse='龙的轮廓，藏在七宿之间。'),
- dict(id='tortoise',name='北方玄武',short='玄武',direction='北',season='冬',element='水',color='#82aee0',en='BLACK TORTOISE',intro='斗、牛、女、虚、危、室、壁，名字里有农事、屋宇与生活。龟蛇合体的玄武，是北方的象征。',verse='把人间的生活，安放在天上。'),
- dict(id='tiger',name='西方白虎',short='白虎',direction='西',season='秋',element='金',color='#dfce9e',en='WHITE TIGER',intro='从奎娄到觜参，跨过细密的昴星团与醒目的参宿三星。白虎七宿里，藏着许多熟悉的冬夜星光。',verse='一簇微光，三颗并列的星。'),
- dict(id='bird',name='南方朱雀',short='朱雀',direction='南',season='夏',element='火',color='#e18b76',en='VERMILION BIRD',intro='井、鬼、柳、星、张、翼、轸，朱雀展开长翼，横过双子、巨蟹、长蛇与乌鸦等现代星座所在的天区。',verse='张开羽翼，掠过南方长空。')
+ dict(id='dragon',name='东方苍龙',short='苍龙',direction='东',season='春',element='木',color='#73edc7',en='AZURE DRAGON',intro='从角宿出发，沿着心宿的赤色星光，一直走到银河边的尾与箕。七宿连成古人想象中的苍龙。',verse='龙的轮廓，藏在七宿之间。'),
+ dict(id='tortoise',name='北方玄武',short='玄武',direction='北',season='冬',element='水',color='#83bcff',en='BLACK TORTOISE',intro='斗、牛、女、虚、危、室、壁，名字里有农事、屋宇与生活。龟蛇合体的玄武，是北方的象征。',verse='把人间的生活，安放在天上。'),
+ dict(id='tiger',name='西方白虎',short='白虎',direction='西',season='秋',element='金',color='#f6d991',en='WHITE TIGER',intro='从奎娄到觜参，跨过细密的昴星团与醒目的参宿三星。白虎七宿里，藏着许多熟悉的冬夜星光。',verse='一簇微光，三颗并列的星。'),
+ dict(id='bird',name='南方朱雀',short='朱雀',direction='南',season='夏',element='火',color='#ff957e',en='VERMILION BIRD',intro='井、鬼、柳、星、张、翼、轸，朱雀展开长翼，横过双子、巨蟹、长蛇与乌鸦等现代星座所在的天区。',verse='张开羽翼，掠过南方长空。')
 ]
 # Each row: id, name, reading, region, anchor label, anchor HIP, overview, astronomy, culture.
 rows=[

@@ -1,15 +1,16 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="zh-CN" data-type="software">
 <head>
  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
- <meta name="theme-color" content="#080d10"><meta name="description" content="从四象走进二十八宿：探索中国传统星空，阅读每一宿的天文、历史与文化。交互星图、完整百科与可追溯的资料来源。">
+ <meta name="theme-color" content="#080e22"><meta name="description" content="从四象走进二十八宿：探索中国传统星空，阅读每一宿的天文、历史与文化。交互星图、完整百科与可追溯的资料来源。">
+ <meta name="page-type" content="software"><meta name="site-kind" content="software">
  <title>二十八宿 · 中国星空漫游</title>
  <link rel="icon" href="icon.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <a class="skip-link" href="#main">跳到正文</a>
 <header class="site-header">
- <a class="brand" href="#home" aria-label="二十八宿首页"><span class="brand-icon">✳</span><span>二十八宿<small>THE CHINESE SKY</small></span></a>
+ <a class="brand" href="#home" aria-label="二十八宿首页"><svg class="brand-icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><circle cx="20" cy="20" r="15"/><ellipse cx="20" cy="20" rx="7" ry="15" transform="rotate(35 20 20)"/><path d="M3 20h34M20 3v34"/><circle cx="20" cy="20" r="3" fill="currentColor"/></svg><span>二十八宿<small>THE CHINESE SKY</small></span></a>
  <nav aria-label="主导航"><a href="#guide/0">入门导览</a><a href="#atlas">四象星图</a><a href="#library">星宿百科</a><a href="#traditions">文化脉络</a><a href="#sources">文献索引</a></nav>
  <a class="back-atlas" href="../">周期图谱 <span>↗</span></a>
 </header>
@@ -19,41 +20,41 @@
  <div id="app" hidden>
  <section id="view-home" class="view">
   <div class="hero">
-   <div class="hero-copy"><p class="eyebrow"><span class="dot"></span> 中国星空漫游 <span class="eyebrow-rule"></span> 卷一</p><h1>二十八宿</h1><p class="hero-subtitle">仰望之间，<br>读懂古人的宇宙。</p><p class="hero-desc">循着四象，走进二十八座星空驿站。<br>让遥远的星光，照见天文、诗歌与人间。</p><div class="hero-actions"><a class="button primary" href="#atlas" aria-label="探索二十八宿">探索二十八宿 <span>↗</span></a><a class="text-link" href="#guide/0">从这里读起 <span>→</span></a></div><div class="hero-stats"><span><b>四象</b>天之四方</span><span><b>二十八宿</b>日月之舍</span><span><b>一片星空</b>不同的读法</span></div></div>
+   <div class="hero-copy"><h1>二十八宿</h1><p class="hero-subtitle">仰望之间，<br>读懂古人的宇宙。</p><p class="hero-desc">循着四象，走进二十八座星空驿站。<br>让遥远的星光，照见天文、诗歌与人间。</p><div class="hero-actions"><a class="button primary" href="#atlas" aria-label="探索二十八宿">探索二十八宿 <span>↗</span></a><a class="text-link" href="#guide/0">从这里读起 <span>→</span></a></div><p class="hero-note">传统星官 · 现代星位 · 历史文本</p></div>
    <div id="home-sky-mount" class="sky-mount"></div>
    <div class="hero-vertical" aria-hidden="true">观乎天文 · 以察时变</div>
   </div>
-  <div class="symbols-strip"><div class="strip-heading"><span class="eyebrow">THE FOUR SYMBOLS</span><h2>四方有象，星空有序。</h2><p>选择一象，开启一段星空旅程。</p></div><div id="home-groups" class="symbol-cards"></div></div>
+  <div class="symbols-strip"><div class="strip-heading"><h2>四方有象，星空有序。</h2><p>选择一象，开启一段星空旅程。</p></div><div id="home-groups" class="symbol-cards"></div></div>
   <div class="home-bottom"><span>传统星官 × 现代星位 × 历史文本</span><a href="#sources">每一束星光，都有来处 ↗</a></div>
  </section>
  <section id="view-atlas" class="view" hidden>
-  <div class="section-intro"><div><p class="eyebrow">01 / CELESTIAL ATLAS</p><h1>四象星图</h1></div><p>选一象，再点一宿。<br>在同一片天空中，辨认古人的命名。</p></div>
+  <div class="section-intro"><div><h1>四象星图</h1></div><p>选一象，再点一宿。<br>在同一片天空中，辨认古人的命名。</p></div>
   <div class="atlas-layout"><aside class="atlas-side"><div id="atlas-groups" class="group-tabs"></div><p id="atlas-en" class="eyebrow"></p><h2 id="atlas-name"></h2><p id="atlas-intro" class="body-copy"></p><div id="atlas-mansions" class="seven-mansions"></div><p class="small muted">点击星宿名或图中亮星，打开讲解。<br>四象的传统方向不代表此刻的地平朝向。</p></aside><div id="atlas-sky-mount" class="sky-mount"></div></div>
-  <div class="ring-section"><div><p class="eyebrow">TWENTY-EIGHT MANSIONS</p><h2>二十八宿，周而复始。</h2><p>从角宿出发，沿传统次序绕行一周。</p></div><div id="mansion-rail" class="mansion-rail"></div><p class="small muted">等宽排列仅用于导航；真实宿距不等宽。点击任一宿查看详情。</p></div>
+  <div class="ring-section"><div><h2>二十八宿，周而复始。</h2><p>从角宿出发，沿传统次序绕行一周。</p></div><div id="mansion-rail" class="mansion-rail"></div><p class="small muted">等宽排列仅用于导航；真实宿距不等宽。点击任一宿查看详情。</p></div>
  </section>
  <section id="view-library" class="view reading-view" hidden>
-  <div class="section-intro"><div><p class="eyebrow">02 / FIELD NOTES</p><h1>星宿百科</h1></div><p>每一宿，一段认识星空的起点。<br>先读概览，再走进天文与文化。</p></div>
-  <div class="library-controls"><label class="search-box"><span>⌕</span><span class="sr-only">搜索星宿、拼音或恒星名</span><input id="search" type="search" placeholder="搜索星宿、拼音或恒星名" autocomplete="off"><button id="clear-search" aria-label="清除搜索">×</button></label><div id="library-groups" class="filter-tabs"></div></div>
+  <div class="section-intro"><div><h1>星宿百科</h1></div><p>每一宿，一段认识星空的起点。<br>先读概览，再走进天文与文化。</p></div>
+  <div class="library-controls"><label class="search-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="10" cy="10" r="6.5"/><path d="m15 15 5 5"/></svg><span class="sr-only">搜索星宿、拼音或恒星名</span><input id="search" type="search" placeholder="搜索星宿、拼音或恒星名" autocomplete="off"><button id="clear-search" aria-label="清除搜索">×</button></label><div id="library-groups" class="filter-tabs"></div></div>
   <p id="result-count" class="small muted" role="status"></p><div id="library-results" class="library-grid"></div><div id="empty-search" hidden><h2>没有找到这片星光</h2><p>试试宿名、拼音，或清除筛选查看全部二十八宿。</p></div>
  </section>
  <section id="view-guide" class="view" hidden>
-  <div class="guide-top"><p class="eyebrow">A WALK THROUGH THE CHINESE SKY / 入门导览</p><div id="chapter-dots" class="chapter-dots"></div></div>
+  <div class="guide-top"><p class="eyebrow">入门导览 · 六章认识中国星空</p><div id="chapter-dots" class="chapter-dots"></div></div>
   <div class="guide-layout"><article class="guide-copy"><p id="guide-kicker" class="eyebrow"></p><h1 id="guide-title"></h1><p id="guide-lead" class="guide-lead"></p><p id="guide-body" class="body-copy"></p><p id="guide-fact" class="fact-line"></p><div id="guide-refs" class="inline-refs"></div><a id="guide-action" class="text-link"></a></article><div id="guide-sky-mount" class="sky-mount"></div></div>
   <div class="guide-bottom"><button id="prev-chapter" class="text-link" aria-label="上一章">← 上一章</button><span id="chapter-number" class="eyebrow"></span><button id="next-chapter" class="text-link" aria-label="下一章">下一章 →</button></div>
  </section>
  <section id="view-traditions" class="view reading-view" hidden>
-  <div class="section-intro"><div><p class="eyebrow">03 / MANY WAYS TO READ THE SKY</p><h1>同一片星空，<br>不同的知识脉络。</h1></div><p>从测量天空，到安放神话。<br>先分清体系，再理解它们的相遇。</p></div>
+  <div class="section-intro"><div><h1>同一片星空，<br>不同的知识脉络。</h1></div><p>从测量天空，到安放神话。<br>先分清体系，再理解它们的相遇。</p></div>
   <div class="tradition-preface"><span class="seal">知其所自</span><p>天文描述天体的位置和运动；历史记录观念如何形成；神话与术数保留人们赋予星空的意义。这里并列介绍，分别注明依据。</p></div><div id="tradition-list" class="tradition-grid"></div>
   <div class="element-key"><h2>五行有色，七曜有别。</h2><div id="element-colors"></div><p>木、火、土、金、水沿用原图谱的五行颜色。日与月另用暖白和银白表示；四象的方位配属与各宿的七曜配属分开阅读。</p></div>
  </section>
  <section id="view-sources" class="view reading-view" hidden>
-  <div class="section-intro"><div><p class="eyebrow">04 / SOURCES & NOTES</p><h1>星光之外，<br>也要看见出处。</h1></div><p>知道一条知识从哪里来，<br>也是认识它的一部分。</p></div>
+  <div class="section-intro"><div><h1>星光之外，<br>也要看见出处。</h1></div><p>知道一条知识从哪里来，<br>也是认识它的一部分。</p></div>
   <div class="source-note"><h2>这张星图怎样读</h2><p>星点是现代 J2000 参考方向，星官连线采用 Stellarium 整理的中国传统星官。它是一张知识导览图，未按日期和地点计算观测天空。选中的代表星用于聚焦，不是对所有历史距星的认定。</p><p>本站覆盖二十八宿基础、四象、历史、诗文与传统体系概览；资料库可继续扩充，不宣称穷尽所有文献。原典转录需结合版本和注疏阅读。</p></div><div id="source-list" class="source-list"></div><div class="attribution"><h2>数据与制作</h2><p>星官资料：Stellarium 中国星空文化，Karrie Berglund、Sun Shuwei 等贡献者，CC BY-SA 4.0。恒星数据：D3-Celestial / Hipparcos。数据经过筛选与格式转换；详细许可证见 <a href="LICENSES.txt">数据署名与许可</a>。</p><p>视觉语言参考用户提供的霖曦 AIGC《二十八星宿》视频；界面与交互重新实现，未使用视频帧作为网站素材。星空中附加的雾光仅为装饰。</p><p class="small muted">内容版本 2026.11 · 本站不包含配音、实时观星模拟、个人命运预测。</p></div>
  </section>
  </div>
 </main>
-<div id="sky-stage" class="sky-stage" hidden><div class="orbit-label"><span class="tiny-cross">+</span><span id="sky-label">东方苍龙 · 七宿</span><span>星官示意</span></div><canvas id="sky" aria-label="传统星官天球图，使用下方星宿按钮查看详情"></canvas><div class="sky-bottom"><span>J2000 星位 · 非实时地平星空</span><button id="motion-toggle" aria-pressed="false">Ⅱ 暂停旋转</button></div></div>
-<dialog id="detail" aria-labelledby="detail-title"><div class="detail-top"><span id="detail-breadcrumb" class="eyebrow"></span><button id="close-detail" aria-label="关闭星宿详情">×</button></div><div class="detail-content"><p id="detail-reading" class="eyebrow"></p><h2 id="detail-title"></h2><div id="detail-tags" class="detail-tags"></div><p id="detail-summary" class="detail-summary"></p><div id="detail-map" class="detail-map"></div><p id="star-info" class="star-info" role="status">点击星点，查看名称与恒星编号。</p><section class="detail-section"><p class="eyebrow">01 / ASTRONOMY</p><h3>在天空中的位置</h3><p id="detail-astronomy"></p></section><section class="detail-section"><p class="eyebrow">02 / CULTURE</p><h3>在人间的故事</h3><p id="detail-culture"></p><div id="detail-quote" class="quote-box"></div></section><details class="detail-section"><summary>深读：这张星图的范围与口径</summary><p>此图展示该宿同名主要星官，不能代表该宿辖下的全部星官或完整边界。恒星按现代方向投影；传统连线依据晚期星表整理，未复原古代观测年代。星图比例随星官范围调整，不宜直接比较各宿宽度。</p></details><section class="detail-section"><p class="eyebrow">READ THE SOURCES</p><h3>出处与延伸阅读</h3><div id="detail-sources"></div></section><div class="detail-pagination"><button id="prev-mansion"></button><a id="share-mansion" href="#">此宿链接 ↗</a><button id="next-mansion"></button></div></div></dialog>
+<div id="sky-stage" class="sky-stage" hidden><div class="orbit-label"><span class="tiny-cross" aria-hidden="true"></span><span id="sky-label">东方苍龙 · 七宿</span><span>星官示意</span></div><canvas id="sky" aria-label="传统星官天球图，使用下方星宿按钮查看详情"></canvas><div class="sky-bottom"><span>J2000 星位 · 非实时地平星空</span><button id="motion-toggle" aria-pressed="false">Ⅱ 暂停旋转</button></div></div>
+<dialog id="detail" aria-labelledby="detail-title"><div class="detail-top"><span id="detail-breadcrumb" class="eyebrow"></span><button id="close-detail" aria-label="关闭星宿详情">×</button></div><div class="detail-content"><p id="detail-reading" class="eyebrow"></p><h2 id="detail-title"></h2><div id="detail-tags" class="detail-tags"></div><p id="detail-summary" class="detail-summary"></p><div id="detail-map" class="detail-map"></div><p id="star-info" class="star-info" role="status">点击星点，查看名称与恒星编号。</p><section class="detail-section"><h3>在天空中的位置</h3><p id="detail-astronomy"></p></section><section class="detail-section"><h3>在人间的故事</h3><p id="detail-culture"></p><div id="detail-quote" class="quote-box"></div></section><details class="detail-section"><summary>深读：这张星图的范围与口径</summary><p>此图展示该宿同名主要星官，不能代表该宿辖下的全部星官或完整边界。恒星按现代方向投影；传统连线依据晚期星表整理，未复原古代观测年代。星图比例随星官范围调整，不宜直接比较各宿宽度。</p></details><section class="detail-section"><h3>出处与延伸阅读</h3><div id="detail-sources"></div></section><div class="detail-pagination"><button id="prev-mansion"></button><a id="share-mansion" href="#">此宿链接 ↗</a><button id="next-mansion"></button></div></div></dialog>
 <footer class="site-footer"><a href="#home">二十八宿 <span>· 中国星空漫游</span></a><p>以星为引，以文为证。</p><a href="../">返回中国周期图谱 ↗</a></footer>
 <noscript><p class="noscript">交互星图需要开启 JavaScript。你也可以阅读<a href="data/content.json">全部文字资料</a>。</p></noscript>
 <script type="module" src="app.mjs"></script>

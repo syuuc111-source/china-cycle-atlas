@@ -1,5 +1,5 @@
 import {parseRoute,searchMansions} from './model.mjs';
-import {createSky,detailStarMap,GROUP_COLORS} from './sky.mjs';
+import {createSky,detailStarMap,mansionThumbnail,GROUP_COLORS} from './sky.mjs';
 import {createEffects} from './motion.mjs';
 const $=s=>document.querySelector(s);
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -21,7 +21,7 @@ function renderLibrary(){
  const list=searchMansions(data.mansions,$('#search').value,libraryGroup);$('#result-count').textContent=`找到 ${list.length} 宿 / 共 28 宿`;
  $('#library-groups').querySelectorAll('button').forEach(b=>{b.classList.toggle('active',b.dataset.group===libraryGroup);b.setAttribute('aria-pressed',String(b.dataset.group===libraryGroup))});
  $('#empty-search').hidden=list.length>0;$('#library-results').hidden=!list.length;
- $('#library-results').innerHTML=list.map(m=>`<button class="mansion-card" data-mansion="${m.id}" style="--group:${GROUP_COLORS[m.group]}" aria-label="${m.name}宿，${m.fullName}"><div class="card-header"><span>${String(m.number).padStart(2,'0')} / ${getGroup(m.group).name}</span><span style="--element:${ELEMENTS[m.luminary]}">${m.fullName}</span></div><div class="card-name">${m.name}<span>宿</span></div><span class="card-reading">${m.reading.toUpperCase()} XIÙ</span><span class="card-arrow">↗</span><p>${m.summary}</p></button>`).join('');
+ $('#library-results').innerHTML=list.map(m=>`<button class="mansion-card" data-mansion="${m.id}" style="--group:${GROUP_COLORS[m.group]}" aria-label="${m.name}宿，${m.fullName}"><div class="card-header"><span>${String(m.number).padStart(2,'0')} / ${getGroup(m.group).name}</span><span style="--element:${ELEMENTS[m.luminary]}">${m.fullName}</span></div>${mansionThumbnail(m,skyData)}<div class="card-name">${m.name}<span>宿</span></div><span class="card-reading">${m.reading.toUpperCase()} XIÙ</span><span class="card-arrow">↗</span><p>${m.summary}</p></button>`).join('');
 }
 function renderGuide(){
  const c=data.chapters[chapter];$('#guide-kicker').textContent=c.kicker;$('#guide-title').textContent=c.title;$('#guide-lead').textContent=c.lead;$('#guide-body').textContent=c.body;$('#guide-fact').textContent=c.fact;$('#guide-refs').innerHTML=refLinks(c.sources);
@@ -136,8 +136,9 @@ function renderStatic(){
 async function init(){
  try{
   [data,skyData]=await Promise.all(['data/content.json','data/sky.json'].map(async url=>{const r=await fetch(url);if(!r.ok)throw new Error(`Unable to load ${url}`);return r.json()}));
+  data.groups.forEach(g=>g.color=GROUP_COLORS[g.id]);
   skyData.mansions=data.mansions;$('#loading').hidden=true;$('#app').hidden=false;
-  sky=createSky($('#sky'),skyData,id=>location.hash='#mansion/'+id);renderStatic();bind();syncMotion();applyRoute();$('#app').dataset.ready='true';
+  sky=createSky($('#sky'),skyData,id=>location.hash='#mansion/'+id);renderStatic();bind();syncMotion();applyRoute();effects.reveal(document.querySelectorAll('#view-home:not([hidden]) .hero-copy'),{distance:18,duration:850});$('#app').dataset.ready='true';
  }catch(error){$('#loading').hidden=true;$('#app').hidden=true;$('#load-error').hidden=false;$('#retry').onclick=()=>location.reload();console.error('Site initialization failed:',error.message)}
 }
 init();

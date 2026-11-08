@@ -1,6 +1,7 @@
 import {createCamera} from './motion.mjs';
 const TAU=Math.PI*2,DEG=Math.PI/180;
-export const GROUP_COLORS={dragon:'#79cbb5',tortoise:'#82aee0',tiger:'#dfce9e',bird:'#e18b76'};
+export const GROUP_COLORS={dragon:'#73edc7',tortoise:'#83bcff',tiger:'#f6d991',bird:'#ff957e'};
+const GROUP_RGB=Object.fromEntries(Object.entries(GROUP_COLORS).map(([id,color])=>[id,[1,3,5].map(i=>parseInt(color.slice(i,i+2),16))]));
 const GROUP_RA={dragon:242,tortoise:325,tiger:48,bird:145};
 const GROUP_POSE={dragon:[-10,-5,1],tortoise:[12,7,1.02],tiger:[18,-7,1.04],bird:[-12,5,1]};
 const vec=([hip,ra,dec,mag])=>({hip,ra:ra*DEG,dec:dec*DEG,mag});
@@ -15,16 +16,28 @@ export function createSky(canvas,data,onSelect){
  function draw(){
   pose=camera.sample(performance.now());r=baseRadius*pose.zoom;canvas.dataset.moving=String(camera.moving);
   ctx.clearRect(0,0,w,h);if(w<1||h<1)return;
-  const cx=w/2,cy=h/2;const fog=ctx.createRadialGradient(cx-r*.3,cy+r*.1,0,cx,cy,r);fog.addColorStop(0,'#89b8a40b');fog.addColorStop(.6,'#63948608');fog.addColorStop(1,'#08111800');ctx.fillStyle=fog;ctx.fillRect(0,0,w,h);
-  ctx.strokeStyle='#839a8229';ctx.lineWidth=.8;ctx.beginPath();ctx.arc(cx,cy,r,0,TAU);ctx.stroke();ctx.strokeStyle='#8a99801c';ctx.beginPath();ctx.arc(cx,cy,r+11,0,TAU);ctx.stroke();
-  for(let i=0;i<180;i++){const a=i/180*TAU;ctx.strokeStyle=i%5===0?'#91a38470':'#91a38428';ctx.beginPath();ctx.moveTo(cx+Math.cos(a)*(r+15),cy+Math.sin(a)*(r+15));ctx.lineTo(cx+Math.cos(a)*(r+(i%5===0?21:18)),cy+Math.sin(a)*(r+(i%5===0?21:18)));ctx.stroke()}
-  for(let ra=0;ra<360;ra+=30)curve(Array.from({length:91},(_,j)=>[ra*DEG,(-90+j*2)*DEG]),'#9aaf9f1c',.6);
-  for(let dec=-60;dec<=60;dec+=30)curve(Array.from({length:181},(_,j)=>[j*2*DEG,dec*DEG]),dec===0?'#b0bd9e43':'#9aaf9f1c',.6);
+  const cx=w/2,cy=h/2;
+  // The ambient colour uses the same interpolated weights as the camera. Rapid
+  // navigation therefore never leaves a stale CSS colour transition running.
+  const rgb=[0,1,2].map(i=>Math.round(Object.keys(GROUP_RGB).reduce((v,id)=>v+GROUP_RGB[id][i]*pose[id],0)));
+  const tint=alpha=>`rgba(${rgb.join(',')},${alpha})`;
+  const glow=ctx.createRadialGradient(cx,cy,r*.65,cx,cy,r*1.3);
+  glow.addColorStop(0,tint(0));glow.addColorStop(.48,tint(.1));glow.addColorStop(1,tint(0));ctx.fillStyle=glow;ctx.fillRect(0,0,w,h);
+  const fog=ctx.createRadialGradient(cx-r*.4,cy-r*.4,0,cx,cy,r*1.05);
+  fog.addColorStop(0,tint(.16));fog.addColorStop(.55,tint(.035));fog.addColorStop(1,tint(0));ctx.fillStyle=fog;ctx.fillRect(0,0,w,h);
+  const dusk=ctx.createRadialGradient(cx+r*.48,cy+r*.38,0,cx+r*.3,cy+r*.3,r*.9);
+  dusk.addColorStop(0,'#516ae623');dusk.addColorStop(1,'#516ae600');ctx.fillStyle=dusk;ctx.fillRect(0,0,w,h);
+  ctx.strokeStyle=tint(.4);ctx.lineWidth=1;ctx.beginPath();ctx.arc(cx,cy,r,0,TAU);ctx.stroke();
+  const rim=ctx.createConicGradient(-Math.PI/2,cx,cy);Object.values(GROUP_COLORS).forEach((color,i)=>rim.addColorStop(i/4,color+'80'));rim.addColorStop(1,GROUP_COLORS.dragon+'80');
+  ctx.strokeStyle=rim;ctx.lineWidth=1;ctx.beginPath();ctx.arc(cx,cy,r+10,0,TAU);ctx.stroke();
+  for(let i=0;i<180;i++){const a=i/180*TAU;ctx.strokeStyle=i%5===0?tint(.6):tint(.2);ctx.beginPath();ctx.moveTo(cx+Math.cos(a)*(r+15),cy+Math.sin(a)*(r+15));ctx.lineTo(cx+Math.cos(a)*(r+(i%5===0?22:18)),cy+Math.sin(a)*(r+(i%5===0?22:18)));ctx.stroke()}
+  for(let ra=0;ra<360;ra+=30)curve(Array.from({length:91},(_,j)=>[ra*DEG,(-90+j*2)*DEG]),'#8baee52b',.7);
+  for(let dec=-60;dec<=60;dec+=30)curve(Array.from({length:181},(_,j)=>[j*2*DEG,dec*DEG]),dec===0?'#a8c8ea66':'#8baee52b',.7);
   const ecliptic=Array.from({length:181},(_,i)=>{const l=i*2*DEG,ob=23.4393*DEG;return [Math.atan2(Math.sin(l)*Math.cos(ob),Math.cos(l)),Math.asin(Math.sin(l)*Math.sin(ob))]});curve(ecliptic,'#c9ac674a',.8);
   for(const s of stars){const p=project(s.ra,s.dec);if(p.z<0)continue;const xy=screen(p),size=Math.max(.35,1.6-s.mag*.22),alpha=Math.min(.95,Math.max(.12,(6.1-s.mag)/6));ctx.globalAlpha=alpha*(.4+.6*p.z);ctx.fillStyle='#e1e7dc';ctx.beginPath();ctx.arc(xy.x,xy.y,size,0,TAU);ctx.fill();if(s.mag<1.5){ctx.globalAlpha=.3;const g=ctx.createRadialGradient(xy.x,xy.y,0,xy.x,xy.y,9);g.addColorStop(0,'#f4f0cd88');g.addColorStop(1,'#f4f0cd00');ctx.fillStyle=g;ctx.fillRect(xy.x-9,xy.y-9,18,18)}}ctx.globalAlpha=1;
   for(const c of data.asterisms){
    const weight=pose[c.group],reveal=c.group===group&&camera.moving?Math.min(1,.12+camera.progress*1.1):1;
-   ctx.strokeStyle=GROUP_COLORS[c.group];ctx.globalAlpha=.13+.65*weight;ctx.lineWidth=.55+.85*weight;
+   ctx.strokeStyle=GROUP_COLORS[c.group];ctx.globalAlpha=.16+.75*weight;ctx.lineWidth=.65+.95*weight;
    for(const line of c.lines){for(let i=1;i<line.length;i++){
     const fraction=Math.max(0,Math.min(1,reveal*(line.length-1)-(i-1)));if(!fraction)continue;
     const a=byHip.get(line[i-1]),b=byHip.get(line[i]);if(!a||!b)continue;
@@ -35,9 +48,11 @@ export function createSky(canvas,data,onSelect){
   hits=[];const labelRects=[];
   const sorted=[...data.mansions].sort((a,b)=>(b.group===group)-(a.group===group));
   for(const m of sorted){const s=byHip.get(m.anchor.hip);if(!s)continue;const p=project(s.ra,s.dec);if(p.z<.07)continue;const xy=screen(p),selected=m.group===group;hits.push({...xy,id:m.id});ctx.fillStyle=selected?GROUP_COLORS[group]:'#c1d0c1';ctx.beginPath();ctx.arc(xy.x,xy.y,selected?2.7:1.6,0,TAU);ctx.fill();if(selected){ctx.strokeStyle=GROUP_COLORS[group]+'5c';ctx.beginPath();ctx.arc(xy.x,xy.y,7,0,TAU);ctx.stroke()}
-   if(pose[m.group]<.03)continue;const label=m.name,xx=xy.x+11,yy=xy.y-12;const collides=labelRects.some(a=>Math.abs(a.x-xx)<30&&Math.abs(a.y-yy)<22);const adjusted=collides?yy+29:yy;labelRects.push({x:xx,y:adjusted});ctx.font=`${w<450?15:18}px "SimSun",serif`;ctx.fillStyle='#dce5d4';ctx.shadowColor='#080e12';ctx.shadowBlur=5;ctx.globalAlpha=pose[m.group];ctx.fillText(label,xx,adjusted);ctx.globalAlpha=1;ctx.shadowBlur=0;
+   if(pose[m.group]<.03)continue;const label=m.name,xx=xy.x+11,yy=xy.y-12;const collides=labelRects.some(a=>Math.abs(a.x-xx)<30&&Math.abs(a.y-yy)<22);const adjusted=collides?yy+29:yy;labelRects.push({x:xx,y:adjusted});ctx.font=`${w<450?17:21}px "Sky Serif","SimSun",serif`;ctx.fillStyle='#eef3ff';ctx.shadowColor='#080e22';ctx.shadowBlur=6;ctx.globalAlpha=pose[m.group];ctx.fillText(label,xx,adjusted);ctx.globalAlpha=1;ctx.shadowBlur=0;
   }
-  ctx.fillStyle='#829c8e99';ctx.font='8px sans-serif';ctx.textAlign='center';ctx.fillText('天球 · 正射投影',cx,cy-r-28);ctx.fillText('赤道与黄道 / 方向投影',cx,cy+r+35);ctx.textAlign='start';
+  // On narrow screens the DOM caption already carries the projection context;
+  // keep the instrument annotations away from the touch controls.
+  if(w>=500){ctx.fillStyle='#afc0dc';ctx.font='11px sans-serif';ctx.textAlign='center';ctx.fillText('天球 · 正射投影',cx,cy-r-33);ctx.fillText('赤道与黄道 / 方向投影',cx,cy+r+39);ctx.textAlign='start'}
  }
  function tick(t){raf=0;if(!active||document.hidden)return;if(t-last>30){if(!camera.moving&&!paused&&!media.matches)camera.drift(Math.min((t-last)||0,60)*.000018);last=t;draw()}if(camera.moving||(!paused&&!media.matches))raf=requestAnimationFrame(tick)}
  function start(){if(!raf&&(camera.moving||(!paused&&!media.matches))&&active&&!document.hidden){last=performance.now();raf=requestAnimationFrame(tick)}}
@@ -57,6 +72,15 @@ export function createSky(canvas,data,onSelect){
  const reduced=()=>{if(media.matches){camera.finish();stop();draw()}else start()};
  canvas.addEventListener('click',click);document.addEventListener('visibilitychange',visibility);media.addEventListener('change',reduced);resize();start();
  return {setView,setPaused(value){paused=value;stop();start();draw()},setActive(value){active=value;if(!value){stop();camera.finish();draw()}else{resize();start()}},destroy(){stop();observer.disconnect();canvas.removeEventListener('click',click);document.removeEventListener('visibilitychange',visibility);media.removeEventListener('change',reduced)}};
+}
+
+// Compact, noninteractive charts share the detail map's actual star projection.
+// Removing metadata and IDs avoids nested buttons and duplicate SVG patterns.
+export function mansionThumbnail(mansion,data){
+ const map=detailStarMap(mansion,data);
+ const lines=map.match(/<polyline[^>]+\/>/g)||[];
+ const points=[...map.matchAll(/<circle cx="([^"]+)" cy="([^"]+)" r="[^" ]+" fill="#f1eee0"\/>/g)].map(m=>`<circle cx="${m[1]}" cy="${m[2]}" r="4" fill="currentColor"/>`);
+ return `<svg class="card-chart" viewBox="40 25 420 210" aria-hidden="true" focusable="false">${lines.join('')}${points.join('')}</svg>`;
 }
 
 export function detailStarMap(mansion,data){
