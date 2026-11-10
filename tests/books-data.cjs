@@ -20,6 +20,25 @@ test('book topics have complete reading entries and bounded, traceable citations
  assert.equal(c.herbs.entries[48].citations[0].start,208);
  for(const id of ['face','taiqing','xiangshu'])assert.match(c.books.find(b=>b.id===id).author,/待考|冲突/);
 });
+test('all 50 herb profiles have distinct applications, usage guidance and resolvable references',()=>{
+ const ids=new Set(sources.map(s=>s.id));assert.equal(ids.size,sources.length);
+ for(const e of c.herbs.entries){const p=e.profile;assert.ok(p,e.name);
+  for(const k of ['overview','effects','form','method','caution','evidence'])assert.ok(p[k].length>=25,`${e.name}: ${k}`);
+  assert.ok(p.applications.length>=2,e.name);assert.equal(new Set(p.applications).size,p.applications.length);
+  for(const k of ['traditionalSourceIds','usageSourceIds','safetySourceIds','evidenceSourceIds'])for(const id of p[k])assert.ok(ids.has(id),`${e.name}: ${id}`);
+  if(p.requiresSupervision)assert.doesNotMatch(JSON.stringify(p),/\d+\s*(?:克|毫克|毫升|分钟|小时)|[一二三四五六七八九十半]+\s*(?:克|毫克|毫升|分钟|小时)/,e.name);
+ }
+ const byName=n=>c.herbs.entries.find(e=>e.name===n).profile;
+ assert.match(byName('芍药').effects,/白芍.*赤芍/);assert.match(byName('阿胶').method,/烊化/);
+ assert.match(byName('五味子').caution,/他克莫司/);assert.match(byName('防己').overview,/广防己.*马兜铃酸/);
+ assert.deepEqual(byName('龙骨').traditionalSourceIds,[]);
+ assert.match(sources.find(s=>s.id==='herb-hkbu-b00404').locator,/只核对身份/);
+});
+test('herb profile search finds preparation, constituent distinctions and interaction topics',async()=>{
+ const {filterHerbs}=await import('../ganzhi/books.mjs');
+ for(const [query,name] of [['烊化','阿胶'],['生地黄','地黄'],['他克莫司','五味子'],['先煎','石膏']])assert.ok(filterHerbs(c.herbs.entries,{query}).some(e=>e.name===name),query);
+ assert.equal(filterHerbs(c.herbs.entries,{query:'烊化',material:'菌类'}).length,0);
+});
 test('herb aliases, combined filters, empty states and historical term search',async()=>{
  const {filterHerbs,filterTerms}=await import('../ganzhi/books.mjs');
  assert.deepEqual(filterHerbs(c.herbs.entries,{query:'土鳖虫'}).map(x=>x.name),['䗪虫']);

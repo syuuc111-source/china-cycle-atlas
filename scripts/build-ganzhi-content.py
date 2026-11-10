@@ -224,7 +224,9 @@ for id,title,url,scope in [
     ('books-licorice','Licorice Root · 甘草安全资料','https://www.nccih.nih.gov/health/licorice-root','甘草酸相关不良反应、长期使用与基础疾病注意事项'),
     ('books-ephedra','Ephedra · 麻黄安全资料','https://www.nccih.nih.gov/health/ephedra','麻黄相关制品的风险；不将补充剂与传统处方语境混同')]:
     sources.append(dict(id=id,title=title,author='美国国家补充与整合健康中心 NCCIH',url=url,locator='Safety 及基本说明',supports=[scope],note='本站原创中文概述，仅支持现代风险说明，不用于证明古代药证疗效。',status='verified',checkedAt='2026-11-10'))
-data=dict(version='2026.11.books',entries=entries,articles=articles,guides=guides,plants=plants,body=body,**book_topics)
+from ganzhi_herb_profiles import enrich as enrich_herbs
+enrich_herbs(book_topics['herbs'],sources)
+data=dict(version='2026.11.herb-profiles',entries=entries,articles=articles,guides=guides,plants=plants,body=body,**book_topics)
 for name,obj in [('content.json',data),('sources.json',sources)]:
     (OUT/name).write_text(json.dumps(obj,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 print(f'{len(entries)} entries, {len(articles)} articles, {len(sources)} sources')

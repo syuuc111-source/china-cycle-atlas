@@ -757,5 +757,848 @@
     "note": "本站原创中文概述，仅支持现代风险说明，不用于证明古代药证疗效。",
     "status": "verified",
     "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "herb-hkbu-b00138",
+    "title": "桂枝 · 中药材资料",
+    "author": "香港浸会大学中医药学院、图书馆",
+    "url": "https://sys01.lib.hkbu.edu.hk/cmed/mmid/detail.php?lang=chs&pid=B00138",
+    "locator": "名称、来源、性味、传统功效及页面载有的炮制品",
+    "supports": [
+      "药材名称和来源",
+      "传统功效与制品区别"
+    ],
+    "note": "数据库的功效栏属于传统应用资料，不是逐病种临床疗效评估。本站仅转述事实与阅读重点，不转载图像或全文。",
+    "status": "verified",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "herb-hkbu-b00026",
+    "title": "白芍 · 中药材资料",
+    "author": "香港浸会大学中医药学院、图书馆",
+    "url": "https://sys01.lib.hkbu.edu.hk/cmed/mmid/detail.php?lang=chs&pid=B00026",
+    "locator": "名称、来源、性味、传统功效及页面载有的炮制品",
+    "supports": [
+      "药材名称和来源",
+      "传统功效与制品区别"
+    ],
+    "note": "数据库的功效栏属于传统应用资料，不是逐病种临床疗效评估。本站仅转述事实与阅读重点，不转载图像或全文。",
+    "status": "verified",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "herb-hkbu-b00041",
+    "title": "赤芍 · 中药材资料",
+    "author": "香港浸会大学中医药学院、图书馆",
+    "url": "https://sys01.lib.hkbu.edu.hk/cmed/mmid/detail.php?lang=chs&pid=B00041",
+    "locator": "名称、来源、性味、传统功效及页面载有的炮制品",
+    "supports": [
+      "药材名称和来源",
+      "传统功效与制品区别"
+    ],
+    "note": "数据库的功效栏属于传统应用资料，不是逐病种临床疗效评估。本站仅转述事实与阅读重点，不转载图像或全文。",
+    "status": "verified",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "herb-hkbu-b00129",
+    "title": "甘草 · 中药材资料",
+    "author": "香港浸会大学中医药学院、图书馆",
+    "url": "https://sys01.lib.hkbu.edu.hk/cmed/mmid/detail.php?lang=chs&pid=B00129",
+    "locator": "名称、来源、性味、传统功效及页面载有的炮制品",
+    "supports": [
+      "药材名称和来源",
+      "传统功效与制品区别"
+    ],
+    "note": "数据库的功效栏属于传统应用资料，不是逐病种临床疗效评估。本站仅转述事实与阅读重点，不转载图像或全文。",
+    "status": "verified",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "herb-hkbu-b00171",
+    "title": "大枣 · 中药材资料",
+    "author": "香港浸会大学中医药学院、图书馆",
+    "url": "https://sys01.lib.hkbu.edu.hk/cmed/mmid/detail.php?lang=chs&pid=B00171",
+    "locator": "名称、来源、性味、传统功效及页面载有的炮制品",
+    "supports": [
+      "药材名称和来源",
+      "传统功效与制品区别"
+    ],
+    "note": "数据库的功效栏属于传统应用资料，不是逐病种临床疗效评估。本站仅转述事实与阅读重点，不转载图像或全文。",
+    "status": "verified",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "herb-hkbu-b00278",
+    "title": "麻黄 · 中药材资料",
+    "author": "香港浸会大学中医药学院、图书馆",
+    "url": "https://sys01.lib.hkbu.edu.hk/cmed/mmid/detail.php?lang=chs&pid=B00278",
+    "locator": "名称、来源、性味、传统功效及页面载有的炮制品",
+    "supports": [
+      "药材名称和来源",
+      "传统功效与制品区别"
+    ],
+    "note": "数据库的功效栏属于传统应用资料，不是逐病种临床疗效评估。本站仅转述事实与阅读重点，不转载图像或全文。",
+    "status": "verified",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "herb-hkbu-b00058",
+    "title": "附子 · 中药材资料",
+    "author": "香港浸会大学中医药学院、图书馆",
+    "url": "https://sys01.lib.hkbu.edu.hk/cmed/mmid/detail.php?lang=chs&pid=B00058",
+    "locator": "名称、来源、性味、传统功效及页面载有的炮制品",
+    "supports": [
+      "药材名称和来源",
+      "传统功效与制品区别"
+    ],
+    "note": "数据库的功效栏属于传统应用资料，不是逐病种临床疗效评估。本站仅转述事实与阅读重点，不转载图像或全文。",
+    "status": "verified",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "herb-hkbu-b00046",
+    "title": "川乌 · 中药材资料",
+    "author": "香港浸会大学中医药学院、图书馆",
+    "url": "https://sys01.lib.hkbu.edu.hk/cmed/mmid/detail.php?lang=chs&pid=B00046",
+    "locator": "名称、来源、性味、传统功效及页面载有的炮制品",
+    "supports": [
+      "药材名称和来源",
+      "传统功效与制品区别"
+    ],
+    "note": "数据库的功效栏属于传统应用资料，不是逐病种临床疗效评估。本站仅转述事实与阅读重点，不转载图像或全文。",
+    "status": "verified",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "herb-hkbu-b00037",
+    "title": "草乌 · 中药材资料",
+    "author": "香港浸会大学中医药学院、图书馆",
+    "url": "https://sys01.lib.hkbu.edu.hk/cmed/mmid/detail.php?lang=chs&pid=B00037",
+    "locator": "名称、来源、性味、传统功效及页面载有的炮制品",
+    "supports": [
+      "药材名称和来源",
+      "传统功效与制品区别"
+    ],
+    "note": "数据库的功效栏属于传统应用资料，不是逐病种临床疗效评估。本站仅转述事实与阅读重点，不转载图像或全文。",
+    "status": "verified",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "herb-hkbu-b00013",
+    "title": "干姜 · 中药材资料",
+    "author": "香港浸会大学中医药学院、图书馆",
+    "url": "https://sys01.lib.hkbu.edu.hk/cmed/mmid/detail.php?lang=chs&pid=B00013",
+    "locator": "名称、来源、性味、传统功效及页面载有的炮制品",
+    "supports": [
+      "药材名称和来源",
+      "传统功效与制品区别"
+    ],
+    "note": "数据库的功效栏属于传统应用资料，不是逐病种临床疗效评估。本站仅转述事实与阅读重点，不转载图像或全文。",
+    "status": "verified",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "herb-hkbu-b00012",
+    "title": "生姜 · 中药材资料",
+    "author": "香港浸会大学中医药学院、图书馆",
+    "url": "https://sys01.lib.hkbu.edu.hk/cmed/mmid/detail.php?lang=chs&pid=B00012",
+    "locator": "名称、来源、性味、传统功效及页面载有的炮制品",
+    "supports": [
+      "药材名称和来源",
+      "传统功效与制品区别"
+    ],
+    "note": "数据库的功效栏属于传统应用资料，不是逐病种临床疗效评估。本站仅转述事实与阅读重点，不转载图像或全文。",
+    "status": "verified",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "herb-hkbu-b00112",
+    "title": "细辛 · 中药材资料",
+    "author": "香港浸会大学中医药学院、图书馆",
+    "url": "https://sys01.lib.hkbu.edu.hk/cmed/mmid/detail.php?lang=chs&pid=B00112",
+    "locator": "名称、来源、性味、传统功效及页面载有的炮制品",
+    "supports": [
+      "药材名称和来源",
+      "传统功效与制品区别"
+    ],
+    "note": "数据库的功效栏属于传统应用资料，不是逐病种临床疗效评估。本站仅转述事实与阅读重点，不转载图像或全文。",
+    "status": "verified",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "herb-hkbu-b00212",
+    "title": "吴茱萸 · 中药材资料",
+    "author": "香港浸会大学中医药学院、图书馆",
+    "url": "https://sys01.lib.hkbu.edu.hk/cmed/mmid/detail.php?lang=chs&pid=B00212",
+    "locator": "名称、来源、性味、传统功效及页面载有的炮制品",
+    "supports": [
+      "药材名称和来源",
+      "传统功效与制品区别"
+    ],
+    "note": "数据库的功效栏属于传统应用资料，不是逐病种临床疗效评估。本站仅转述事实与阅读重点，不转载图像或全文。",
+    "status": "verified",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "herb-hkbu-b00038",
+    "title": "柴胡 · 中药材资料",
+    "author": "香港浸会大学中医药学院、图书馆",
+    "url": "https://sys01.lib.hkbu.edu.hk/cmed/mmid/detail.php?lang=chs&pid=B00038",
+    "locator": "名称、来源、性味、传统功效及页面载有的炮制品",
+    "supports": [
+      "药材名称和来源",
+      "传统功效与制品区别"
+    ],
+    "note": "数据库的功效栏属于传统应用资料，不是逐病种临床疗效评估。本站仅转述事实与阅读重点，不转载图像或全文。",
+    "status": "verified",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "herb-hkbu-b00132",
+    "title": "半夏 · 中药材资料",
+    "author": "香港浸会大学中医药学院、图书馆",
+    "url": "https://sys01.lib.hkbu.edu.hk/cmed/mmid/detail.php?lang=chs&pid=B00132",
+    "locator": "名称、来源、性味、传统功效及页面载有的炮制品",
+    "supports": [
+      "药材名称和来源",
+      "传统功效与制品区别"
+    ],
+    "note": "数据库的功效栏属于传统应用资料，不是逐病种临床疗效评估。本站仅转述事实与阅读重点，不转载图像或全文。",
+    "status": "verified",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "herb-hkbu-b00071",
+    "title": "黄芪 · 中药材资料",
+    "author": "香港浸会大学中医药学院、图书馆",
+    "url": "https://sys01.lib.hkbu.edu.hk/cmed/mmid/detail.php?lang=chs&pid=B00071",
+    "locator": "名称、来源、性味、传统功效及页面载有的炮制品",
+    "supports": [
+      "药材名称和来源",
+      "传统功效与制品区别"
+    ],
+    "note": "数据库的功效栏属于传统应用资料，不是逐病种临床疗效评估。本站仅转述事实与阅读重点，不转载图像或全文。",
+    "status": "verified",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "herb-hkbu-b00032",
+    "title": "白术 · 中药材资料",
+    "author": "香港浸会大学中医药学院、图书馆",
+    "url": "https://sys01.lib.hkbu.edu.hk/cmed/mmid/detail.php?lang=chs&pid=B00032",
+    "locator": "名称、来源、性味、传统功效及页面载有的炮制品",
+    "supports": [
+      "药材名称和来源",
+      "传统功效与制品区别"
+    ],
+    "note": "数据库的功效栏属于传统应用资料，不是逐病种临床疗效评估。本站仅转述事实与阅读重点，不转载图像或全文。",
+    "status": "verified",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "herb-hkbu-b00356",
+    "title": "茯苓 · 中药材资料",
+    "author": "香港浸会大学中医药学院、图书馆",
+    "url": "https://sys01.lib.hkbu.edu.hk/cmed/mmid/detail.php?lang=chs&pid=B00356",
+    "locator": "名称、来源、性味、传统功效及页面载有的炮制品",
+    "supports": [
+      "药材名称和来源",
+      "传统功效与制品区别"
+    ],
+    "note": "数据库的功效栏属于传统应用资料，不是逐病种临床疗效评估。本站仅转述事实与阅读重点，不转载图像或全文。",
+    "status": "verified",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "herb-hkbu-b00360",
+    "title": "猪苓 · 中药材资料",
+    "author": "香港浸会大学中医药学院、图书馆",
+    "url": "https://sys01.lib.hkbu.edu.hk/cmed/mmid/detail.php?lang=chs&pid=B00360",
+    "locator": "名称、来源、性味、传统功效及页面载有的炮制品",
+    "supports": [
+      "药材名称和来源",
+      "传统功效与制品区别"
+    ],
+    "note": "数据库的功效栏属于传统应用资料，不是逐病种临床疗效评估。本站仅转述事实与阅读重点，不转载图像或全文。",
+    "status": "verified",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "herb-hkbu-b00123",
+    "title": "泽泻 · 中药材资料",
+    "author": "香港浸会大学中医药学院、图书馆",
+    "url": "https://sys01.lib.hkbu.edu.hk/cmed/mmid/detail.php?lang=chs&pid=B00123",
+    "locator": "名称、来源、性味、传统功效及页面载有的炮制品",
+    "supports": [
+      "药材名称和来源",
+      "传统功效与制品区别"
+    ],
+    "note": "数据库的功效栏属于传统应用资料，不是逐病种临床疗效评估。本站仅转述事实与阅读重点，不转载图像或全文。",
+    "status": "verified",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "herb-hkbu-b00401",
+    "title": "滑石 · 中药材资料",
+    "author": "香港浸会大学中医药学院、图书馆",
+    "url": "https://sys01.lib.hkbu.edu.hk/cmed/mmid/detail.php?lang=chs&pid=B00401",
+    "locator": "名称、来源、性味、传统功效及页面载有的炮制品",
+    "supports": [
+      "药材名称和来源",
+      "传统功效与制品区别"
+    ],
+    "note": "数据库的功效栏属于传统应用资料，不是逐病种临床疗效评估。本站仅转述事实与阅读重点，不转载图像或全文。",
+    "status": "verified",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "herb-hkbu-b00055",
+    "title": "防己 · 中药材资料",
+    "author": "香港浸会大学中医药学院、图书馆",
+    "url": "https://sys01.lib.hkbu.edu.hk/cmed/mmid/detail.php?lang=chs&pid=B00055",
+    "locator": "名称、来源、性味、传统功效及页面载有的炮制品",
+    "supports": [
+      "药材名称和来源",
+      "传统功效与制品区别"
+    ],
+    "note": "数据库的功效栏属于传统应用资料，不是逐病种临床疗效评估。本站仅转述事实与阅读重点，不转载图像或全文。",
+    "status": "verified",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "herb-hkbu-b00063",
+    "title": "葛根 · 中药材资料",
+    "author": "香港浸会大学中医药学院、图书馆",
+    "url": "https://sys01.lib.hkbu.edu.hk/cmed/mmid/detail.php?lang=chs&pid=B00063",
+    "locator": "名称、来源、性味、传统功效及页面载有的炮制品",
+    "supports": [
+      "药材名称和来源",
+      "传统功效与制品区别"
+    ],
+    "note": "数据库的功效栏属于传统应用资料，不是逐病种临床疗效评估。本站仅转述事实与阅读重点，不转载图像或全文。",
+    "status": "verified",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "herb-hkbu-b00104",
+    "title": "天花粉 · 中药材资料",
+    "author": "香港浸会大学中医药学院、图书馆",
+    "url": "https://sys01.lib.hkbu.edu.hk/cmed/mmid/detail.php?lang=chs&pid=B00104",
+    "locator": "名称、来源、性味、传统功效及页面载有的炮制品",
+    "supports": [
+      "药材名称和来源",
+      "传统功效与制品区别"
+    ],
+    "note": "数据库的功效栏属于传统应用资料，不是逐病种临床疗效评估。本站仅转述事实与阅读重点，不转载图像或全文。",
+    "status": "verified",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "herb-hkbu-b00070",
+    "title": "黄连 · 中药材资料",
+    "author": "香港浸会大学中医药学院、图书馆",
+    "url": "https://sys01.lib.hkbu.edu.hk/cmed/mmid/detail.php?lang=chs&pid=B00070",
+    "locator": "名称、来源、性味、传统功效及页面载有的炮制品",
+    "supports": [
+      "药材名称和来源",
+      "传统功效与制品区别"
+    ],
+    "note": "数据库的功效栏属于传统应用资料，不是逐病种临床疗效评估。本站仅转述事实与阅读重点，不转载图像或全文。",
+    "status": "verified",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "herb-hkbu-b00072",
+    "title": "黄芩 · 中药材资料",
+    "author": "香港浸会大学中医药学院、图书馆",
+    "url": "https://sys01.lib.hkbu.edu.hk/cmed/mmid/detail.php?lang=chs&pid=B00072",
+    "locator": "名称、来源、性味、传统功效及页面载有的炮制品",
+    "supports": [
+      "药材名称和来源",
+      "传统功效与制品区别"
+    ],
+    "note": "数据库的功效栏属于传统应用资料，不是逐病种临床疗效评估。本站仅转述事实与阅读重点，不转载图像或全文。",
+    "status": "verified",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "herb-hkbu-b00346",
+    "title": "黄柏 · 中药材资料",
+    "author": "香港浸会大学中医药学院、图书馆",
+    "url": "https://sys01.lib.hkbu.edu.hk/cmed/mmid/detail.php?lang=chs&pid=B00346",
+    "locator": "名称、来源、性味、传统功效及页面载有的炮制品",
+    "supports": [
+      "药材名称和来源",
+      "传统功效与制品区别"
+    ],
+    "note": "数据库的功效栏属于传统应用资料，不是逐病种临床疗效评估。本站仅转述事实与阅读重点，不转载图像或全文。",
+    "status": "verified",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "herb-hkbu-b00224",
+    "title": "栀子 · 中药材资料",
+    "author": "香港浸会大学中医药学院、图书馆",
+    "url": "https://sys01.lib.hkbu.edu.hk/cmed/mmid/detail.php?lang=chs&pid=B00224",
+    "locator": "名称、来源、性味、传统功效及页面载有的炮制品",
+    "supports": [
+      "药材名称和来源",
+      "传统功效与制品区别"
+    ],
+    "note": "数据库的功效栏属于传统应用资料，不是逐病种临床疗效评估。本站仅转述事实与阅读重点，不转载图像或全文。",
+    "status": "verified",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "herb-hkbu-b00006",
+    "title": "大黄 · 中药材资料",
+    "author": "香港浸会大学中医药学院、图书馆",
+    "url": "https://sys01.lib.hkbu.edu.hk/cmed/mmid/detail.php?lang=chs&pid=B00006",
+    "locator": "名称、来源、性味、传统功效及页面载有的炮制品",
+    "supports": [
+      "药材名称和来源",
+      "传统功效与制品区别"
+    ],
+    "note": "数据库的功效栏属于传统应用资料，不是逐病种临床疗效评估。本站仅转述事实与阅读重点，不转载图像或全文。",
+    "status": "verified",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "herb-hkbu-b00404",
+    "title": "芒硝 · 中药材资料",
+    "author": "香港浸会大学中医药学院、图书馆",
+    "url": "https://sys01.lib.hkbu.edu.hk/cmed/mmid/detail.php?lang=chs&pid=B00404",
+    "locator": "名称、来源；本条只核对身份信息",
+    "supports": [
+      "药材来源及名称辨析"
+    ],
+    "note": "数据库的功效栏属于传统应用资料，不是逐病种临床疗效评估。本站仅转述事实与阅读重点，不转载图像或全文。该页功效措辞存在疑义，本版芒硝的传统应用据用户提供的药证书，不采用其功效栏。",
+    "status": "verified",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "herb-hkbu-b00347",
+    "title": "厚朴 · 中药材资料",
+    "author": "香港浸会大学中医药学院、图书馆",
+    "url": "https://sys01.lib.hkbu.edu.hk/cmed/mmid/detail.php?lang=chs&pid=B00347",
+    "locator": "名称、来源、性味、传统功效及页面载有的炮制品",
+    "supports": [
+      "药材名称和来源",
+      "传统功效与制品区别"
+    ],
+    "note": "数据库的功效栏属于传统应用资料，不是逐病种临床疗效评估。本站仅转述事实与阅读重点，不转载图像或全文。",
+    "status": "verified",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "herb-hkbu-b00223",
+    "title": "枳实 · 中药材资料",
+    "author": "香港浸会大学中医药学院、图书馆",
+    "url": "https://sys01.lib.hkbu.edu.hk/cmed/mmid/detail.php?lang=chs&pid=B00223",
+    "locator": "名称、来源、性味、传统功效及页面载有的炮制品",
+    "supports": [
+      "药材名称和来源",
+      "传统功效与制品区别"
+    ],
+    "note": "数据库的功效栏属于传统应用资料，不是逐病种临床疗效评估。本站仅转述事实与阅读重点，不转载图像或全文。",
+    "status": "verified",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "herb-hkbu-b00177",
+    "title": "瓜蒌 · 中药材资料",
+    "author": "香港浸会大学中医药学院、图书馆",
+    "url": "https://sys01.lib.hkbu.edu.hk/cmed/mmid/detail.php?lang=chs&pid=B00177",
+    "locator": "名称、来源、性味、传统功效及页面载有的炮制品",
+    "supports": [
+      "药材名称和来源",
+      "传统功效与制品区别"
+    ],
+    "note": "数据库的功效栏属于传统应用资料，不是逐病种临床疗效评估。本站仅转述事实与阅读重点，不转载图像或全文。",
+    "status": "verified",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "herb-hkbu-b00111",
+    "title": "薤白 · 中药材资料",
+    "author": "香港浸会大学中医药学院、图书馆",
+    "url": "https://sys01.lib.hkbu.edu.hk/cmed/mmid/detail.php?lang=chs&pid=B00111",
+    "locator": "名称、来源、性味、传统功效及页面载有的炮制品",
+    "supports": [
+      "药材名称和来源",
+      "传统功效与制品区别"
+    ],
+    "note": "数据库的功效栏属于传统应用资料，不是逐病种临床疗效评估。本站仅转述事实与阅读重点，不转载图像或全文。",
+    "status": "verified",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "herb-hkbu-b00412",
+    "title": "石膏 · 中药材资料",
+    "author": "香港浸会大学中医药学院、图书馆",
+    "url": "https://sys01.lib.hkbu.edu.hk/cmed/mmid/detail.php?lang=chs&pid=B00412",
+    "locator": "名称、来源、性味、传统功效及页面载有的炮制品",
+    "supports": [
+      "药材名称和来源",
+      "传统功效与制品区别"
+    ],
+    "note": "数据库的功效栏属于传统应用资料，不是逐病种临床疗效评估。本站仅转述事实与阅读重点，不转载图像或全文。",
+    "status": "verified",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "herb-hkbu-b00125",
+    "title": "知母 · 中药材资料",
+    "author": "香港浸会大学中医药学院、图书馆",
+    "url": "https://sys01.lib.hkbu.edu.hk/cmed/mmid/detail.php?lang=chs&pid=B00125",
+    "locator": "名称、来源、性味、传统功效及页面载有的炮制品",
+    "supports": [
+      "药材名称和来源",
+      "传统功效与制品区别"
+    ],
+    "note": "数据库的功效栏属于传统应用资料，不是逐病种临床疗效评估。本站仅转述事实与阅读重点，不转载图像或全文。",
+    "status": "verified",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "herb-hkbu-b00383",
+    "title": "牡蛎 · 中药材资料",
+    "author": "香港浸会大学中医药学院、图书馆",
+    "url": "https://sys01.lib.hkbu.edu.hk/cmed/mmid/detail.php?lang=chs&pid=B00383",
+    "locator": "名称、来源、性味、传统功效及页面载有的炮制品",
+    "supports": [
+      "药材名称和来源",
+      "传统功效与制品区别"
+    ],
+    "note": "数据库的功效栏属于传统应用资料，不是逐病种临床疗效评估。本站仅转述事实与阅读重点，不转载图像或全文。",
+    "status": "verified",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "herb-hkbu-b00002",
+    "title": "人参 · 中药材资料",
+    "author": "香港浸会大学中医药学院、图书馆",
+    "url": "https://sys01.lib.hkbu.edu.hk/cmed/mmid/detail.php?lang=chs&pid=B00002",
+    "locator": "名称、来源、性味、传统功效及页面载有的炮制品",
+    "supports": [
+      "药材名称和来源",
+      "传统功效与制品区别"
+    ],
+    "note": "数据库的功效栏属于传统应用资料，不是逐病种临床疗效评估。本站仅转述事实与阅读重点，不转载图像或全文。",
+    "status": "verified",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "herb-hkbu-b00084",
+    "title": "麦冬 · 中药材资料",
+    "author": "香港浸会大学中医药学院、图书馆",
+    "url": "https://sys01.lib.hkbu.edu.hk/cmed/mmid/detail.php?lang=chs&pid=B00084",
+    "locator": "名称、来源、性味、传统功效及页面载有的炮制品",
+    "supports": [
+      "药材名称和来源",
+      "传统功效与制品区别"
+    ],
+    "note": "数据库的功效栏属于传统应用资料，不是逐病种临床疗效评估。本站仅转述事实与阅读重点，不转载图像或全文。",
+    "status": "verified",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "herb-hkbu-b00373",
+    "title": "阿胶 · 中药材资料",
+    "author": "香港浸会大学中医药学院、图书馆",
+    "url": "https://sys01.lib.hkbu.edu.hk/cmed/mmid/detail.php?lang=chs&pid=B00373",
+    "locator": "名称、来源、性味、传统功效及页面载有的炮制品",
+    "supports": [
+      "药材名称和来源",
+      "传统功效与制品区别"
+    ],
+    "note": "数据库的功效栏属于传统应用资料，不是逐病种临床疗效评估。本站仅转述事实与阅读重点，不转载图像或全文。",
+    "status": "verified",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "herb-hkbu-b00050",
+    "title": "地黄 · 中药材资料",
+    "author": "香港浸会大学中医药学院、图书馆",
+    "url": "https://sys01.lib.hkbu.edu.hk/cmed/mmid/detail.php?lang=chs&pid=B00050",
+    "locator": "名称、来源、性味、传统功效及页面载有的炮制品",
+    "supports": [
+      "药材名称和来源",
+      "传统功效与制品区别"
+    ],
+    "note": "数据库的功效栏属于传统应用资料，不是逐病种临床疗效评估。本站仅转述事实与阅读重点，不转载图像或全文。",
+    "status": "verified",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "herb-hkbu-b00049",
+    "title": "当归 · 中药材资料",
+    "author": "香港浸会大学中医药学院、图书馆",
+    "url": "https://sys01.lib.hkbu.edu.hk/cmed/mmid/detail.php?lang=chs&pid=B00049",
+    "locator": "名称、来源、性味、传统功效及页面载有的炮制品",
+    "supports": [
+      "药材名称和来源",
+      "传统功效与制品区别"
+    ],
+    "note": "数据库的功效栏属于传统应用资料，不是逐病种临床疗效评估。本站仅转述事实与阅读重点，不转载图像或全文。",
+    "status": "verified",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "herb-hkbu-b00047",
+    "title": "川芎 · 中药材资料",
+    "author": "香港浸会大学中医药学院、图书馆",
+    "url": "https://sys01.lib.hkbu.edu.hk/cmed/mmid/detail.php?lang=chs&pid=B00047",
+    "locator": "名称、来源、性味、传统功效及页面载有的炮制品",
+    "supports": [
+      "药材名称和来源",
+      "传统功效与制品区别"
+    ],
+    "note": "数据库的功效栏属于传统应用资料，不是逐病种临床疗效评估。本站仅转述事实与阅读重点，不转载图像或全文。",
+    "status": "verified",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "herb-hkbu-b00349",
+    "title": "牡丹皮 · 中药材资料",
+    "author": "香港浸会大学中医药学院、图书馆",
+    "url": "https://sys01.lib.hkbu.edu.hk/cmed/mmid/detail.php?lang=chs&pid=B00349",
+    "locator": "名称、来源、性味、传统功效及页面载有的炮制品",
+    "supports": [
+      "药材名称和来源",
+      "传统功效与制品区别"
+    ],
+    "note": "数据库的功效栏属于传统应用资料，不是逐病种临床疗效评估。本站仅转述事实与阅读重点，不转载图像或全文。",
+    "status": "verified",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "herb-hkbu-b00216",
+    "title": "苦杏仁 · 中药材资料",
+    "author": "香港浸会大学中医药学院、图书馆",
+    "url": "https://sys01.lib.hkbu.edu.hk/cmed/mmid/detail.php?lang=chs&pid=B00216",
+    "locator": "名称、来源、性味、传统功效及页面载有的炮制品",
+    "supports": [
+      "药材名称和来源",
+      "传统功效与制品区别"
+    ],
+    "note": "数据库的功效栏属于传统应用资料，不是逐病种临床疗效评估。本站仅转述事实与阅读重点，不转载图像或全文。",
+    "status": "verified",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "herb-hkbu-b00211",
+    "title": "五味子 · 中药材资料",
+    "author": "香港浸会大学中医药学院、图书馆",
+    "url": "https://sys01.lib.hkbu.edu.hk/cmed/mmid/detail.php?lang=chs&pid=B00211",
+    "locator": "名称、来源、性味、传统功效及页面载有的炮制品",
+    "supports": [
+      "药材名称和来源",
+      "传统功效与制品区别"
+    ],
+    "note": "数据库的功效栏属于传统应用资料，不是逐病种临床疗效评估。本站仅转述事实与阅读重点，不转载图像或全文。",
+    "status": "verified",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "herb-hkbu-b00076",
+    "title": "桔梗 · 中药材资料",
+    "author": "香港浸会大学中医药学院、图书馆",
+    "url": "https://sys01.lib.hkbu.edu.hk/cmed/mmid/detail.php?lang=chs&pid=B00076",
+    "locator": "名称、来源、性味、传统功效及页面载有的炮制品",
+    "supports": [
+      "药材名称和来源",
+      "传统功效与制品区别"
+    ],
+    "note": "数据库的功效栏属于传统应用资料，不是逐病种临床疗效评估。本站仅转述事实与阅读重点，不转载图像或全文。",
+    "status": "verified",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "herb-hkbu-b00208",
+    "title": "葶苈子 · 中药材资料",
+    "author": "香港浸会大学中医药学院、图书馆",
+    "url": "https://sys01.lib.hkbu.edu.hk/cmed/mmid/detail.php?lang=chs&pid=B00208",
+    "locator": "名称、来源、性味、传统功效及页面载有的炮制品",
+    "supports": [
+      "药材名称和来源",
+      "传统功效与制品区别"
+    ],
+    "note": "数据库的功效栏属于传统应用资料，不是逐病种临床疗效评估。本站仅转述事实与阅读重点，不转载图像或全文。",
+    "status": "verified",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "herb-hkbu-b00207",
+    "title": "桃仁 · 中药材资料",
+    "author": "香港浸会大学中医药学院、图书馆",
+    "url": "https://sys01.lib.hkbu.edu.hk/cmed/mmid/detail.php?lang=chs&pid=B00207",
+    "locator": "名称、来源、性味、传统功效及页面载有的炮制品",
+    "supports": [
+      "药材名称和来源",
+      "传统功效与制品区别"
+    ],
+    "note": "数据库的功效栏属于传统应用资料，不是逐病种临床疗效评估。本站仅转述事实与阅读重点，不转载图像或全文。",
+    "status": "verified",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "herb-hkbu-b00396",
+    "title": "土鳖虫 · 中药材资料",
+    "author": "香港浸会大学中医药学院、图书馆",
+    "url": "https://sys01.lib.hkbu.edu.hk/cmed/mmid/detail.php?lang=chs&pid=B00396",
+    "locator": "名称、来源、性味、传统功效及页面载有的炮制品",
+    "supports": [
+      "药材名称和来源",
+      "传统功效与制品区别"
+    ],
+    "note": "数据库的功效栏属于传统应用资料，不是逐病种临床疗效评估。本站仅转述事实与阅读重点，不转载图像或全文。",
+    "status": "verified",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "herb-hkbu-b00392",
+    "title": "水蛭 · 中药材资料",
+    "author": "香港浸会大学中医药学院、图书馆",
+    "url": "https://sys01.lib.hkbu.edu.hk/cmed/mmid/detail.php?lang=chs&pid=B00392",
+    "locator": "名称、来源、性味、传统功效及页面载有的炮制品",
+    "supports": [
+      "药材名称和来源",
+      "传统功效与制品区别"
+    ],
+    "note": "数据库的功效栏属于传统应用资料，不是逐病种临床疗效评估。本站仅转述事实与阅读重点，不转载图像或全文。",
+    "status": "verified",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "herb-aristolochic",
+    "title": "含马兜铃酸药材：基原与风险",
+    "author": "香港卫生署中医药规管办公室",
+    "url": "https://www.cmro.gov.hk/html/b5/useful_information/public_health/publication/AdverseEvents13.html",
+    "locator": "防己与广防己、细辛药材来源及风险辨别",
+    "supports": [
+      "防己与广防己、细辛药材来源及风险辨别"
+    ],
+    "note": "已读取相关正文，本站以原创中文解释使用；不据此把传统功效认作单味药治愈疾病的证据。",
+    "status": "verified",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "herb-apricot",
+    "title": "苦杏仁：不良事件资料",
+    "author": "香港卫生署中医药规管办公室",
+    "url": "https://www.cmro.gov.hk/html/b5/useful_information/public_health/publication/AdverseEvents17.html",
+    "locator": "苦杏仁中毒风险及症状",
+    "supports": [
+      "苦杏仁中毒风险及症状"
+    ],
+    "note": "已读取相关正文，本站以原创中文解释使用；不据此把传统功效认作单味药治愈疾病的证据。",
+    "status": "verified",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "herb-banxia",
+    "title": "生半夏和制半夏",
+    "author": "香港卫生署中医药规管办公室",
+    "url": "https://www.cmro.gov.hk/html/b5/useful_information/public_health/publication/AdverseEvents7.html",
+    "locator": "半夏生制品与误食风险",
+    "supports": [
+      "半夏生制品与误食风险"
+    ],
+    "note": "已读取相关正文，本站以原创中文解释使用；不据此把传统功效认作单味药治愈疾病的证据。",
+    "status": "verified",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "herb-decoctions",
+    "title": "煎药常识",
+    "author": "香港卫生署中医药规管办公室",
+    "url": "https://www.cmro.gov.hk/html/b5/useful_information/public_health/pamphlet/Preparing_Herbal_Decoctions.html",
+    "locator": "煎药器具、一般过程、特殊药物依处方处理",
+    "supports": [
+      "煎药器具、一般过程、特殊药物依处方处理"
+    ],
+    "note": "已读取相关正文，本站以原创中文解释使用；不据此把传统功效认作单味药治愈疾病的证据。",
+    "status": "verified",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "herb-methods",
+    "title": "中药的先煎、后下、包煎、烊化、冲服和另煎解析",
+    "author": "深圳市宝安纯中医治疗医院",
+    "url": "https://www.bawjxt.net/szsbaczyzlyy/whxj/zyywh/content/post_917762.html",
+    "locator": "先煎、后下、包煎、另煎、烊化等特殊用法术语；本站不转录毒性药物的煎煮时长",
+    "supports": [
+      "先煎、后下、包煎、另煎、烊化等特殊用法术语；本站不转录毒性药物的煎煮时长"
+    ],
+    "note": "已读取相关正文，本站以原创中文解释使用；不据此把传统功效认作单味药治愈疾病的证据。",
+    "status": "verified",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "herb-ginger",
+    "title": "Ginger：生姜研究与安全",
+    "author": "美国国家补充与整合健康中心 NCCIH",
+    "url": "https://www.nccih.nih.gov/health/ginger",
+    "locator": "恶心等研究结论、制剂与安全限制",
+    "supports": [
+      "恶心等研究结论、制剂与安全限制"
+    ],
+    "note": "已读取相关正文，本站以原创中文解释使用；不据此把传统功效认作单味药治愈疾病的证据。",
+    "status": "verified",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "herb-ginseng",
+    "title": "Asian Ginseng：人参研究与安全",
+    "author": "美国国家补充与整合健康中心 NCCIH",
+    "url": "https://www.nccih.nih.gov/health/asian-ginseng",
+    "locator": "疲劳、血糖等研究的局限及用药注意",
+    "supports": [
+      "疲劳、血糖等研究的局限及用药注意"
+    ],
+    "note": "已读取相关正文，本站以原创中文解释使用；不据此把传统功效认作单味药治愈疾病的证据。",
+    "status": "verified",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "herb-astragalus",
+    "title": "Astragalus：黄芪研究与安全",
+    "author": "美国国家补充与整合健康中心 NCCIH",
+    "url": "https://www.nccih.nih.gov/health/astragalus",
+    "locator": "临床研究质量限制、自身免疫病和免疫抑制药注意",
+    "supports": [
+      "临床研究质量限制、自身免疫病和免疫抑制药注意"
+    ],
+    "note": "已读取相关正文，本站以原创中文解释使用；不据此把传统功效认作单味药治愈疾病的证据。",
+    "status": "verified",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "herb-schisandra",
+    "title": "Schisandra：五味子与药物相互作用",
+    "author": "纪念斯隆凯特琳癌症中心 MSK",
+    "url": "https://www.mskcc.org/cancer-care/integrative-medicine/herbs/schisandra",
+    "locator": "有限人体研究；他克莫司血药浓度变化与合用注意",
+    "supports": [
+      "有限人体研究；他克莫司血药浓度变化与合用注意"
+    ],
+    "note": "已读取相关正文，本站以原创中文解释使用；不据此把传统功效认作单味药治愈疾病的证据。",
+    "status": "verified",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "herb-dongquai",
+    "title": "Dong Quai：当归安全与相互作用",
+    "author": "纪念斯隆凯特琳癌症中心 MSK",
+    "url": "https://www.mskcc.org/cancer-care/integrative-medicine/herbs/dong-quai",
+    "locator": "当归与抗凝药、孕期等注意事项",
+    "supports": [
+      "当归与抗凝药、孕期等注意事项"
+    ],
+    "note": "已读取相关正文，本站以原创中文解释使用；不据此把传统功效认作单味药治愈疾病的证据。",
+    "status": "verified",
+    "checkedAt": "2026-11-10"
   }
 ]
