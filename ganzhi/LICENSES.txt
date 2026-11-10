@@ -1,0 +1,18 @@
+天干地支 · 时间之序
+
+原创中文释文与交互：本项目。古籍仅作短引或原创转述，不批量复制现代注释。
+古籍电子文本参考维基文库，各原典多已进入公有领域；具体转录和页面许可请见来源页。本站未复制整篇电子转录。
+二手百科仅用于事实与术语核对，本站释文独立撰写。各条出处列于 data/sources.json。
+香港天文台资料用于独立日期校验；本站浏览器计算使用下列本地依赖，未声称获得天文台背书。
+
+lunar-javascript 1.7.8 — Copyright (c) 2018 6tail — MIT
+https://github.com/6tail/lunar-javascript
+完整许可：vendor/LICENSE.lunar.txt
+npm包sha512：T79Lq2t5zjPu7nnkuUn3xFqIMIB5LCVSn6uJXQLvgWEqUGdE4KQXqQOVBaoYsVHY/8MIwFd7ol9dJ5bP2ItXUQ==
+
+Noto Serif SC — SIL Open Font License 1.1
+由 Fontsource @fontsource/noto-serif-sc 5.3.1 提供源字体，按本专题文字子集化。
+完整许可：fonts/OFL.txt
+https://cdn.jsdelivr.net/npm/@fontsource/noto-serif-sc@5.3.1/files/noto-serif-sc-chinese-simplified-400-normal.woff2
+
+循环盘、关系图和图标为原创 SVG 几何图形，无外部图片或视频素材。
