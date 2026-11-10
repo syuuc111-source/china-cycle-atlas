@@ -1,5 +1,1473 @@
 {
-  "version": "2026.11.herb-profiles",
+  "acupuncture": {
+    "channels": [
+      {
+        "id": "lu",
+        "name": "手太阴肺经",
+        "phase": "金",
+        "path": "胸部与上肢内侧、拇指一线",
+        "explain": "经文以肺系与手臂内侧的联系组织咳嗽、气逆和局部不适；经名不表示沿线疼痛都来自肺部疾病。",
+        "citations": [
+          {
+            "book": "acu-dacheng",
+            "start": 268,
+            "end": 273,
+            "note": ""
+          }
+        ]
+      },
+      {
+        "id": "li",
+        "name": "手阳明大肠经",
+        "phase": "金",
+        "path": "食指、上肢外侧至面鼻部",
+        "explain": "牙齿、鼻面和上肢症状常见于本经主治记载；大肠经穴也有头面部用途，不能只按脏器名字理解。",
+        "citations": [
+          {
+            "book": "acu-dacheng",
+            "start": 274,
+            "end": 280,
+            "note": ""
+          }
+        ]
+      },
+      {
+        "id": "st",
+        "name": "足阳明胃经",
+        "phase": "土",
+        "path": "面部、胸腹前侧至下肢前外侧及足部",
+        "explain": "经文兼顾饮食、腹部和下肢表现。胃经的传统范围远大于现代胃器官，不据线路诊断胃病。",
+        "citations": [
+          {
+            "book": "acu-dacheng",
+            "start": 280,
+            "end": 293,
+            "note": ""
+          }
+        ]
+      },
+      {
+        "id": "sp",
+        "name": "足太阴脾经",
+        "phase": "土",
+        "path": "足大趾内侧、下肢内侧至腹胸部",
+        "explain": "饮食、便溏、水湿和下肢内侧症状是阅读线索；传统脾的运化概念不同于现代脾脏功能。",
+        "citations": [
+          {
+            "book": "acu-dacheng",
+            "start": 294,
+            "end": 301,
+            "note": ""
+          }
+        ]
+      },
+      {
+        "id": "ht",
+        "name": "手少阴心经",
+        "phase": "火",
+        "path": "腋部、上肢内侧后缘至小指",
+        "explain": "神志、心悸与局部症状并列，提示古代心的理论范围；心经主治不可当作心脏急救方案。",
+        "citations": [
+          {
+            "book": "acu-dacheng",
+            "start": 302,
+            "end": 306,
+            "note": ""
+          }
+        ]
+      },
+      {
+        "id": "si",
+        "name": "手太阳小肠经",
+        "phase": "火",
+        "path": "小指、上肢后侧、肩胛至颈面耳部",
+        "explain": "肩胛、颈项、耳部的描述较多；与心经表里相配是传统分类关系，不是现代血管连接图。",
+        "citations": [
+          {
+            "book": "acu-dacheng",
+            "start": 307,
+            "end": 311,
+            "note": ""
+          }
+        ]
+      },
+      {
+        "id": "bl",
+        "name": "足太阳膀胱经",
+        "phase": "水",
+        "path": "眼内角、头背部、下肢后侧至足外侧",
+        "explain": "背俞穴与腰背、下肢的记载是重点。本经不只是排尿系统，其背部腧穴体系需要另读。",
+        "citations": [
+          {
+            "book": "acu-dacheng",
+            "start": 312,
+            "end": 329,
+            "note": ""
+          }
+        ]
+      },
+      {
+        "id": "ki",
+        "name": "足少阴肾经",
+        "phase": "水",
+        "path": "足底、下肢内后侧至腹胸部",
+        "explain": "古代肾、精、骨与生殖等理论在此交汇；肾经症状不能用来推断现代肾功能或诊断肾衰。",
+        "citations": [
+          {
+            "book": "acu-dacheng",
+            "start": 329,
+            "end": 339,
+            "note": ""
+          }
+        ]
+      },
+      {
+        "id": "pc",
+        "name": "手厥阴心包经",
+        "phase": "火",
+        "path": "胸部、上肢内侧中间至中指",
+        "explain": "古书又称手心主、心包络。胸部、神志、肘腕描述并见，不能直接等同现代心包疾病。",
+        "citations": [
+          {
+            "book": "acu-dacheng",
+            "start": 340,
+            "end": 343,
+            "note": ""
+          }
+        ]
+      },
+      {
+        "id": "te",
+        "name": "手少阳三焦经",
+        "phase": "火",
+        "path": "无名指、上肢外侧中间至肩颈耳旁",
+        "explain": "三焦是传统功能与部位体系；不对应一件独立现代解剖器官。耳部、上肢和胁部是常见阅读线索。",
+        "citations": [
+          {
+            "book": "acu-dacheng",
+            "start": 343,
+            "end": 349,
+            "note": ""
+          }
+        ]
+      },
+      {
+        "id": "gb",
+        "name": "足少阳胆经",
+        "phase": "木",
+        "path": "头侧、躯干侧面、下肢外侧至足部",
+        "explain": "侧头、胁肋、筋与下肢外侧表现共同出现；胆经疼痛不是胆囊病的自测标准。",
+        "citations": [
+          {
+            "book": "acu-dacheng",
+            "start": 349,
+            "end": 360,
+            "note": ""
+          }
+        ]
+      },
+      {
+        "id": "lr",
+        "name": "足厥阴肝经",
+        "phase": "木",
+        "path": "足大趾、下肢内侧至少腹与胁部",
+        "explain": "疝、月经、筋与胁部等古代用语需要分开解释；传统肝不等于现代肝脏检验指标。",
+        "citations": [
+          {
+            "book": "acu-dacheng",
+            "start": 360,
+            "end": 367,
+            "note": ""
+          }
+        ]
+      },
+      {
+        "id": "cv",
+        "name": "任脉",
+        "phase": "—",
+        "path": "身体前正中，沿腹胸至颏部",
+        "explain": "任脉属于奇经八脉，另有独立经穴。腹部的募穴和生殖相关描述多见，不是所有妇科疾病的通用治疗线。",
+        "citations": [
+          {
+            "book": "acu-dacheng",
+            "start": 367,
+            "end": 377,
+            "note": ""
+          }
+        ]
+      },
+      {
+        "id": "gv",
+        "name": "督脉",
+        "phase": "—",
+        "path": "身体后正中，沿脊柱至头面",
+        "explain": "督脉也是奇经八脉，常讨论背部、头部及阳经联系。古书穴数与现行标准可能不同，不能默认为同一版本。",
+        "citations": [
+          {
+            "book": "acu-dacheng",
+            "start": 377,
+            "end": 385,
+            "note": ""
+          }
+        ]
+      }
+    ],
+    "points": [
+      {
+        "id": "lu7",
+        "code": "LU7",
+        "name": "列缺",
+        "channel": "lu",
+        "region": "上肢",
+        "location": "前臂靠拇指的一侧，腕部上方；这里仅作部位识别，不据图片定针位。",
+        "category": "络穴；八脉交会穴，通任脉",
+        "uses": "原书记有咳嗽、肩臂和手腕相关症状，体现肺系与经脉循行的传统联系。",
+        "distinction": "“头项寻列缺”是取穴歌诀的记忆线索，不能代替头痛、颈痛的病因诊断。",
+        "caution": "新发面歪、肢体无力或说话困难需立即急救，不先按古书偏风条目试治。",
+        "citations": [
+          {
+            "book": "acu-dacheng",
+            "start": 271,
+            "end": 272,
+            "note": ""
+          }
+        ],
+        "categoryCitations": [
+          {
+            "book": "acu-dacheng",
+            "start": 213,
+            "end": 214,
+            "note": ""
+          },
+          {
+            "book": "acu-dacheng",
+            "start": 240,
+            "end": 241,
+            "note": ""
+          },
+          {
+            "book": "acu-dacheng",
+            "start": 397,
+            "end": 397,
+            "note": ""
+          }
+        ],
+        "sourceIds": [
+          "acu-nccih"
+        ]
+      },
+      {
+        "id": "lu9",
+        "code": "LU9",
+        "name": "太渊",
+        "channel": "lu",
+        "region": "上肢",
+        "location": "腕掌侧靠拇指端的区域，邻近可触及的脉搏。",
+        "category": "输穴、原穴；八会穴之脉会",
+        "uses": "原书讨论咳嗽、胸部不适、肩背及手臂症状；脉会来自传统八会理论。",
+        "distinction": "脉会不表示刺激此穴能疏通所有血管或治疗血栓；这里的脉有传统语境。",
+        "caution": "邻近血管，不能按脉搏位置自行进针；胸痛、咯血等需医疗评估。",
+        "citations": [
+          {
+            "book": "acu-dacheng",
+            "start": 272,
+            "end": 272,
+            "note": ""
+          }
+        ],
+        "categoryCitations": [
+          {
+            "book": "acu-dacheng",
+            "start": 213,
+            "end": 214,
+            "note": ""
+          },
+          {
+            "book": "acu-dacheng",
+            "start": 240,
+            "end": 241,
+            "note": ""
+          },
+          {
+            "book": "acu-dacheng",
+            "start": 397,
+            "end": 397,
+            "note": ""
+          }
+        ],
+        "sourceIds": [
+          "acu-nccih"
+        ]
+      },
+      {
+        "id": "li4",
+        "code": "LI4",
+        "name": "合谷",
+        "channel": "li",
+        "region": "上肢",
+        "location": "手背第一、第二掌骨之间的区域，俗称虎口附近；不是整片虎口都叫合谷。",
+        "category": "原穴",
+        "uses": "原书以头面、牙齿、口鼻和上肢等症状为主，列举范围很广，需放回不同证候理解。",
+        "distinction": "牙痛可涉及牙髓、牙周等病因，传统止痛用途不能替代牙科处理。古书的孕期补泻说法不作为操作规则。",
+        "caution": "孕期、可能怀孕及手部损伤需告知医生；不按网上补泻手法自行刺激来催产。",
+        "citations": [
+          {
+            "book": "acu-dacheng",
+            "start": 276,
+            "end": 276,
+            "note": ""
+          }
+        ],
+        "categoryCitations": [
+          {
+            "book": "acu-dacheng",
+            "start": 213,
+            "end": 214,
+            "note": ""
+          },
+          {
+            "book": "acu-dacheng",
+            "start": 240,
+            "end": 241,
+            "note": ""
+          },
+          {
+            "book": "acu-dacheng",
+            "start": 397,
+            "end": 397,
+            "note": ""
+          }
+        ],
+        "sourceIds": [
+          "acu-nccih"
+        ]
+      },
+      {
+        "id": "li11",
+        "code": "LI11",
+        "name": "曲池",
+        "channel": "li",
+        "region": "上肢",
+        "location": "肘部外侧，屈肘时靠近肘横纹外端的区域。",
+        "category": "合穴",
+        "uses": "原书记有肘臂疼痛、屈伸不利及热病、风疹等，局部和远部主治并存。",
+        "distinction": "“热”“风”是传统分类词，不能因为皮肤发红或发热就自动选择同一处理。",
+        "caution": "肘关节红肿伴发热、外伤后活动受限需要明确感染或损伤；针灸不代替检查。",
+        "citations": [
+          {
+            "book": "acu-dacheng",
+            "start": 277,
+            "end": 278,
+            "note": ""
+          }
+        ],
+        "categoryCitations": [
+          {
+            "book": "acu-dacheng",
+            "start": 213,
+            "end": 214,
+            "note": ""
+          },
+          {
+            "book": "acu-dacheng",
+            "start": 240,
+            "end": 241,
+            "note": ""
+          },
+          {
+            "book": "acu-dacheng",
+            "start": 397,
+            "end": 397,
+            "note": ""
+          }
+        ],
+        "sourceIds": [
+          "acu-nccih"
+        ]
+      },
+      {
+        "id": "st25",
+        "code": "ST25",
+        "name": "天枢",
+        "channel": "st",
+        "region": "躯干",
+        "location": "腹部脐旁左右的区域，属于腹部穴位，不是肚脐本身。",
+        "category": "大肠募穴",
+        "uses": "原书围绕腹胀、肠鸣、泄泻和脐周痛等记载，与大肠募穴的传统解释相关。",
+        "distinction": "同样是腹泻可能涉及感染、药物或慢性肠病；腹部取穴不等于对这些原因都有疗效。",
+        "caution": "腹部深层有脏器，孕期、术后或突发剧痛不自行针刺或强压；剧痛伴呕吐需就医。",
+        "citations": [
+          {
+            "book": "acu-dacheng",
+            "start": 287,
+            "end": 287,
+            "note": ""
+          }
+        ],
+        "categoryCitations": [
+          {
+            "book": "acu-dacheng",
+            "start": 213,
+            "end": 214,
+            "note": ""
+          },
+          {
+            "book": "acu-dacheng",
+            "start": 240,
+            "end": 241,
+            "note": ""
+          },
+          {
+            "book": "acu-dacheng",
+            "start": 397,
+            "end": 397,
+            "note": ""
+          }
+        ],
+        "sourceIds": [
+          "acu-nccih"
+        ]
+      },
+      {
+        "id": "st36",
+        "code": "ST36",
+        "name": "足三里",
+        "channel": "st",
+        "region": "下肢",
+        "location": "小腿前外侧、膝下的区域。需与上肢的手三里分开。",
+        "category": "合穴",
+        "uses": "古书以胃腹、饮食及下肢症状为重要线索，也列有虚劳等广泛主治。",
+        "distinction": "原书“诸病皆治”等赞语属于历史表达，不是现代疗效承诺；单穴不能代替营养、运动或疾病治疗。",
+        "caution": "不以追求强烈酸痛判断效果。小腿感染、外伤或不明肿胀应先评估，不能自行针刺。",
+        "citations": [
+          {
+            "book": "acu-dacheng",
+            "start": 289,
+            "end": 290,
+            "note": ""
+          }
+        ],
+        "categoryCitations": [
+          {
+            "book": "acu-dacheng",
+            "start": 213,
+            "end": 214,
+            "note": ""
+          },
+          {
+            "book": "acu-dacheng",
+            "start": 240,
+            "end": 241,
+            "note": ""
+          },
+          {
+            "book": "acu-dacheng",
+            "start": 397,
+            "end": 397,
+            "note": ""
+          }
+        ],
+        "sourceIds": [
+          "acu-nccih"
+        ]
+      },
+      {
+        "id": "sp6",
+        "code": "SP6",
+        "name": "三阴交",
+        "channel": "sp",
+        "region": "下肢",
+        "location": "小腿内侧，内踝上方、胫骨内侧缘附近的区域。",
+        "category": "足三阴经交会穴",
+        "uses": "原书讨论脾胃、泌尿、生殖相关及下肢症状，三阴指脾、肝、肾三经的传统交会。",
+        "distinction": "交会不等于一个穴位同时治疗三个脏器的所有疾病。古书孕期相关说法需与现代孕产医疗分开。",
+        "caution": "孕期、异常阴道出血或急性下腹痛需医疗评估；不自行用穴来催经或安胎。",
+        "citations": [
+          {
+            "book": "acu-dacheng",
+            "start": 297,
+            "end": 298,
+            "note": ""
+          }
+        ],
+        "categoryCitations": [
+          {
+            "book": "acu-dacheng",
+            "start": 213,
+            "end": 214,
+            "note": ""
+          },
+          {
+            "book": "acu-dacheng",
+            "start": 240,
+            "end": 241,
+            "note": ""
+          },
+          {
+            "book": "acu-dacheng",
+            "start": 397,
+            "end": 397,
+            "note": ""
+          }
+        ],
+        "sourceIds": [
+          "acu-nccih"
+        ]
+      },
+      {
+        "id": "sp9",
+        "code": "SP9",
+        "name": "阴陵泉",
+        "channel": "sp",
+        "region": "下肢",
+        "location": "小腿内侧上部，膝下胫骨内侧隆起附近。",
+        "category": "合穴",
+        "uses": "原书相关段落涉及腹满、小便及下肢内侧表现，传统常用“水湿”组织这些病证。",
+        "distinction": "“利湿”不是把任何肿胀排出去；心肾疾病、静脉问题和炎症造成的肿胀须分别诊断。",
+        "caution": "单侧腿肿痛、胸闷气促或尿量明显减少不按水湿自行处理。",
+        "citations": [
+          {
+            "book": "acu-dacheng",
+            "start": 298,
+            "end": 299,
+            "note": ""
+          }
+        ],
+        "categoryCitations": [
+          {
+            "book": "acu-dacheng",
+            "start": 213,
+            "end": 214,
+            "note": ""
+          },
+          {
+            "book": "acu-dacheng",
+            "start": 240,
+            "end": 241,
+            "note": ""
+          },
+          {
+            "book": "acu-dacheng",
+            "start": 397,
+            "end": 397,
+            "note": ""
+          }
+        ],
+        "sourceIds": [
+          "acu-nccih"
+        ]
+      },
+      {
+        "id": "ht7",
+        "code": "HT7",
+        "name": "神门",
+        "channel": "ht",
+        "region": "上肢",
+        "location": "腕掌侧靠小指的一端，邻近肌腱与血管神经结构。",
+        "category": "输穴、原穴",
+        "uses": "原书列心烦、恐悸、健忘等古代神志用语，也讨论手臂与胸部症状。",
+        "distinction": "“安神”是传统解释，不证明单穴能治疗所有失眠、焦虑或记忆问题；长期症状需要完整评估。",
+        "caution": "胸痛、晕厥及显著精神行为变化不能用神门替代及时诊疗；腕部不自行进针。",
+        "citations": [
+          {
+            "book": "acu-dacheng",
+            "start": 305,
+            "end": 306,
+            "note": ""
+          }
+        ],
+        "categoryCitations": [
+          {
+            "book": "acu-dacheng",
+            "start": 213,
+            "end": 214,
+            "note": ""
+          },
+          {
+            "book": "acu-dacheng",
+            "start": 240,
+            "end": 241,
+            "note": ""
+          },
+          {
+            "book": "acu-dacheng",
+            "start": 397,
+            "end": 397,
+            "note": ""
+          }
+        ],
+        "sourceIds": [
+          "acu-nccih"
+        ]
+      },
+      {
+        "id": "si3",
+        "code": "SI3",
+        "name": "后溪",
+        "channel": "si",
+        "region": "上肢",
+        "location": "手掌小指侧，掌指关节近侧的区域，握拳时较易观察到局部皮纹。",
+        "category": "输穴；八脉交会穴，通督脉",
+        "uses": "古书记录颈项、肩臂、头面与手部表现；通督脉是传统经脉联系之一。",
+        "distinction": "与申脉的传统配对属于八脉交会体系，不应和八会穴混成一套。",
+        "caution": "外伤后的颈痛、手指麻木无力先明确病因，不能靠强刺激手穴拖延处理。",
+        "citations": [
+          {
+            "book": "acu-dacheng",
+            "start": 308,
+            "end": 309,
+            "note": ""
+          }
+        ],
+        "categoryCitations": [
+          {
+            "book": "acu-dacheng",
+            "start": 213,
+            "end": 214,
+            "note": ""
+          },
+          {
+            "book": "acu-dacheng",
+            "start": 240,
+            "end": 241,
+            "note": ""
+          },
+          {
+            "book": "acu-dacheng",
+            "start": 397,
+            "end": 397,
+            "note": ""
+          }
+        ],
+        "sourceIds": [
+          "acu-nccih"
+        ]
+      },
+      {
+        "id": "bl40",
+        "code": "BL40",
+        "name": "委中",
+        "channel": "bl",
+        "region": "下肢",
+        "location": "膝后腘窝中央区域，有重要血管与神经经过。",
+        "category": "合穴",
+        "uses": "原书有腰重、腰脊痛及膝部相关症状，后世常以“腰背委中求”作为歌诀。",
+        "distinction": "原书记载放血等方法，只作为历史资料定位；腰痛还需排查神经压迫、感染等原因。",
+        "caution": "不提供腘窝针刺或放血教程。腰痛伴新发大小便障碍、会阴麻木或腿无力应及时急诊。",
+        "citations": [
+          {
+            "book": "acu-dacheng",
+            "start": 325,
+            "end": 325,
+            "note": ""
+          }
+        ],
+        "categoryCitations": [
+          {
+            "book": "acu-dacheng",
+            "start": 213,
+            "end": 214,
+            "note": ""
+          },
+          {
+            "book": "acu-dacheng",
+            "start": 240,
+            "end": 241,
+            "note": ""
+          },
+          {
+            "book": "acu-dacheng",
+            "start": 397,
+            "end": 397,
+            "note": ""
+          }
+        ],
+        "sourceIds": [
+          "acu-nccih"
+        ]
+      },
+      {
+        "id": "bl60",
+        "code": "BL60",
+        "name": "昆仑",
+        "channel": "bl",
+        "region": "下肢",
+        "location": "外踝后侧与跟腱之间的区域。",
+        "category": "经穴（五输穴之一）",
+        "uses": "原书涉及头项、腰背、踝足等症状，也有孕产方面历史记载。",
+        "distinction": "“经穴”既可泛指经脉穴位，也可专指五输穴中的经；此处指后者。古代落胎断语不作为可靠或安全的方法。",
+        "caution": "孕期或可能怀孕应先告知医生；踝部外伤、跟腱损伤不能靠此穴自行处理。",
+        "citations": [
+          {
+            "book": "acu-dacheng",
+            "start": 327,
+            "end": 327,
+            "note": ""
+          }
+        ],
+        "categoryCitations": [
+          {
+            "book": "acu-dacheng",
+            "start": 213,
+            "end": 214,
+            "note": ""
+          },
+          {
+            "book": "acu-dacheng",
+            "start": 240,
+            "end": 241,
+            "note": ""
+          },
+          {
+            "book": "acu-dacheng",
+            "start": 397,
+            "end": 397,
+            "note": ""
+          }
+        ],
+        "sourceIds": [
+          "acu-nccih"
+        ]
+      },
+      {
+        "id": "ki1",
+        "code": "KI1",
+        "name": "涌泉",
+        "channel": "ki",
+        "region": "下肢",
+        "location": "足底前部中央附近，足趾屈曲时可观察到凹陷区域。",
+        "category": "井穴",
+        "uses": "原书记有头面、咽喉、足底及古代厥证等；以肾经起始穴的传统理论理解。",
+        "distinction": "按揉或针刺涌泉不能唤醒所有昏迷者。失去反应时应呼叫急救并按急救人员指导处理。",
+        "caution": "糖尿病足、感觉减退、足部溃疡者不自行灸烫或刺足；不可用疼痛试验代替意识评估。",
+        "citations": [
+          {
+            "book": "acu-dacheng",
+            "start": 332,
+            "end": 333,
+            "note": ""
+          }
+        ],
+        "categoryCitations": [
+          {
+            "book": "acu-dacheng",
+            "start": 213,
+            "end": 214,
+            "note": ""
+          },
+          {
+            "book": "acu-dacheng",
+            "start": 240,
+            "end": 241,
+            "note": ""
+          },
+          {
+            "book": "acu-dacheng",
+            "start": 397,
+            "end": 397,
+            "note": ""
+          }
+        ],
+        "sourceIds": [
+          "acu-nccih"
+        ]
+      },
+      {
+        "id": "ki3",
+        "code": "KI3",
+        "name": "太溪",
+        "channel": "ki",
+        "region": "下肢",
+        "location": "内踝后侧与跟腱之间的区域。",
+        "category": "输穴、原穴",
+        "uses": "原书将咽部、腰足及传统肾系症状联系起来；涉及的肾是中医理论范畴。",
+        "distinction": "古书以此处脉搏推断生死的断语不用于现代预后判断，摸不到不代表必死。",
+        "caution": "慢性肾病仍需检验、用药和随访；踝部有血管神经，勿自行进针。",
+        "citations": [
+          {
+            "book": "acu-dacheng",
+            "start": 333,
+            "end": 334,
+            "note": ""
+          }
+        ],
+        "categoryCitations": [
+          {
+            "book": "acu-dacheng",
+            "start": 213,
+            "end": 214,
+            "note": ""
+          },
+          {
+            "book": "acu-dacheng",
+            "start": 240,
+            "end": 241,
+            "note": ""
+          },
+          {
+            "book": "acu-dacheng",
+            "start": 397,
+            "end": 397,
+            "note": ""
+          }
+        ],
+        "sourceIds": [
+          "acu-nccih"
+        ]
+      },
+      {
+        "id": "pc6",
+        "code": "PC6",
+        "name": "内关",
+        "channel": "pc",
+        "region": "上肢",
+        "location": "前臂掌侧，腕部上方两条肌腱之间附近的区域。",
+        "category": "络穴；八脉交会穴，通阴维脉",
+        "uses": "原书有心痛、肘挛等记载，八脉交会理论另把它与胸胃部位联系起来。",
+        "distinction": "现代关于针灸缓解恶心的研究是具体方案的证据，不能简单归因于任意刺激内关，更不能外推为治疗心肌梗塞。",
+        "caution": "胸痛伴出汗、气促或向臂背放射应立即急救，不等待针灸止痛；持续呕吐也需查因。",
+        "citations": [
+          {
+            "book": "acu-dacheng",
+            "start": 342,
+            "end": 342,
+            "note": ""
+          }
+        ],
+        "categoryCitations": [
+          {
+            "book": "acu-dacheng",
+            "start": 213,
+            "end": 214,
+            "note": ""
+          },
+          {
+            "book": "acu-dacheng",
+            "start": 240,
+            "end": 241,
+            "note": ""
+          },
+          {
+            "book": "acu-dacheng",
+            "start": 397,
+            "end": 397,
+            "note": ""
+          }
+        ],
+        "sourceIds": [
+          "acu-nccih"
+        ]
+      },
+      {
+        "id": "te5",
+        "code": "TE5",
+        "name": "外关",
+        "channel": "te",
+        "region": "上肢",
+        "location": "前臂背侧，腕部上方，位于两骨之间的区域，与内关分处不同侧面。",
+        "category": "络穴；八脉交会穴，通阳维脉",
+        "uses": "原书着重耳部、手指、肘臂屈伸等表现；传统也与足临泣配对讨论。",
+        "distinction": "突发听力下降与慢性耳鸣不是同一问题，不能仅凭耳部主治列表自行选穴。",
+        "caution": "突然听力下降需尽快就诊；前臂受伤、麻木或肌力下降不自行试针。",
+        "citations": [
+          {
+            "book": "acu-dacheng",
+            "start": 345,
+            "end": 345,
+            "note": ""
+          }
+        ],
+        "categoryCitations": [
+          {
+            "book": "acu-dacheng",
+            "start": 213,
+            "end": 214,
+            "note": ""
+          },
+          {
+            "book": "acu-dacheng",
+            "start": 240,
+            "end": 241,
+            "note": ""
+          },
+          {
+            "book": "acu-dacheng",
+            "start": 397,
+            "end": 397,
+            "note": ""
+          }
+        ],
+        "sourceIds": [
+          "acu-nccih"
+        ]
+      },
+      {
+        "id": "gb20",
+        "code": "GB20",
+        "name": "风池",
+        "channel": "gb",
+        "region": "头颈",
+        "location": "后头部与颈部交界、两侧肌肉之间的区域。",
+        "category": "交会穴",
+        "uses": "原书讨论头项和相关风证；风是传统病因分类，不等于自然风吹造成全部头痛。",
+        "distinction": "头痛可能有不同原因。不能把颈部示意图当作针刺定位图，更不能依据古书的角度深度自行操作。",
+        "caution": "枕颈部涉及重要深层结构，禁止自行试针。突发剧烈头痛、发热颈强或神经异常需急诊。",
+        "citations": [
+          {
+            "book": "acu-dacheng",
+            "start": 354,
+            "end": 355,
+            "note": ""
+          }
+        ],
+        "categoryCitations": [
+          {
+            "book": "acu-dacheng",
+            "start": 213,
+            "end": 214,
+            "note": ""
+          },
+          {
+            "book": "acu-dacheng",
+            "start": 240,
+            "end": 241,
+            "note": ""
+          },
+          {
+            "book": "acu-dacheng",
+            "start": 397,
+            "end": 397,
+            "note": ""
+          }
+        ],
+        "sourceIds": [
+          "acu-nccih"
+        ]
+      },
+      {
+        "id": "gb34",
+        "code": "GB34",
+        "name": "阳陵泉",
+        "channel": "gb",
+        "region": "下肢",
+        "location": "膝外下方、腓骨头附近的区域。",
+        "category": "合穴；八会穴之筋会",
+        "uses": "原书以筋病、膝痛、麻木及胁部等表现为线索，筋会是八会体系的分类。",
+        "distinction": "传统筋包括多种运动功能描述，不等同一条肌腱；不能据此承诺修复韧带或神经损伤。",
+        "caution": "局部邻近神经，腿无力或足下垂需要检查；不以强烈放电样痛作为刺激目标。",
+        "citations": [
+          {
+            "book": "acu-dacheng",
+            "start": 357,
+            "end": 358,
+            "note": ""
+          }
+        ],
+        "categoryCitations": [
+          {
+            "book": "acu-dacheng",
+            "start": 213,
+            "end": 214,
+            "note": ""
+          },
+          {
+            "book": "acu-dacheng",
+            "start": 240,
+            "end": 241,
+            "note": ""
+          },
+          {
+            "book": "acu-dacheng",
+            "start": 397,
+            "end": 397,
+            "note": ""
+          }
+        ],
+        "sourceIds": [
+          "acu-nccih"
+        ]
+      },
+      {
+        "id": "lr3",
+        "code": "LR3",
+        "name": "太冲",
+        "channel": "lr",
+        "region": "下肢",
+        "location": "足背第一、第二跖骨之间的区域，与足底穴位分开。",
+        "category": "输穴、原穴",
+        "uses": "古书涉及胁腹、足部以及月经、泌尿等古代分类，应用范围需要逐项辨读。",
+        "distinction": "传统疏肝不能直接翻译成保护现代肝脏，太冲也不是检查或治疗所有肝病的工具。",
+        "caution": "足部肿痛、感染或感觉异常应先检查；古书以脉断生死等说法不作为现代判断。",
+        "citations": [
+          {
+            "book": "acu-dacheng",
+            "start": 363,
+            "end": 363,
+            "note": ""
+          }
+        ],
+        "categoryCitations": [
+          {
+            "book": "acu-dacheng",
+            "start": 213,
+            "end": 214,
+            "note": ""
+          },
+          {
+            "book": "acu-dacheng",
+            "start": 240,
+            "end": 241,
+            "note": ""
+          },
+          {
+            "book": "acu-dacheng",
+            "start": 397,
+            "end": 397,
+            "note": ""
+          }
+        ],
+        "sourceIds": [
+          "acu-nccih"
+        ]
+      },
+      {
+        "id": "gv20",
+        "code": "GV20",
+        "name": "百会",
+        "channel": "gv",
+        "region": "头颈",
+        "location": "头顶部、正中线附近的区域；发旋并不是每个人都可靠的定位标志。",
+        "category": "交会穴",
+        "uses": "原书记有头部、神志及脱肛等不同主治，反映传统局部与远部取穴思路。",
+        "distinction": "“升提”“醒脑”等说法不意味着针刺头顶可自行处理卒中、昏迷或痴呆。",
+        "caution": "突然言语不清、面歪、肢体无力立即急救；头皮破损、颅脑手术史等需告知医师。",
+        "citations": [
+          {
+            "book": "acu-dacheng",
+            "start": 382,
+            "end": 383,
+            "note": ""
+          }
+        ],
+        "categoryCitations": [
+          {
+            "book": "acu-dacheng",
+            "start": 213,
+            "end": 214,
+            "note": ""
+          },
+          {
+            "book": "acu-dacheng",
+            "start": 240,
+            "end": 241,
+            "note": ""
+          },
+          {
+            "book": "acu-dacheng",
+            "start": 397,
+            "end": 397,
+            "note": ""
+          }
+        ],
+        "sourceIds": [
+          "acu-nccih"
+        ]
+      },
+      {
+        "id": "cv12",
+        "code": "CV12",
+        "name": "中脘",
+        "channel": "cv",
+        "region": "躯干",
+        "location": "上腹部前正中，胸骨下端与脐之间的区域。",
+        "category": "胃募穴；八会穴之腑会",
+        "uses": "原书记有食饮不化、腹胀、翻胃等，主要在传统脾胃与腑病语境理解。",
+        "distinction": "“腑会中脘”不是所有胃肠病都能用此穴治愈。笔记中的“统治一切胃病”属于过度概括。",
+        "caution": "上腹痛可能涉及消化道、胆胰乃至心脏原因。剧痛、呕血、黑便需诊疗，不自行腹部进针。",
+        "citations": [
+          {
+            "book": "acu-dacheng",
+            "start": 372,
+            "end": 373,
+            "note": ""
+          }
+        ],
+        "categoryCitations": [
+          {
+            "book": "acu-dacheng",
+            "start": 213,
+            "end": 214,
+            "note": ""
+          },
+          {
+            "book": "acu-dacheng",
+            "start": 240,
+            "end": 241,
+            "note": ""
+          },
+          {
+            "book": "acu-dacheng",
+            "start": 397,
+            "end": 397,
+            "note": ""
+          }
+        ],
+        "sourceIds": [
+          "acu-nccih"
+        ]
+      },
+      {
+        "id": "cv4",
+        "code": "CV4",
+        "name": "关元",
+        "channel": "cv",
+        "region": "躯干",
+        "location": "下腹部正中、脐下的区域。",
+        "category": "小肠募穴；交会穴",
+        "uses": "原书涉及下腹、排尿、生殖及虚寒相关病证，不同条目不能拼成同一治疗方案。",
+        "distinction": "传统补元、调经与现代内分泌、生育力检验不是同一概念；不据古书记载承诺治疗不孕。",
+        "caution": "孕期、不明出血、尿潴留和急性下腹痛先就医；不自行用针灸终止或维持妊娠。",
+        "citations": [
+          {
+            "book": "acu-dacheng",
+            "start": 370,
+            "end": 370,
+            "note": ""
+          }
+        ],
+        "categoryCitations": [
+          {
+            "book": "acu-dacheng",
+            "start": 213,
+            "end": 214,
+            "note": ""
+          },
+          {
+            "book": "acu-dacheng",
+            "start": 240,
+            "end": 241,
+            "note": ""
+          },
+          {
+            "book": "acu-dacheng",
+            "start": 397,
+            "end": 397,
+            "note": ""
+          }
+        ],
+        "sourceIds": [
+          "acu-nccih"
+        ]
+      },
+      {
+        "id": "cv6",
+        "code": "CV6",
+        "name": "气海",
+        "channel": "cv",
+        "region": "躯干",
+        "location": "下腹前正中、脐下，与关元为不同穴位。",
+        "category": "任脉穴",
+        "uses": "古书常在气虚、腹部和虚寒等语境讨论，名称中的气海是传统理论用语。",
+        "distinction": "不是可测量或可用手感确认的能量储存器，也不能根据按压感受判断生命力。",
+        "caution": "下腹不适不能先认定为气不足。孕期、腹部术后、疝或急性痛应由医师评估。",
+        "citations": [
+          {
+            "book": "acu-dacheng",
+            "start": 371,
+            "end": 372,
+            "note": ""
+          }
+        ],
+        "categoryCitations": [
+          {
+            "book": "acu-dacheng",
+            "start": 213,
+            "end": 214,
+            "note": ""
+          },
+          {
+            "book": "acu-dacheng",
+            "start": 240,
+            "end": 241,
+            "note": ""
+          },
+          {
+            "book": "acu-dacheng",
+            "start": 397,
+            "end": 397,
+            "note": ""
+          }
+        ],
+        "sourceIds": [
+          "acu-nccih"
+        ]
+      },
+      {
+        "id": "cv17",
+        "code": "CV17",
+        "name": "膻中",
+        "channel": "cv",
+        "region": "躯干",
+        "location": "胸前正中、胸骨区域。乳头位置会随体型等变化，不能独立作为定位依据。",
+        "category": "八会穴之气会",
+        "uses": "原书涉及胸中如塞、短气、咳嗽和乳汁等；属于不同传统证候的集合。",
+        "distinction": "气会不是所有胸闷都可在此解决；本书还记有禁针，历史禁忌与现代操作标准需分开理解。",
+        "caution": "胸部操作存在严重损伤风险。新发胸痛、呼吸困难先急救，不自行针刺，也不靠按揉排除心脏病。",
+        "citations": [
+          {
+            "book": "acu-dacheng",
+            "start": 374,
+            "end": 375,
+            "note": ""
+          }
+        ],
+        "categoryCitations": [
+          {
+            "book": "acu-dacheng",
+            "start": 213,
+            "end": 214,
+            "note": ""
+          },
+          {
+            "book": "acu-dacheng",
+            "start": 240,
+            "end": 241,
+            "note": ""
+          },
+          {
+            "book": "acu-dacheng",
+            "start": 397,
+            "end": 397,
+            "note": ""
+          }
+        ],
+        "sourceIds": [
+          "acu-nccih"
+        ]
+      }
+    ],
+    "books": [
+      {
+        "id": "acu-dacheng",
+        "title": "针灸大成（文字本）",
+        "author": "明 · 杨继洲",
+        "pages": 569,
+        "files": [
+          "针灸大成  [明]杨继洲（高清文字版）.pdf"
+        ],
+        "scope": "主要条目来源。核对经穴、八会、交会及禁忌相关段落；页面引用是本文件物理页码。",
+        "note": "标题页署杨继洲；当前未确认本电子本出版版次。文本可检索但有异体、识别错误，必要时须回看原页。古代疗效断语、病名与操作数值不直接转为现代建议。"
+      },
+      {
+        "id": "acu-zhuyu",
+        "title": "针灸大成笔记",
+        "author": "祝余整理；封面称根据倪海厦视频整理",
+        "pages": 67,
+        "files": [
+          "针灸大成笔记_祝余_像素1080.pdf"
+        ],
+        "scope": "已核对封面与样页；本版作为讲课笔记的版本线索，尚未逐页编校或建立穴位引文。",
+        "note": "个人整理笔记与杨继洲原著不是同一文本；讲者意见、整理者概括和原典必须分开。"
+      },
+      {
+        "id": "acu-jiaoshi",
+        "title": "针灸大成校释",
+        "author": "校释者、版次待考",
+        "pages": 1320,
+        "files": [
+          "针灸大成校释.pdf"
+        ],
+        "scope": "扫描本；已查看开头目录样页，可见经穴、子午流注、八法与禁忌等篇目。尚未逐页核读，不以本文件支持当前穴位详情。",
+        "note": "文件标题不能代替版权页鉴定；校释解释与原文不同层次应分辨。不同PDF的物理页码不能互套。"
+      },
+      {
+        "id": "acu-kuimao",
+        "title": "针灸葵卯集（按文件名著录）",
+        "author": "文件名含“厚鹊”；作者、编者及正式书名待考",
+        "pages": 72,
+        "files": [
+          "针灸葵卯集 厚鹊.pdf"
+        ],
+        "scope": "已核读开头歌诀与任脉笔记，PDF第1—4页；用于解释歌诀及辨别过度疗效断言，不作为针刺操作指南。",
+        "note": "未因文件名自行改作“癸卯”。第3—4页含对胃病、心肌梗塞的宽泛断言，本版明确不采为现代治疗结论。"
+      },
+      {
+        "id": "acu-notes",
+        "title": "针灸学笔记图解",
+        "author": "封面署管宏钟、张选国主编",
+        "pages": 231,
+        "files": [
+          "针灸学笔记图解.pdf",
+          "针灸学笔记图解 (1).pdf"
+        ],
+        "scope": "已核对封面、样页与重复文件；两份文件SHA-256完全相同，算一个来源。扫描正文尚未逐页编校。",
+        "note": "封面标化学工业出版社；版次与年份未核实。仅作课程资料索引，不转载图像或全文。"
+      }
+    ],
+    "guides": [
+      {
+        "id": "start",
+        "title": "针、灸与经络，先分清什么",
+        "summary": "从治疗方式到传统理论，建立第一层概念。",
+        "paragraphs": [
+          "针法以针具刺激组织，灸法多借助艾等产生的温热刺激；二者不是同一种干预，研究结论也不能自动互用。电针、耳针和按压同样需要区分。",
+          "十二正经按手足、阴阳与脏腑命名，任脉、督脉也有独立经穴，合称十四经的学习框架。奇经八脉不等于八条都有独立穴位表，任督以外的奇经还涉及交会穴联系。",
+          "经络是中医解释联系与组织诊疗经验的传统体系，不能直接当成已证实的血管、神经或独立解剖管道。首页部位图只帮助浏览，不表现精确循行和针位。"
+        ],
+        "citations": [
+          {
+            "book": "acu-dacheng",
+            "start": 268,
+            "end": 269,
+            "note": ""
+          },
+          {
+            "book": "acu-dacheng",
+            "start": 367,
+            "end": 368,
+            "note": ""
+          }
+        ],
+        "sourceIds": [
+          "acu-nccih"
+        ]
+      },
+      {
+        "id": "location",
+        "title": "穴位、骨度与“寸”怎样读",
+        "summary": "知道位置属于哪里，不等于学会针刺定位。",
+        "paragraphs": [
+          "古书常用骨、筋、横纹和凹陷描述穴位。体位、体型、年龄及解剖差异都会影响辨认，所以本版只给部位概述，不把插图点位当作临床定点。",
+          "针灸定位中的同身寸或骨度分寸是人体比例方法，不是固定厘米。不能把古书记载的寸、分直接换成尺子长度或进针深度。",
+          "穴名可能有别称，同名也需看经属。例如手三里与足三里不是一个穴，神门穴也不能与耳穴的同名点混用。网页采用代码辅助检索，不说明古书本来使用这些代码。"
+        ],
+        "citations": [
+          {
+            "book": "acu-dacheng",
+            "start": 277,
+            "end": 277,
+            "note": ""
+          },
+          {
+            "book": "acu-dacheng",
+            "start": 289,
+            "end": 289,
+            "note": ""
+          },
+          {
+            "book": "acu-dacheng",
+            "start": 305,
+            "end": 305,
+            "note": ""
+          }
+        ],
+        "sourceIds": []
+      },
+      {
+        "id": "categories",
+        "title": "五输、原络、募俞与八会",
+        "summary": "这些标签回答不同问题，不能合并成一个五行表。",
+        "paragraphs": [
+          "井、荥、输、经、合是五输穴分类。“输”在古籍也常写作“俞”，与背俞穴的俞不能只凭字形混同。这里“经穴”可特指五输之一，也可泛指经脉穴位，要看上下文。",
+          "原穴、络穴、郄穴各有不同理论角色；募穴与背俞穴则涉及脏腑相关的躯干部位组织方式。它们可以与其他类别重叠，不是互斥标签。",
+          "八会穴按脏、腑、气、血、筋、脉、骨、髓分类，例如腑会中脘、筋会阳陵泉、脉会太渊、气会膻中。八脉交会穴则联系奇经八脉，例如列缺通任脉、后溪通督脉；“八会”和“八脉交会”是两套系统。",
+          "经脉五行与五输穴五行也要分开。肺经归金不表示肺经上的每个五输穴都属金。当前经脉卡片的颜色只标经脉传统五行；任督不强行填入单一五行。"
+        ],
+        "citations": [
+          {
+            "book": "acu-dacheng",
+            "start": 213,
+            "end": 214,
+            "note": ""
+          },
+          {
+            "book": "acu-dacheng",
+            "start": 240,
+            "end": 241,
+            "note": ""
+          },
+          {
+            "book": "acu-dacheng",
+            "start": 397,
+            "end": 397,
+            "note": ""
+          }
+        ],
+        "sourceIds": []
+      },
+      {
+        "id": "time",
+        "title": "子午流注与干支是什么关系",
+        "summary": "了解历史时间取穴体系，不把时辰当作疾病时钟。",
+        "paragraphs": [
+          "子午流注在特定流派里把日时干支与经穴组织起来；灵龟八法等又有自己的推算与配穴体系。《针灸大成》保存了相关歌诀、图表和讨论。",
+          "十二经与十二时辰的配属是传统解释框架，不意味着某个现代器官只在固定两小时工作，也不能凭夜间醒来的时间判断哪个脏器患病。",
+          "干支历法工具可以帮助读懂古文日期，但历法算得准不等于按时选穴疗效已经证实。本版提供文献说明，不生成个人治疗处方或按时自动推荐针刺。"
+        ],
+        "citations": [
+          {
+            "book": "acu-dacheng",
+            "start": 215,
+            "end": 223,
+            "note": ""
+          },
+          {
+            "book": "acu-dacheng",
+            "start": 240,
+            "end": 242,
+            "note": ""
+          }
+        ],
+        "sourceIds": []
+      },
+      {
+        "id": "evidence",
+        "title": "传统主治与现代证据怎样对照",
+        "summary": "研究支持某种方案，不等于证明每一个穴位包治同类病。",
+        "paragraphs": [
+          "NCCIH综述指出，针灸可能有助于部分疼痛问题，如背颈痛、膝骨关节炎相关疼痛等。治疗方案、对照组、随访和研究质量影响结果，不能把一种病的研究扩大到所有疼痛。",
+          "与不治疗相比的改善往往大于与假针刺相比的差异，提示治疗期待、医患互动等非特异因素也参与结果。具体机制尚未完全明了，既不宜夸大，也不宜把所有结果简单归于同一种机制。",
+          "某些非疼痛问题也有研究，例如肿瘤治疗相关恶心呕吐。此类证据不代表针灸能治疗肿瘤；症状缓解、生活质量和疾病治愈是不同终点。",
+          "穴位页的传统主治依据原书；现代部分引用的是针灸领域的概述，并非已对每个单穴作疗效验证。针、灸、电针、按压及复合治疗的证据不能任意互换。"
+        ],
+        "citations": [],
+        "sourceIds": [
+          "acu-nccih"
+        ]
+      },
+      {
+        "id": "safe",
+        "title": "禁忌、风险与就诊准备",
+        "summary": "先理解风险，再讨论是否适合接受治疗。",
+        "paragraphs": [
+          "选择具备相应资质的医疗人员。就诊时主动说明孕期、出血或凝血问题、抗凝药、植入式医疗设备、皮肤感染、既往晕针及重大手术情况，由接诊者判断是否适合及采用何种治疗。",
+          "非无菌针具或不恰当操作可能造成感染、脏器损伤、神经系统损伤等严重后果。不要依据古书针深、留针、补泻或放血描述自行操作，尤其不能在胸背、腹部及枕颈部试针。",
+          "灸法的热源可造成烫伤；艾烟也可能刺激呼吸道。感觉减退、糖尿病足或皮肤破损时不能靠“越烫越有效”判断，不在睡眠中灸治。本版不提供家庭瘢痕灸、化脓灸的步骤。",
+          "古书禁针、禁灸与今天的风险判断不完全相同；古书没有写禁忌，不代表对任何人安全。也不依据人神所在、择日等说法推迟必要医疗。",
+          "新发胸痛、呼吸困难、疑似卒中或意识障碍应立即呼叫急救。文件第4页把一组针法用于心肌梗塞的说法，不作为可靠急救方案，也不能因疼痛减轻就排除心梗。"
+        ],
+        "citations": [
+          {
+            "book": "acu-dacheng",
+            "start": 200,
+            "end": 200,
+            "note": ""
+          },
+          {
+            "book": "acu-kuimao",
+            "start": 3,
+            "end": 4,
+            "note": ""
+          }
+        ],
+        "sourceIds": [
+          "acu-nccih",
+          "acu-nhs"
+        ]
+      }
+    ]
+  },
+  "version": "2026.11.acupuncture",
   "entries": [
     {
       "id": "jia",

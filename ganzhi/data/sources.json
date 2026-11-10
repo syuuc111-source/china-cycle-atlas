@@ -1600,5 +1600,32 @@
     "note": "已读取相关正文，本站以原创中文解释使用；不据此把传统功效认作单味药治愈疾病的证据。",
     "status": "verified",
     "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "acu-nhs",
+    "title": "NHS · 补充疗法中的针灸安全提示",
+    "author": "英国国民保健署 NHS",
+    "url": "https://www.nhs.uk/tests-and-treatments/acupuncture/",
+    "locator": "原针灸网址现跳转至补充疗法总览；Acupuncture 安全小节",
+    "supports": [
+      "出血风险、抗凝用药与皮肤感染需告知治疗者"
+    ],
+    "note": "已读取跳转后的正文，只引用针灸及一般就诊沟通部分，不将页面中草药禁忌混作针灸禁忌。",
+    "status": "verified",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "acu-nccih",
+    "title": "Acupuncture: Effectiveness and Safety · 针灸疗效与安全",
+    "author": "美国国家补充与整合健康中心 NCCIH",
+    "url": "https://www.nccih.nih.gov/health/acupuncture-effectiveness-and-safety",
+    "locator": "疼痛、非疼痛研究概述；机制与安全章节",
+    "supports": [
+      "针灸研究的适用范围及对照差异",
+      "不当操作、感染与脏器损伤风险"
+    ],
+    "note": "已读取正文。支持领域概述，不用于证明本站每个单穴的独立疗效；针刺研究不自动外推到灸法或按揉。",
+    "status": "verified",
+    "checkedAt": "2026-11-10"
   }
 ]

@@ -1,3 +1,4 @@
+import * as A from './acupuncture.mjs';
 import * as K from './books.mjs';
 import * as B from './body.mjs';
 import * as P from './plants.mjs';
@@ -6,6 +7,7 @@ import {mountWheel} from './wheel.mjs';
 import {queryCalendar} from './calendar.mjs';
 import {cycleAt} from './model.mjs';
 const main=document.querySelector('main');let content,sources,wheel=null,route='',selection=0,loadVersion=0;
+const acuState={query:'',channel:'',region:''};
 const bodyState={query:'',system:'surface'};
 const herbState={query:'',material:''},physState={query:'',group:''};
 const plantState={query:'',system:'',element:''};
@@ -16,6 +18,8 @@ function runQuery(){const [year,month,day]=calendarState.date.split('-').map(Num
 function updateResults(){const items=R.searchResults(content,searchState.query,searchState.kind,searchState.element,searchState.mode);document.querySelector('#results').innerHTML=R.resultHTML(items);document.querySelector('#result-count').textContent=`找到 ${items.length} 个条目${searchState.element?' · '+searchState.element+'（'+({stem:'天干五行',branch:'地支本气',nayin:'纳音五行'}[searchState.mode])+'）':''}`;}
 function render(){if(!content)return;const raw=location.hash.slice(1)||'home';if(raw==='main'){history.replaceState(null,'','#'+(route||'home'));main.focus();return;}wheel?.destroy();wheel=null;route=raw;const [page,id]=raw.split('/');let title='天干地支';
  if(page==='home'){main.innerHTML=R.home(content);mount(selection);}
+ else if(page==='acupuncture'){main.innerHTML=A.hub(content.acupuncture);A.mount(content.acupuncture,acuState);title='针灸';}
+ else if(['acu-point','acu-channel','acu-guide','acu-book'].includes(page)){const kind=page.slice(4),list=content.acupuncture[{point:'points',channel:'channels',guide:'guides',book:'books'}[kind]],item=list.find(x=>x.id===id);if(item){main.innerHTML=A[kind](item,content.acupuncture,sources);title=(item.name||item.title)+' · 针灸';}else notFound();}
  else if(page==='herbs'){main.innerHTML=K.herbs(content);K.mountHerbs(content,herbState);title='中药';}
  else if(page==='herb'){const e=content.herbs.entries.find(e=>e.id===id);if(e){main.innerHTML=K.herb(e,content,sources);title=e.name+' · 中药'}else notFound();}
  else if(page==='herb-guide'){const e=content.herbs.guides.find(e=>e.id===id);if(e){main.innerHTML=K.herbGuide(e,content);title=e.title}else notFound();}
