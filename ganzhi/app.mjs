@@ -1,3 +1,4 @@
+import * as K from './books.mjs';
 import * as B from './body.mjs';
 import * as P from './plants.mjs';
 import * as R from './render.mjs';
@@ -6,6 +7,7 @@ import {queryCalendar} from './calendar.mjs';
 import {cycleAt} from './model.mjs';
 const main=document.querySelector('main');let content,sources,wheel=null,route='',selection=0,loadVersion=0;
 const bodyState={query:'',system:'surface'};
+const herbState={query:'',material:''},physState={query:'',group:''};
 const plantState={query:'',system:'',element:''};
 const searchState={query:'',kind:'all',element:'',mode:'stem'};
 const calendarState={date:new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Shanghai',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date()),time:'12:00',boundary:'midnight'};
@@ -14,6 +16,13 @@ function runQuery(){const [year,month,day]=calendarState.date.split('-').map(Num
 function updateResults(){const items=R.searchResults(content,searchState.query,searchState.kind,searchState.element,searchState.mode);document.querySelector('#results').innerHTML=R.resultHTML(items);document.querySelector('#result-count').textContent=`找到 ${items.length} 个条目${searchState.element?' · '+searchState.element+'（'+({stem:'天干五行',branch:'地支本气',nayin:'纳音五行'}[searchState.mode])+'）':''}`;}
 function render(){if(!content)return;const raw=location.hash.slice(1)||'home';if(raw==='main'){history.replaceState(null,'','#'+(route||'home'));main.focus();return;}wheel?.destroy();wheel=null;route=raw;const [page,id]=raw.split('/');let title='天干地支';
  if(page==='home'){main.innerHTML=R.home(content);mount(selection);}
+ else if(page==='herbs'){main.innerHTML=K.herbs(content);K.mountHerbs(content,herbState);title='中药';}
+ else if(page==='herb'){const e=content.herbs.entries.find(e=>e.id===id);if(e){main.innerHTML=K.herb(e,content,sources);title=e.name+' · 中药'}else notFound();}
+ else if(page==='herb-guide'){const e=content.herbs.guides.find(e=>e.id===id);if(e){main.innerHTML=K.herbGuide(e,content);title=e.title}else notFound();}
+ else if(page==='physiognomy'){main.innerHTML=K.physiognomy(content);K.mountPhysiognomy(content,physState);title='相术';}
+ else if(page==='physiognomy-entry'){const e=content.physiognomy.entries.find(e=>e.id===id);if(e){main.innerHTML=K.term(e,content);title=e.name+' · 相术'}else notFound();}
+ else if(page==='books'){main.innerHTML=K.catalog(content);title='所用书目与页码';}
+ else if(page==='book'){const e=content.books.find(e=>e.id===id);if(e){main.innerHTML=K.book(e,content);title=e.title}else notFound();}
  else if(page==='body'){main.innerHTML=B.hub(content,sources);B.mount(content.body,bodyState,sources);title='身体与干支';}
  else if(page==='body-entry'){const item=content.body.entries.find(e=>e.id===id);if(item){main.innerHTML=B.entry(item,content,sources);title=item.name+' · 身体对应'}else notFound();}
  else if(page==='body-region'){const item=content.body.regions.find(r=>r.id===id);if(item){main.innerHTML=B.region(item,content,sources);title=item.title}else notFound();}
@@ -28,7 +37,7 @@ function render(){if(!content)return;const raw=location.hash.slice(1)||'home';if
  else if(page==='relations'){main.innerHTML=R.relations();const show=name=>{const view=R.relationView(name);document.querySelector('#relation-map').innerHTML=view.map;document.querySelector('#relation-info').innerHTML=view.info;document.querySelectorAll('[data-relation]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.relation===name)))};document.querySelectorAll('[data-relation]').forEach(b=>b.onclick=()=>show(b.dataset.relation));show('五行相生');title='关系图解';}
  else notFound();
  const reader=document.querySelector('#school-reader');if(reader){reader.onchange=()=>{const value=reader.value;let count=0;document.querySelectorAll('[data-school-section]').forEach(el=>{el.hidden=value!=='all'&&el.dataset.schoolSection!==value;if(!el.hidden)count++});document.querySelectorAll('[data-school-link]').forEach(el=>{el.hidden=value!=='all'&&el.dataset.schoolLink!==value});document.querySelector('#school-reader-status').textContent=`${value==='all'?'全部解释':value==='basis'?'基础对应':R.SCHOOL_NAMES[value]} · ${count}个章节`;};}
- main.dataset.ready='true';document.title=title+' · 时间之序';document.querySelectorAll('header nav a').forEach(a=>{const section=a.hash.slice(1).split('/')[0];if(section===page||(section==='library'&&['entry','article','cycle'].includes(page)))a.setAttribute('aria-current','page');else a.removeAttribute('aria-current')});main.focus({preventScroll:true});window.scrollTo(0,0);if(page==='sources'&&id)document.getElementById('source-'+id)?.scrollIntoView();
+ main.dataset.ready='true';main.dataset.route=raw;document.title=title+' · 时间之序';document.querySelectorAll('header nav a').forEach(a=>{const section=a.hash.slice(1).split('/')[0];if(section===page||(section==='library'&&['entry','article','cycle'].includes(page)))a.setAttribute('aria-current','page');else a.removeAttribute('aria-current')});main.focus({preventScroll:true});window.scrollTo(0,0);if(page==='sources'&&id)document.getElementById('source-'+id)?.scrollIntoView();
 }
 function notFound(){main.innerHTML=R.top('这个条目不存在','链接可能已更改，请返回百科查找。')+'<a class="button primary" href="#library">返回干支百科</a>'}
 async function load(){const version=++loadVersion;main.innerHTML='<p class="loading" role="status">正在展开时间之序…</p>';try{const result=await Promise.all(['content','sources'].map(async n=>{const r=await fetch(`data/${n}.json`);if(!r.ok)throw Error('load');return r.json()}));if(version!==loadVersion)return;[content,sources]=result;render();}catch{main.innerHTML='<div class="empty"><h1>资料没有载入</h1><p>请检查网络，然后重新加载。无需登录。</p><div class="actions"><button id="retry">重新加载</button></div></div>';document.querySelector('#retry').onclick=load;}}

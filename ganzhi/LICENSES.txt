@@ -16,3 +16,7 @@ Noto Serif SC — SIL Open Font License 1.1
 https://cdn.jsdelivr.net/npm/@fontsource/noto-serif-sc@5.3.1/files/noto-serif-sc-chinese-simplified-400-normal.woff2
 
 循环盘、关系图和图标为原创 SVG 几何图形，无外部图片或视频素材。
+
+中药与相术专题：依据用户提供的五个文本来源（六份PDF）撰写原创阅读摘要与术语说明，仅记录书目及页码；不发布书籍全文、扫描页、原始OCR或本地文件路径。具体阅读范围、版本疑点和重复文件说明见网页 #books 与 data/content.json 的 books 字段。现代注释、讲义及汇编不因引用古书而自动进入公有领域。
+
+罕用字䗪（U+45EA）补充字体：Noto Serif SC，Google Fonts v36按单字获取并转换为WOFF2，遵循同一SIL OFL 1.1，见fonts/OFL.txt。单独资源fonts/noto-serif-sc-rare.woff2，避免主子集缺字。

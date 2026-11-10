@@ -7,14 +7,16 @@ icons={
  'ganzhi':'<circle cx="16" cy="16" r="12"/><circle cx="16" cy="16" r="7"/><path d="M16 1v7m0 16v7M1 16h7m16 0h7M16 16l6-7"/>',
  'plants':'<path d="M16 29V13M16 21C5 21 3 16 4 7c9 0 12 5 12 14Zm0-6C16 6 22 2 29 3c0 9-4 13-13 12Z"/>',
  'body':'<circle cx="16" cy="6" r="4"/><path d="M9 12h14l5 11M9 12 4 23m9-10v8l-3 10m9-18v8l3 10M13 20h6"/>'}
-labels=[('atlas','中国周期图谱','时间与周期'),('mansions','二十八宿','星空与文献'),('ganzhi','天干地支','入门与百科'),('plants','植物五行','草木与出处'),('body','身体与干支','部位与症状')]
+icons.update(herbs='<path d="M5 17h22c-1 8-5 11-11 11S6 25 5 17Zm4 12h14M18 17 27 5q2-3 4 0L23 17M9 12C4 12 4 7 5 4c6 0 8 4 4 8Zm0 0 3 5"/>',physiognomy='<path d="M16 3C7 3 5 10 7 18s5 12 9 12 7-4 9-12S25 3 16 3ZM10 12h3m6 0h3m-7 2-1 5h4m-6 5h8"/>')
+labels=[('atlas','中国周期图谱','时间与周期'),('mansions','二十八宿','星空与文献'),('ganzhi','天干地支','入门与百科'),('plants','植物五行','草木与出处'),('body','身体与干支','部位与症状'),('herbs','中药','药材与药证'),('physiognomy','相术','名词与文献')]
 for file,site,prefix in [('src/atlas/template.html','atlas',''),('index.html','atlas',''),('mansions/index.html','mansions','../'),('ganzhi/index.html','ganzhi','../')]:
  p=root/file;s=p.read_text(encoding='utf-8')
  paths={'atlas':prefix or './','mansions':prefix+'mansions/','ganzhi':prefix+'ganzhi/','plants':prefix+'ganzhi/#plants','body':prefix+'ganzhi/#body'}
- if site=='ganzhi':paths.update(ganzhi='#home',plants='#plants',body='#body')
+ paths.update(herbs=prefix+'ganzhi/#herbs',physiognomy=prefix+'ganzhi/#physiognomy')
+ if site=='ganzhi':paths.update(ganzhi='#home',plants='#plants',body='#body',herbs='#herbs',physiognomy='#physiognomy')
  if site=='mansions':paths['mansions']='#home'
  links=''.join(f'<a href="{paths[id]}" data-topic="{id}"><svg viewBox="0 0 32 32" aria-hidden="true">{icons[id]}</svg><span><strong>{label}</strong><small>{desc}</small></span></a>' for id,label,desc in labels)
- nav=f'<!-- topic-switcher:start --><nav class="topic-switcher" aria-label="专题切换" data-topic-site="{site}"><p>探索专题<span>点击切换</span></p><div>{links}</div></nav><!-- topic-switcher:end -->'
+ nav=f'<!-- topic-switcher:start --><nav class="topic-switcher" aria-label="专题切换" data-topic-site="{site}"><p>探索专题<span>7 个专题 · <span class="topic-scroll-hint">左右滑动，</span>点击切换</span></p><div>{links}</div></nav><!-- topic-switcher:end -->'
  if '<!-- topic-switcher:start -->' in s:
   a=s.index('<!-- topic-switcher:start -->');b=s.index('<!-- topic-switcher:end -->',a)+len('<!-- topic-switcher:end -->');s=s[:a]+nav+s[b:]
  else:s=s.replace('</header>','</header>\n'+nav,1)

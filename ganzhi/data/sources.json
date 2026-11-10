@@ -731,5 +731,31 @@
     "note": "本站原创中文转述，按页面实际读取内容整理。原站999/111为英国服务；面向中国大陆的急救提示使用120。症状列表非穷尽，未作个体诊断。",
     "status": "verified",
     "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "books-licorice",
+    "title": "Licorice Root · 甘草安全资料",
+    "author": "美国国家补充与整合健康中心 NCCIH",
+    "url": "https://www.nccih.nih.gov/health/licorice-root",
+    "locator": "Safety 及基本说明",
+    "supports": [
+      "甘草酸相关不良反应、长期使用与基础疾病注意事项"
+    ],
+    "note": "本站原创中文概述，仅支持现代风险说明，不用于证明古代药证疗效。",
+    "status": "verified",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "books-ephedra",
+    "title": "Ephedra · 麻黄安全资料",
+    "author": "美国国家补充与整合健康中心 NCCIH",
+    "url": "https://www.nccih.nih.gov/health/ephedra",
+    "locator": "Safety 及基本说明",
+    "supports": [
+      "麻黄相关制品的风险；不将补充剂与传统处方语境混同"
+    ],
+    "note": "本站原创中文概述，仅支持现代风险说明，不用于证明古代药证疗效。",
+    "status": "verified",
+    "checkedAt": "2026-11-10"
   }
 ]
