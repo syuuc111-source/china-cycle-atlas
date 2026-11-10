@@ -214,7 +214,9 @@ for item in articles:
         item['sourceIds']=list(dict.fromkeys(ref for section in item['sections'] for ref in section['sourceIds']))
 from ganzhi_schools import enrich
 enrich(entries,articles,sources)
-data=dict(version='2026.11.schools',entries=entries,articles=articles,guides=guides)
+from ganzhi_plants import enrich as enrich_plants
+plants=enrich_plants(articles,sources)
+data=dict(version='2026.11.plants',entries=entries,articles=articles,guides=guides,plants=plants)
 for name,obj in [('content.json',data),('sources.json',sources)]:
     (OUT/name).write_text(json.dumps(obj,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 print(f'{len(entries)} entries, {len(articles)} articles, {len(sources)} sources')

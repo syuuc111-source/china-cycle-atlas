@@ -393,5 +393,135 @@
     "status": "verified",
     "checkedAt": "2026-11-10",
     "note": "已读相关正文。作者还批评占筮仅重地支而轻天干，表明古人之间亦有方法争论；本站不把其批评当作所有后世六爻法共识。"
+  },
+  {
+    "id": "plant-field",
+    "title": "植物的五行",
+    "author": "芦苇植物造景设计研究中心 · 2018-12-16",
+    "url": "https://www.sohu.com/a/282380649_187391",
+    "locator": "叶色、叶形、花色及手感辨植物场的段落",
+    "note": "民间个人观点。正文提及《李氏绿色兵法》，本次未取得该书。治病与凭手感辨毒等说法未获验证。",
+    "supports": [
+      "叶色、叶形、花色及手感辨植物场的段落"
+    ],
+    "status": "verified",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "plant-seven",
+    "title": "七大类·常见植物的阴阳五行及其应用（全）",
+    "author": "山林田野 · 2018-12-03",
+    "url": "https://www.sohu.com/a/279228703_754323",
+    "locator": "逐种花木的五行与精气描述",
+    "note": "民间园艺文章；只摘录来源归类，不采信治疗、转运断言。俗名与学名有混用，不能用于植物鉴定。",
+    "supports": [
+      "逐种花木的五行与精气描述"
+    ],
+    "status": "verified",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "plant-patent",
+    "title": "CN103537006A：五行景观保健植物挥发气体自然疗法",
+    "author": "颜明等 · 2014-01-29公开",
+    "url": "https://patents.google.com/patent/CN103537006A/zh",
+    "locator": "题名、发明人与公开日期",
+    "note": "只核对书目信息，未完整读取说明书。专利公开不等于疗效验证；当前法律状态未核验。",
+    "supports": [
+      "题名、发明人与公开日期"
+    ],
+    "status": "partial",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "plant-fuxing",
+    "title": "辅行诀脏腑用药法要",
+    "author": "维基文库传本文字转录",
+    "url": "https://zh.wikisource.org/zh-hant/輔行訣臟腑用藥法要",
+    "locator": "天有五气、化生五味以下二十五种及五行互含段",
+    "note": "有异文标注，不作为校勘定本，不据题署断言为陶弘景原稿。",
+    "supports": [
+      "天有五气、化生五味以下二十五种及五行互含段"
+    ],
+    "status": "verified",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "plant-suwen",
+    "title": "黄帝内经·素问第二卷",
+    "author": "维基文库转录",
+    "url": "https://zh.wikisource.org/zh-hant/黃帝內經/素問第二卷",
+    "locator": "阴阳应象大论：木生酸、火生苦、土生甘、金生辛、水生咸",
+    "note": "传统对应关系不自动给每一物种确定唯一五行。",
+    "supports": [
+      "阴阳应象大论：木生酸、火生苦、土生甘、金生辛、水生咸"
+    ],
+    "status": "verified",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "plant-shennong",
+    "title": "神农本草经·序",
+    "author": "维基文库转录",
+    "url": "https://zh.wikisource.org/wiki/神農本草經",
+    "locator": "五味、四气、有毒无毒及生熟的区分",
+    "note": "页面标注未校对；用于概念史，不照搬服食效果。",
+    "supports": [
+      "五味、四气、有毒无毒及生熟的区分"
+    ],
+    "status": "verified",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "plant-pharmacy",
+    "title": "中药药剂",
+    "author": "香港医务卫生局",
+    "url": "https://www.healthbureau.gov.hk/chs/chinese_medicine/chinese_medicines_pharmacy/index.html",
+    "locator": "四气、五味、归经、升降浮沉的解释",
+    "note": "官方对中医概念的介绍，不是对远距离植物气场的验证。",
+    "supports": [
+      "四气、五味、归经、升降浮沉的解释"
+    ],
+    "status": "verified",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "plant-food",
+    "title": "中医饮食养生——五谷与蔬果",
+    "author": "香港卫生署",
+    "url": "https://www.cmro.gov.hk/html/gb/useful_information/public_health/publication/Health_Preservation_by_Food_in_CM.html",
+    "locator": "四气五味及五谷蔬果举例",
+    "note": "记录传统性味，不提供个体饮食治疗建议。",
+    "supports": [
+      "四气五味及五谷蔬果举例"
+    ],
+    "status": "verified",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "plant-cinnamon",
+    "title": "防疫中药——肉桂与桂枝",
+    "author": "北京中医药大学博物馆",
+    "url": "https://bowuguan.bucm.edu.cn/kpzl/zyyzs/68915.htm",
+    "locator": "肉桂树皮与桂枝嫩枝的区别、肉桂性味",
+    "note": "仅使用身份与性味段落，不将药理或防疫描述转成居家疗效保证。",
+    "supports": [
+      "肉桂树皮与桂枝嫩枝的区别、肉桂性味"
+    ],
+    "status": "verified",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "plant-fuzi",
+    "title": "生附子和制附子",
+    "author": "香港卫生署中医药规管办公室",
+    "url": "https://www.cmro.gov.hk/html/b5/useful_information/public_health/publication/AdverseEvents8.html",
+    "locator": "附子来源与乌头类生物碱中毒风险",
+    "note": "有毒药材，不提供采食、炮制或剂量指导。",
+    "supports": [
+      "附子来源与乌头类生物碱中毒风险"
+    ],
+    "status": "verified",
+    "checkedAt": "2026-11-10"
   }
 ]
