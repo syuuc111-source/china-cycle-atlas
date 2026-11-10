@@ -228,7 +228,8 @@ from ganzhi_herb_profiles import enrich as enrich_herbs
 enrich_herbs(book_topics['herbs'],sources)
 from ganzhi_acupuncture import build as build_acupuncture, sources as acupuncture_sources
 sources.extend(acupuncture_sources())
-data=dict(acupuncture=build_acupuncture(),version='2026.11.acupuncture',entries=entries,articles=articles,guides=guides,plants=plants,body=body,**book_topics)
+from ganzhi_fengshui import build as build_fengshui
+data=dict(fengshuiTopics=build_fengshui(),acupuncture=build_acupuncture(),version='2026.11.fengshui',entries=entries,articles=articles,guides=guides,plants=plants,body=body,**book_topics)
 for name,obj in [('content.json',data),('sources.json',sources)]:
     (OUT/name).write_text(json.dumps(obj,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 print(f'{len(entries)} entries, {len(articles)} articles, {len(sources)} sources')
