@@ -22,5 +22,5 @@ const base=process.env.GANZHI_URL||'http://127.0.0.1:8768/ganzhi/';
  for(const [href,needle] of [['../','ganzhi/'],['../mansions/','../ganzhi/']]){
   const response=await page.request.get(new URL(href,base).href);assert.ok(response.ok());assert.ok((await response.text()).includes('href="'+needle+'"'));
  }
- assert.deepEqual(errors,[]);console.log('PASS: 120 detail routes, rapid selection/history, private date query, 200% zoom, three-site links');
+ assert.deepEqual(errors,[]);console.log('PASS: 124 detail routes, rapid selection/history, private date query, 200% zoom, three-site links');
 }finally{await browser.close()}})().catch(e=>{console.error(e);process.exit(1)});

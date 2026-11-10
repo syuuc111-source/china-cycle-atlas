@@ -14,3 +14,11 @@ test('numeric searches use displayed one-based cycle positions',async()=>{
  const {searchResults}=await import('../ganzhi/render.mjs');
  for(let i=1;i<=60;i++)assert.deepEqual(searchResults(content,String(i),'cycle','','stem').map(x=>x.index),[i-1]);
 });
+test('table terms are searchable and exact entry names rank first',async()=>{
+ const {searchResults}=await import('../ganzhi/render.mjs');
+ for(const [name,id] of [['辛','xin'],['午','wu']])assert.equal(searchResults(content,name,'all','','stem')[0].id,id);
+ const wenchang=searchResults(content,'文昌','all','','stem').map(x=>x.id);
+ assert.ok(wenchang.includes('bing'));assert.ok(wenchang.includes('xin'));
+ const wuqu=searchResults(content,'武曲','all','','stem').map(x=>x.id);
+ for(const id of ['jia','geng','ren'])assert.ok(wuqu.includes(id),id);
+});
