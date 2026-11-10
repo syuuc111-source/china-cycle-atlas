@@ -82,7 +82,7 @@ Taste最终 **GATE: OPEN 42（第3轮）**，不是PASS；无waiver。保留经�
 
 ## 发布
 
-目标：https://syuuc111-source.github.io/china-cycle-atlas/ganzhi/ 。公开部署验证在发布后追加。
+目标：https://syuuc111-source.github.io/china-cycle-atlas/ganzhi/ 。部署成功，公开站点已验证。
 
 ## 最终本地性能抽样
 
@@ -103,3 +103,11 @@ SUMMARY 127.0.0.1:8768/ganzhi/: 0 FAIL, 4 WARN  -> WARN
 ```
 
 正文/辅助文字/青金链接对三种背景的设计色值最小对比度 7.30:1，达到普通文本AA；五行彩色小点不承担独立文本识别。
+
+## 公开部署验证结果
+
+2026-11-10，产品提交 `86c9d1477a07ae94c23c438eee403a5516f42cf5` 已上线，GitHub Pages任务 `42802592145` success。Git HTTPS推送遭遇连接重置/超时，改用认证的GitHub Git Data API上传原始blob/tree/commit；逐项核对所有SHA一致后，以force:false更新main，保留完整本地提交历史。
+
+正式地址：https://syuuc111-source.github.io/china-cycle-atlas/ganzhi/
+
+公开HTML、渲染模块、内容JSON、字体的SHA256与Git版本一致。将GANZHI_URL设为正式地址后，三套浏览器检查全部通过：学习/搜索/60步/日期边界/27响应式组合/重试；手机目录与键盘焦点/320px；120个详情/快速切换及后退/查询无网络请求/200%缩放/三站入口。最初无障碍测试在公网数据尚未加载时立即检查目录，已补充等待正文加载后重新验证通过，产品代码无需改变。
