@@ -2,3 +2,4 @@
 node_modules/
 verification/
 .taste-skill/
+scripts/__pycache__/

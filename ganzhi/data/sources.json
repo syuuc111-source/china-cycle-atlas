@@ -289,5 +289,109 @@
     "status": "verified",
     "checkedAt": "2026-11-10",
     "note": "已读取相关关系定义；不采用吉凶断语为事实结论。"
+  },
+  {
+    "id": "yuanhai",
+    "title": "渊海子平 · 藏干与干支体象",
+    "author": "传世子平文献",
+    "url": "https://zh.wikisource.org/zh-hant/淵海子平",
+    "locator": "又地支藏遁歌、论日为主、论月令、干支体象天干与地支",
+    "supports": [
+      "藏干表",
+      "日干参照",
+      "22干支的传统取象"
+    ],
+    "status": "verified",
+    "checkedAt": "2026-11-10",
+    "note": "已核读所列段落；分月用事表与藏干总表分开，原书吉凶与性别价值判断不作为本站结论。"
+  },
+  {
+    "id": "ditian",
+    "title": "滴天髓 · 天干论与地支论",
+    "author": "传世文本及所附解释",
+    "url": "https://zh.wikisource.org/wiki/滴天髓",
+    "locator": "天干论：甲至癸；地支论：生方、库地、刑冲等段落",
+    "supports": [
+      "十干取象的条件",
+      "文本与注释差异",
+      "地支关系解释"
+    ],
+    "status": "verified",
+    "checkedAt": "2026-11-10",
+    "note": "只核读相关段落，不据页面署名断定原作年代。与《渊海子平》戊土、辛金比喻的差异并列展示。"
+  },
+  {
+    "id": "ziwei2",
+    "title": "紫微斗数全书 · 卷二",
+    "author": "传世斗数文献",
+    "url": "https://zh.wikisource.org/wiki/紫微斗數全書/卷二",
+    "locator": "安身命例、起五行寅例、安禄存、安禄权科忌四星变化诀",
+    "supports": [
+      "安命身与宫干",
+      "禄存位置",
+      "四化文本表"
+    ],
+    "status": "verified",
+    "checkedAt": "2026-11-10",
+    "note": "电子本有明显讹字；壬干口诀写“壬梁紫府武”，与现代安星诀的“左辅化科”不同，不能悄悄合并。"
+  },
+  {
+    "id": "ziwei-setup",
+    "title": "紫微斗数安星诀",
+    "author": "紫微研习社 / iztro 文档",
+    "url": "https://iztro.com/zh_TW/learn/setup",
+    "locator": "第1—7、14—18节；流月与流曜说明",
+    "supports": [
+      "十干四化表",
+      "禄存与天马",
+      "命身宫与宫干",
+      "命主规则差异"
+    ],
+    "status": "verified",
+    "checkedAt": "2026-11-10",
+    "note": "现代二手技术整理，正文自称南派四化。仅采用可核查的规则和版本说明，不将库配置视为所有门派共同标准。"
+  },
+  {
+    "id": "ziwei-mutagen",
+    "title": "紫微斗数四化",
+    "author": "紫微研习社",
+    "url": "https://iztro.com/learn/mutagen",
+    "locator": "前言：运限四化与宫位四化；化禄与禄存区别",
+    "supports": [
+      "四化依附星曜",
+      "生年与宫干四化的层次"
+    ],
+    "status": "verified",
+    "checkedAt": "2026-11-10",
+    "note": "现代作者解释，本站原创转述概念，不复制大段正文，不采用性格及吉凶断言为事实。"
+  },
+  {
+    "id": "liuren1",
+    "title": "六壬大全 · 卷一",
+    "author": "《四库全书》本",
+    "url": "https://zh.wikisource.org/wiki/六壬大全_(四庫全書本)/卷01",
+    "locator": "十干寄宫、九宗门：贼克至返吟",
+    "supports": [
+      "十干寄宫",
+      "四课取传的方法"
+    ],
+    "status": "verified",
+    "checkedAt": "2026-11-10",
+    "note": "转录中出现“丙戊课己”“丁巳课未”等巳己混字；按通行寄宫表说明并明确字形校核，未称校勘定本。"
+  },
+  {
+    "id": "najia2",
+    "title": "易学象数论 · 纳甲二",
+    "author": "清 · 黄宗羲",
+    "url": "https://zh.wikisource.org/zh-hant/易學象數論/納甲二",
+    "locator": "纳日与纳辰的区别；沈存中纳甲胎育图列八卦与十干配属",
+    "supports": [
+      "八卦纳干表",
+      "内外卦纳支",
+      "纳干纳辰区别"
+    ],
+    "status": "verified",
+    "checkedAt": "2026-11-10",
+    "note": "已读相关正文。作者还批评占筮仅重地支而轻天干，表明古人之间亦有方法争论；本站不把其批评当作所有后世六爻法共识。"
   }
 ]
