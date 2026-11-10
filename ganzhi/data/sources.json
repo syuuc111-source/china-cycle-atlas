@@ -1,0 +1,293 @@
+[
+  {
+    "id": "museum",
+    "title": "刻“干支表”牛骨",
+    "author": "中国国家博物馆",
+    "url": "https://www.chnmuseum.cn/zp/zpml/kgfjp/202108/t20210802_250928.shtml",
+    "locator": "藏品说明：商王帝乙或帝辛时期，殷墟出土",
+    "supports": [
+      "商代干支纪日实物",
+      "十干十二支与60日循环"
+    ],
+    "status": "verified",
+    "checkedAt": "2026-11-10",
+    "note": ""
+  },
+  {
+    "id": "hko-year",
+    "title": "今夕是何年？",
+    "author": "香港天文台 · 许大伟",
+    "url": "https://www.hko.gov.hk/tc/education/astronomy-and-time/time-service/00506-what-year-is-it-today.html",
+    "locator": "2018年4月，正月初一与立春的段落",
+    "supports": [
+      "农历年界",
+      "立春年界的不同用途",
+      "60年循环"
+    ],
+    "status": "verified",
+    "checkedAt": "2026-11-10",
+    "note": ""
+  },
+  {
+    "id": "wuxing1",
+    "title": "五行大义 · 卷一",
+    "author": "隋 · 萧吉",
+    "url": "https://zh.wikisource.org/wiki/五行大義/1",
+    "locator": "第一释名、第二辨体性、第三明数",
+    "supports": [
+      "传统干支释名",
+      "五行方位",
+      "纳音数"
+    ],
+    "status": "verified",
+    "checkedAt": "2026-11-10",
+    "note": "已读取相关段落。电子转录可有讹字，本文以现代转述为主；传统训释不等同于甲骨文字源定论。"
+  },
+  {
+    "id": "wuxing2",
+    "title": "五行大义 · 卷二",
+    "author": "隋 · 萧吉",
+    "url": "https://zh.wikisource.org/wiki/五行大義/2",
+    "locator": "第四相生至第十三冲破",
+    "supports": [
+      "生克与休旺",
+      "配支干",
+      "合刑害冲破"
+    ],
+    "status": "verified",
+    "checkedAt": "2026-11-10",
+    "note": "已读取相关段落。保留其时代与体系背景，不将古代社会比附作为现代价值判断。"
+  },
+  {
+    "id": "sanming1",
+    "title": "三命通会 · 卷一",
+    "author": "明 · 万民英",
+    "url": "https://zh.wikisource.org/wiki/三命通會/卷一",
+    "locator": "总论纳音、论纳音取象、释六十甲子性质吉凶",
+    "supports": [
+      "30组纳音名称与传统取象"
+    ],
+    "status": "verified",
+    "checkedAt": "2026-11-10",
+    "note": "只引用分类和历史解释；原书的吉凶断语不作为事实结论。"
+  },
+  {
+    "id": "sanming2",
+    "title": "三命通会 · 卷二",
+    "author": "明 · 万民英",
+    "url": "https://zh.wikisource.org/wiki/三命通會/卷二",
+    "locator": "论天干、论地支、遁月时、论大运等篇",
+    "supports": [
+      "干支传统对应",
+      "月时推干",
+      "生旺与大运"
+    ],
+    "status": "verified",
+    "checkedAt": "2026-11-10",
+    "note": "已读取相关段落；字形、异文需结合影印本，本站不提供校勘定本。"
+  },
+  {
+    "id": "sanming4",
+    "title": "三命通会 · 卷四",
+    "author": "明 · 万民英",
+    "url": "https://zh.wikisource.org/wiki/三命通會/卷四",
+    "locator": "论十干坐支兼得月时及行运吉凶等篇",
+    "supports": [
+      "四柱解释传统",
+      "十干取象",
+      "财官印等术语"
+    ],
+    "status": "verified",
+    "checkedAt": "2026-11-10",
+    "note": "原书含时代性命运判断，本站介绍其概念结构，不照录个人吉凶结论。"
+  },
+  {
+    "id": "suwen",
+    "title": "素问 · 第十九卷",
+    "author": "《黄帝内经》传世文本",
+    "url": "https://zh.wikisource.org/zh-hant/黃帝內經/素問第十九卷",
+    "locator": "天元纪大论、五运行大论、六微旨大论",
+    "supports": [
+      "五运配干",
+      "司天配支",
+      "六气与周期"
+    ],
+    "status": "verified",
+    "checkedAt": "2026-11-10",
+    "note": "已核读有关段落；电子转录有巳／己等易混字。所列规则是传统医籍理论，不是临床验证。"
+  },
+  {
+    "id": "liuren",
+    "title": "大六壬",
+    "author": "维基百科协作者",
+    "url": "https://zh.wikipedia.org/zh-hans/大六壬",
+    "locator": "六壬盘基本组成",
+    "supports": [
+      "天地盘、四课三传概览"
+    ],
+    "status": "verified",
+    "checkedAt": "2026-11-10",
+    "note": "二手百科用于体系导览，不作为某家排盘细则的唯一依据。"
+  },
+  {
+    "id": "qimen",
+    "title": "奇门遁甲",
+    "author": "维基百科协作者",
+    "url": "https://zh.wikipedia.org/zh-hans/奇門遁甲",
+    "locator": "概论、三奇六仪",
+    "supports": [
+      "三奇六仪与六甲",
+      "转盘飞盘差异"
+    ],
+    "status": "verified",
+    "checkedAt": "2026-11-10",
+    "note": "二手百科用于名词概览；传说与历史实证分开。"
+  },
+  {
+    "id": "taiyi",
+    "title": "太乙金镜式经",
+    "author": "唐 · 王希明",
+    "url": "https://zh.wikisource.org/wiki/太乙金鏡式經_(四庫全書本)/卷01",
+    "locator": "卷一：推上元积年、推太岁所在、入纪等推法",
+    "supports": [
+      "太乙积算与干支纪年"
+    ],
+    "status": "verified",
+    "checkedAt": "2026-11-10",
+    "note": "已读取卷一有关积年和六十去之的段落；版本计算不在本站复现。"
+  },
+  {
+    "id": "calendar",
+    "title": "公历与农历对照表",
+    "author": "香港天文台",
+    "url": "https://www.hko.gov.hk/tc/gts/time/conversion.htm",
+    "locator": "1901—2100年公农历资料",
+    "supports": [
+      "农历日期核对",
+      "闰月",
+      "日期范围"
+    ],
+    "status": "verified",
+    "checkedAt": "2026-11-10",
+    "note": ""
+  },
+  {
+    "id": "terms",
+    "title": "二十四节气的日期及时间资料",
+    "author": "香港天文台",
+    "url": "https://www.hko.gov.hk/tc/gts/astronomy/Solar_Term.htm",
+    "locator": "节气时刻表及香港时间说明",
+    "supports": [
+      "节气、时区与交节时刻"
+    ],
+    "status": "verified",
+    "checkedAt": "2026-11-10",
+    "note": ""
+  },
+  {
+    "id": "liu",
+    "title": "Sexagenary Cycle（六十干支）",
+    "author": "Y. T. Liu",
+    "url": "https://ytliu0.github.io/ChineseCalendar/sexagenary.html",
+    "locator": "干支日与儒略日计算说明",
+    "supports": [
+      "连续日计数",
+      "干支周期算法"
+    ],
+    "status": "verified",
+    "checkedAt": "2026-11-10",
+    "note": ""
+  },
+  {
+    "id": "najia",
+    "title": "京氏易传",
+    "author": "汉 · 京房（传）",
+    "url": "https://zh.wikisource.org/wiki/京氏易傳",
+    "locator": "卷上：乾卦甲壬配外内二象等段落",
+    "supports": [
+      "八卦与干支的传统关系"
+    ],
+    "status": "verified",
+    "checkedAt": "2026-11-10",
+    "note": "已读取卷上相关段落；本站仅解释纳甲的基本用途，不提供各版本完整占断。"
+  },
+  {
+    "id": "xieji",
+    "title": "钦定协纪辨方书",
+    "author": "清代官修",
+    "url": "https://zh.wikisource.org/wiki/欽定協紀辨方書_(四庫全書本)",
+    "locator": "本原、义例与用事诸卷的阅读入口",
+    "supports": [
+      "择日分类与神煞体系"
+    ],
+    "status": "partial",
+    "checkedAt": "2026-11-10",
+    "note": "延伸阅读入口；择日与方位内容为概览，不宣称全书已校读。"
+  },
+  {
+    "id": "zodiac",
+    "title": "十二生肖",
+    "author": "维基百科协作者",
+    "url": "https://zh.wikipedia.org/zh-hans/生肖",
+    "locator": "各地生肖及文化习俗",
+    "supports": [
+      "生肖与地支",
+      "东亚差异"
+    ],
+    "status": "verified",
+    "checkedAt": "2026-11-10",
+    "note": "已读取地域配属段落；用于文化概览的二手资料，未采用文中未经充分支持的起源断言。"
+  },
+  {
+    "id": "library",
+    "title": "lunar-javascript 1.7.8",
+    "author": "6tail",
+    "url": "https://github.com/6tail/lunar-javascript",
+    "locator": "MIT许可证；Solar、Lunar日期与节气接口",
+    "supports": [
+      "本地历算实现与版本"
+    ],
+    "status": "verified",
+    "checkedAt": "2026-11-10",
+    "note": "实现依赖不是独立历表证据；验证记录另列香港天文台和干支日公式。"
+  },
+  {
+    "id": "compass",
+    "title": "堪舆罗盘",
+    "author": "维基百科协作者",
+    "url": "https://zh.wikipedia.org/zh-hans/風水羅盤",
+    "locator": "二十四山方位列表",
+    "supports": [
+      "二十四山的八干、十二支和四卦"
+    ],
+    "status": "verified",
+    "checkedAt": "2026-11-10",
+    "note": "二手资料用于方位符号分类，未采用文中风水吉凶结论。"
+  },
+  {
+    "id": "kanreki",
+    "title": "还历",
+    "author": "维基百科协作者",
+    "url": "https://zh.wikipedia.org/zh-hans/還曆",
+    "locator": "名称、六十循环与东亚习俗",
+    "supports": [
+      "还历、回甲等文化用法"
+    ],
+    "status": "verified",
+    "checkedAt": "2026-11-10",
+    "note": "只采用六十循环相关的名称与习俗；年龄须区分周岁、虚岁和具体地方习惯。"
+  },
+  {
+    "id": "sanming5",
+    "title": "三命通会 · 卷五",
+    "author": "明 · 万民英",
+    "url": "https://zh.wikisource.org/wiki/三命通會/卷五",
+    "locator": "论正官、论偏官、论正财、论偏财、论印绶等篇",
+    "supports": [
+      "十神关系和传统命理术语"
+    ],
+    "status": "verified",
+    "checkedAt": "2026-11-10",
+    "note": "已读取相关关系定义；不采用吉凶断语为事实结论。"
+  }
+]

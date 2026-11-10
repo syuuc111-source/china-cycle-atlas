@@ -1,0 +1,2901 @@
+{
+  "version": "2026.11",
+  "entries": [
+    {
+      "id": "jia",
+      "kind": "stem",
+      "name": "甲",
+      "pinyin": "jiǎ",
+      "index": 0,
+      "element": "木",
+      "polarity": "阳",
+      "aliases": [
+        "jia",
+        "jiǎ"
+      ],
+      "summary": "序列的起点。甲子、甲戌等六个旬首都以甲开头。",
+      "related": [
+        "yin-yang",
+        "stem-combinations",
+        "ten-gods"
+      ],
+      "sourceIds": [
+        "wuxing1",
+        "wuxing2",
+        "sanming2"
+      ],
+      "sections": [
+        {
+          "heading": "位置与对应",
+          "paragraphs": [
+            "甲是第1个天干，按常见干支本气表属木，阴阳为阳。顺序、阴阳与五行是不同属性，查阅时分别辨认。",
+            "天干五合中对应甲己。若讨论五运，需另查五运配干表；这里的本气五行不自动改变。"
+          ],
+          "evidenceType": "传统对应",
+          "sourceIds": [
+            "wuxing1",
+            "wuxing2",
+            "sanming2"
+          ]
+        },
+        {
+          "heading": "怎样理解这些解释",
+          "paragraphs": [
+            "序列的起点。甲子、甲戌等六个旬首都以甲开头。",
+            "《五行大义》常用生长、收藏等物候比附解释干支名称。这些传统训释可以帮助理解古籍，不等同于现代文字学已经证明的原始造字意义。"
+          ],
+          "evidenceType": "历史材料",
+          "sourceIds": [
+            "wuxing1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "yi",
+      "kind": "stem",
+      "name": "乙",
+      "pinyin": "yǐ",
+      "index": 1,
+      "element": "木",
+      "polarity": "阴",
+      "aliases": [
+        "yi",
+        "yǐ"
+      ],
+      "summary": "乙接在甲之后，只与阴支相配；乙丑是循环第二项。",
+      "related": [
+        "yin-yang",
+        "stem-combinations",
+        "ten-gods"
+      ],
+      "sourceIds": [
+        "wuxing1",
+        "wuxing2",
+        "sanming2"
+      ],
+      "sections": [
+        {
+          "heading": "位置与对应",
+          "paragraphs": [
+            "乙是第2个天干，按常见干支本气表属木，阴阳为阴。顺序、阴阳与五行是不同属性，查阅时分别辨认。",
+            "天干五合中对应乙庚。若讨论五运，需另查五运配干表；这里的本气五行不自动改变。"
+          ],
+          "evidenceType": "传统对应",
+          "sourceIds": [
+            "wuxing1",
+            "wuxing2",
+            "sanming2"
+          ]
+        },
+        {
+          "heading": "怎样理解这些解释",
+          "paragraphs": [
+            "乙接在甲之后，只与阴支相配；乙丑是循环第二项。",
+            "《五行大义》常用生长、收藏等物候比附解释干支名称。这些传统训释可以帮助理解古籍，不等同于现代文字学已经证明的原始造字意义。"
+          ],
+          "evidenceType": "历史材料",
+          "sourceIds": [
+            "wuxing1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bing",
+      "kind": "stem",
+      "name": "丙",
+      "pinyin": "bǐng",
+      "index": 2,
+      "element": "火",
+      "polarity": "阳",
+      "aliases": [
+        "bing",
+        "bǐng"
+      ],
+      "summary": "丙是阳火，丙寅接在乙丑之后。纳音却为炉中火，不能据此类推所有丙组合。",
+      "related": [
+        "yin-yang",
+        "stem-combinations",
+        "ten-gods"
+      ],
+      "sourceIds": [
+        "wuxing1",
+        "wuxing2",
+        "sanming2"
+      ],
+      "sections": [
+        {
+          "heading": "位置与对应",
+          "paragraphs": [
+            "丙是第3个天干，按常见干支本气表属火，阴阳为阳。顺序、阴阳与五行是不同属性，查阅时分别辨认。",
+            "天干五合中对应丙辛。若讨论五运，需另查五运配干表；这里的本气五行不自动改变。"
+          ],
+          "evidenceType": "传统对应",
+          "sourceIds": [
+            "wuxing1",
+            "wuxing2",
+            "sanming2"
+          ]
+        },
+        {
+          "heading": "怎样理解这些解释",
+          "paragraphs": [
+            "丙是阳火，丙寅接在乙丑之后。纳音却为炉中火，不能据此类推所有丙组合。",
+            "《五行大义》常用生长、收藏等物候比附解释干支名称。这些传统训释可以帮助理解古籍，不等同于现代文字学已经证明的原始造字意义。"
+          ],
+          "evidenceType": "历史材料",
+          "sourceIds": [
+            "wuxing1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ding",
+      "kind": "stem",
+      "name": "丁",
+      "pinyin": "dīng",
+      "index": 3,
+      "element": "火",
+      "polarity": "阴",
+      "aliases": [
+        "ding",
+        "dīng"
+      ],
+      "summary": "丁是阴火，与壬列为天干五合的一组。",
+      "related": [
+        "yin-yang",
+        "stem-combinations",
+        "ten-gods"
+      ],
+      "sourceIds": [
+        "wuxing1",
+        "wuxing2",
+        "sanming2"
+      ],
+      "sections": [
+        {
+          "heading": "位置与对应",
+          "paragraphs": [
+            "丁是第4个天干，按常见干支本气表属火，阴阳为阴。顺序、阴阳与五行是不同属性，查阅时分别辨认。",
+            "天干五合中对应丁壬。若讨论五运，需另查五运配干表；这里的本气五行不自动改变。"
+          ],
+          "evidenceType": "传统对应",
+          "sourceIds": [
+            "wuxing1",
+            "wuxing2",
+            "sanming2"
+          ]
+        },
+        {
+          "heading": "怎样理解这些解释",
+          "paragraphs": [
+            "丁是阴火，与壬列为天干五合的一组。",
+            "《五行大义》常用生长、收藏等物候比附解释干支名称。这些传统训释可以帮助理解古籍，不等同于现代文字学已经证明的原始造字意义。"
+          ],
+          "evidenceType": "历史材料",
+          "sourceIds": [
+            "wuxing1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wu-stem",
+      "kind": "stem",
+      "name": "戊",
+      "pinyin": "wù",
+      "index": 4,
+      "element": "土",
+      "polarity": "阳",
+      "aliases": [
+        "wu",
+        "wù"
+      ],
+      "summary": "戊读wù，不是戌xū或戍shù；戊是天干，戌才是地支。",
+      "related": [
+        "yin-yang",
+        "stem-combinations",
+        "ten-gods"
+      ],
+      "sourceIds": [
+        "wuxing1",
+        "wuxing2",
+        "sanming2"
+      ],
+      "sections": [
+        {
+          "heading": "位置与对应",
+          "paragraphs": [
+            "戊是第5个天干，按常见干支本气表属土，阴阳为阳。顺序、阴阳与五行是不同属性，查阅时分别辨认。",
+            "天干五合中对应戊癸。若讨论五运，需另查五运配干表；这里的本气五行不自动改变。"
+          ],
+          "evidenceType": "传统对应",
+          "sourceIds": [
+            "wuxing1",
+            "wuxing2",
+            "sanming2"
+          ]
+        },
+        {
+          "heading": "怎样理解这些解释",
+          "paragraphs": [
+            "戊读wù，不是戌xū或戍shù；戊是天干，戌才是地支。",
+            "《五行大义》常用生长、收藏等物候比附解释干支名称。这些传统训释可以帮助理解古籍，不等同于现代文字学已经证明的原始造字意义。"
+          ],
+          "evidenceType": "历史材料",
+          "sourceIds": [
+            "wuxing1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ji",
+      "kind": "stem",
+      "name": "己",
+      "pinyin": "jǐ",
+      "index": 5,
+      "element": "土",
+      "polarity": "阴",
+      "aliases": [
+        "ji",
+        "jǐ"
+      ],
+      "summary": "己读jǐ，注意区分已yǐ和巳sì；己是阴土，巳是地支。",
+      "related": [
+        "yin-yang",
+        "stem-combinations",
+        "ten-gods"
+      ],
+      "sourceIds": [
+        "wuxing1",
+        "wuxing2",
+        "sanming2"
+      ],
+      "sections": [
+        {
+          "heading": "位置与对应",
+          "paragraphs": [
+            "己是第6个天干，按常见干支本气表属土，阴阳为阴。顺序、阴阳与五行是不同属性，查阅时分别辨认。",
+            "天干五合中对应甲己。若讨论五运，需另查五运配干表；这里的本气五行不自动改变。"
+          ],
+          "evidenceType": "传统对应",
+          "sourceIds": [
+            "wuxing1",
+            "wuxing2",
+            "sanming2"
+          ]
+        },
+        {
+          "heading": "怎样理解这些解释",
+          "paragraphs": [
+            "己读jǐ，注意区分已yǐ和巳sì；己是阴土，巳是地支。",
+            "《五行大义》常用生长、收藏等物候比附解释干支名称。这些传统训释可以帮助理解古籍，不等同于现代文字学已经证明的原始造字意义。"
+          ],
+          "evidenceType": "历史材料",
+          "sourceIds": [
+            "wuxing1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "geng",
+      "kind": "stem",
+      "name": "庚",
+      "pinyin": "gēng",
+      "index": 6,
+      "element": "金",
+      "polarity": "阳",
+      "aliases": [
+        "geng",
+        "gēng"
+      ],
+      "summary": "庚是阳金。古籍常以“更”解释其季节意义，这是训释传统。",
+      "related": [
+        "yin-yang",
+        "stem-combinations",
+        "ten-gods"
+      ],
+      "sourceIds": [
+        "wuxing1",
+        "wuxing2",
+        "sanming2"
+      ],
+      "sections": [
+        {
+          "heading": "位置与对应",
+          "paragraphs": [
+            "庚是第7个天干，按常见干支本气表属金，阴阳为阳。顺序、阴阳与五行是不同属性，查阅时分别辨认。",
+            "天干五合中对应乙庚。若讨论五运，需另查五运配干表；这里的本气五行不自动改变。"
+          ],
+          "evidenceType": "传统对应",
+          "sourceIds": [
+            "wuxing1",
+            "wuxing2",
+            "sanming2"
+          ]
+        },
+        {
+          "heading": "怎样理解这些解释",
+          "paragraphs": [
+            "庚是阳金。古籍常以“更”解释其季节意义，这是训释传统。",
+            "《五行大义》常用生长、收藏等物候比附解释干支名称。这些传统训释可以帮助理解古籍，不等同于现代文字学已经证明的原始造字意义。"
+          ],
+          "evidenceType": "历史材料",
+          "sourceIds": [
+            "wuxing1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "xin",
+      "kind": "stem",
+      "name": "辛",
+      "pinyin": "xīn",
+      "index": 7,
+      "element": "金",
+      "polarity": "阴",
+      "aliases": [
+        "xin",
+        "xīn"
+      ],
+      "summary": "辛为阴金。传统取象可用精细金属，不能用它断言人的性格。",
+      "related": [
+        "yin-yang",
+        "stem-combinations",
+        "ten-gods"
+      ],
+      "sourceIds": [
+        "wuxing1",
+        "wuxing2",
+        "sanming2"
+      ],
+      "sections": [
+        {
+          "heading": "位置与对应",
+          "paragraphs": [
+            "辛是第8个天干，按常见干支本气表属金，阴阳为阴。顺序、阴阳与五行是不同属性，查阅时分别辨认。",
+            "天干五合中对应丙辛。若讨论五运，需另查五运配干表；这里的本气五行不自动改变。"
+          ],
+          "evidenceType": "传统对应",
+          "sourceIds": [
+            "wuxing1",
+            "wuxing2",
+            "sanming2"
+          ]
+        },
+        {
+          "heading": "怎样理解这些解释",
+          "paragraphs": [
+            "辛为阴金。传统取象可用精细金属，不能用它断言人的性格。",
+            "《五行大义》常用生长、收藏等物候比附解释干支名称。这些传统训释可以帮助理解古籍，不等同于现代文字学已经证明的原始造字意义。"
+          ],
+          "evidenceType": "历史材料",
+          "sourceIds": [
+            "wuxing1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ren",
+      "kind": "stem",
+      "name": "壬",
+      "pinyin": "rén",
+      "index": 8,
+      "element": "水",
+      "polarity": "阳",
+      "aliases": [
+        "ren",
+        "rén"
+      ],
+      "summary": "壬为阳水。壬子与癸丑纳音为桑柘木，又显示本气与纳音的区别。",
+      "related": [
+        "yin-yang",
+        "stem-combinations",
+        "ten-gods"
+      ],
+      "sourceIds": [
+        "wuxing1",
+        "wuxing2",
+        "sanming2"
+      ],
+      "sections": [
+        {
+          "heading": "位置与对应",
+          "paragraphs": [
+            "壬是第9个天干，按常见干支本气表属水，阴阳为阳。顺序、阴阳与五行是不同属性，查阅时分别辨认。",
+            "天干五合中对应丁壬。若讨论五运，需另查五运配干表；这里的本气五行不自动改变。"
+          ],
+          "evidenceType": "传统对应",
+          "sourceIds": [
+            "wuxing1",
+            "wuxing2",
+            "sanming2"
+          ]
+        },
+        {
+          "heading": "怎样理解这些解释",
+          "paragraphs": [
+            "壬为阳水。壬子与癸丑纳音为桑柘木，又显示本气与纳音的区别。",
+            "《五行大义》常用生长、收藏等物候比附解释干支名称。这些传统训释可以帮助理解古籍，不等同于现代文字学已经证明的原始造字意义。"
+          ],
+          "evidenceType": "历史材料",
+          "sourceIds": [
+            "wuxing1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gui",
+      "kind": "stem",
+      "name": "癸",
+      "pinyin": "guǐ",
+      "index": 9,
+      "element": "水",
+      "polarity": "阴",
+      "aliases": [
+        "gui",
+        "guǐ"
+      ],
+      "summary": "癸是十干末位，之后回甲；六十循环的末项是癸亥。",
+      "related": [
+        "yin-yang",
+        "stem-combinations",
+        "ten-gods"
+      ],
+      "sourceIds": [
+        "wuxing1",
+        "wuxing2",
+        "sanming2"
+      ],
+      "sections": [
+        {
+          "heading": "位置与对应",
+          "paragraphs": [
+            "癸是第10个天干，按常见干支本气表属水，阴阳为阴。顺序、阴阳与五行是不同属性，查阅时分别辨认。",
+            "天干五合中对应戊癸。若讨论五运，需另查五运配干表；这里的本气五行不自动改变。"
+          ],
+          "evidenceType": "传统对应",
+          "sourceIds": [
+            "wuxing1",
+            "wuxing2",
+            "sanming2"
+          ]
+        },
+        {
+          "heading": "怎样理解这些解释",
+          "paragraphs": [
+            "癸是十干末位，之后回甲；六十循环的末项是癸亥。",
+            "《五行大义》常用生长、收藏等物候比附解释干支名称。这些传统训释可以帮助理解古籍，不等同于现代文字学已经证明的原始造字意义。"
+          ],
+          "evidenceType": "历史材料",
+          "sourceIds": [
+            "wuxing1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "zi",
+      "kind": "branch",
+      "name": "子",
+      "pinyin": "zǐ",
+      "index": 0,
+      "element": "水",
+      "polarity": "阳",
+      "aliases": [
+        "zi",
+        "zǐ"
+      ],
+      "summary": "子常配鼠，季节位置为仲冬；标准时辰对照为23:00—01:00。",
+      "related": [
+        "yin-yang",
+        "five-elements",
+        "hidden-stems"
+      ],
+      "sourceIds": [
+        "wuxing1",
+        "wuxing2",
+        "sanming2"
+      ],
+      "sections": [
+        {
+          "heading": "位置与对应",
+          "paragraphs": [
+            "子是第1个地支，按常见干支本气表属水，阴阳为阳。顺序、阴阳与五行是不同属性，查阅时分别辨认。",
+            "常见子平藏干为癸。与午相冲；这些是传统关系名，不据此判断实际人际关系或命运。"
+          ],
+          "evidenceType": "传统对应",
+          "sourceIds": [
+            "wuxing1",
+            "wuxing2",
+            "sanming2"
+          ]
+        },
+        {
+          "heading": "怎样理解这些解释",
+          "paragraphs": [
+            "子常配鼠，季节位置为仲冬；标准时辰对照为23:00—01:00。",
+            "《五行大义》常用生长、收藏等物候比附解释干支名称。这些传统训释可以帮助理解古籍，不等同于现代文字学已经证明的原始造字意义。"
+          ],
+          "evidenceType": "历史材料",
+          "sourceIds": [
+            "wuxing1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chou",
+      "kind": "branch",
+      "name": "丑",
+      "pinyin": "chǒu",
+      "index": 1,
+      "element": "土",
+      "polarity": "阴",
+      "aliases": [
+        "chou",
+        "chǒu"
+      ],
+      "summary": "丑常配牛，季节位置为季冬；标准时辰对照为01:00—03:00。",
+      "related": [
+        "yin-yang",
+        "five-elements",
+        "hidden-stems"
+      ],
+      "sourceIds": [
+        "wuxing1",
+        "wuxing2",
+        "sanming2"
+      ],
+      "sections": [
+        {
+          "heading": "位置与对应",
+          "paragraphs": [
+            "丑是第2个地支，按常见干支本气表属土，阴阳为阴。顺序、阴阳与五行是不同属性，查阅时分别辨认。",
+            "常见子平藏干为己癸辛。与未相冲；这些是传统关系名，不据此判断实际人际关系或命运。"
+          ],
+          "evidenceType": "传统对应",
+          "sourceIds": [
+            "wuxing1",
+            "wuxing2",
+            "sanming2"
+          ]
+        },
+        {
+          "heading": "怎样理解这些解释",
+          "paragraphs": [
+            "丑常配牛，季节位置为季冬；标准时辰对照为01:00—03:00。",
+            "《五行大义》常用生长、收藏等物候比附解释干支名称。这些传统训释可以帮助理解古籍，不等同于现代文字学已经证明的原始造字意义。"
+          ],
+          "evidenceType": "历史材料",
+          "sourceIds": [
+            "wuxing1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "yin",
+      "kind": "branch",
+      "name": "寅",
+      "pinyin": "yín",
+      "index": 2,
+      "element": "木",
+      "polarity": "阳",
+      "aliases": [
+        "yin",
+        "yín"
+      ],
+      "summary": "寅常配虎，季节位置为孟春；标准时辰对照为03:00—05:00。",
+      "related": [
+        "yin-yang",
+        "five-elements",
+        "hidden-stems"
+      ],
+      "sourceIds": [
+        "wuxing1",
+        "wuxing2",
+        "sanming2"
+      ],
+      "sections": [
+        {
+          "heading": "位置与对应",
+          "paragraphs": [
+            "寅是第3个地支，按常见干支本气表属木，阴阳为阳。顺序、阴阳与五行是不同属性，查阅时分别辨认。",
+            "常见子平藏干为甲丙戊。与申相冲；这些是传统关系名，不据此判断实际人际关系或命运。"
+          ],
+          "evidenceType": "传统对应",
+          "sourceIds": [
+            "wuxing1",
+            "wuxing2",
+            "sanming2"
+          ]
+        },
+        {
+          "heading": "怎样理解这些解释",
+          "paragraphs": [
+            "寅常配虎，季节位置为孟春；标准时辰对照为03:00—05:00。",
+            "《五行大义》常用生长、收藏等物候比附解释干支名称。这些传统训释可以帮助理解古籍，不等同于现代文字学已经证明的原始造字意义。"
+          ],
+          "evidenceType": "历史材料",
+          "sourceIds": [
+            "wuxing1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mao",
+      "kind": "branch",
+      "name": "卯",
+      "pinyin": "mǎo",
+      "index": 3,
+      "element": "木",
+      "polarity": "阴",
+      "aliases": [
+        "mao",
+        "mǎo"
+      ],
+      "summary": "卯常配兔，季节位置为仲春；标准时辰对照为05:00—07:00。",
+      "related": [
+        "yin-yang",
+        "five-elements",
+        "hidden-stems"
+      ],
+      "sourceIds": [
+        "wuxing1",
+        "wuxing2",
+        "sanming2"
+      ],
+      "sections": [
+        {
+          "heading": "位置与对应",
+          "paragraphs": [
+            "卯是第4个地支，按常见干支本气表属木，阴阳为阴。顺序、阴阳与五行是不同属性，查阅时分别辨认。",
+            "常见子平藏干为乙。与酉相冲；这些是传统关系名，不据此判断实际人际关系或命运。"
+          ],
+          "evidenceType": "传统对应",
+          "sourceIds": [
+            "wuxing1",
+            "wuxing2",
+            "sanming2"
+          ]
+        },
+        {
+          "heading": "怎样理解这些解释",
+          "paragraphs": [
+            "卯常配兔，季节位置为仲春；标准时辰对照为05:00—07:00。",
+            "《五行大义》常用生长、收藏等物候比附解释干支名称。这些传统训释可以帮助理解古籍，不等同于现代文字学已经证明的原始造字意义。"
+          ],
+          "evidenceType": "历史材料",
+          "sourceIds": [
+            "wuxing1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chen",
+      "kind": "branch",
+      "name": "辰",
+      "pinyin": "chén",
+      "index": 4,
+      "element": "土",
+      "polarity": "阳",
+      "aliases": [
+        "chen",
+        "chén"
+      ],
+      "summary": "辰常配龙，季节位置为季春；标准时辰对照为07:00—09:00。",
+      "related": [
+        "yin-yang",
+        "five-elements",
+        "hidden-stems"
+      ],
+      "sourceIds": [
+        "wuxing1",
+        "wuxing2",
+        "sanming2"
+      ],
+      "sections": [
+        {
+          "heading": "位置与对应",
+          "paragraphs": [
+            "辰是第5个地支，按常见干支本气表属土，阴阳为阳。顺序、阴阳与五行是不同属性，查阅时分别辨认。",
+            "常见子平藏干为戊乙癸。与戌相冲；这些是传统关系名，不据此判断实际人际关系或命运。"
+          ],
+          "evidenceType": "传统对应",
+          "sourceIds": [
+            "wuxing1",
+            "wuxing2",
+            "sanming2"
+          ]
+        },
+        {
+          "heading": "怎样理解这些解释",
+          "paragraphs": [
+            "辰常配龙，季节位置为季春；标准时辰对照为07:00—09:00。",
+            "《五行大义》常用生长、收藏等物候比附解释干支名称。这些传统训释可以帮助理解古籍，不等同于现代文字学已经证明的原始造字意义。"
+          ],
+          "evidenceType": "历史材料",
+          "sourceIds": [
+            "wuxing1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "si",
+      "kind": "branch",
+      "name": "巳",
+      "pinyin": "sì",
+      "index": 5,
+      "element": "火",
+      "polarity": "阴",
+      "aliases": [
+        "si",
+        "sì"
+      ],
+      "summary": "巳常配蛇，季节位置为孟夏；标准时辰对照为09:00—11:00。",
+      "related": [
+        "yin-yang",
+        "five-elements",
+        "hidden-stems"
+      ],
+      "sourceIds": [
+        "wuxing1",
+        "wuxing2",
+        "sanming2"
+      ],
+      "sections": [
+        {
+          "heading": "位置与对应",
+          "paragraphs": [
+            "巳是第6个地支，按常见干支本气表属火，阴阳为阴。顺序、阴阳与五行是不同属性，查阅时分别辨认。",
+            "常见子平藏干为丙戊庚。与亥相冲；这些是传统关系名，不据此判断实际人际关系或命运。"
+          ],
+          "evidenceType": "传统对应",
+          "sourceIds": [
+            "wuxing1",
+            "wuxing2",
+            "sanming2"
+          ]
+        },
+        {
+          "heading": "怎样理解这些解释",
+          "paragraphs": [
+            "巳常配蛇，季节位置为孟夏；标准时辰对照为09:00—11:00。",
+            "《五行大义》常用生长、收藏等物候比附解释干支名称。这些传统训释可以帮助理解古籍，不等同于现代文字学已经证明的原始造字意义。"
+          ],
+          "evidenceType": "历史材料",
+          "sourceIds": [
+            "wuxing1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wu",
+      "kind": "branch",
+      "name": "午",
+      "pinyin": "wǔ",
+      "index": 6,
+      "element": "火",
+      "polarity": "阳",
+      "aliases": [
+        "wu",
+        "wǔ"
+      ],
+      "summary": "午常配马，季节位置为仲夏；标准时辰对照为11:00—13:00。",
+      "related": [
+        "yin-yang",
+        "five-elements",
+        "hidden-stems"
+      ],
+      "sourceIds": [
+        "wuxing1",
+        "wuxing2",
+        "sanming2"
+      ],
+      "sections": [
+        {
+          "heading": "位置与对应",
+          "paragraphs": [
+            "午是第7个地支，按常见干支本气表属火，阴阳为阳。顺序、阴阳与五行是不同属性，查阅时分别辨认。",
+            "常见子平藏干为丁己。与子相冲；这些是传统关系名，不据此判断实际人际关系或命运。"
+          ],
+          "evidenceType": "传统对应",
+          "sourceIds": [
+            "wuxing1",
+            "wuxing2",
+            "sanming2"
+          ]
+        },
+        {
+          "heading": "怎样理解这些解释",
+          "paragraphs": [
+            "午常配马，季节位置为仲夏；标准时辰对照为11:00—13:00。",
+            "《五行大义》常用生长、收藏等物候比附解释干支名称。这些传统训释可以帮助理解古籍，不等同于现代文字学已经证明的原始造字意义。"
+          ],
+          "evidenceType": "历史材料",
+          "sourceIds": [
+            "wuxing1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wei",
+      "kind": "branch",
+      "name": "未",
+      "pinyin": "wèi",
+      "index": 7,
+      "element": "土",
+      "polarity": "阴",
+      "aliases": [
+        "wei",
+        "wèi"
+      ],
+      "summary": "未常配羊，季节位置为季夏；标准时辰对照为13:00—15:00。",
+      "related": [
+        "yin-yang",
+        "five-elements",
+        "hidden-stems"
+      ],
+      "sourceIds": [
+        "wuxing1",
+        "wuxing2",
+        "sanming2"
+      ],
+      "sections": [
+        {
+          "heading": "位置与对应",
+          "paragraphs": [
+            "未是第8个地支，按常见干支本气表属土，阴阳为阴。顺序、阴阳与五行是不同属性，查阅时分别辨认。",
+            "常见子平藏干为己丁乙。与丑相冲；这些是传统关系名，不据此判断实际人际关系或命运。"
+          ],
+          "evidenceType": "传统对应",
+          "sourceIds": [
+            "wuxing1",
+            "wuxing2",
+            "sanming2"
+          ]
+        },
+        {
+          "heading": "怎样理解这些解释",
+          "paragraphs": [
+            "未常配羊，季节位置为季夏；标准时辰对照为13:00—15:00。",
+            "《五行大义》常用生长、收藏等物候比附解释干支名称。这些传统训释可以帮助理解古籍，不等同于现代文字学已经证明的原始造字意义。"
+          ],
+          "evidenceType": "历史材料",
+          "sourceIds": [
+            "wuxing1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shen",
+      "kind": "branch",
+      "name": "申",
+      "pinyin": "shēn",
+      "index": 8,
+      "element": "金",
+      "polarity": "阳",
+      "aliases": [
+        "shen",
+        "shēn"
+      ],
+      "summary": "申常配猴，季节位置为孟秋；标准时辰对照为15:00—17:00。",
+      "related": [
+        "yin-yang",
+        "five-elements",
+        "hidden-stems"
+      ],
+      "sourceIds": [
+        "wuxing1",
+        "wuxing2",
+        "sanming2"
+      ],
+      "sections": [
+        {
+          "heading": "位置与对应",
+          "paragraphs": [
+            "申是第9个地支，按常见干支本气表属金，阴阳为阳。顺序、阴阳与五行是不同属性，查阅时分别辨认。",
+            "常见子平藏干为庚壬戊。与寅相冲；这些是传统关系名，不据此判断实际人际关系或命运。"
+          ],
+          "evidenceType": "传统对应",
+          "sourceIds": [
+            "wuxing1",
+            "wuxing2",
+            "sanming2"
+          ]
+        },
+        {
+          "heading": "怎样理解这些解释",
+          "paragraphs": [
+            "申常配猴，季节位置为孟秋；标准时辰对照为15:00—17:00。",
+            "《五行大义》常用生长、收藏等物候比附解释干支名称。这些传统训释可以帮助理解古籍，不等同于现代文字学已经证明的原始造字意义。"
+          ],
+          "evidenceType": "历史材料",
+          "sourceIds": [
+            "wuxing1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "you",
+      "kind": "branch",
+      "name": "酉",
+      "pinyin": "yǒu",
+      "index": 9,
+      "element": "金",
+      "polarity": "阴",
+      "aliases": [
+        "you",
+        "yǒu"
+      ],
+      "summary": "酉常配鸡，季节位置为仲秋；标准时辰对照为17:00—19:00。",
+      "related": [
+        "yin-yang",
+        "five-elements",
+        "hidden-stems"
+      ],
+      "sourceIds": [
+        "wuxing1",
+        "wuxing2",
+        "sanming2"
+      ],
+      "sections": [
+        {
+          "heading": "位置与对应",
+          "paragraphs": [
+            "酉是第10个地支，按常见干支本气表属金，阴阳为阴。顺序、阴阳与五行是不同属性，查阅时分别辨认。",
+            "常见子平藏干为辛。与卯相冲；这些是传统关系名，不据此判断实际人际关系或命运。"
+          ],
+          "evidenceType": "传统对应",
+          "sourceIds": [
+            "wuxing1",
+            "wuxing2",
+            "sanming2"
+          ]
+        },
+        {
+          "heading": "怎样理解这些解释",
+          "paragraphs": [
+            "酉常配鸡，季节位置为仲秋；标准时辰对照为17:00—19:00。",
+            "《五行大义》常用生长、收藏等物候比附解释干支名称。这些传统训释可以帮助理解古籍，不等同于现代文字学已经证明的原始造字意义。"
+          ],
+          "evidenceType": "历史材料",
+          "sourceIds": [
+            "wuxing1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "xu",
+      "kind": "branch",
+      "name": "戌",
+      "pinyin": "xū",
+      "index": 10,
+      "element": "土",
+      "polarity": "阳",
+      "aliases": [
+        "xu",
+        "xū"
+      ],
+      "summary": "戌常配狗，季节位置为季秋；标准时辰对照为19:00—21:00。",
+      "related": [
+        "yin-yang",
+        "five-elements",
+        "hidden-stems"
+      ],
+      "sourceIds": [
+        "wuxing1",
+        "wuxing2",
+        "sanming2"
+      ],
+      "sections": [
+        {
+          "heading": "位置与对应",
+          "paragraphs": [
+            "戌是第11个地支，按常见干支本气表属土，阴阳为阳。顺序、阴阳与五行是不同属性，查阅时分别辨认。",
+            "常见子平藏干为戊辛丁。与辰相冲；这些是传统关系名，不据此判断实际人际关系或命运。"
+          ],
+          "evidenceType": "传统对应",
+          "sourceIds": [
+            "wuxing1",
+            "wuxing2",
+            "sanming2"
+          ]
+        },
+        {
+          "heading": "怎样理解这些解释",
+          "paragraphs": [
+            "戌常配狗，季节位置为季秋；标准时辰对照为19:00—21:00。",
+            "《五行大义》常用生长、收藏等物候比附解释干支名称。这些传统训释可以帮助理解古籍，不等同于现代文字学已经证明的原始造字意义。"
+          ],
+          "evidenceType": "历史材料",
+          "sourceIds": [
+            "wuxing1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hai",
+      "kind": "branch",
+      "name": "亥",
+      "pinyin": "hài",
+      "index": 11,
+      "element": "水",
+      "polarity": "阴",
+      "aliases": [
+        "hai",
+        "hài"
+      ],
+      "summary": "亥常配猪，季节位置为孟冬；标准时辰对照为21:00—23:00。",
+      "related": [
+        "yin-yang",
+        "five-elements",
+        "hidden-stems"
+      ],
+      "sourceIds": [
+        "wuxing1",
+        "wuxing2",
+        "sanming2"
+      ],
+      "sections": [
+        {
+          "heading": "位置与对应",
+          "paragraphs": [
+            "亥是第12个地支，按常见干支本气表属水，阴阳为阴。顺序、阴阳与五行是不同属性，查阅时分别辨认。",
+            "常见子平藏干为壬甲。与巳相冲；这些是传统关系名，不据此判断实际人际关系或命运。"
+          ],
+          "evidenceType": "传统对应",
+          "sourceIds": [
+            "wuxing1",
+            "wuxing2",
+            "sanming2"
+          ]
+        },
+        {
+          "heading": "怎样理解这些解释",
+          "paragraphs": [
+            "亥常配猪，季节位置为孟冬；标准时辰对照为21:00—23:00。",
+            "《五行大义》常用生长、收藏等物候比附解释干支名称。这些传统训释可以帮助理解古籍，不等同于现代文字学已经证明的原始造字意义。"
+          ],
+          "evidenceType": "历史材料",
+          "sourceIds": [
+            "wuxing1"
+          ]
+        }
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "id": "cycle-60",
+      "title": "为什么是六十甲子",
+      "category": "基础",
+      "summary": "十和十二同时向前一步，要走六十步，才会同时回到起点。",
+      "sections": [
+        {
+          "heading": "两列同步前进",
+          "paragraphs": [
+            "从甲子出发，下一项是乙丑，然后丙寅。天干走完十项归甲，地支走完十二项归子；两轮各自回到起点的最短共同步数，是10与12的最小公倍数60。"
+          ],
+          "evidenceType": "历法与数学",
+          "sourceIds": [
+            "museum",
+            "hko-year"
+          ]
+        },
+        {
+          "heading": "为什么不是一百二十",
+          "paragraphs": [
+            "如果任意排列，10×12确实有120对。但传统循环要求两列同步，奇数位只遇到奇数位，偶数位只遇到偶数位，所以甲不会配丑，乙不会配子。有效组合恰好60个。"
+          ],
+          "evidenceType": "历法与数学",
+          "sourceIds": [
+            "museum",
+            "hko-year"
+          ]
+        },
+        {
+          "heading": "周期不等于因果",
+          "paragraphs": [
+            "同一个干支可以标记年、月、日或时辰，必须先看单位。“甲子日”每60天一遇，不代表每60天发生同样的事件。循环盘演示的是序列规则。"
+          ],
+          "evidenceType": "历法与数学",
+          "sourceIds": [
+            "museum",
+            "hko-year"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "museum",
+        "hko-year"
+      ],
+      "related": [
+        "six-xun",
+        "year-reckoning"
+      ],
+      "aliases": []
+    },
+    {
+      "id": "yin-yang",
+      "title": "阴阳怎样分配给干支",
+      "category": "基础",
+      "summary": "干支阴阳依传统序位交替，是一套分类语言。",
+      "sections": [
+        {
+          "heading": "天干与地支的奇偶",
+          "paragraphs": [
+            "甲丙戊庚壬为阳干，乙丁己辛癸为阴干；子寅辰午申戌为阳支，丑卯巳未酉亥为阴支。同一组甲子里的干支阴阳一致。"
+          ],
+          "evidenceType": "传统理论",
+          "sourceIds": [
+            "wuxing1",
+            "wuxing2"
+          ]
+        },
+        {
+          "heading": "分类的用途与边界",
+          "paragraphs": [
+            "阴阳可用于解释顺逆、配合和生克中的关系，但不等于现代物理中的正负电荷。古籍常以刚柔、动静等作比附；这些象征不应直接变成人的优劣评价。"
+          ],
+          "evidenceType": "传统理论",
+          "sourceIds": [
+            "wuxing1",
+            "wuxing2"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "wuxing1",
+        "wuxing2"
+      ],
+      "related": [
+        "five-elements"
+      ],
+      "aliases": []
+    },
+    {
+      "id": "five-elements",
+      "title": "同一个甲子，为什么有三种五行",
+      "category": "基础",
+      "summary": "甲属木、子属水、甲子纳音属金，三种说法各有所指。",
+      "sections": [
+        {
+          "heading": "先看你在问哪一层",
+          "paragraphs": [
+            "天干本气：甲乙木、丙丁火、戊己土、庚辛金、壬癸水。地支本气：寅卯木、巳午火、申酉金、亥子水、辰戌丑未土。纳音则给相邻两组甲子另配一种五行。"
+          ],
+          "evidenceType": "传统理论",
+          "sourceIds": [
+            "wuxing2",
+            "sanming1"
+          ]
+        },
+        {
+          "heading": "生与克的两条路径",
+          "paragraphs": [
+            "相生为木→火→土→金→水→木；相克为木→土→水→火→金→木。它们是传统解释模型，不能把图上的箭头直接当成可测量的能量流。"
+          ],
+          "evidenceType": "传统理论",
+          "sourceIds": [
+            "wuxing2"
+          ]
+        },
+        {
+          "heading": "颜色只帮助识别",
+          "paragraphs": [
+            "本站木绿、火红、土橙、金黄、水蓝是交互配色。古籍常见的五色是青、赤、黄、白、黑，两者并不相同；颜色旁始终写出五行名称。"
+          ],
+          "evidenceType": "传统理论",
+          "sourceIds": [
+            "wuxing1"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "wuxing2",
+        "sanming1",
+        "wuxing1"
+      ],
+      "related": [
+        "nayin",
+        "wuyun-liuqi"
+      ],
+      "aliases": []
+    },
+    {
+      "id": "history-origins",
+      "title": "干支的起源：证据与传说",
+      "category": "历史文化",
+      "summary": "商代甲骨给出可见的实物证据，起源传说属于另一类材料。",
+      "sections": [
+        {
+          "heading": "可以直接看见的材料",
+          "paragraphs": [
+            "殷墟甲骨中已有干支纪日。国博所藏刻“干支表”牛骨为商代末年材料，说明当时干支序列已经用于记录时间；它不能单独证明干支最初发明于哪一年。"
+          ],
+          "evidenceType": "历史材料",
+          "sourceIds": [
+            "museum"
+          ]
+        },
+        {
+          "heading": "大挠作甲子的故事",
+          "paragraphs": [
+            "《五行大义》引述大挠制干支的说法，属于后世文献对起源的叙述。不能把传说人物的年代当作现代考古已经确定的纪年，也不能据此给史前每一天编一个已验证干支。"
+          ],
+          "evidenceType": "历史材料",
+          "sourceIds": [
+            "wuxing1"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "museum",
+        "wuxing1"
+      ],
+      "related": [
+        "oracle-bones",
+        "historical-reading"
+      ],
+      "aliases": []
+    },
+    {
+      "id": "oracle-bones",
+      "title": "甲骨上的干支表",
+      "category": "历史文化",
+      "summary": "一块牛肩胛骨，让抽象的循环变成可触摸的历史。",
+      "sections": [
+        {
+          "heading": "藏品提供了什么",
+          "paragraphs": [
+            "中国国家博物馆介绍的刻“干支表”牛骨，长22.5厘米、宽7.4厘米，出土于河南安阳殷墟，年代为商王帝乙或帝辛时期。骨面刻有甲子、乙丑等序列。"
+          ],
+          "evidenceType": "历史材料",
+          "sourceIds": [
+            "museum"
+          ]
+        },
+        {
+          "heading": "读材料时别跳过用途",
+          "paragraphs": [
+            "这是一项纪日制度的物证。学习时可把骨上的次序与本站60表对照；但古代字形与现代楷书有演变，不能把现代字形拆解当作甲骨字源。"
+          ],
+          "evidenceType": "历史材料",
+          "sourceIds": [
+            "museum"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "museum"
+      ],
+      "related": [
+        "history-origins",
+        "cycle-60"
+      ],
+      "aliases": []
+    },
+    {
+      "id": "year-reckoning",
+      "title": "干支纪年与两种年界",
+      "category": "历法",
+      "summary": "春节和立春都重要，但它们回答的问题不同。",
+      "sections": [
+        {
+          "heading": "农历年什么时候开始",
+          "paragraphs": [
+            "香港天文台以正月初一香港标准时间零时作为农历干支年的交替。只用“公历年减1984”的办法，可以得到该年常用标签，却不能判断春节前的具体日期。"
+          ],
+          "evidenceType": "历法与数学",
+          "sourceIds": [
+            "hko-year",
+            "wuxing1"
+          ]
+        },
+        {
+          "heading": "立春口径用在哪里",
+          "paragraphs": [
+            "部分四柱传统按立春交节时刻换年柱。例如2024年2月9日已过立春但未到春节，农历纪年仍为癸卯，而按立春的节气年柱已为甲辰。本站将二者并列。"
+          ],
+          "evidenceType": "历法与数学",
+          "sourceIds": [
+            "hko-year",
+            "wuxing1"
+          ]
+        },
+        {
+          "heading": "岁星、太岁与干支",
+          "paragraphs": [
+            "岁星指木星，古代曾按其在天空的位置纪年；太岁纪年另有配套名称与方向约定。木星公转并非恰好12年，不能把现代木星位置直接等同某个干支年。"
+          ],
+          "evidenceType": "历法与数学",
+          "sourceIds": [
+            "hko-year",
+            "wuxing1"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "hko-year",
+        "wuxing1"
+      ],
+      "related": [
+        "month-reckoning",
+        "historical-reading"
+      ],
+      "aliases": []
+    },
+    {
+      "id": "month-reckoning",
+      "title": "干支纪月：节月不是农历月",
+      "category": "历法",
+      "summary": "月支按季节排列；日期工具中的月柱按交节时刻切换。",
+      "sections": [
+        {
+          "heading": "十二节与十二月支",
+          "paragraphs": [
+            "立春起寅、惊蛰起卯、清明起辰、立夏起巳、芒种起午、小暑起未、立秋起申、白露起酉、寒露起戌、立冬起亥、大雪起子、小寒起丑。雨水、春分等中气不另换月柱。"
+          ],
+          "evidenceType": "历法与数学",
+          "sourceIds": [
+            "sanming2",
+            "hko-year",
+            "terms"
+          ]
+        },
+        {
+          "heading": "月干要从年干推",
+          "paragraphs": [
+            "寅月的天干由年干决定，再逐月顺推，这就是五虎遁。公历月份数字不能直接当月支；农历正月初一也不一定恰好是立春。"
+          ],
+          "evidenceType": "历法与数学",
+          "sourceIds": [
+            "sanming2",
+            "hko-year",
+            "terms"
+          ]
+        },
+        {
+          "heading": "避免混搭",
+          "paragraphs": [
+            "本工具的节气年月柱共同使用立春口径。春节纪年作为独立信息展示，不拿它替换立春体系的年干来推月干。否则春节与立春之间可能出现自相矛盾的结果。"
+          ],
+          "evidenceType": "历法与数学",
+          "sourceIds": [
+            "sanming2",
+            "hko-year",
+            "terms"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "sanming2",
+        "hko-year",
+        "terms"
+      ],
+      "related": [
+        "five-tigers",
+        "leap-months"
+      ],
+      "aliases": []
+    },
+    {
+      "id": "day-reckoning",
+      "title": "干支纪日：不断的六十日序列",
+      "category": "历法",
+      "summary": "月份和年份会换，干支日依照连续日数向前走。",
+      "sections": [
+        {
+          "heading": "从一个已知日推到另一天",
+          "paragraphs": [
+            "若已核实某天为甲子，后一天就是乙丑；相隔60天又为甲子。实现时用连续日计数与可信锚点，不在月初、春节或闰日重置。"
+          ],
+          "evidenceType": "历法与数学",
+          "sourceIds": [
+            "liu",
+            "sanming2"
+          ]
+        },
+        {
+          "heading": "日期制度也要注明",
+          "paragraphs": [
+            "本工具使用现代公历1901—2100年。更早的历史日期涉及历法、地域与岁首变化，不把现代公历回推结果直接称为古人实际使用的历日。"
+          ],
+          "evidenceType": "历法与数学",
+          "sourceIds": [
+            "liu",
+            "sanming2"
+          ]
+        },
+        {
+          "heading": "换日分歧",
+          "paragraphs": [
+            "默认在标准时间00:00换日；另一种演示口径在23:00换日。两者都必须说明时干跟随哪一个日干，尤其是23点到午夜这一小时。"
+          ],
+          "evidenceType": "历法与数学",
+          "sourceIds": [
+            "liu",
+            "sanming2"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "liu",
+        "sanming2"
+      ],
+      "related": [
+        "time-conventions",
+        "hour-reckoning"
+      ],
+      "aliases": []
+    },
+    {
+      "id": "hour-reckoning",
+      "title": "十二时辰与干支纪时",
+      "category": "历法",
+      "summary": "一日十二时辰，时支固定轮转，时干随日干而变。",
+      "sections": [
+        {
+          "heading": "一支约两小时",
+          "paragraphs": [
+            "按本站标准时间约定，子时23:00—01:00，丑时01:00—03:00，依次到亥时21:00—23:00。区间左端包含、右端不包含；01:00已经是丑时。"
+          ],
+          "evidenceType": "历法与数学",
+          "sourceIds": [
+            "sanming2",
+            "liu"
+          ]
+        },
+        {
+          "heading": "为什么同为子时仍有区别",
+          "paragraphs": [
+            "甲、己日从甲子时起，乙、庚日从丙子时起，其他依五鼠遁。仅知道“子时”，不能推定完整的时柱。"
+          ],
+          "evidenceType": "历法与数学",
+          "sourceIds": [
+            "sanming2",
+            "liu"
+          ]
+        },
+        {
+          "heading": "古代时制与现代时钟",
+          "paragraphs": [
+            "古代还有初、正、刻、更等记时方式。均匀的现代两小时时段是本站的换算约定，不能省略地点与时制就套用所有历史记载。"
+          ],
+          "evidenceType": "历法与数学",
+          "sourceIds": [
+            "sanming2",
+            "liu"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "sanming2",
+        "liu"
+      ],
+      "related": [
+        "five-rats",
+        "time-conventions"
+      ],
+      "aliases": []
+    },
+    {
+      "id": "solar-terms",
+      "title": "二十四节气与十二个节",
+      "category": "历法",
+      "summary": "节气以太阳的周年视运动为依据，与月相分工不同。",
+      "sections": [
+        {
+          "heading": "太阳与月亮各管什么",
+          "paragraphs": [
+            "现代节气以太阳视黄经每隔15度划分，24个构成一轮。农历月初一与朔相联系，属于月相部分；农历同时协调太阳季节，因此是阴阳合历。"
+          ],
+          "evidenceType": "历法与数学",
+          "sourceIds": [
+            "terms",
+            "hko-year"
+          ]
+        },
+        {
+          "heading": "节和中气交错",
+          "paragraphs": [
+            "从立春开始，立春为节，雨水为中气，惊蛰为节，春分为中气，如此交错。节月的边界只取12个节，不能每15天换一次月柱。"
+          ],
+          "evidenceType": "历法与数学",
+          "sourceIds": [
+            "terms",
+            "hko-year"
+          ]
+        },
+        {
+          "heading": "交节是一刻，不是一整天",
+          "paragraphs": [
+            "同一个交节日期，交节前后可能属于不同月柱。本站显示所用历算的时刻与精度说明；只有日期没有时分的表不能解决当天边界查询。"
+          ],
+          "evidenceType": "历法与数学",
+          "sourceIds": [
+            "terms",
+            "hko-year"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "terms",
+        "hko-year"
+      ],
+      "related": [
+        "month-reckoning",
+        "leap-months"
+      ],
+      "aliases": []
+    },
+    {
+      "id": "leap-months",
+      "title": "闰月怎样影响干支",
+      "category": "历法",
+      "summary": "多出的农历月用于协调季节，不是额外增加一个节月。",
+      "sections": [
+        {
+          "heading": "为什么需要置闰",
+          "paragraphs": [
+            "12个朔望月短于一个回归年，若不调整，月名会逐渐偏离季节。农历通过闰月协调，两次冬至之间的月序及中气安排参与确定置闰。"
+          ],
+          "evidenceType": "历法与数学",
+          "sourceIds": [
+            "calendar",
+            "terms"
+          ]
+        },
+        {
+          "heading": "闰月不能机械顺推月柱",
+          "paragraphs": [
+            "闰二月是农历月名，不能据此再往后推一个地支月。节月仍由惊蛰、清明等实际交节界定。查询界面把农历日期与节气月柱分开列出。"
+          ],
+          "evidenceType": "历法与数学",
+          "sourceIds": [
+            "calendar",
+            "terms"
+          ]
+        },
+        {
+          "heading": "2033问题说明了什么",
+          "paragraphs": [
+            "远期历算需认真处理朔、中气和日界的先后；2033—2034年附近的置闰常被用来检验算法。应查权威历表，不能靠固定“每几年一闰”的口诀决定具体月份。"
+          ],
+          "evidenceType": "历法与数学",
+          "sourceIds": [
+            "calendar",
+            "terms"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "calendar",
+        "terms"
+      ],
+      "related": [
+        "month-reckoning",
+        "solar-terms"
+      ],
+      "aliases": []
+    },
+    {
+      "id": "time-conventions",
+      "title": "标准时间、真太阳时与子时",
+      "category": "历法",
+      "summary": "同一个输入，只有先说明时间约定，比较结果才有意义。",
+      "sections": [
+        {
+          "heading": "本工具采用什么时间",
+          "paragraphs": [
+            "所有输入均解释为固定UTC+08:00标准时间，不随电脑所在地改变，不自动套用中国历史夏令时，也不推算出生地太阳时。输入前需先把原始记录换算到这一约定。"
+          ],
+          "evidenceType": "历法与数学",
+          "sourceIds": [
+            "terms",
+            "sanming2"
+          ]
+        },
+        {
+          "heading": "地方太阳时为什么不同",
+          "paragraphs": [
+            "地方平太阳时随经度变化；真太阳时还要考虑均时差。它们与统一时区的钟表时间不同，不能只填一个城市名或简单加减整小时就假装完成精确换算。"
+          ],
+          "evidenceType": "历法与数学",
+          "sourceIds": [
+            "terms",
+            "sanming2"
+          ]
+        },
+        {
+          "heading": "两种日界的含义",
+          "paragraphs": [
+            "00点口径：23点仍算民用当日，以当日日干推时。23点口径：23点起算次日，并以次日日干推时。另有早晚子时等流派，本工具只演示这里明确写出的两种规则。"
+          ],
+          "evidenceType": "历法与数学",
+          "sourceIds": [
+            "terms",
+            "sanming2"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "terms",
+        "sanming2"
+      ],
+      "related": [
+        "day-reckoning",
+        "five-rats"
+      ],
+      "aliases": []
+    },
+    {
+      "id": "five-tigers",
+      "title": "五虎遁：从年干推月干",
+      "category": "历法",
+      "summary": "寅月起干确定后，后面的月份依序前进。",
+      "sections": [
+        {
+          "heading": "五组起点",
+          "paragraphs": [
+            "甲己年丙寅起，乙庚年戊寅起，丙辛年庚寅起，丁壬年壬寅起，戊癸年甲寅起。由于都从寅月开始，所以传统称五虎遁。"
+          ],
+          "evidenceType": "历法与数学",
+          "sourceIds": [
+            "sanming2"
+          ]
+        },
+        {
+          "heading": "试算一个例子",
+          "paragraphs": [
+            "甲年立春后为丙寅月，惊蛰后为丁卯，清明后为戊辰。小寒后的丑月仍属上一立春年度的最后一个节月，不能在公历元旦随意重置。"
+          ],
+          "evidenceType": "历法与数学",
+          "sourceIds": [
+            "sanming2"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "sanming2"
+      ],
+      "related": [
+        "month-reckoning"
+      ],
+      "aliases": []
+    },
+    {
+      "id": "five-rats",
+      "title": "五鼠遁：从日干推时干",
+      "category": "历法",
+      "summary": "先定日干，再从子时起干，一步一步排到亥时。",
+      "sections": [
+        {
+          "heading": "五组子时起点",
+          "paragraphs": [
+            "甲己日甲子起，乙庚日丙子起，丙辛日戊子起，丁壬日庚子起，戊癸日壬子起。子属鼠，故传统称五鼠遁。"
+          ],
+          "evidenceType": "历法与数学",
+          "sourceIds": [
+            "sanming2"
+          ]
+        },
+        {
+          "heading": "把算法和日界接起来",
+          "paragraphs": [
+            "甲日午时为庚午。23:30若按00点换日，仍从当日日干推子时；若按23点换日，必须先取次日日干再推。这也是本工具同时展示日柱和时柱的原因。"
+          ],
+          "evidenceType": "历法与数学",
+          "sourceIds": [
+            "sanming2"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "sanming2"
+      ],
+      "related": [
+        "hour-reckoning",
+        "time-conventions"
+      ],
+      "aliases": []
+    },
+    {
+      "id": "nayin",
+      "title": "纳音：六十甲子的另一层命名",
+      "category": "传统对应",
+      "summary": "海中金、大林木、天河水，是成对甲子的传统分类。",
+      "sections": [
+        {
+          "heading": "三十组名称对应六十组合",
+          "paragraphs": [
+            "甲子乙丑为海中金、丙寅丁卯为炉中火，依次配成30组。名称中的金木水火土指纳音五行，不能覆盖天干、地支各自的本气。六十甲子表列出全套对应。"
+          ],
+          "evidenceType": "传统理论",
+          "sourceIds": [
+            "sanming1",
+            "wuxing1"
+          ]
+        },
+        {
+          "heading": "名称怎样产生意义",
+          "paragraphs": [
+            "《三命通会》讨论纳音与律吕相生、取象的关系，用海、炉、林等意象解释分类。名称是传统象征体系，不是描述出生时实际存在某种物质。"
+          ],
+          "evidenceType": "传统理论",
+          "sourceIds": [
+            "sanming1",
+            "wuxing1"
+          ]
+        },
+        {
+          "heading": "异名和判断边界",
+          "paragraphs": [
+            "覆灯火亦写作佛灯火，沙中与砂中、金箔与金泊有文本差异。本站统一常见写法并保留检索别名；单凭纳音不推断性格、健康或命运。"
+          ],
+          "evidenceType": "传统理论",
+          "sourceIds": [
+            "sanming1",
+            "wuxing1"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "sanming1",
+        "wuxing1"
+      ],
+      "related": [
+        "five-elements",
+        "cycle-60"
+      ],
+      "aliases": [
+        "佛灯火",
+        "覆灯火",
+        "砂中金"
+      ]
+    },
+    {
+      "id": "six-xun",
+      "title": "六旬与旬空",
+      "category": "传统对应",
+      "summary": "每十个连续组合为一旬，十干配不完的两支称为旬空。",
+      "sections": [
+        {
+          "heading": "六个旬首",
+          "paragraphs": [
+            "六旬分别以甲子、甲戌、甲申、甲午、甲辰、甲寅起头。甲子旬从甲子到癸酉，用到子至酉，剩下戌亥；这就是甲子旬戌亥空。"
+          ],
+          "evidenceType": "传统理论",
+          "sourceIds": [
+            "sanming2",
+            "qimen"
+          ]
+        },
+        {
+          "heading": "完整对应",
+          "paragraphs": [
+            "甲子旬戌亥空，甲戌旬申酉空，甲申旬午未空，甲午旬辰巳空，甲辰旬寅卯空，甲寅旬子丑空。这里的“空”首先是配对余项，术数对它的解释另有规则，不能直接说某两天不存在。"
+          ],
+          "evidenceType": "传统理论",
+          "sourceIds": [
+            "sanming2",
+            "qimen"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "sanming2",
+        "qimen"
+      ],
+      "related": [
+        "cycle-60",
+        "qimen"
+      ],
+      "aliases": []
+    },
+    {
+      "id": "hidden-stems",
+      "title": "地支藏干",
+      "category": "传统对应",
+      "summary": "一个地支在命理体系中还可以含有多个天干层次。",
+      "sections": [
+        {
+          "heading": "常见藏干表",
+          "paragraphs": [
+            "子癸；丑己癸辛；寅甲丙戊；卯乙；辰戊乙癸；巳丙戊庚；午丁己；未己丁乙；申庚壬戊；酉辛；戌戊辛丁；亥壬甲。此处按常见子平表列示，本气置前。"
+          ],
+          "evidenceType": "传统理论",
+          "sourceIds": [
+            "sanming2",
+            "wuxing2"
+          ]
+        },
+        {
+          "heading": "本气不等于藏干总和",
+          "paragraphs": [
+            "例如寅的本气属木，但藏甲丙戊；“寅属木”与“寅中有火土”处于不同解释层次。各家对分日司令、余气比例或土寄宫的说法不完全相同，不能把它们当作精密含量。"
+          ],
+          "evidenceType": "传统理论",
+          "sourceIds": [
+            "sanming2",
+            "wuxing2"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "sanming2",
+        "wuxing2"
+      ],
+      "related": [
+        "five-elements",
+        "ten-gods"
+      ],
+      "aliases": []
+    },
+    {
+      "id": "stem-combinations",
+      "title": "天干五合：合不等于化",
+      "category": "传统对应",
+      "summary": "甲己、乙庚、丙辛、丁壬、戊癸，是常见五组配合。",
+      "sections": [
+        {
+          "heading": "五组配合与化气",
+          "paragraphs": [
+            "常见说法为甲己合土、乙庚合金、丙辛合水、丁壬合木、戊癸合火。这是干合化气体系；单独的甲仍属木，不因表里出现“土”就改为甲土。"
+          ],
+          "evidenceType": "传统理论",
+          "sourceIds": [
+            "wuxing2",
+            "sanming2"
+          ]
+        },
+        {
+          "heading": "为什么不能看到一合就断化",
+          "paragraphs": [
+            "传统命理往往还看月令、根气、位置、争合等条件，对合而不化、合绊等有不同解释。本站图示只显示配对关系，是否成化属于学派论述而非自动结论。"
+          ],
+          "evidenceType": "传统理论",
+          "sourceIds": [
+            "wuxing2",
+            "sanming2"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "wuxing2",
+        "sanming2"
+      ],
+      "related": [
+        "five-elements",
+        "clashes",
+        "wuyun-liuqi"
+      ],
+      "aliases": []
+    },
+    {
+      "id": "branch-combinations",
+      "title": "六合、三合与三会",
+      "category": "传统对应",
+      "summary": "同样叫“合”，两支相配、三支成组和季节会合并非一回事。",
+      "sections": [
+        {
+          "heading": "六合",
+          "paragraphs": [
+            "子丑、寅亥、卯戌、辰酉、巳申、午未为六组。合化五行的解释须看体系及条件，不能把两字相遇简单解释为现实关系一定和谐。"
+          ],
+          "evidenceType": "传统理论",
+          "sourceIds": [
+            "wuxing2",
+            "sanming2"
+          ]
+        },
+        {
+          "heading": "三合与三会",
+          "paragraphs": [
+            "三合：申子辰水、亥卯未木、寅午戌火、巳酉丑金。三会：寅卯辰东方木、巳午未南方火、申酉戌西方金、亥子丑北方水。三会连着一个季节，三合跨越不同季节。"
+          ],
+          "evidenceType": "传统理论",
+          "sourceIds": [
+            "wuxing2",
+            "sanming2"
+          ]
+        },
+        {
+          "heading": "读图的方法",
+          "paragraphs": [
+            "选择一组后，先看它是六合、三合还是三会，再看成员与传统解释。不把缺一支的组合自动当成完整会局，也不据此预测婚姻或事件结果。"
+          ],
+          "evidenceType": "传统理论",
+          "sourceIds": [
+            "wuxing2",
+            "sanming2"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "wuxing2",
+        "sanming2"
+      ],
+      "related": [
+        "clashes",
+        "punishments-harms-breaks"
+      ],
+      "aliases": []
+    },
+    {
+      "id": "clashes",
+      "title": "六冲与天干冲的异说",
+      "category": "传统对应",
+      "summary": "冲是传统关系名，不是可以测量的碰撞力量。",
+      "sections": [
+        {
+          "heading": "地支六冲",
+          "paragraphs": [
+            "子午、丑未、寅申、卯酉、辰戌、巳亥为六冲。把十二支按次序放在圆周上，间隔六位的两支相对，可以帮助记忆。"
+          ],
+          "evidenceType": "传统理论",
+          "sourceIds": [
+            "wuxing2",
+            "sanming2"
+          ]
+        },
+        {
+          "heading": "天干冲须注明版本",
+          "paragraphs": [
+            "常见列法为甲庚、乙辛、丙壬、丁癸，戊己居中不列；有的体系重点论克而不另立同样的冲表。因此不能把天干与地支的冲当作完全相同的统一公式。"
+          ],
+          "evidenceType": "传统理论",
+          "sourceIds": [
+            "wuxing2",
+            "sanming2"
+          ]
+        },
+        {
+          "heading": "合冲可以同时出现",
+          "paragraphs": [
+            "例如巳申既被列入六合，又处在寅巳申刑的讨论中。关系名可以重叠，传统解释要看具体体系；关系图不能取代全部条件。"
+          ],
+          "evidenceType": "传统理论",
+          "sourceIds": [
+            "wuxing2",
+            "sanming2"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "wuxing2",
+        "sanming2"
+      ],
+      "related": [
+        "branch-combinations",
+        "stem-combinations"
+      ],
+      "aliases": []
+    },
+    {
+      "id": "punishments-harms-breaks",
+      "title": "刑、害、破怎样区分",
+      "category": "传统对应",
+      "summary": "这些是不同的传统配对或成组规则，不是同一个“不合”的同义词。",
+      "sections": [
+        {
+          "heading": "刑与自刑",
+          "paragraphs": [
+            "常见三刑为寅巳申、丑戌未，另有子卯相刑，辰午酉亥自刑。各家对单支、重复支或三支俱全的成立条件有差异；“刑”不等于现实中的刑事犯罪。"
+          ],
+          "evidenceType": "传统理论",
+          "sourceIds": [
+            "wuxing2",
+            "sanming2"
+          ]
+        },
+        {
+          "heading": "六害与六破",
+          "paragraphs": [
+            "六害：子未、丑午、寅巳、卯辰、申亥、酉戌。常见六破：子酉、卯午、辰丑、戌未、寅亥、巳申。古籍篇名与后世通行表需对照阅读。"
+          ],
+          "evidenceType": "传统理论",
+          "sourceIds": [
+            "wuxing2",
+            "sanming2"
+          ]
+        },
+        {
+          "heading": "把术语留在它的语境",
+          "paragraphs": [
+            "这些词在古籍中带有象征性褒贬，但不应据出生日期给人贴伤害他人、疾病或灾祸的标签。学习重点是辨认关系和文献用法。"
+          ],
+          "evidenceType": "传统理论",
+          "sourceIds": [
+            "wuxing2",
+            "sanming2"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "wuxing2",
+        "sanming2"
+      ],
+      "related": [
+        "clashes",
+        "branch-combinations"
+      ],
+      "aliases": []
+    },
+    {
+      "id": "ten-gods",
+      "title": "十神：围绕日干的十种关系",
+      "category": "四柱传统",
+      "summary": "十神并不是十位神，而是五行关系再分阴阳的名称。",
+      "sections": [
+        {
+          "heading": "五组关系",
+          "paragraphs": [
+            "以日干为“我”：同我为比劫，我生为食伤，我克为财，克我为官杀，生我为印。各组再按阴阳同异分成十个名称。"
+          ],
+          "evidenceType": "传统理论",
+          "sourceIds": [
+            "sanming4",
+            "sanming5"
+          ]
+        },
+        {
+          "heading": "以甲木日干为例",
+          "paragraphs": [
+            "甲比肩、乙劫财、丙食神、丁伤官、戊偏财、己正财、庚七杀、辛正官、壬偏印、癸正印。换了日干，同一个字的十神名称也会改变。"
+          ],
+          "evidenceType": "传统理论",
+          "sourceIds": [
+            "sanming4",
+            "sanming5"
+          ]
+        },
+        {
+          "heading": "命名不等于好坏",
+          "paragraphs": [
+            "“伤官”“七杀”等是传统术语，不能按字面断定人品或事件；“正财”“正印”也不是现实收入或学历证明。不同流派的解释还依赖月令、组合等条件。"
+          ],
+          "evidenceType": "传统理论",
+          "sourceIds": [
+            "sanming4",
+            "sanming5"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "sanming4",
+        "sanming5"
+      ],
+      "related": [
+        "four-pillars",
+        "hidden-stems"
+      ],
+      "aliases": []
+    },
+    {
+      "id": "twelve-stages",
+      "title": "十二长生：传统的阶段模型",
+      "category": "四柱传统",
+      "summary": "长生、沐浴等名称用来组织干支关系，不是人体寿命表。",
+      "sections": [
+        {
+          "heading": "十二个阶段",
+          "paragraphs": [
+            "常见次序为长生、沐浴、冠带、临官、帝旺、衰、病、死、墓、绝、胎、养。“死”“墓”等是模型位置，不等于人的死亡日期。"
+          ],
+          "evidenceType": "传统理论",
+          "sourceIds": [
+            "sanming2",
+            "wuxing2"
+          ]
+        },
+        {
+          "heading": "起点和顺逆",
+          "paragraphs": [
+            "常见十干长生起点：甲亥、乙午、丙寅、丁酉、戊寅、己酉、庚巳、辛子、壬申、癸卯；阳干顺行、阴干逆行。土随火等处理有异说，五行长生与十干长生也不可混用。"
+          ],
+          "evidenceType": "传统理论",
+          "sourceIds": [
+            "sanming2",
+            "wuxing2"
+          ]
+        },
+        {
+          "heading": "用甲木走一圈",
+          "paragraphs": [
+            "甲木从亥长生，子沐浴、丑冠带、寅临官、卯帝旺，继续到戌养，再回到亥。它表达循环阶段，不能当作一年中木材物理性质的检测结果。"
+          ],
+          "evidenceType": "传统理论",
+          "sourceIds": [
+            "sanming2",
+            "wuxing2"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "sanming2",
+        "wuxing2"
+      ],
+      "related": [
+        "seasonal-strength",
+        "ten-gods"
+      ],
+      "aliases": []
+    },
+    {
+      "id": "seasonal-strength",
+      "title": "旺相休囚死与四季",
+      "category": "四柱传统",
+      "summary": "传统用五行生克关系描述某一季节的相对状态。",
+      "sections": [
+        {
+          "heading": "五种状态怎么排",
+          "paragraphs": [
+            "以春木当令为例：木旺，木生火所以火相，水生木所以水休，金克木所以金囚，木克土所以土死。这套术语与十二长生不同。"
+          ],
+          "evidenceType": "传统理论",
+          "sourceIds": [
+            "wuxing2"
+          ]
+        },
+        {
+          "heading": "土的安排须看版本",
+          "paragraphs": [
+            "传统有土寄四季、季夏属土等不同层面的安排。不能给每一天固定一个看似精确的五行百分比，再把它当作实测气候数据。"
+          ],
+          "evidenceType": "传统理论",
+          "sourceIds": [
+            "wuxing2"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "wuxing2"
+      ],
+      "related": [
+        "five-elements",
+        "twelve-stages"
+      ],
+      "aliases": []
+    },
+    {
+      "id": "four-pillars",
+      "title": "四柱与日主",
+      "category": "四柱传统",
+      "summary": "年、月、日、时各写一对干支，就是四柱八字。",
+      "sections": [
+        {
+          "heading": "八个字怎样形成",
+          "paragraphs": [
+            "四柱包含年柱、月柱、日柱和时柱，共八字。子平传统通常以日干为日主，再讨论其他干支与它的关系，因此日界、月界和时制会影响排法。"
+          ],
+          "evidenceType": "传统理论",
+          "sourceIds": [
+            "sanming2",
+            "sanming4"
+          ]
+        },
+        {
+          "heading": "排历与解命是两件事",
+          "paragraphs": [
+            "输入时间得到约定下的干支，是可检验的历法任务；由这些字推论命运，属于传统解释。本站提供前者的规则说明，并介绍后者的术语和历史，不给个人命运定论。"
+          ],
+          "evidenceType": "传统理论",
+          "sourceIds": [
+            "sanming2",
+            "sanming4"
+          ]
+        },
+        {
+          "heading": "格局与用神",
+          "paragraphs": [
+            "格局是传统组织命局结构的方式，用神在不同学派甚至不同语境里有不同含义。扶抑、调候、格局取用不能简化为“缺什么补什么”。"
+          ],
+          "evidenceType": "传统理论",
+          "sourceIds": [
+            "sanming2",
+            "sanming4"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "sanming2",
+        "sanming4"
+      ],
+      "related": [
+        "ten-gods",
+        "luck-cycles",
+        "schools-and-shensha"
+      ],
+      "aliases": []
+    },
+    {
+      "id": "luck-cycles",
+      "title": "大运、流年与岁运",
+      "category": "四柱传统",
+      "summary": "它们在命理传统中叠加时间层次，但不等同于现实统计周期。",
+      "sections": [
+        {
+          "heading": "不同尺度的命名",
+          "paragraphs": [
+            "流年通常指正在讨论的一年；大运是传统命理排列的多年阶段，常见以十年为一段。流月、流日则继续细分时间，均需先交代采用的历法口径。"
+          ],
+          "evidenceType": "传统理论",
+          "sourceIds": [
+            "sanming2",
+            "sanming4"
+          ]
+        },
+        {
+          "heading": "起运并非只有一个默认值",
+          "paragraphs": [
+            "顺逆与起运年龄常涉及阴阳、性别分类、出生至节令的间隔及换算约定，不同派别有差异。本站说明这些结构，不在日期查询旁悄悄附加未经说明的大运或人生预测。"
+          ],
+          "evidenceType": "传统理论",
+          "sourceIds": [
+            "sanming2",
+            "sanming4"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "sanming2",
+        "sanming4"
+      ],
+      "related": [
+        "four-pillars",
+        "time-conventions"
+      ],
+      "aliases": []
+    },
+    {
+      "id": "schools-and-shensha",
+      "title": "流派、神煞与阅读方法",
+      "category": "四柱传统",
+      "summary": "同一个术语在不同书里可能有不同的起例和解释。",
+      "sections": [
+        {
+          "heading": "先问它依据哪一柱",
+          "paragraphs": [
+            "神煞是按年干、日干、地支等起例的一类传统标签，如天乙贵人、驿马、桃花、文昌。不同起点会改变查表结果，不能脱离具体规则只报一个名称。"
+          ],
+          "evidenceType": "传统理论",
+          "sourceIds": [
+            "sanming1",
+            "sanming2",
+            "sanming4"
+          ]
+        },
+        {
+          "heading": "不要把表堆成唯一答案",
+          "paragraphs": [
+            "纳音、日主旺衰、格局与神煞各有文献脉络，不能把各家的结论机械相加。读书时记录作者、年代、版本、起例和成立条件，遇到冲突先保留差异。"
+          ],
+          "evidenceType": "传统理论",
+          "sourceIds": [
+            "sanming1",
+            "sanming2",
+            "sanming4"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "sanming1",
+        "sanming2",
+        "sanming4"
+      ],
+      "related": [
+        "four-pillars",
+        "date-selection"
+      ],
+      "aliases": []
+    },
+    {
+      "id": "liuren",
+      "title": "六壬里的干支",
+      "category": "相关术数",
+      "summary": "六壬用干支组织天地盘、四课与三传，有自己独立的起课体系。",
+      "sections": [
+        {
+          "heading": "干支在什么位置",
+          "paragraphs": [
+            "大六壬通常以日干支、占时、月将等组织天地盘，并进一步形成四课三传。十二支承担时位与盘位角色，十干有寄宫等安排。"
+          ],
+          "evidenceType": "传统理论",
+          "sourceIds": [
+            "liuren"
+          ]
+        },
+        {
+          "heading": "与四柱有什么不同",
+          "paragraphs": [
+            "六壬关注起课时刻及其课式，四柱通常以出生年月日时构成命局。二者都用干支，不代表能互换起例；月将也不应简单等同节月月支。"
+          ],
+          "evidenceType": "传统理论",
+          "sourceIds": [
+            "liuren"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "liuren"
+      ],
+      "related": [
+        "qimen",
+        "six-xun"
+      ],
+      "aliases": []
+    },
+    {
+      "id": "qimen",
+      "title": "奇门：六甲为什么隐遁",
+      "category": "相关术数",
+      "summary": "三奇、六仪与六甲，将干支循环带入九宫体系。",
+      "sections": [
+        {
+          "heading": "三奇六仪",
+          "paragraphs": [
+            "乙丙丁为三奇，戊己庚辛壬癸为六仪。六甲分别为甲子、甲戌、甲申、甲午、甲辰、甲寅，与六旬的旬首相同。"
+          ],
+          "evidenceType": "传统理论",
+          "sourceIds": [
+            "qimen"
+          ]
+        },
+        {
+          "heading": "六甲的对应",
+          "paragraphs": [
+            "常见隐遁对应为甲子戊、甲戌己、甲申庚、甲午辛、甲辰壬、甲寅癸。再与八门、九星、九宫等结构配合，不是简单把六十甲子绕一圈就得到完整奇门局。"
+          ],
+          "evidenceType": "传统理论",
+          "sourceIds": [
+            "qimen"
+          ]
+        },
+        {
+          "heading": "不同起局传统",
+          "paragraphs": [
+            "转盘、飞盘以及置闰、拆补等方法存在差异。本站以概念对照为主，不把任意一套起局方法说成所有奇门的统一标准。"
+          ],
+          "evidenceType": "传统理论",
+          "sourceIds": [
+            "qimen"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "qimen"
+      ],
+      "related": [
+        "six-xun",
+        "liuren",
+        "taiyi"
+      ],
+      "aliases": []
+    },
+    {
+      "id": "taiyi",
+      "title": "太乙与积算纪年",
+      "category": "相关术数",
+      "summary": "太乙传统把干支纪年放入更长的积算和宫位推演中。",
+      "sections": [
+        {
+          "heading": "看积算，也看起点",
+          "paragraphs": [
+            "《太乙金镜式经》有推积年、太岁、入纪等程序。一个积年数依赖所选历元和起算规则；只见一个大周期数字，不能忽略它从何年、按何法开始。"
+          ],
+          "evidenceType": "传统理论",
+          "sourceIds": [
+            "taiyi"
+          ]
+        },
+        {
+          "heading": "不把三式混为一式",
+          "paragraphs": [
+            "太乙、奇门、六壬常合称三式，但盘式、参数与用途不同。本站把它们作为相关传统分别介绍，不把太乙计算结果当作朝代兴亡已获证实的因果规律。"
+          ],
+          "evidenceType": "传统理论",
+          "sourceIds": [
+            "taiyi"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "taiyi"
+      ],
+      "related": [
+        "liuren",
+        "qimen",
+        "year-reckoning"
+      ],
+      "aliases": []
+    },
+    {
+      "id": "najia",
+      "title": "六爻纳甲与干支",
+      "category": "相关术数",
+      "summary": "纳甲把干支接入卦爻体系，与纳音不是同一件事。",
+      "sections": [
+        {
+          "heading": "从卦象到干支",
+          "paragraphs": [
+            "纳甲传统给八卦、内外卦及爻位配置干支，后世六爻体系再据此讨论六亲、月建、日辰等关系。这里的单位是卦与爻，不能把四柱八个字直接代入同一结构。"
+          ],
+          "evidenceType": "传统理论",
+          "sourceIds": [
+            "najia",
+            "sanming1"
+          ]
+        },
+        {
+          "heading": "三个相近名词",
+          "paragraphs": [
+            "纳甲是卦爻配干支；纳音是六十甲子的成对五行分类；藏干是地支中配天干。名称都可能出现干支与五行，但回答的是不同问题。"
+          ],
+          "evidenceType": "传统理论",
+          "sourceIds": [
+            "najia",
+            "sanming1"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "najia",
+        "sanming1"
+      ],
+      "related": [
+        "nayin",
+        "hidden-stems"
+      ],
+      "aliases": []
+    },
+    {
+      "id": "date-selection",
+      "title": "择日：同一日为何说法不一",
+      "category": "相关术数",
+      "summary": "择日文献把日期与用事类别联系起来，起例与取舍各有传统。",
+      "sections": [
+        {
+          "heading": "先确定想研究的规则",
+          "paragraphs": [
+            "传统择日涉及建除、神煞、月建、日辰及具体用事。不同活动可能采用不同条件；一句“宜”或“忌”脱离出处和事项，信息并不完整。"
+          ],
+          "evidenceType": "传统理论",
+          "sourceIds": [
+            "xieji",
+            "sanming2"
+          ]
+        },
+        {
+          "heading": "读黄历时的三项检查",
+          "paragraphs": [
+            "先核对公历和农历日期，再核对日干支与所用时区，最后看宜忌来自哪部历书或哪一派规则。本站日期工具只给历法信息，不把文化标签包装成现实成败保证。"
+          ],
+          "evidenceType": "传统理论",
+          "sourceIds": [
+            "xieji",
+            "sanming2"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "xieji",
+        "sanming2"
+      ],
+      "related": [
+        "schools-and-shensha",
+        "day-reckoning"
+      ],
+      "aliases": []
+    },
+    {
+      "id": "fengshui",
+      "title": "方位体系中的干支",
+      "category": "相关术数",
+      "summary": "方位环上的干支，是空间分类；纪日表上的干支，是时间标记。",
+      "sections": [
+        {
+          "heading": "二十四山中的位置",
+          "paragraphs": [
+            "常见二十四山包含十二地支、八干（甲乙丙丁庚辛壬癸）及乾坤艮巽四卦，戊己居中而不列入外围八干。它不是二十四节气的同一张表。"
+          ],
+          "evidenceType": "传统理论",
+          "sourceIds": [
+            "xieji",
+            "wuxing1",
+            "compass"
+          ]
+        },
+        {
+          "heading": "不要把朝向和时辰混读",
+          "paragraphs": [
+            "子可以作为北方标记，也可以表示子时；语境不同。建筑朝向还需实测，不能根据年干支推出一栋房屋的真实方向或结构安全。"
+          ],
+          "evidenceType": "传统理论",
+          "sourceIds": [
+            "xieji",
+            "wuxing1",
+            "compass"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "xieji",
+        "wuxing1",
+        "compass"
+      ],
+      "related": [
+        "hour-reckoning",
+        "five-elements"
+      ],
+      "aliases": []
+    },
+    {
+      "id": "wuyun-liuqi",
+      "title": "五运六气：干支的另一套对应",
+      "category": "传统医籍",
+      "summary": "在运气理论中，甲己配土运，与“甲乙属木”不冲突。",
+      "sections": [
+        {
+          "heading": "天干配五运",
+          "paragraphs": [
+            "《素问·天元纪大论》列甲己土运、乙庚金运、丙辛水运、丁壬木运、戊癸火运。常见解释再按阳干太过、阴干不及区分；这是中运层次。"
+          ],
+          "evidenceType": "传统理论",
+          "sourceIds": [
+            "suwen"
+          ]
+        },
+        {
+          "heading": "地支配司天",
+          "paragraphs": [
+            "子午少阴君火，丑未太阴湿土，寅申少阳相火，卯酉阳明燥金，辰戌太阳寒水，巳亥厥阴风木。在泉与司天相配，主气、客气、主运、客运又是不同层次。"
+          ],
+          "evidenceType": "传统理论",
+          "sourceIds": [
+            "suwen"
+          ]
+        },
+        {
+          "heading": "周期怎样形成",
+          "paragraphs": [
+            "五运与六气结合阴阳差异，可按六十年排列。主气常依风木、君火、相火、湿土、燥金、寒水排序；客气轮转另有规则，不能交换表头。"
+          ],
+          "evidenceType": "传统理论",
+          "sourceIds": [
+            "suwen"
+          ]
+        },
+        {
+          "heading": "怎样与现代资料对读",
+          "paragraphs": [
+            "这些是传统医籍的理论结构。若比较现代气象或疾病数据，仍需独立数据、统计方法与混杂因素分析；不能以年份标签判断个人疾病或替代诊疗。"
+          ],
+          "evidenceType": "传统理论",
+          "sourceIds": [
+            "suwen"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "suwen"
+      ],
+      "related": [
+        "five-elements",
+        "stem-combinations"
+      ],
+      "aliases": []
+    },
+    {
+      "id": "historical-reading",
+      "title": "读懂“岁次”与古代日期",
+      "category": "历史文化",
+      "summary": "干支帮助定位历史，但通常需要年号、月序与其他证据共同约束。",
+      "sections": [
+        {
+          "heading": "为什么只看甲子不够",
+          "paragraphs": [
+            "甲子年每60年重现；一篇碑文写“岁次甲子”，还需朝代、年号、人物和文物年代来确定是哪一轮。日干支也能用于检验某月朔日或事件先后。"
+          ],
+          "evidenceType": "历史材料",
+          "sourceIds": [
+            "museum",
+            "wuxing1",
+            "hko-year"
+          ]
+        },
+        {
+          "heading": "岁首曾经变化",
+          "paragraphs": [
+            "历史上存在建子、建丑、建寅等岁首传统。不能看到古文“正月”就默认其季节、月号和现代农历完全一样；换算要指定时代与历制。"
+          ],
+          "evidenceType": "历史材料",
+          "sourceIds": [
+            "museum",
+            "wuxing1",
+            "hko-year"
+          ]
+        },
+        {
+          "heading": "实践顺序",
+          "paragraphs": [
+            "先抄清原文与字形，再确认纪年体系和历法，最后查可信历表。干支是一项交叉验证线索，不能凭一个循环标签补造缺失史实。"
+          ],
+          "evidenceType": "历史材料",
+          "sourceIds": [
+            "museum",
+            "wuxing1",
+            "hko-year"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "museum",
+        "wuxing1",
+        "hko-year"
+      ],
+      "related": [
+        "history-origins",
+        "day-reckoning"
+      ],
+      "aliases": []
+    },
+    {
+      "id": "zodiac-culture",
+      "title": "生肖、花甲与生活中的干支",
+      "category": "历史文化",
+      "summary": "生肖让十二支容易记忆，但它只代表干支的一半。",
+      "sections": [
+        {
+          "heading": "十二支配十二兽",
+          "paragraphs": [
+            "子鼠、丑牛、寅虎、卯兔、辰龙、巳蛇、午马、未羊、申猴、酉鸡、戌狗、亥猪，是中国常见配法。生肖没有给出天干，所以同属龙还可能是甲辰、丙辰等不同年份。"
+          ],
+          "evidenceType": "历史材料",
+          "sourceIds": [
+            "zodiac"
+          ]
+        },
+        {
+          "heading": "六十与还历",
+          "paragraphs": [
+            "六十个干支轮回让“花甲”“还历”等称谓有了文化意义。生日、虚岁、周岁等又有不同计龄方法，不能把一个称谓直接换成精确年龄。"
+          ],
+          "evidenceType": "历史材料",
+          "sourceIds": [
+            "hko-year",
+            "kanreki"
+          ]
+        },
+        {
+          "heading": "符号也进入命名",
+          "paragraphs": [
+            "甲乙可用于排序、契约双方、等级或现代命名，此时未必表示历日。商王称名中也见天干字，具体历史解释须结合甲骨与文献。"
+          ],
+          "evidenceType": "历史材料",
+          "sourceIds": [
+            "museum",
+            "wuxing1"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "zodiac",
+        "hko-year",
+        "kanreki",
+        "museum",
+        "wuxing1"
+      ],
+      "related": [
+        "east-asia",
+        "cycle-60"
+      ],
+      "aliases": []
+    },
+    {
+      "id": "east-asia",
+      "title": "东亚的干支与生肖",
+      "category": "历史文化",
+      "summary": "汉字名称可以跨地域流传，具体纪年和民俗仍会变化。",
+      "sections": [
+        {
+          "heading": "共享序列，各有读法",
+          "paragraphs": [
+            "日本、朝鲜半岛、越南等地区历史上使用或沿用干支；当地读音、节日及纪年背景不同。日本的“还历”、韩语语境中的六十岁庆典都与六十循环有关。"
+          ],
+          "evidenceType": "历史材料",
+          "sourceIds": [
+            "kanreki"
+          ]
+        },
+        {
+          "heading": "生肖也会变",
+          "paragraphs": [
+            "越南常见生肖以猫对应卯，与中国常见的兔不同；牛、羊等动物称谓也有本地解释。谈生肖传统要注明地域，不能假定一张中文生肖表代表所有地区。"
+          ],
+          "evidenceType": "历史材料",
+          "sourceIds": [
+            "zodiac"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "kanreki",
+        "zodiac"
+      ],
+      "related": [
+        "zodiac-culture",
+        "year-reckoning"
+      ],
+      "aliases": []
+    },
+    {
+      "id": "common-misconceptions",
+      "title": "八个最容易混淆的问题",
+      "category": "基础",
+      "summary": "先辨认问题属于哪一层，很多“矛盾”就能解开。",
+      "sections": [
+        {
+          "heading": "循环与日期",
+          "paragraphs": [
+            "60不是120，因为干支同步递进；公历元旦不是农历换年；春节不是所有术数体系的年界；农历月份不等于节月。"
+          ],
+          "evidenceType": "传统理论",
+          "sourceIds": [
+            "hko-year",
+            "wuxing2",
+            "sanming1"
+          ]
+        },
+        {
+          "heading": "对应与判断",
+          "paragraphs": [
+            "生肖只给地支；纳音不取代本气；合不一定化；循环存在不等于历史、经济或人生会按相同剧本重演。"
+          ],
+          "evidenceType": "传统理论",
+          "sourceIds": [
+            "hko-year",
+            "wuxing2",
+            "sanming1"
+          ]
+        },
+        {
+          "heading": "给每个答案加上条件",
+          "paragraphs": [
+            "查表前先写清：用哪套体系、哪个时间单位、什么时区、何时换年换日、依据哪份材料。本站各结果和文章都沿着这些问题给出解释。"
+          ],
+          "evidenceType": "传统理论",
+          "sourceIds": [
+            "hko-year",
+            "wuxing2",
+            "sanming1"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "hko-year",
+        "wuxing2",
+        "sanming1"
+      ],
+      "related": [
+        "cycle-60",
+        "time-conventions",
+        "five-elements"
+      ],
+      "aliases": []
+    }
+  ],
+  "guides": [
+    {
+      "id": "0",
+      "title": "先认识二十二个字",
+      "paragraphs": [
+        "十天干与十二地支，原本都是有次序的符号。先记顺序，再看阴阳和五行，不必一开始就背所有对应。"
+      ],
+      "articleIds": [
+        "yin-yang",
+        "history-origins"
+      ],
+      "cycleIndex": 0
+    },
+    {
+      "id": "1",
+      "title": "让两只轮子同时前进",
+      "paragraphs": [
+        "按一下“下一步”：甲到乙，子到丑。每一步两列同时走，不能只让其中一列随意组合。"
+      ],
+      "articleIds": [
+        "cycle-60"
+      ],
+      "cycleIndex": 1
+    },
+    {
+      "id": "2",
+      "title": "六十步，重新相遇",
+      "paragraphs": [
+        "天干每十步归位，地支每十二步归位，第六十步才同时归位。六旬把这一大圈分成六段。"
+      ],
+      "articleIds": [
+        "cycle-60",
+        "six-xun"
+      ],
+      "cycleIndex": 10
+    },
+    {
+      "id": "3",
+      "title": "同一组合，不同层次",
+      "paragraphs": [
+        "甲子里，甲属木，子属水，纳音海中金。看到不同颜色，先看标签在说哪一层。"
+      ],
+      "articleIds": [
+        "five-elements",
+        "nayin"
+      ],
+      "cycleIndex": 0
+    },
+    {
+      "id": "4",
+      "title": "把序列放回时间",
+      "paragraphs": [
+        "年、月、日、时各有一对干支，换界却不同。春节、立春、交节与午夜，是理解日期查询的关键。"
+      ],
+      "articleIds": [
+        "year-reckoning",
+        "month-reckoning",
+        "time-conventions"
+      ],
+      "cycleIndex": 40
+    },
+    {
+      "id": "5",
+      "title": "知道它从哪里来",
+      "paragraphs": [
+        "实物、历表、古籍和现代解释各有用途。认识规则之后，再进入合冲、四柱或运气等传统，并保留不同流派的边界。"
+      ],
+      "articleIds": [
+        "oracle-bones",
+        "four-pillars",
+        "wuyun-liuqi"
+      ],
+      "cycleIndex": 59
+    }
+  ]
+}
