@@ -523,5 +523,213 @@
     ],
     "status": "verified",
     "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "body-sanming",
+    "title": "三命通会·卷七：论疾病先知五脏六腑所属干支",
+    "author": "明·万民英；维基文库转录",
+    "url": "https://zh.wikisource.org/wiki/三命通會/卷七",
+    "locator": "篇首十干脏腑歌、十干体表歌与两首地支对应歌",
+    "supports": [
+      "篇首十干脏腑歌、十干体表歌与两首地支对应歌"
+    ],
+    "note": "历史术数文献，不是病因或诊断证据。转录有异字；乙按本页“顶”录，巳、未等难解词不擅自校定。",
+    "status": "verified",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "body-needle",
+    "title": "针灸大成·卷二：标幽赋注",
+    "author": "明·杨继洲；维基文库转录",
+    "url": "https://zh.wikisource.org/wiki/針灸大成/卷二",
+    "locator": "“每日寅时”起十二经与时辰顺序",
+    "supports": [
+      "“每日寅时”起十二经与时辰顺序"
+    ],
+    "note": "古籍索引页提示校订不足；此处只取经名与顺序，对明显字形按常用名说明，不复制针刺步骤。古代时辰不等于器官只在两小时内工作。",
+    "status": "verified",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "body-suwen22",
+    "title": "黄帝内经·素问第二十二卷：至真要大论",
+    "author": "维基文库转录",
+    "url": "https://zh.wikisource.org/wiki/黃帝內經/素問第二十二卷",
+    "locator": "病机十九条及“谨守病机”段",
+    "supports": [
+      "病机十九条及“谨守病机”段"
+    ],
+    "note": "传统病机归纳不等同现代病因证明；需结合语境，不能把“皆属于”当成单症状诊断规则。",
+    "status": "verified",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "body-med-head",
+    "title": "Headaches · 症状与常见原因",
+    "author": "英国国民医疗服务体系 NHS",
+    "url": "https://www.nhs.uk/symptoms/headaches/",
+    "locator": "常见原因、何时求助与紧急表现",
+    "supports": [
+      "常见原因、何时求助与紧急表现"
+    ],
+    "note": "本站原创中文转述，按页面实际读取内容整理。原站999/111为英国服务；面向中国大陆的急救提示使用120。症状列表非穷尽，未作个体诊断。",
+    "status": "verified",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "body-med-chest",
+    "title": "Chest pain · 症状与常见原因",
+    "author": "英国国民医疗服务体系 NHS",
+    "url": "https://www.nhs.uk/symptoms/chest-pain/",
+    "locator": "常见原因、何时求助与紧急表现",
+    "supports": [
+      "常见原因、何时求助与紧急表现"
+    ],
+    "note": "本站原创中文转述，按页面实际读取内容整理。原站999/111为英国服务；面向中国大陆的急救提示使用120。症状列表非穷尽，未作个体诊断。",
+    "status": "verified",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "body-med-palpitation",
+    "title": "Heart palpitations · 症状与常见原因",
+    "author": "英国国民医疗服务体系 NHS",
+    "url": "https://www.nhs.uk/symptoms/heart-palpitations/",
+    "locator": "常见原因、何时求助与紧急表现",
+    "supports": [
+      "常见原因、何时求助与紧急表现"
+    ],
+    "note": "本站原创中文转述，按页面实际读取内容整理。原站999/111为英国服务；面向中国大陆的急救提示使用120。症状列表非穷尽，未作个体诊断。",
+    "status": "verified",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "body-med-cough",
+    "title": "Cough · 症状与常见原因",
+    "author": "英国国民医疗服务体系 NHS",
+    "url": "https://www.nhs.uk/symptoms/cough/",
+    "locator": "常见原因、何时求助与紧急表现",
+    "supports": [
+      "常见原因、何时求助与紧急表现"
+    ],
+    "note": "本站原创中文转述，按页面实际读取内容整理。原站999/111为英国服务；面向中国大陆的急救提示使用120。症状列表非穷尽，未作个体诊断。",
+    "status": "verified",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "body-med-abdomen",
+    "title": "Stomach ache · 症状与常见原因",
+    "author": "英国国民医疗服务体系 NHS",
+    "url": "https://www.nhs.uk/symptoms/stomach-ache/",
+    "locator": "常见原因、何时求助与紧急表现",
+    "supports": [
+      "常见原因、何时求助与紧急表现"
+    ],
+    "note": "本站原创中文转述，按页面实际读取内容整理。原站999/111为英国服务；面向中国大陆的急救提示使用120。症状列表非穷尽，未作个体诊断。",
+    "status": "verified",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "body-med-back",
+    "title": "Back pain · 症状与常见原因",
+    "author": "英国国民医疗服务体系 NHS",
+    "url": "https://www.nhs.uk/conditions/back-pain/",
+    "locator": "常见原因、何时求助与紧急表现",
+    "supports": [
+      "常见原因、何时求助与紧急表现"
+    ],
+    "note": "本站原创中文转述，按页面实际读取内容整理。原站999/111为英国服务；面向中国大陆的急救提示使用120。症状列表非穷尽，未作个体诊断。",
+    "status": "verified",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "body-med-neck",
+    "title": "Neck pain · 症状与常见原因",
+    "author": "英国国民医疗服务体系 NHS",
+    "url": "https://www.nhs.uk/symptoms/neck-pain-and-stiff-neck/",
+    "locator": "常见原因、何时求助与紧急表现",
+    "supports": [
+      "常见原因、何时求助与紧急表现"
+    ],
+    "note": "本站原创中文转述，按页面实际读取内容整理。原站999/111为英国服务；面向中国大陆的急救提示使用120。症状列表非穷尽，未作个体诊断。",
+    "status": "verified",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "body-med-limbs",
+    "title": "Joint pain · 症状与常见原因",
+    "author": "英国国民医疗服务体系 NHS",
+    "url": "https://www.nhs.uk/symptoms/joint-pain/",
+    "locator": "常见原因、何时求助与紧急表现",
+    "supports": [
+      "常见原因、何时求助与紧急表现"
+    ],
+    "note": "本站原创中文转述，按页面实际读取内容整理。原站999/111为英国服务；面向中国大陆的急救提示使用120。症状列表非穷尽，未作个体诊断。",
+    "status": "verified",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "body-med-urine",
+    "title": "Urinary tract infections · 症状与常见原因",
+    "author": "英国国民医疗服务体系 NHS",
+    "url": "https://www.nhs.uk/conditions/urinary-tract-infections-utis/",
+    "locator": "常见原因、何时求助与紧急表现",
+    "supports": [
+      "常见原因、何时求助与紧急表现"
+    ],
+    "note": "本站原创中文转述，按页面实际读取内容整理。原站999/111为英国服务；面向中国大陆的急救提示使用120。症状列表非穷尽，未作个体诊断。",
+    "status": "verified",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "body-med-eye",
+    "title": "Vision loss · 症状与常见原因",
+    "author": "英国国民医疗服务体系 NHS",
+    "url": "https://www.nhs.uk/conditions/vision-loss/",
+    "locator": "常见原因、何时求助与紧急表现",
+    "supports": [
+      "常见原因、何时求助与紧急表现"
+    ],
+    "note": "本站原创中文转述，按页面实际读取内容整理。原站999/111为英国服务；面向中国大陆的急救提示使用120。症状列表非穷尽，未作个体诊断。",
+    "status": "verified",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "body-med-ear",
+    "title": "Hearing loss · 症状与常见原因",
+    "author": "英国国民医疗服务体系 NHS",
+    "url": "https://www.nhs.uk/conditions/hearing-loss/",
+    "locator": "常见原因、何时求助与紧急表现",
+    "supports": [
+      "常见原因、何时求助与紧急表现"
+    ],
+    "note": "本站原创中文转述，按页面实际读取内容整理。原站999/111为英国服务；面向中国大陆的急救提示使用120。症状列表非穷尽，未作个体诊断。",
+    "status": "verified",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "body-med-mouth",
+    "title": "Toothache · 症状与常见原因",
+    "author": "英国国民医疗服务体系 NHS",
+    "url": "https://www.nhs.uk/symptoms/toothache/",
+    "locator": "常见原因、何时求助与紧急表现",
+    "supports": [
+      "常见原因、何时求助与紧急表现"
+    ],
+    "note": "本站原创中文转述，按页面实际读取内容整理。原站999/111为英国服务；面向中国大陆的急救提示使用120。症状列表非穷尽，未作个体诊断。",
+    "status": "verified",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "id": "body-med-skin",
+    "title": "Itchy skin · 症状与常见原因",
+    "author": "英国国民医疗服务体系 NHS",
+    "url": "https://www.nhs.uk/symptoms/itchy-skin/",
+    "locator": "常见原因、何时求助与紧急表现",
+    "supports": [
+      "常见原因、何时求助与紧急表现"
+    ],
+    "note": "本站原创中文转述，按页面实际读取内容整理。原站999/111为英国服务；面向中国大陆的急救提示使用120。症状列表非穷尽，未作个体诊断。",
+    "status": "verified",
+    "checkedAt": "2026-11-10"
   }
 ]

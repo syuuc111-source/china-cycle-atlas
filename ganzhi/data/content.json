@@ -1,5 +1,5 @@
 {
-  "version": "2026.11.plants",
+  "version": "2026.11.body",
   "entries": [
     {
       "id": "jia",
@@ -8596,6 +8596,247 @@
           ]
         }
       ]
+    },
+    {
+      "id": "body-read",
+      "title": "读身体对应表，先分清三种关系",
+      "summary": "符号与身体的对应、传统病机、现代病因，是三个不同问题。",
+      "category": "身体与干支",
+      "aliases": [
+        "身体",
+        "脏腑",
+        "症状",
+        "经络"
+      ],
+      "related": [
+        "body-hours",
+        "body-causation",
+        "body-variants"
+      ],
+      "sourceIds": [
+        "body-sanming",
+        "body-needle",
+        "plant-pharmacy",
+        "plant-suwen",
+        "body-suwen22",
+        "body-med-head",
+        "body-med-abdomen"
+      ],
+      "sections": [
+        {
+          "heading": "对应是一种文本关系",
+          "paragraphs": [
+            "十干脏腑歌说甲胆乙肝，另一首说甲头乙顶；这说明同一个干可以进入不同表格。地支体表位置歌、混合歌与时辰经脉表的目标又不同，本站分别显示。",
+            "图示用于查找身体区域，不是经络的精确解剖定位。命门、三焦、包络等术语需放回传统文献语境，不随意画成某个现代器官。"
+          ],
+          "evidenceType": "历史对应",
+          "sourceIds": [
+            "body-sanming",
+            "body-needle"
+          ]
+        },
+        {
+          "heading": "传统脏腑是功能语言",
+          "paragraphs": [
+            "中医脏腑概念与现代解剖器官有名称重叠，却不能在全部语境中等同。例如脾的运化或心的神志，是传统功能框架；不能仅由“脾虚”三个字推定解剖脾脏损伤。",
+            "辨证需要综合症状与望闻问切等信息；本站介绍的是理论与文字，未提供根据生日或一个症状自动辨证的功能。"
+          ],
+          "evidenceType": "概念界限",
+          "sourceIds": [
+            "plant-pharmacy",
+            "plant-suwen"
+          ]
+        },
+        {
+          "heading": "病因要有独立证据",
+          "paragraphs": [
+            "病机十九条用风寒湿热等归纳症候，命理书又用生克刑冲解释疾病。这是两类历史解释；并没有因此证明某个干受克会引起你的器官病变。",
+            "症状页另列现代医学常见原因与就医提示。它们是一组可能性，不是通过点击身体部位就得出的诊断。"
+          ],
+          "evidenceType": "传统解释与现代评估",
+          "sourceIds": [
+            "body-suwen22",
+            "body-sanming",
+            "body-med-head",
+            "body-med-abdomen"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "body-hours",
+      "title": "十二时辰与经脉：配时不是器官排班",
+      "summary": "寅肺、卯大肠、辰胃……是传统配时表，不是器官每天只工作两小时。",
+      "category": "身体与干支",
+      "aliases": [
+        "身体",
+        "脏腑",
+        "症状",
+        "经络"
+      ],
+      "related": [
+        "body-read",
+        "body-causation"
+      ],
+      "sourceIds": [
+        "body-needle",
+        "sanming2",
+        "body-med-chest",
+        "body-med-head"
+      ],
+      "sections": [
+        {
+          "heading": "文献里的顺序",
+          "paragraphs": [
+            "《针灸大成》标幽赋注按寅时肺经起，接大肠、胃、脾、心、小肠、膀胱、肾、心包络、三焦、胆、肝，经脉名称与时辰共同构成一轮。",
+            "本站以常见现代钟表对照列出23—01为子时等区间，只方便读表，没有校正历史时制、经度或真太阳时，也没有据此计算针刺开穴。"
+          ],
+          "evidenceType": "传统配时",
+          "sourceIds": [
+            "body-needle"
+          ]
+        },
+        {
+          "heading": "为什么寅木会配肺经",
+          "paragraphs": [
+            "寅木说的是地支本气，寅时肺经说的是时辰与经脉配属。这是不同表头，不能把肺的传统金行换成木，也不能凭某支对应一脏就改写全部表。",
+            "完整子午流注针法还有日干、时干、五输穴等取用规则，单张十二时辰表不能代表全部针法，更不是自行针刺教程。"
+          ],
+          "evidenceType": "层次区别",
+          "sourceIds": [
+            "body-needle",
+            "sanming2"
+          ]
+        },
+        {
+          "heading": "醒来或疼痛的时刻不是诊断",
+          "paragraphs": [
+            "夜间反复不适可记录其时间，提供给医生了解病程，但“丑时醒就是肝有病”“子时胆经排毒所以不能治疗”都不是这张对应表能证明的结论。",
+            "持续胸痛、突发剧烈头痛等应按实际紧急表现求助，不能等待所谓合适时辰。"
+          ],
+          "evidenceType": "实际使用范围",
+          "sourceIds": [
+            "body-med-chest",
+            "body-med-head"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "body-causation",
+      "title": "为什么会出现症状：怎样读传统病机",
+      "summary": "把古人的解释讲清楚，也保留现代病因判断所需的证据。",
+      "category": "身体与干支",
+      "aliases": [
+        "身体",
+        "脏腑",
+        "症状",
+        "经络"
+      ],
+      "related": [
+        "body-read",
+        "body-hours"
+      ],
+      "sourceIds": [
+        "body-suwen22",
+        "body-sanming",
+        "body-med-abdomen",
+        "body-med-chest"
+      ],
+      "sections": [
+        {
+          "heading": "风、寒、湿、热并非一个症状的唯一原因",
+          "paragraphs": [
+            "《素问》以诸风掉眩、诸寒收引、诸湿肿满等组织病机。这里风、寒、湿、热有传统理论含义，不能把每个字直接换成细菌、温度或某个解剖病灶。",
+            "同一现代症状可能来自不同原因，同一种疾病也可出现多种症状。病机条文需要结合原文整体，不能抽一句“皆属于肝”就给所有眩晕者诊断肝病。"
+          ],
+          "evidenceType": "传统病机释义",
+          "sourceIds": [
+            "body-suwen22"
+          ]
+        },
+        {
+          "heading": "命理生克不是医学因果检验",
+          "paragraphs": [
+            "《三命通会》在疾病篇用五行不和、太过不及、刑伤等术数语言推病。本站解释其文献结构，但不复述成必然患病、寿夭或家属疾病预测。",
+            "人的出生干支不是病原检测、影像、心电图或诊断结论。既不能据它确诊，也不能据“命局很好”排除急症。"
+          ],
+          "evidenceType": "历史术数及其边界",
+          "sourceIds": [
+            "body-sanming"
+          ]
+        },
+        {
+          "heading": "症状说明看三个层面",
+          "paragraphs": [
+            "先记录发生了什么：部位、起病速度、持续时间、伴随表现。再看可能机制：损伤、感染、反流、神经或其他问题。最后判断是否需要紧急评估。",
+            "例如腹痛可能与消化不良有关，也可能涉及阑尾、胆道、泌尿或妇科问题；胸痛也可能跨越心脏、呼吸、胸壁与消化系统。位置只是一个线索。"
+          ],
+          "evidenceType": "现代健康教育",
+          "sourceIds": [
+            "body-med-abdomen",
+            "body-med-chest"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "body-variants",
+      "title": "同一本书里，为什么也有不同身体表？",
+      "summary": "保留表头与版本差异，比合成一张“唯一正确表”更准确。",
+      "category": "身体与干支",
+      "aliases": [
+        "身体",
+        "脏腑",
+        "症状",
+        "经络"
+      ],
+      "related": [
+        "body-read",
+        "body-hours"
+      ],
+      "sourceIds": [
+        "body-sanming",
+        "body-needle",
+        "sanming2"
+      ],
+      "sections": [
+        {
+          "heading": "子与午是很直观的例子",
+          "paragraphs": [
+            "《三命通会》第一首地支歌把子与膀胱、水道、耳并列，第二首却把子放在阴部位置；午先见精神眼目，后又配头。《针灸大成》的配时表则是子胆经、午心经。",
+            "这不是本站把三张表合成三种病因，而是把原文的不同用途摆出来，供你逐项对读。"
+          ],
+          "evidenceType": "并存体系",
+          "sourceIds": [
+            "body-sanming",
+            "body-needle"
+          ]
+        },
+        {
+          "heading": "不把转录错误当成知识补全",
+          "paragraphs": [
+            "本次维基文库文本十干体表歌写乙顶，本站保留为头顶；没有以网络常见的乙项擅改。地支混合歌在巳、未等处有字形或难解词，本站标为待校，不硬译成某个器官。",
+            "针灸大成索引提示校订不足，经名中的明显太/大、已/巳等转录字形按常用经名和序列说明；未据这份转录提供针法和穴位深度。"
+          ],
+          "evidenceType": "版本处理",
+          "sourceIds": [
+            "body-sanming",
+            "body-needle"
+          ]
+        },
+        {
+          "heading": "颜色也有自己的表头",
+          "paragraphs": [
+            "专题按钮颜色表示天干或地支本气，沿用木绿、火红、土橙、金金色、水蓝。它不是人体热力图，不表示该部位的风险，更不把经脉五行强行改成干支本气。",
+            "先看所选体系，再看颜色旁的文字；症状与病因页面不使用五行强弱评分。"
+          ],
+          "evidenceType": "界面阅读方法",
+          "sourceIds": [
+            "sanming2"
+          ]
+        }
+      ]
     }
   ],
   "guides": [
@@ -9922,6 +10163,962 @@
       "plant-matrix",
       "plant-identity",
       "plant-file"
+    ]
+  },
+  "body": {
+    "entries": [
+      {
+        "id": "jia",
+        "name": "甲",
+        "kind": "stem",
+        "element": "木",
+        "body": "头",
+        "organ": "胆",
+        "meridian": "",
+        "hours": "",
+        "variant": "",
+        "note": "甲配胆属于脏腑歌，甲配头属于另一首体表歌；两者不能拼成“头痛就是胆病”。头部症状还需要区分起病方式、神经表现与其他因素。",
+        "regionIds": [
+          "head"
+        ],
+        "sourceIds": [
+          "body-sanming"
+        ],
+        "summary": "十干脏腑歌：胆；另一首体表歌：头。两套对应分别阅读。"
+      },
+      {
+        "id": "yi",
+        "name": "乙",
+        "kind": "stem",
+        "element": "木",
+        "body": "顶（头顶）",
+        "organ": "肝",
+        "meridian": "",
+        "hours": "",
+        "variant": "",
+        "note": "本次所读转录写乙顶，因此按头顶部位解释。网络另见乙项等写法，未校定版本时不把它悄悄改成颈项。乙配肝属于另一层；中医肝与现代解剖肝脏不能在所有语境中直接互换。",
+        "regionIds": [
+          "head",
+          "neck"
+        ],
+        "sourceIds": [
+          "body-sanming"
+        ],
+        "summary": "十干脏腑歌：肝；另一首体表歌：顶（头顶）。两套对应分别阅读。"
+      },
+      {
+        "id": "bing",
+        "name": "丙",
+        "kind": "stem",
+        "element": "火",
+        "body": "肩",
+        "organ": "小肠",
+        "meridian": "",
+        "hours": "",
+        "variant": "",
+        "note": "丙的小肠与肩分属两首歌。肩部在空间图上与胸部相邻，但不能因此把肩痛归结为小肠病，更不能以丙火强弱推断某人病情。",
+        "regionIds": [
+          "neck",
+          "limbs"
+        ],
+        "sourceIds": [
+          "body-sanming"
+        ],
+        "summary": "十干脏腑歌：小肠；另一首体表歌：肩。两套对应分别阅读。"
+      },
+      {
+        "id": "ding",
+        "name": "丁",
+        "kind": "stem",
+        "element": "火",
+        "body": "心（胸中）",
+        "organ": "心",
+        "meridian": "",
+        "hours": "",
+        "variant": "",
+        "note": "丁在脏腑歌与体表歌中都出现心字，这种文字重合仍不是心电或影像检查结论。胸痛、心悸的原因须看实际症状与检查。",
+        "regionIds": [
+          "chest"
+        ],
+        "sourceIds": [
+          "body-sanming"
+        ],
+        "summary": "十干脏腑歌：心；另一首体表歌：心（胸中）。两套对应分别阅读。"
+      },
+      {
+        "id": "wu-stem",
+        "name": "戊",
+        "kind": "stem",
+        "element": "土",
+        "body": "肋",
+        "organ": "胃",
+        "meridian": "",
+        "hours": "",
+        "variant": "",
+        "note": "戊配胃和肋分别记录。肋是体表区域，胃是传统脏腑名；上腹、右肋下或胸壁疼痛有不同可能原因，不能只据一个字归因。",
+        "regionIds": [
+          "chest",
+          "abdomen"
+        ],
+        "sourceIds": [
+          "body-sanming"
+        ],
+        "summary": "十干脏腑歌：胃；另一首体表歌：肋。两套对应分别阅读。"
+      },
+      {
+        "id": "ji",
+        "name": "己",
+        "kind": "stem",
+        "element": "土",
+        "body": "腹",
+        "organ": "脾",
+        "meridian": "",
+        "hours": "",
+        "variant": "",
+        "note": "己配脾、体表配腹。中医语境的脾常包含运化等功能解释，不完全等于现代解剖学的脾脏；腹胀不能直接推出脾脏器质病变。",
+        "regionIds": [
+          "abdomen"
+        ],
+        "sourceIds": [
+          "body-sanming"
+        ],
+        "summary": "十干脏腑歌：脾；另一首体表歌：腹。两套对应分别阅读。"
+      },
+      {
+        "id": "geng",
+        "name": "庚",
+        "kind": "stem",
+        "element": "金",
+        "body": "脐轮（肚脐周围）",
+        "organ": "大肠",
+        "meridian": "",
+        "hours": "",
+        "variant": "",
+        "note": "庚配大肠，体表为脐轮。脐周是区域定位，大肠是另一层名称，脐周疼痛并不总来自大肠；还需观察移动、持续时间及伴随症状。",
+        "regionIds": [
+          "abdomen"
+        ],
+        "sourceIds": [
+          "body-sanming"
+        ],
+        "summary": "十干脏腑歌：大肠；另一首体表歌：脐轮（肚脐周围）。两套对应分别阅读。"
+      },
+      {
+        "id": "xin",
+        "name": "辛",
+        "kind": "stem",
+        "element": "金",
+        "body": "股（大腿）",
+        "organ": "肺",
+        "meridian": "",
+        "hours": "",
+        "variant": "",
+        "note": "辛配肺，体表配股。股指大腿，不是现代医学里的股骨疾病诊断。不能根据辛金标签把腿痛与肺部疾病直接连成因果。",
+        "regionIds": [
+          "limbs",
+          "cough"
+        ],
+        "sourceIds": [
+          "body-sanming"
+        ],
+        "summary": "十干脏腑歌：肺；另一首体表歌：股（大腿）。两套对应分别阅读。"
+      },
+      {
+        "id": "ren",
+        "name": "壬",
+        "kind": "stem",
+        "element": "水",
+        "body": "胫（小腿前部）",
+        "organ": "膀胱",
+        "meridian": "",
+        "hours": "",
+        "variant": "",
+        "note": "壬配膀胱，原文又把三焦寄于壬；体表配胫。三焦属于传统功能和经络概念，不能画成一个已经确认的单独解剖器官。",
+        "regionIds": [
+          "urine",
+          "limbs"
+        ],
+        "sourceIds": [
+          "body-sanming"
+        ],
+        "summary": "十干脏腑歌：膀胱；另一首体表歌：胫（小腿前部）。两套对应分别阅读。"
+      },
+      {
+        "id": "gui",
+        "name": "癸",
+        "kind": "stem",
+        "element": "水",
+        "body": "足",
+        "organ": "肾",
+        "meridian": "",
+        "hours": "",
+        "variant": "",
+        "note": "癸配肾，原文又称包络同归癸；体表配足。包络在这里属传统用语，与现代心包解剖结构须按语境区分。足痛并不意味着肾脏生病。",
+        "regionIds": [
+          "back",
+          "urine",
+          "limbs"
+        ],
+        "sourceIds": [
+          "body-sanming"
+        ],
+        "summary": "十干脏腑歌：肾；另一首体表歌：足。两套对应分别阅读。"
+      },
+      {
+        "id": "zi",
+        "name": "子",
+        "kind": "branch",
+        "element": "水",
+        "body": "阴部",
+        "organ": "",
+        "meridian": "足少阳胆经",
+        "hours": "23:00—01:00",
+        "variant": "膀胱、水道、耳",
+        "note": "子在体表位置歌配阴部，另一首混合歌涉及膀胱、水道和耳，时辰经脉表却配胆经。这是三个体系，不能据子水本气覆盖胆经配时，也不能认定子时不适一定来自胆。",
+        "regionIds": [
+          "urine",
+          "ear"
+        ],
+        "sourceIds": [
+          "body-sanming",
+          "body-needle"
+        ],
+        "summary": "位置歌配阴部；时辰表配足少阳胆经。另列原文混合歌作为对读。"
+      },
+      {
+        "id": "chou",
+        "name": "丑",
+        "kind": "branch",
+        "element": "土",
+        "body": "脚",
+        "organ": "",
+        "meridian": "足厥阴肝经",
+        "hours": "01:00—03:00",
+        "variant": "胞肚、脾",
+        "note": "丑在位置歌配脚，混合歌写胞肚及脾，时辰表配肝经。胞肚是所读文本用词，本站不擅自把它改成某个精确现代器官。凌晨醒来不能单靠丑时判为肝病。",
+        "regionIds": [
+          "limbs",
+          "abdomen"
+        ],
+        "sourceIds": [
+          "body-sanming",
+          "body-needle"
+        ],
+        "summary": "位置歌配脚；时辰表配足厥阴肝经。另列原文混合歌作为对读。"
+      },
+      {
+        "id": "yin",
+        "name": "寅",
+        "kind": "branch",
+        "element": "木",
+        "body": "腿",
+        "organ": "",
+        "meridian": "手太阴肺经",
+        "hours": "03:00—05:00",
+        "variant": "胆、发脉、两手",
+        "note": "寅的位置歌配腿，混合歌涉及胆和两手，时辰表是肺经。寅本气属木，肺经常配金，原因是表头不同；不是人的肺在这一时段变成木。",
+        "regionIds": [
+          "limbs",
+          "cough"
+        ],
+        "sourceIds": [
+          "body-sanming",
+          "body-needle"
+        ],
+        "summary": "位置歌配腿；时辰表配手太阴肺经。另列原文混合歌作为对读。"
+      },
+      {
+        "id": "mao",
+        "name": "卯",
+        "kind": "branch",
+        "element": "木",
+        "body": "肋",
+        "organ": "",
+        "meridian": "手阳明大肠经",
+        "hours": "05:00—07:00",
+        "variant": "十指、肝",
+        "note": "卯的位置歌配肋，混合歌涉及十指、肝，时辰表配大肠经。排便习惯受多种生理与生活因素影响，不是必须在卯时完成的诊疗规则。",
+        "regionIds": [
+          "chest",
+          "limbs",
+          "abdomen"
+        ],
+        "sourceIds": [
+          "body-sanming",
+          "body-needle"
+        ],
+        "summary": "位置歌配肋；时辰表配手阳明大肠经。另列原文混合歌作为对读。"
+      },
+      {
+        "id": "chen",
+        "name": "辰",
+        "kind": "branch",
+        "element": "土",
+        "body": "臂",
+        "organ": "",
+        "meridian": "足阳明胃经",
+        "hours": "07:00—09:00",
+        "variant": "皮、肩、胸",
+        "note": "辰与申在位置歌中配两臂；原句说左右二膊，没有在本站据此强分左右。混合歌与时辰表分别涉及皮肩胸和胃经；三套标签不能拼成一个器官。",
+        "regionIds": [
+          "limbs",
+          "skin",
+          "chest"
+        ],
+        "sourceIds": [
+          "body-sanming",
+          "body-needle"
+        ],
+        "summary": "位置歌配臂；时辰表配足阳明胃经。另列原文混合歌作为对读。"
+      },
+      {
+        "id": "si",
+        "name": "巳",
+        "kind": "branch",
+        "element": "火",
+        "body": "肩",
+        "organ": "",
+        "meridian": "足太阴脾经",
+        "hours": "09:00—11:00",
+        "variant": "面、咽、齿等（转录余词待校）",
+        "note": "巳在位置歌配肩，配时表是脾经。所读转录把巳写作已，混合歌尾还有难解字，故只列清楚的面、咽、齿，不把讹字扩写为确定的解剖学判断。",
+        "regionIds": [
+          "neck",
+          "mouth",
+          "abdomen"
+        ],
+        "sourceIds": [
+          "body-sanming",
+          "body-needle"
+        ],
+        "summary": "位置歌配肩；时辰表配足太阴脾经。另列原文混合歌作为对读。"
+      },
+      {
+        "id": "wu",
+        "name": "午",
+        "kind": "branch",
+        "element": "火",
+        "body": "头",
+        "organ": "",
+        "meridian": "手少阴心经",
+        "hours": "11:00—13:00",
+        "variant": "精神、眼目",
+        "note": "午在位置歌配头，混合歌谈精神、眼目，配时表是心经。心神是传统功能概念；头痛、视力变化和胸痛仍须各自评估，不由午火一项概括。",
+        "regionIds": [
+          "head",
+          "eye",
+          "chest"
+        ],
+        "sourceIds": [
+          "body-sanming",
+          "body-needle"
+        ],
+        "summary": "位置歌配头；时辰表配手少阴心经。另列原文混合歌作为对读。"
+      },
+      {
+        "id": "wei",
+        "name": "未",
+        "kind": "branch",
+        "element": "土",
+        "body": "肩",
+        "organ": "",
+        "meridian": "手太阳小肠经",
+        "hours": "13:00—15:00",
+        "variant": "胃、脊梁等（转录“腕隔”待校）",
+        "note": "未的位置歌与巳同配肩，时辰配小肠经；混合歌有胃与脊梁等词，部分转录待校。肩部区域不是小肠所在的解剖位置，图示不应把二者画成同一器官。",
+        "regionIds": [
+          "neck",
+          "abdomen",
+          "back"
+        ],
+        "sourceIds": [
+          "body-sanming",
+          "body-needle"
+        ],
+        "summary": "位置歌配肩；时辰表配手太阳小肠经。另列原文混合歌作为对读。"
+      },
+      {
+        "id": "shen",
+        "name": "申",
+        "kind": "branch",
+        "element": "金",
+        "body": "臂",
+        "organ": "",
+        "meridian": "足太阳膀胱经",
+        "hours": "15:00—17:00",
+        "variant": "大肠、经络、肺",
+        "note": "申在位置歌配臂，混合歌又列大肠、经络、肺，而时辰表配膀胱经。以申金推算“这一时段只养肺”会把本气与配时混在一起。",
+        "regionIds": [
+          "limbs",
+          "cough",
+          "urine"
+        ],
+        "sourceIds": [
+          "body-sanming",
+          "body-needle"
+        ],
+        "summary": "位置歌配臂；时辰表配足太阳膀胱经。另列原文混合歌作为对读。"
+      },
+      {
+        "id": "you",
+        "name": "酉",
+        "kind": "branch",
+        "element": "金",
+        "body": "肋",
+        "organ": "",
+        "meridian": "足少阴肾经",
+        "hours": "17:00—19:00",
+        "variant": "精血、小肠",
+        "note": "酉的位置歌配肋，混合歌涉及精血、小肠，时辰表配肾经。酉金与肾经的水行解释来自不同层级，不互相取代，也不推导肋痛就是肾病。",
+        "regionIds": [
+          "chest",
+          "urine"
+        ],
+        "sourceIds": [
+          "body-sanming",
+          "body-needle"
+        ],
+        "summary": "位置歌配肋；时辰表配足少阴肾经。另列原文混合歌作为对读。"
+      },
+      {
+        "id": "xu",
+        "name": "戌",
+        "kind": "branch",
+        "element": "土",
+        "body": "腿",
+        "organ": "",
+        "meridian": "手厥阴心包络经",
+        "hours": "19:00—21:00",
+        "variant": "命门、腿、踝、足",
+        "note": "戌在位置歌配腿，混合歌还列命门、踝、足，时辰表是心包络经。命门在传统文献中有不同解释，不能直接标为某一个已确认的器官。",
+        "regionIds": [
+          "limbs",
+          "back",
+          "chest"
+        ],
+        "sourceIds": [
+          "body-sanming",
+          "body-needle"
+        ],
+        "summary": "位置歌配腿；时辰表配手厥阴心包络经。另列原文混合歌作为对读。"
+      },
+      {
+        "id": "hai",
+        "name": "亥",
+        "kind": "branch",
+        "element": "水",
+        "body": "脚",
+        "organ": "",
+        "meridian": "手少阳三焦经",
+        "hours": "21:00—23:00",
+        "variant": "头、肾囊",
+        "note": "亥的位置歌配脚，混合歌涉及头及肾囊，时辰表配三焦经。三焦经的传统功能解释不等于一种肉眼可见的管道；夜间不适应按症状评估。",
+        "regionIds": [
+          "limbs",
+          "head",
+          "urine"
+        ],
+        "sourceIds": [
+          "body-sanming",
+          "body-needle"
+        ],
+        "summary": "位置歌配脚；时辰表配手少阳三焦经。另列原文混合歌作为对读。"
+      }
+    ],
+    "regions": [
+      {
+        "id": "head",
+        "title": "头部 · 头痛",
+        "description": "先区分突然发作、反复发作与受伤后的头痛。",
+        "traditional": "体表歌的甲头、乙顶与地支午头是不同记忆表。《素问》病机归纳中讨论风、掉、眩与肝的关系；这里的眩等古代症候不等于所有现代头痛，更不能由甲乙或出生时辰确定病因。",
+        "causes": [
+          {
+            "title": "常见诱因与头痛类型",
+            "text": "感冒、压力、缺水、不规律进餐、姿势或视力问题都可能伴随头痛；反复或严重头痛还可能属于偏头痛、丛集性头痛等。仅凭痛在前额或头顶无法定因。"
+          },
+          {
+            "title": "为什么要问用药与伴随表现",
+            "text": "频繁使用止痛药也可能与头痛有关。是否有发热、呕吐、视力或神经功能变化，会改变需要评估的方向；不能只按五行分类。"
+          }
+        ],
+        "urgent": "头痛突然发生且极其剧烈，或近三个月头部受伤后出现头痛，或伴肢体无力、言语困难、意识异常、视力丧失、高热颈僵等，应立即急诊；中国大陆可拨120。",
+        "care": "反复头痛、逐渐加重、影响生活，或头痛伴视力问题、呕吐等，应就医；儿童头痛应结合年龄与伴随表现及时评估；外伤后头痛按上方紧急提示处理。",
+        "observe": "记录第一次发作的时间、多久达到最痛、部位与持续时长、伴随表现、近期外伤和实际使用的药物。",
+        "medicalSourceIds": [
+          "body-med-head"
+        ],
+        "traditionalSourceIds": [
+          "plant-suwen",
+          "body-suwen22"
+        ],
+        "entryIds": [
+          "jia",
+          "yi",
+          "wu",
+          "hai"
+        ],
+        "sourceIds": [
+          "plant-suwen",
+          "body-suwen22",
+          "body-med-head",
+          "body-sanming"
+        ]
+      },
+      {
+        "id": "eye",
+        "title": "眼部 · 视力变化",
+        "description": "模糊、闪光、黑影、疼痛与突然看不见，需要分别描述。",
+        "traditional": "五行脏象中有肝与目、筋等的对应，命理混合歌又把午配眼目。这些文本关联不能把眼病直接诊断成肝病，也不表示验肝功能就能解释全部视力问题。",
+        "causes": [
+          {
+            "title": "晶状体与眼底的不同问题",
+            "text": "白内障、视网膜脱离、黄斑变性、糖尿病视网膜病变等都可能影响视力，但表现和处理不同。持续模糊与突然闪光黑影不能合并成一种“五行失衡”。"
+          },
+          {
+            "title": "疼痛与变化速度也很重要",
+            "text": "视物模糊伴严重眼痛、红眼可能涉及青光眼等问题；具体诊断要由眼科检查确认，不能凭网页列表自查排除。"
+          }
+        ],
+        "urgent": "突然一眼或双眼视力丧失，或突然剧烈眼痛，应立即急诊；需要急救时拨120。不要自行驾车。",
+        "care": "新发闪光、黑影、复视，或红眼疼痛、畏光，需尽快眼科评估；逐渐下降的视力也应检查。",
+        "observe": "区分单眼和双眼、突发或渐进、是否疼痛和闪光，以及眼外伤、糖尿病等病史。",
+        "medicalSourceIds": [
+          "body-med-eye"
+        ],
+        "traditionalSourceIds": [
+          "plant-suwen",
+          "body-sanming"
+        ],
+        "entryIds": [
+          "wu"
+        ],
+        "sourceIds": [
+          "plant-suwen",
+          "body-sanming",
+          "body-med-eye"
+        ]
+      },
+      {
+        "id": "ear",
+        "title": "耳部 · 听力变化",
+        "description": "听力下降、耳痛、耳鸣和眩晕不是同一件事。",
+        "traditional": "五行脏象有肾与耳的对应；地支混合歌还把子与耳并列。这是传统联类，不能由“耳属肾”直接推出肾脏疾病，或把突发听力下降当成可等待的补肾问题。",
+        "causes": [
+          {
+            "title": "外耳、中耳和长期损伤",
+            "text": "耳垢堵塞、感染、鼓膜损伤、长期噪声暴露及年龄相关变化，都可能使听力下降。是否可逆需要检查，而非看壬癸是否旺。"
+          },
+          {
+            "title": "伴眩晕或耳鸣的变化",
+            "text": "某些内耳问题可同时出现听力变化、旋转感或耳鸣。症状组合只能提供线索，不能确认唯一疾病。"
+          }
+        ],
+        "urgent": "一侧或两侧突然听力下降，或数日内快速变差，应立即安排紧急耳鼻喉评估，不要等待干支时辰。",
+        "care": "听力下降伴耳痛、流液，或治疗耳垢与感染后仍未恢复，需就医；渐进下降也可安排听力检查。",
+        "observe": "记录具体哪只耳、何时开始、是否接触强噪声或气压变化、耳痛流液和眩晕。",
+        "medicalSourceIds": [
+          "body-med-ear"
+        ],
+        "traditionalSourceIds": [
+          "plant-suwen",
+          "body-sanming"
+        ],
+        "entryIds": [
+          "zi"
+        ],
+        "sourceIds": [
+          "plant-suwen",
+          "body-sanming",
+          "body-med-ear"
+        ]
+      },
+      {
+        "id": "mouth",
+        "title": "口齿 · 牙痛",
+        "description": "牙齿、牙龈与口颈肿胀应按实际表现判断。",
+        "traditional": "所读地支混合歌在巳条提到面、咽、齿，另一首位置歌却将巳配肩。这种差异说明它们不是统一的牙科定位表；不能从巳火或肾水推定蛀牙、感染的有无。",
+        "causes": [
+          {
+            "title": "牙齿与牙周的局部原因",
+            "text": "龋齿、牙脓肿、牙齿裂损、补牙材料松动、牙龈疾病等均可能引起牙痛，通常需要口腔检查。"
+          },
+          {
+            "title": "萌出、磨牙与敏感",
+            "text": "智齿萌出相关感染、磨牙、正畸问题或牙敏感也可能疼痛。疼痛是否由冷、热、咬合诱发有助于问诊，不能仅以火旺解释。"
+          }
+        ],
+        "urgent": "牙痛伴眼周或颈部肿胀，尤其口颈肿胀使呼吸、吞咽或说话困难，应立即急诊；呼吸受影响时拨120。",
+        "care": "牙痛超过两天、发热、咬合痛、面颊或下颌肿胀，应看口腔科；不要等到特定“吉日”再处理。",
+        "observe": "记录是哪颗牙或哪一侧、冷热与咬合是否诱发、是否肿胀发热，以及近期牙科治疗。",
+        "medicalSourceIds": [
+          "body-med-mouth"
+        ],
+        "traditionalSourceIds": [
+          "body-sanming"
+        ],
+        "entryIds": [
+          "si"
+        ],
+        "sourceIds": [
+          "body-sanming",
+          "body-med-mouth"
+        ]
+      },
+      {
+        "id": "neck",
+        "title": "颈肩 · 颈痛僵硬",
+        "description": "姿势、睡姿、神经受压或损伤都可能相关。",
+        "traditional": "丙肩与巳未两肩是两首不同的体表歌；乙在本次转录作顶，不直接改成颈项。《素问》有项强与湿等病机归纳，但古代证候标签不能代替对外伤或神经症状的检查。",
+        "causes": [
+          {
+            "title": "姿势与软组织因素",
+            "text": "不舒适的睡姿、长时间伏案等可与颈痛有关，交通事故或跌倒造成的鞭打样损伤也是可能原因。"
+          },
+          {
+            "title": "神经与持续症状",
+            "text": "神经受压可能伴手臂麻刺等表现。手臂发冷、持续不缓解或其他异常应评估，不能只按肩配丙来解释。"
+          }
+        ],
+        "urgent": "颈僵若同时有高热、严重头痛或意识异常，应立即急诊；严重受伤后不适也应及时求助，必要时拨120。",
+        "care": "数周不缓解，或伴手臂麻刺、发冷等，应就医。颈痛限制活动时不要勉强进行危险动作。",
+        "observe": "记录与睡姿、伏案、转头或外伤的关系，是否放射到手臂，有无麻木或无力。",
+        "medicalSourceIds": [
+          "body-med-neck",
+          "body-med-head"
+        ],
+        "traditionalSourceIds": [
+          "plant-suwen",
+          "body-suwen22"
+        ],
+        "entryIds": [
+          "yi",
+          "bing",
+          "si",
+          "wei"
+        ],
+        "sourceIds": [
+          "plant-suwen",
+          "body-suwen22",
+          "body-med-neck",
+          "body-med-head",
+          "body-sanming"
+        ]
+      },
+      {
+        "id": "chest",
+        "title": "胸部 · 胸痛与心悸",
+        "description": "胸壁、消化、呼吸和心脏问题都可能表现为胸部不适。",
+        "traditional": "丁心、戊肋、卯酉肋来自不同记忆表。传统心还涉及神志等功能，不能与所有现代心脏疾病一一对应。胸痛或心悸不能归咎于丁火被克后就停止检查。",
+        "causes": [
+          {
+            "title": "胸痛可能来自不同系统",
+            "text": "胃酸反流、胸壁拉伤、焦虑或惊恐、胸部感染、胸膜问题都可能胸痛；心绞痛、心肌梗死、心包炎等也必须结合表现排查。"
+          },
+          {
+            "title": "心悸不只有一种原因",
+            "text": "剧烈运动、缺睡、咖啡因或酒精、某些药物可诱发心悸；贫血、甲状腺功能亢进、心律失常等也可能相关，持续或反复时需评估。"
+          }
+        ],
+        "urgent": "突发持续胸痛、压迫感，尤其放射到手臂/颈颌/背部，或伴出汗、恶心、气短；心悸持续不退或伴胸痛、气短、晕厥，应立即急诊。中国大陆拨120，不要自行开车。",
+        "care": "反复胸痛或心悸、发作变频繁、已有心脏病，应就医；紧急表现虽已停止，也需尽快评估。",
+        "observe": "记录持续时长、运动或进食关系、是否放射、是否晕厥，以及药物、咖啡因和既往心脏病史。",
+        "medicalSourceIds": [
+          "body-med-chest",
+          "body-med-palpitation"
+        ],
+        "traditionalSourceIds": [
+          "body-sanming",
+          "plant-suwen"
+        ],
+        "entryIds": [
+          "ding",
+          "wu-stem",
+          "mao",
+          "chen",
+          "wu",
+          "you",
+          "xu"
+        ],
+        "sourceIds": [
+          "body-sanming",
+          "plant-suwen",
+          "body-med-chest",
+          "body-med-palpitation"
+        ]
+      },
+      {
+        "id": "cough",
+        "title": "呼吸 · 咳嗽",
+        "description": "注意持续多久，以及有无气短、胸痛、咯血或发热。",
+        "traditional": "辛配肺，寅时配肺经，而申混合歌也出现肺；这三处并非同一规则。《素问》有气的郁滞与肺的传统归纳，但咳嗽不等于辛金弱，寅时咳醒也不能单凭时刻诊断肺病。",
+        "causes": [
+          {
+            "title": "感染与刺激",
+            "text": "感冒、流感、支气管炎或新冠等感染可导致咳嗽，吸烟等刺激也可能相关。病因需结合病程和其他症状。"
+          },
+          {
+            "title": "反流、过敏与鼻部因素",
+            "text": "胃酸反流、过敏或鼻后滴流也可能引起咳嗽，说明咳嗽并非都能由一个肺部诊断解释。"
+          }
+        ],
+        "urgent": "咳嗽伴呼吸困难、胸痛、咯血或快速恶化，应及时急诊评估；明显喘不过气时拨120。",
+        "care": "咳嗽超过三周、无意体重下降或免疫功能较弱时，应就医，不要只按经络时辰调整作息后等待。",
+        "observe": "记录起始日期、干咳或有痰、是否咯血、气短与发热、吸烟暴露及反流或鼻部症状。",
+        "medicalSourceIds": [
+          "body-med-cough"
+        ],
+        "traditionalSourceIds": [
+          "body-sanming",
+          "body-needle",
+          "body-suwen22"
+        ],
+        "entryIds": [
+          "xin",
+          "yin",
+          "shen"
+        ],
+        "sourceIds": [
+          "body-sanming",
+          "body-needle",
+          "body-suwen22",
+          "body-med-cough"
+        ]
+      },
+      {
+        "id": "abdomen",
+        "title": "腹部 · 腹痛腹胀",
+        "description": "部位、变化过程与排便、进食、月经的关系都重要。",
+        "traditional": "戊胃、己脾与己腹、庚脐轮分别是脏腑歌和体表歌。《素问》以湿、热等讨论胀满与吐泻，是传统病机语言；腹胀不能由此自动诊为湿热，腹痛也不等于土被木克。",
+        "causes": [
+          {
+            "title": "常见消化道因素",
+            "text": "积气、消化不良、便秘、胃肠道感染或食物中毒，均可能有腹痛腹胀；腹泻、呕吐等伴随表现有助于判断。"
+          },
+          {
+            "title": "其他可能原因",
+            "text": "阑尾炎、胆结石、肾结石、肠易激综合征及月经或子宫内膜异位相关问题，都可能表现为腹痛。疼痛位置只是线索，不能凭表格确诊或排除。"
+          }
+        ],
+        "urgent": "突然剧烈腹痛、呕血、黑色黏便或大量便血，腹痛伴完全不能排尿/排便排气或呼吸困难，应立即急诊；需要急救时拨120。",
+        "care": "持续或反复腹痛、妊娠期腹痛、症状突然加重、异常阴道出血，或腹泻呕吐持续数天，应及时就医。",
+        "observe": "记录最初与现在的痛点、疼痛移动、进食排便关系、呕吐物和大便变化，以及妊娠可能或月经情况。",
+        "medicalSourceIds": [
+          "body-med-abdomen"
+        ],
+        "traditionalSourceIds": [
+          "plant-suwen",
+          "body-suwen22"
+        ],
+        "entryIds": [
+          "wu-stem",
+          "ji",
+          "geng",
+          "chou",
+          "mao",
+          "si",
+          "wei"
+        ],
+        "sourceIds": [
+          "plant-suwen",
+          "body-suwen22",
+          "body-med-abdomen",
+          "body-sanming"
+        ]
+      },
+      {
+        "id": "back",
+        "title": "腰背 · 腰痛",
+        "description": "多数腰背痛不是仅凭“肾”字就能解释的。",
+        "traditional": "传统把肾与腰、骨等联系起来，混合歌在未条涉及脊梁。但这不是现代肾脏疾病筛查；腰痛不直接等于肾虚，更不能以壬癸强弱判断需不需要就医。",
+        "causes": [
+          {
+            "title": "肌肉、椎间盘与神经",
+            "text": "肌肉拉伤是常见原因之一；椎间盘问题、坐骨神经痛或强直性脊柱炎也可造成腰背痛。需看动作关系、放射痛和功能受限。"
+          },
+          {
+            "title": "少见但需重视的情况",
+            "text": "骨折、感染等有时也表现为背痛。夜间痛、无意体重下降、严重外伤或全身不适会影响就医紧迫性，不能靠干支排除。"
+          }
+        ],
+        "urgent": "腰背痛伴双腿麻木无力、会阴周围感觉减退、大小便控制改变或排尿困难，或严重事故后出现疼痛，应立即急诊；需要急救时拨120。",
+        "care": "数周不改善、影响日常生活、夜间加重、无意减重或伴发热寒战，应就医；突发剧烈或快速加重需更紧急评估。",
+        "observe": "记录外伤、负重或动作关系、是否向腿放射、是否双侧，以及尿便和会阴感觉变化。",
+        "medicalSourceIds": [
+          "body-med-back"
+        ],
+        "traditionalSourceIds": [
+          "body-sanming",
+          "plant-suwen"
+        ],
+        "entryIds": [
+          "gui",
+          "wei",
+          "xu"
+        ],
+        "sourceIds": [
+          "body-sanming",
+          "plant-suwen",
+          "body-med-back"
+        ]
+      },
+      {
+        "id": "limbs",
+        "title": "四肢 · 关节疼痛",
+        "description": "手臂、腿、踝足与各关节，不能只按五行分成一种疼痛。",
+        "traditional": "歌诀里辛股、壬胫、癸足，另有寅戌腿、丑亥脚等位置。这些记忆方式与五行筋骨取象并存，却不能替代关节、肌腱、骨骼或神经的具体定位。",
+        "causes": [
+          {
+            "title": "损伤与慢性关节问题",
+            "text": "扭伤拉伤、骨关节炎、滑囊炎、类风湿关节炎等可能引起不同模式的疼痛。是否双侧、晨僵多久和运动关系可帮助问诊。"
+          },
+          {
+            "title": "红肿热痛须分辨原因",
+            "text": "痛风可突然出现剧痛，感染也可能使关节红肿热痛并伴发热。两者不能只凭一个症状或五行标签区分。"
+          }
+        ],
+        "urgent": "外伤后关节剧痛、不能承重或明显变形，或伴周围麻木，应急诊；关节疼痛伴局部热肿，或关节痛伴全身不适、发热/寒战，都需当日紧急评估。",
+        "care": "疼痛影响睡眠和活动、持续两周不缓解、反复肿胀或晨僵超过半小时，应就医。",
+        "observe": "记录具体关节、单侧双侧、外伤与运动量、肿胀发热、晨僵时长及能否承重。",
+        "medicalSourceIds": [
+          "body-med-limbs"
+        ],
+        "traditionalSourceIds": [
+          "body-sanming",
+          "plant-suwen"
+        ],
+        "entryIds": [
+          "bing",
+          "xin",
+          "ren",
+          "gui",
+          "chou",
+          "yin",
+          "mao",
+          "chen",
+          "shen",
+          "xu",
+          "hai"
+        ],
+        "sourceIds": [
+          "body-sanming",
+          "plant-suwen",
+          "body-med-limbs"
+        ]
+      },
+      {
+        "id": "urine",
+        "title": "泌尿 · 尿痛尿频",
+        "description": "尿液颜色、排尿变化和全身症状要一起看。",
+        "traditional": "壬配膀胱、癸配肾，子混合歌涉及水道；配时表却是申膀胱经、酉肾经。这些命名不能诊断尿路感染，也不能用子水或癸水不足来解释所有排尿异常。",
+        "causes": [
+          {
+            "title": "尿路感染的常见机制",
+            "text": "细菌经尿道进入尿路可造成感染，出现尿痛、尿频、尿急等。妊娠、导尿管、尿路阻塞或排空不全等可改变风险，需按实际情况评估。"
+          },
+          {
+            "title": "单个表现并不特异",
+            "text": "只有尿色深或气味重，有时与饮水少有关；但血尿、发热、腰肋痛或排尿困难不能据此忽略。尿路症状也不都由感染造成。"
+          }
+        ],
+        "urgent": "尿路不适伴意识模糊、嗜睡或说话困难，应立即急诊；完全不能排尿也需急诊。需要急救时拨120。",
+        "care": "尿痛尿频伴血尿、发热寒战、腰肋痛，或发生在孕期、儿童、男性、高龄及免疫功能较弱者，应尽快就医。",
+        "observe": "记录尿痛、频率、血尿、发热和腰痛，是否妊娠、导尿、尿路结石及近期治疗。",
+        "medicalSourceIds": [
+          "body-med-urine",
+          "body-med-abdomen"
+        ],
+        "traditionalSourceIds": [
+          "body-sanming",
+          "body-needle"
+        ],
+        "entryIds": [
+          "ren",
+          "gui",
+          "zi",
+          "shen",
+          "you",
+          "hai"
+        ],
+        "sourceIds": [
+          "body-sanming",
+          "body-needle",
+          "body-med-urine",
+          "body-med-abdomen"
+        ]
+      },
+      {
+        "id": "skin",
+        "title": "皮肤 · 瘙痒皮疹",
+        "description": "先看皮损、分布与接触史，而非只看金木水火土。",
+        "traditional": "五行脏象以肺合皮毛等说明功能联系，病机十九条又将痛痒疮与心相联。多种传统对应同时存在，因此不能把一切皮疹归肺金弱，或将“心”直接等同现代心脏病。",
+        "causes": [
+          {
+            "title": "局部皮肤与接触因素",
+            "text": "过敏反应、荨麻疹、痱子、湿疹、银屑病、真菌感染、疥疮或虱等都可能瘙痒。是否有皮疹、鳞屑及家人同样发痒等可提供线索。"
+          },
+          {
+            "title": "全身与特殊时期的因素",
+            "text": "妊娠或更年期可出现瘙痒，较少情况下也与甲状腺、肝肾等疾病有关。全身痒不应简单归咎于“排毒”，孕期瘙痒尤其需要评估。"
+          }
+        ],
+        "urgent": "严重或全身瘙痒、新发肿块皮疹，尤其妊娠期出现瘙痒，应及时就医评估；本站不能凭皮疹文字排除急症。",
+        "care": "反复、影响睡眠生活、自我护理不改善，或出现担心的新皮损时，应到皮肤科或相关科室检查。",
+        "observe": "记录皮疹出现顺序、分布、是否夜间明显、新用护肤品或药物、接触史和是否妊娠。",
+        "medicalSourceIds": [
+          "body-med-skin"
+        ],
+        "traditionalSourceIds": [
+          "plant-suwen",
+          "body-suwen22"
+        ],
+        "entryIds": [
+          "chen"
+        ],
+        "sourceIds": [
+          "plant-suwen",
+          "body-suwen22",
+          "body-med-skin",
+          "body-sanming"
+        ]
+      }
+    ],
+    "phaseTable": [
+      [
+        "木",
+        "肝 / 胆",
+        "目",
+        "筋"
+      ],
+      [
+        "火",
+        "心 / 小肠",
+        "舌",
+        "脉"
+      ],
+      [
+        "土",
+        "脾 / 胃",
+        "口",
+        "肉"
+      ],
+      [
+        "金",
+        "肺 / 大肠",
+        "鼻",
+        "皮毛"
+      ],
+      [
+        "水",
+        "肾 / 膀胱",
+        "耳",
+        "骨"
+      ]
+    ],
+    "articleIds": [
+      "body-read",
+      "body-hours",
+      "body-causation",
+      "body-variants"
     ]
   }
 }

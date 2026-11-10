@@ -216,7 +216,9 @@ from ganzhi_schools import enrich
 enrich(entries,articles,sources)
 from ganzhi_plants import enrich as enrich_plants
 plants=enrich_plants(articles,sources)
-data=dict(version='2026.11.plants',entries=entries,articles=articles,guides=guides,plants=plants)
+from ganzhi_body import enrich as enrich_body
+body=enrich_body(articles,sources)
+data=dict(version='2026.11.body',entries=entries,articles=articles,guides=guides,plants=plants,body=body)
 for name,obj in [('content.json',data),('sources.json',sources)]:
     (OUT/name).write_text(json.dumps(obj,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 print(f'{len(entries)} entries, {len(articles)} articles, {len(sources)} sources')

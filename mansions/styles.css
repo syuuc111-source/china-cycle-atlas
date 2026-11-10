@@ -70,3 +70,5 @@ dialog::backdrop{background:#020615c9;backdrop-filter:blur(5px)}.detail-top{disp
 }
 @media(max-width:360px){.hero h1{font-size:54px}.hero-subtitle{font-size:19px}.hero-actions{gap:14px}.hero .sky-mount{height:370px}.group-tabs button{padding:8px 12px}.symbol-meta{float:none;display:block;margin:0 0 10px}.symbol-char{margin-bottom:8px}.symbol-card .arrow{top:113px}.symbol-seq{font-size:11px}.site-header nav{gap:12px;font-size:11px}.library-grid{gap:0 15px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
+/* Keep the mobile globe in view alongside the visible topic switcher. */
+@media(max-width:760px){.hero-copy{padding-top:16px}.hero h1{font-size:48px}.hero-desc{margin-top:8px}.hero-actions{margin-top:14px}.hero .sky-mount{height:340px}}

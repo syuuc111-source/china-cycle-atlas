@@ -1,9 +1,11 @@
+import * as B from './body.mjs';
 import * as P from './plants.mjs';
 import * as R from './render.mjs';
 import {mountWheel} from './wheel.mjs';
 import {queryCalendar} from './calendar.mjs';
 import {cycleAt} from './model.mjs';
 const main=document.querySelector('main');let content,sources,wheel=null,route='',selection=0,loadVersion=0;
+const bodyState={query:'',system:'surface'};
 const plantState={query:'',system:'',element:''};
 const searchState={query:'',kind:'all',element:'',mode:'stem'};
 const calendarState={date:new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Shanghai',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date()),time:'12:00',boundary:'midnight'};
@@ -12,6 +14,9 @@ function runQuery(){const [year,month,day]=calendarState.date.split('-').map(Num
 function updateResults(){const items=R.searchResults(content,searchState.query,searchState.kind,searchState.element,searchState.mode);document.querySelector('#results').innerHTML=R.resultHTML(items);document.querySelector('#result-count').textContent=`找到 ${items.length} 个条目${searchState.element?' · '+searchState.element+'（'+({stem:'天干五行',branch:'地支本气',nayin:'纳音五行'}[searchState.mode])+'）':''}`;}
 function render(){if(!content)return;const raw=location.hash.slice(1)||'home';if(raw==='main'){history.replaceState(null,'','#'+(route||'home'));main.focus();return;}wheel?.destroy();wheel=null;route=raw;const [page,id]=raw.split('/');let title='天干地支';
  if(page==='home'){main.innerHTML=R.home(content);mount(selection);}
+ else if(page==='body'){main.innerHTML=B.hub(content,sources);B.mount(content.body,bodyState,sources);title='身体与干支';}
+ else if(page==='body-entry'){const item=content.body.entries.find(e=>e.id===id);if(item){main.innerHTML=B.entry(item,content,sources);title=item.name+' · 身体对应'}else notFound();}
+ else if(page==='body-region'){const item=content.body.regions.find(r=>r.id===id);if(item){main.innerHTML=B.region(item,content,sources);title=item.title}else notFound();}
  else if(page==='plants'){main.innerHTML=P.hub(content,sources);P.mountFilters(content.plants,plantState);title='植物五行';}
  else if(page==='plant'){const row=content.plants.records.find(r=>r.id===id);if(row){main.innerHTML=P.detail(row,content,sources);title=row.name+' · 植物五行'}else notFound();}
  else if(page==='library'){main.innerHTML=R.library();for(const [id,key] of [['search','query'],['kind','kind'],['element','element'],['element-mode','mode']]){const el=document.getElementById(id);el.value=searchState[key];el.addEventListener('input',()=>{searchState[key]=el.value;updateResults()})}document.querySelector('#clear-search').onclick=()=>{Object.assign(searchState,{query:'',kind:'all',element:'',mode:'stem'});for(const [id,key] of [['search','query'],['kind','kind'],['element','element'],['element-mode','mode']])document.getElementById(id).value=searchState[key];updateResults();document.querySelector('#search').focus()};updateResults();title='干支百科';}
